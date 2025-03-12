@@ -9,7 +9,7 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception {
 
-        backgroundView root = new backgroundView();
+        StartgroundView root = new StartView();
 
         Scene scene = new Scene(root,1200,1000);
         primaryStage.setScene(scene);
