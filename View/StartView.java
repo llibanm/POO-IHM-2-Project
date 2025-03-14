@@ -1,36 +1,43 @@
 package View;
 
+import Controler.SceneControler;
+import javafx.scene.control.Button;
 import javafx.scene.image.Image;
 import javafx.scene.layout.*;
+import javafx.stage.Stage;
 
 
-public class StartView extends BorderPane {
+public class StartView extends abstractView {
 
-    private Image backgroundImage;
+    //private Image backgroundImage;
     private SceneControler sceneControler;
 
-    public StartView(SceneControler sceneControler){
-    
-    	this.sceneControler = sceneControler;
+    public StartView(Stage s, startingBackground background) {
+        super("Colossal Space Adventure",background);
 
-        backgroundImage = new Image("spaceImagesProject/Space_Background.png");
 
-        BackgroundImage background = new BackgroundImage(
+
+      	//  backgroundImage = new Image("spaceImagesProject/Space_Background.png");
+
+       /* BackgroundImage background = new BackgroundImage(
                 backgroundImage,
                 BackgroundRepeat.NO_REPEAT,
                 BackgroundRepeat.NO_REPEAT,
                 BackgroundPosition.DEFAULT,
                 new BackgroundSize(1200,1000,true,true,true,true)
         );
+			*/
+        this.setBackground(background.getBackground());
 
-        this.setBackground(new Background(background));
-        
-        createTitle("Colossal Space Adventure"); //A creer dans background
+        //createTitle("Colossal Space Adventure"); // Sarah :A creer dans background
+													//Liban :Fait mais j'ai mis dans le constructeur abstractView
         createButtonSingleP();
         createButtonMultiP();
         createButtonBest();
         createButtonParam();
-        createButtonQuit(700, 600); //A creer dans background createButtonQuit(int x, int y)
+        //createButtonQuit(700, 600); //Sarah: A creer dans background createButtonQuit(int x, int y)
+									  //Liban: Fait mais je l'ai initialisé dans le contructeur abstractView et je l'ai mit dans ue liste de Button
+
 
     }
     
@@ -40,14 +47,14 @@ public class StartView extends BorderPane {
 	SinglePButton.setLayoutX(200);
 	SinglePButton.setLayoutY(100);
 		
-	SinglePButton.setOnMouseClicked((MouseEvent e) -> {
+	SinglePButton.setOnMouseClicked(( e) -> { //Liban: TODO mettre ça dans un controler
 	    try {
         		sceneControler.swithToSelectChar(); // Appel sécurisé avec try-catch
     		    } catch (Exception ex) {
         		ex.printStackTrace(); // Affiche l'erreur dans la console
     		      }
-    	super.getChildren().add(SinglePButton);
-    	}
+    	super.getChildren().add(SinglePButton);//Liban: TODO modifier cette ligne car on utilise un Borderpane
+    	});
     }
     
     
@@ -56,7 +63,7 @@ public class StartView extends BorderPane {
 	MultiPButton.setLayoutX(400);
 	MultiPButton.setLayoutY(100);
 		
-    	super.getChildren().add(MultiPButton);
+    	super.getChildren().add(MultiPButton);//Liban: TODO modifier cette ligne car on utilise un Borderpane
     }
     
     public void createButtonBest() {
@@ -64,7 +71,7 @@ public class StartView extends BorderPane {
 	BestButton.setLayoutX(100);
 	BestButton.setLayoutY(600);
 		
-    	super.getChildren().add(BestButton);
+    	super.getChildren().add(BestButton);//Liban: TODO modifier cette ligne car on utilise un Borderpane
     }
     
     public void createButtonParam() {
@@ -72,14 +79,14 @@ public class StartView extends BorderPane {
 	ParamButton.setLayoutX(200);
 	ParamButton.setLayoutY(100);
 		
-	ParamButton.setOnMouseClicked((MouseEvent e) -> {
+	ParamButton.setOnMouseClicked(( e) -> { //Liban: TODO mettre ça dans un controler
 	    try {
         		sceneControler.swithToParam(); // Appel sécurisé avec try-catch
     		    } catch (Exception ex) {
         		ex.printStackTrace(); // Affiche l'erreur dans la console
     		      }
-    	super.getChildren().add(ParamButton);
-    	}
+    	super.getChildren().add(ParamButton);//Liban: TODO modifier cette ligne car on utilise un Borderpane
+    	});
     }
 
 }

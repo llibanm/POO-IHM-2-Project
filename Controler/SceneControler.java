@@ -1,11 +1,17 @@
 package Controler;
 
-public class SceneControler {
+import Model.abstractModel;
+import View.abstractView;
+import javafx.scene.layout.BorderPane;
+import javafx.stage.Stage;
+
+public class SceneControler extends abstractControler {
 
 	private Stage stage;
 	
-	public SceneControler(Stage stage){
-		this.stage = stage;
+	public SceneControler(Stage stage, abstractModel model, abstractView view){
+        super(model,view);
+        this.stage = stage;
 	}
 	
 	public void swithToParam() throws Exception{
