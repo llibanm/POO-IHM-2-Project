@@ -10,7 +10,7 @@ public class SceneControler extends abstractControler {
 	private Stage stage;
 	
 	public SceneControler(Stage stage, abstractModel model, abstractView view){
-        super(model,view);
+       // super(model,view);
         this.stage = stage;
 	}
 	

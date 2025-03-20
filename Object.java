@@ -15,4 +15,22 @@ public abstract class Object {
         view = v;
     }
 
+
+    public abstractModel getModel() {
+        return model;
+    }
+
+
+
+    public abstractControler getControler() {
+        return controler;
+    }
+
+
+
+    public abstractView getView() {
+        return view;
+    }
+
+
 }

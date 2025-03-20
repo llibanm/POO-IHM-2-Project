@@ -1,8 +1,6 @@
 package View;
 
 import Controler.abstractControler;
-import View.Button.quitButton;
-import javafx.geometry.Pos;
 import javafx.scene.control.Button;
 import javafx.scene.layout.BorderPane;
 
@@ -18,22 +16,25 @@ public abstract class abstractView extends BorderPane {
     private List<Button> ButtonList;
     private String Title;
 
-    public abstractView(String t, abstractBackground b){
+    public abstractView(String t, abstractBackground b) {
         this.background = b;
         //this.controler = c;
         this.Title = t;
 
         this.ButtonList = new ArrayList<>();
-        this.ButtonList.add(new quitButton(700,600));
+        //this.ButtonList.add(new quitButtonView(700,600));
 
+        if(b != null) {
+            this.setBackground(background.getBackground());
+        }
 
-        this.setBackground(background.getBackground());
-        this.setBottom(ButtonList.getFirst());
-        this.ButtonList.getFirst().setAlignment(Pos.BOTTOM_RIGHT);
+        //this.setBottom(ButtonList.getFirst());
+        // this.ButtonList.getFirst().setAlignment(Pos.BOTTOM_RIGHT);
     }
 
     public void modifyBackground(abstractBackground b){
         this.background = b;
+        this.setBackground(background.getBackground());
     }
 
     public abstractControler getControler() {
