@@ -1,3 +1,5 @@
+package object;
+
 import Controler.abstractControler;
 import Model.abstractModel;
 import View.abstractView;

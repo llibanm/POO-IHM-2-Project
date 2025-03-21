@@ -1,21 +1,17 @@
-import Controler.abstractControler;
+package object;
+
 import Controler.quitButtonController;
-import Model.abstractModel;
 import Model.quitButtonModel;
-import View.abstractView;
 import View.quitButtonView;
-import javafx.application.Platform;
 
 public class quitButtonObject extends Object{
 
-    private  quitButtonModel model ;
-    private  quitButtonView view;
-    private  quitButtonController controler;
+
 
     public quitButtonObject() {
         super(new quitButtonModel(),new quitButtonController(), new quitButtonView());
 
-        model = (quitButtonModel) super.getModel();
+        /*model = (quitButtonModel) super.getModel();
         view = (quitButtonView) super.getView();
         controler = (quitButtonController) super.getControler();
 
@@ -23,22 +19,27 @@ public class quitButtonObject extends Object{
         controler.setView(view);
         view.setControler(controler);
         //controler.execute();
-        controler.setQuitAction(getView());
+        controler.setQuitAction(getView());*/
+
+        getControler().setModel(getModel());
+        getControler().setView(getView());
+        getView().setControler(getControler());
+        getControler().setAction(getView());
 
     }
 
     @Override
     public quitButtonView getView() {
-        return view;
+        return (quitButtonView) super.getView();
     }
 
     @Override
     public quitButtonModel getModel() {
-        return model;
+        return (quitButtonModel) super.getModel();
     }
 
     @Override
     public quitButtonController getControler() {
-        return controler;
+        return (quitButtonController) super.getControler();
     }
 }

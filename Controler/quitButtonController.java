@@ -2,14 +2,16 @@ package Controler;
 
 import Interfaces.Commands;
 import Model.quitButtonModel;
+import View.myButtonView;
 import View.quitButtonView;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
+import javafx.scene.Cursor;
 
 import javax.swing.*;
 
-public class quitButtonController extends abstractControler implements Commands {
+public class quitButtonController extends myButtonController implements Commands {
 
 
     public quitButtonController() {
@@ -24,10 +26,11 @@ public class quitButtonController extends abstractControler implements Commands 
         return (quitButtonView) this.getView();
     }
 
-    public void setQuitAction(quitButtonView v) {
 
-        v.getQuitButton().setOnAction((ActionEvent e) -> {Platform.exit(); execute();});
-
+    @Override
+    public void setAction(myButtonView v) {
+        super.setAction(v);
+        v.getMyButton().setOnAction((ActionEvent e) -> { execute();});
     }
 
     @Override

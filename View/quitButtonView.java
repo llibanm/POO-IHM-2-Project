@@ -3,22 +3,20 @@ import Controler.abstractControler;
 import Controler.quitButtonController;
 import javafx.scene.control.Button;
 
-public class quitButtonView extends abstractView {
+public class quitButtonView extends myButtonView {
 
-    private Button quitButton;
-    private quitButtonController qbc;
+
     public quitButtonView() {
-        super("Exit",null);
+        super("Quit",null,true);
 
-        quitButton = new Button(getTitle());
+
     }
 
-    public Button getQuitButton() {
-        return quitButton;
-    }
 
     @Override
     public void setControler(abstractControler c) {
         super.setControler(c);
     }
+
+
 }
