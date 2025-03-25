@@ -26,6 +26,6 @@ public class startButtonController extends myButtonController implements Command
 
     @Override
     public void execute() {
-
+        getStartButtonModel().execute();
     }
 }
