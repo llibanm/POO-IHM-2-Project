@@ -1,0 +1,6 @@
+backPack
+bow
+food
+item
+key
+sabre
