@@ -6,7 +6,7 @@ import view.MyButtonView;
 import view.StartButtonView;
 
 
-public class StartButtonController extends myButtonController implements Commands {
+public class StartButtonController extends MyButtonController implements Commands {
     public StartButtonController() {
     }
 

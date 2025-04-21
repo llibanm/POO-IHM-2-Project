@@ -1,17 +1,17 @@
 
 
-import controler.abstractControler;
+import controler.AbstractControler;
 import model.AbstractModel;
 import view.AbstractView;
 
 public abstract class MyObject {
 
     private AbstractModel model;
-    private abstractControler controler;
+    private AbstractControler controler;
     private AbstractView view;
 
 
-    public MyObject(AbstractModel m, abstractControler c, AbstractView v){
+    public MyObject(AbstractModel m, AbstractControler c, AbstractView v){
         model = m;
         controler = c;
         view = v;
@@ -24,7 +24,7 @@ public abstract class MyObject {
 
 
 
-    public abstractControler getControler() {
+    public AbstractControler getControler() {
         return controler;
     }
 

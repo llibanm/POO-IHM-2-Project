@@ -4,12 +4,12 @@ package controler;
 import model.AbstractModel;
 import view.AbstractView;
 
-public abstract class abstractControler {
+public abstract class AbstractControler {
 
     private AbstractModel model;
     private AbstractView view;
 
-    public abstractControler(){
+    public AbstractControler(){
     }
 
     public AbstractModel getModel() {

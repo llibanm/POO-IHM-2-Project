@@ -6,9 +6,9 @@ import view.CreatemapButtonView;
 import view.MyButtonView;
 import javafx.event.ActionEvent;
 
-public class createmapButtonController extends myButtonController implements Commands {
+public class CreatemapButtonController extends MyButtonController implements Commands {
 
-    public createmapButtonController() {}
+    public CreatemapButtonController() {}
 
 
     public CreatemapButtonModel getMapButtonModel() {

@@ -1,13 +1,13 @@
 package view;
 
-import controler.abstractControler;
+import controler.AbstractControler;
 import javafx.scene.layout.BorderPane;
 
 
 public abstract class AbstractView extends BorderPane {
 
 
-    private abstractControler controler;
+    private AbstractControler controler;
     private AbstractBackground background;
 
     private String Title;
@@ -30,7 +30,7 @@ public abstract class AbstractView extends BorderPane {
         this.setBackground(background.getBackground());
     }
 
-    public abstractControler getControler() {
+    public AbstractControler getControler() {
         return controler;
     }
 
@@ -42,7 +42,7 @@ public abstract class AbstractView extends BorderPane {
         return Title;
     }
 
-    public void setControler(abstractControler controler) {
+    public void setControler(AbstractControler controler) {
         this.controler = controler;
     }
 }

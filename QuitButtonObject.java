@@ -1,6 +1,6 @@
 
 
-import controler.quitButtonController;
+import controler.QuitButtonController;
 import model.QuitButtonModel;
 import view.QuitButtonView;
 
@@ -9,7 +9,7 @@ public class QuitButtonObject extends MyObject{
 
 
     public QuitButtonObject() {
-        super(new QuitButtonModel(),new quitButtonController(), new QuitButtonView());
+        super(new QuitButtonModel(),new QuitButtonController(), new QuitButtonView());
 
         /*model = (quitButtonModel) super.getModel();
         view = (quitButtonView) super.getView();
@@ -39,7 +39,7 @@ public class QuitButtonObject extends MyObject{
     }
 
     @Override
-    public quitButtonController getControler() {
-        return (quitButtonController) super.getControler();
+    public QuitButtonController getControler() {
+        return (QuitButtonController) super.getControler();
     }
 }

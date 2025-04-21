@@ -1,5 +1,5 @@
 package view;
-import controler.abstractControler;
+import controler.AbstractControler;
 
 public class QuitButtonView extends MyButtonView {
 
@@ -12,7 +12,7 @@ public class QuitButtonView extends MyButtonView {
 
 
     @Override
-    public void setControler(abstractControler c) {
+    public void setControler(AbstractControler c) {
         super.setControler(c);
     }
 

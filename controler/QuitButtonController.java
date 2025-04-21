@@ -7,10 +7,10 @@ import view.QuitButtonView;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
 
-public class quitButtonController extends myButtonController implements Commands {
+public class QuitButtonController extends MyButtonController implements Commands {
 
 
-    public quitButtonController() {
+    public QuitButtonController() {
     }
 
 

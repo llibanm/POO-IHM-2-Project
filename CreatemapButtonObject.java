@@ -1,11 +1,11 @@
 
-import controler.createmapButtonController;
+import controler.CreatemapButtonController;
 import model.CreatemapButtonModel;
 import view.CreatemapButtonView;
 
 public class CreatemapButtonObject extends MyObject {
     public CreatemapButtonObject() {
-        super(new CreatemapButtonModel(), new createmapButtonController(), new CreatemapButtonView());
+        super(new CreatemapButtonModel(), new CreatemapButtonController(), new CreatemapButtonView());
         getControler().setModel(getModel());
         getControler().setView(getView());
         getView().setControler(getControler());
@@ -19,8 +19,8 @@ public class CreatemapButtonObject extends MyObject {
     }
 
     @Override
-    public createmapButtonController getControler() {
-        return (createmapButtonController) super.getControler();
+    public CreatemapButtonController getControler() {
+        return (CreatemapButtonController) super.getControler();
     }
 
     @Override

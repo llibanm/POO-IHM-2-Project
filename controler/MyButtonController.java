@@ -3,8 +3,8 @@ package controler;
 import view.MyButtonView;
 import javafx.scene.Cursor;
 
-public class myButtonController extends abstractControler {
-    public myButtonController() {
+public class MyButtonController extends AbstractControler {
+    public MyButtonController() {
     }
 
     public void setAction(MyButtonView v) {

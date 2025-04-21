@@ -4,7 +4,7 @@ import model.AbstractModel;
 import view.AbstractView;
 import javafx.stage.Stage;
 
-public class SceneControler extends abstractControler {
+public class SceneControler extends AbstractControler {
 
 	private Stage stage;
 	
