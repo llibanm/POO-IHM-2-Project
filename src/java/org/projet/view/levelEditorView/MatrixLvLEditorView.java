@@ -12,14 +12,12 @@ import src.java.org.projet.model.modelLevelEditor.LevelEditorModel;
 public class MatrixLvLEditorView extends GridPane {
     int nbOfRows;
     int nbOfCols;
-    LevelEditorModel model;
-    LevelEditorController controller;
 
-    public MatrixLvLEditorView(int nbOfRows, int nbOfCols, LevelEditorModel model, LevelEditorController controller) {
+
+    public MatrixLvLEditorView(int nbOfRows, int nbOfCols) {
         this.nbOfRows = nbOfRows;
         this.nbOfCols = nbOfCols;
-        this.model = model;
-        this.controller = controller;
+
         initialize();
     }
 
@@ -32,9 +30,12 @@ public class MatrixLvLEditorView extends GridPane {
         CaseMatrix caseMatrix;
         for (int row = 0; row < nbOfRows; row++){
             for (int col = 0; col < nbOfCols; col++){
+                /*
                 caseMatrix = model.getCaseMatrix(nbOfRows,nbOfCols);
                 imgUrl = caseMatrix.getUrlImgToShow();
                 placeItemImg(imgUrl, col, row);
+
+                 */
 
             }
         }
@@ -50,7 +51,8 @@ public class MatrixLvLEditorView extends GridPane {
     /**Placer le fond d'écran de la grille de l'éditeur de niveau
      * */
     public void setBackground(){
-       var  backgroundImage = new Image(model.getUrlBackground());
+        //model.getUrlBackground()
+       var  backgroundImage = new Image("src/java/org/projet/spaceImagesProject/Space_Background.png");
 
         BackgroundImage background = new BackgroundImage(
                 backgroundImage,
