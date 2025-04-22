@@ -1,4 +1,4 @@
-package src.java.org.projet.unitTest;
+package src.java.org.projet.view.quickUnitTestView;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -7,6 +7,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ObjetToJson {
+
+    public static void main(String[] args) throws JsonProcessingException {
+        ObjetToJson.objetToJsonTest();
+    }
     public static void objetToJsonTest    () throws JsonProcessingException {
 
         Obj obj = new Obj();
@@ -14,11 +18,11 @@ public class ObjetToJson {
         obj.y = 6;
         obj.a = new ArrayList<>();
         obj.a.add(1);
-
+        //Conversion de l'objet en json
         ObjectMapper mapper = new ObjectMapper();
         String json = mapper.writeValueAsString(obj);
         System.out.println(json);
-
+        //Récupération du json-> objet
         Obj regetObj = mapper.readValue(json, Obj.class);
         System.out.println(regetObj);
 

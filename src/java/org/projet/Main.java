@@ -1,19 +1,15 @@
 package src.java.org.projet;
 
 
-import com.fasterxml.jackson.core.JsonProcessingException;
 import src.java.org.projet.controler.SceneControler;
 import src.java.org.projet.model.AbstractModel;
 
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-import src.java.org.projet.unitTest.ObjetToJson;
 import src.java.org.projet.view.StartView;
 import src.java.org.projet.view.StartingBackground;
 import src.java.org.projet.view.levelEditorView.LvlEditorView;
-
-import static java.lang.System.exit;
 
 public class Main extends Application {
 
@@ -43,11 +39,6 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception {
 
-        boolean test = false;
-        if(test){
-            modeTest();
-            exit(0);
-        }
         LvlEditorView(primaryStage);
         //launchDefautView(primaryStage);
 
@@ -57,12 +48,6 @@ public class Main extends Application {
 
     public static void main(String[] args) {
         launch(args);
-    }
-
-    public void modeTest() throws JsonProcessingException {
-        //Teste du chargement json
-       ObjetToJson.objetToJsonTest();
-
     }
 
 
