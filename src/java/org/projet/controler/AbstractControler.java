@@ -1,13 +1,25 @@
 package src.java.org.projet.controler;
 
 
+import src.java.org.projet.interfaces.MyConcreteObservable;
 import src.java.org.projet.model.AbstractModel;
 import src.java.org.projet.view.AbstractView;
 
-public abstract class AbstractControler {
+import java.beans.PropertyChangeListener;
+
+public abstract class AbstractControler  {
 
     private AbstractModel model;
     private AbstractView view;
+    protected PropertyChangeListener propertyChangeListener;
+
+    public PropertyChangeListener getPropertyChangeListener() {
+        return propertyChangeListener;
+    }
+
+    public void setPropertyChangeListener(PropertyChangeListener propertyChangeListener) {
+        this.propertyChangeListener = propertyChangeListener;
+    }
 
     public AbstractControler(){
     }

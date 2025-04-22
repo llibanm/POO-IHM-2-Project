@@ -1,5 +1,6 @@
 package src.java.org.projet.model.modelLevelEditor;
 
+import src.java.org.projet.model.AbstractModel;
 import src.java.org.projet.model.modelLevelEditor.base.CaseMatrix;
 
 import java.util.ArrayList;
@@ -7,7 +8,7 @@ import java.util.List;
 
 /**Classe pour gérer les données du menu de selection des items à placer
  * sur la map de l'éditeur de niveau */
-public  class SelectItemSectionModel {
+public  class SelectItemSectionModel extends AbstractModel {
     List<CaseMatrix> itemsOfSelectionMenu;
     //Item que l'utilisateur a selectionné pour positionner sur le plateau
     CaseMatrix currentSelectedItem;
@@ -21,7 +22,9 @@ public  class SelectItemSectionModel {
     }
 
     public SelectItemSectionModel() {
+        super("Select Item");
         this.itemsOfSelectionMenu = new ArrayList<CaseMatrix>();
+
     }
 
     public void addItem(CaseMatrix item) {

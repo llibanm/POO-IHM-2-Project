@@ -1,6 +1,8 @@
 package src.java.org.projet.model;
 
-public abstract class AbstractModel {
+import src.java.org.projet.interfaces.MyConcreteObservable;
+
+public abstract class AbstractModel extends MyConcreteObservable  {
 
     private String objectDescription;
 

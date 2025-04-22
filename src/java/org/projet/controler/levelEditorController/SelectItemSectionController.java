@@ -1,19 +1,40 @@
 package src.java.org.projet.controler.levelEditorController;
 
+import javafx.scene.Node;
 import javafx.scene.layout.HBox;
+import javafx.scene.layout.VBox;
+import src.java.org.projet.controler.AbstractControler;
 import src.java.org.projet.model.modelLevelEditor.SelectItemSectionModel;
 import src.java.org.projet.model.modelLevelEditor.base.CaseMatrix;
 import src.java.org.projet.view.levelEditorView.SelectItemView;
 
-public class SelectItemSectionController {
+public class SelectItemSectionController extends AbstractControler {
         SelectItemSectionModel model;
         SelectItemView view;
 
     public SelectItemSectionController(SelectItemSectionModel model, SelectItemView view) {
         this.model = model;
         this.view = view;
+        model.addPropertyChangeListener(this.getPropertyChangeListener());
+        //var listItem = this.view.getVbox().getChildren();
+        //addListenerToIems();
+
     }
 
+    public void addListenerToIems() {
+        VBox vbox = view.getVbox();
+        if (vbox != null) {
+            for (Node item : vbox.getChildren()) {
+                item.setOnMouseClicked(e-> {
+
+                    System.out.println("Item cliqué : " + item);
+                });
+            }
+        }
+        else {
+            System.out.println("VBox is null");
+        }
+    }
     public  void onItemClicked(CaseMatrix caseMatrix) {
 
         System.out.println("onItemClicked"+ caseMatrix);

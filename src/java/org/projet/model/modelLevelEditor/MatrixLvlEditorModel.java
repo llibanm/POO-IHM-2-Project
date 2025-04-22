@@ -1,22 +1,25 @@
 package src.java.org.projet.model.modelLevelEditor;
 
 
+import src.java.org.projet.model.AbstractModel;
 import src.java.org.projet.model.modelLevelEditor.base.CaseMatrix;
 
 import java.util.Arrays;
 
 /**Cette classe contient à la fois la map de l'éditeur de niveau pour placer les items
  * et le menu de sélection ou on choisit ces derniers */
-public class MatrixLvlEditorModel extends  ConvertToJson<MatrixLvlEditorModel>{
+public class MatrixLvlEditorModel extends AbstractModel {
 
     //Matrice de l'éditeur de niveau qui contiendra les items selectionnés dans le menu de choix des items
     private CaseMatrix[][] matrixEditorLvl;
     int nbOfRows;
     int nbOfCols;
     String urlBackground;
-    public MatrixLvlEditorModel(){}
+    public MatrixLvlEditorModel(){
+        super("Matrix Lvl Editor");
+    }
     public MatrixLvlEditorModel(int nbOfRows, int nbOfCols, String urlBackground) {
-        super(MatrixLvlEditorModel.class);
+        super("Matrix Lvl Editor");
         //Ajout de la liste d'items du menu de choix des items dans la casse parent
 
         if (nbOfRows <= 0 || nbOfCols <= 0) {

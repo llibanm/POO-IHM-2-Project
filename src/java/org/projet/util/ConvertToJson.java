@@ -1,9 +1,9 @@
-package src.java.org.projet.model.modelLevelEditor;
+package src.java.org.projet.util;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-public abstract class ConvertToJson<T> {
+public class   ConvertToJson<T> {
     private final Class<T> classType;
     public ConvertToJson(){
         this.classType = null;

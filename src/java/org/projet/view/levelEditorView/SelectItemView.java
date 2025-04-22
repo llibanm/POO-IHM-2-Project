@@ -19,12 +19,31 @@ import javafx.geometry.Pos;
 import src.java.org.projet.controler.levelEditorController.SelectItemSectionController;
 import src.java.org.projet.model.modelLevelEditor.base.CaseMatrix;
 
+import java.util.function.Consumer;
+
 public class SelectItemView extends ScrollPane {
 
     VBox vbox;
-    SelectItemSectionController controller;
 
+    public VBox getVbox() {
+        return vbox;
+    }
 
+    public void setVbox(VBox vbox) {
+        this.vbox = vbox;
+    }
+
+    public Consumer<CaseMatrix> getCallback() {
+        return callback;
+    }
+
+    public void setCallback(Consumer<CaseMatrix> callback) {
+        this.callback = callback;
+    }
+
+    //  SelectItemSectionController controller;
+    private Consumer<CaseMatrix> callback;
+/*
     public SelectItemSectionController getController() {
         return controller;
     }
@@ -32,7 +51,7 @@ public class SelectItemView extends ScrollPane {
     public void setController(SelectItemSectionController controller) {
         this.controller = controller;
     }
-
+*/
     public SelectItemView() {
         super();
         vbox = new VBox();
@@ -41,7 +60,7 @@ public class SelectItemView extends ScrollPane {
         this.setContent(vbox);
         this.setFitToWidth(true);
     }
-
+    /**Ajouter un item dans le menu de selection des items */
     public void addItem(CaseMatrix caseMatrix) {
         HBox itemContainer = new HBox(10);
         itemContainer.setAlignment(Pos.CENTER_LEFT);
@@ -61,7 +80,7 @@ public class SelectItemView extends ScrollPane {
         }
 
         itemContainer.getChildren().addAll(descriptionLabel, imageView);
-        itemContainer.setOnMouseClicked(e->controller.onItemClicked(caseMatrix));
+       // itemContainer.setOnMouseClicked(e->controller.onItemClicked(caseMatrix));
         vbox.getChildren().add(itemContainer);
     }
 }
