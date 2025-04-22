@@ -1,4 +1,4 @@
 package src.java.org.projet.controler.levelEditorController;
 
-public class LevelEditorController {
+public class MatrixLvlEditorController {
 }

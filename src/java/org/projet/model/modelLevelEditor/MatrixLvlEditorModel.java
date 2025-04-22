@@ -7,16 +7,16 @@ import java.util.Arrays;
 
 /**Cette classe contient à la fois la map de l'éditeur de niveau pour placer les items
  * et le menu de sélection ou on choisit ces derniers */
-public class LevelEditorModel extends  ConvertToJson<LevelEditorModel>{
+public class MatrixLvlEditorModel extends  ConvertToJson<MatrixLvlEditorModel>{
 
     //Matrice de l'éditeur de niveau qui contiendra les items selectionnés dans le menu de choix des items
     private CaseMatrix[][] matrixEditorLvl;
     int nbOfRows;
     int nbOfCols;
     String urlBackground;
-    public LevelEditorModel(){}
-    public LevelEditorModel(int nbOfRows, int nbOfCols, String urlBackground) {
-        super(LevelEditorModel.class);
+    public MatrixLvlEditorModel(){}
+    public MatrixLvlEditorModel(int nbOfRows, int nbOfCols, String urlBackground) {
+        super(MatrixLvlEditorModel.class);
         //Ajout de la liste d'items du menu de choix des items dans la casse parent
 
         if (nbOfRows <= 0 || nbOfCols <= 0) {
@@ -120,7 +120,6 @@ public class LevelEditorModel extends  ConvertToJson<LevelEditorModel>{
     @Override
     public String toString() {
         return "LevelEditorModel{\n" +
-                "ItemsChoiceList=" + selectItemSectionModel +
                 "\n, nbOfColsMatrix=" + nbOfCols +
                 "\n, nbOfRowsMatrix=" + nbOfRows +
                 "\n, matrixEditorLvl=" + Arrays.deepToString(matrixEditorLvl) +

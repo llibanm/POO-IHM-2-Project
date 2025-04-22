@@ -4,7 +4,7 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import src.java.org.projet.model.modelCharacter.Hero;
 import src.java.org.projet.model.modelLevelEditor.base.ItemToPlaceOnMap;
-import src.java.org.projet.model.modelLevelEditor.LevelEditorModel;
+import src.java.org.projet.model.modelLevelEditor.MatrixLvlEditorModel;
 import src.java.org.projet.model.modelLevelEditor.SelectItemSectionModel;
 
 import java.util.ArrayList;
@@ -38,7 +38,7 @@ public class ObjetToJson {
         var menu = new SelectItemSectionModel();
         ItemToPlaceOnMap item = new ItemToPlaceOnMap(Hero.class,"","Hero");
         menu.addItem(item);
-        var lv = new LevelEditorModel(40,40,"");
+        var lv = new MatrixLvlEditorModel(40,40,"");
 
         //Conversion de l'objet en json
         ObjectMapper mapper = new ObjectMapper();
@@ -46,7 +46,7 @@ public class ObjetToJson {
         System.out.println(json+"\n LevelEditorModel Class-> toJson");
 
         //Récupération du json-> objet
-        LevelEditorModel regetObj = mapper.readValue(json, LevelEditorModel.class);
+        MatrixLvlEditorModel regetObj = mapper.readValue(json, MatrixLvlEditorModel.class);
         System.out.println(regetObj+"\n LevelEditorModel json->class");
 
     }
