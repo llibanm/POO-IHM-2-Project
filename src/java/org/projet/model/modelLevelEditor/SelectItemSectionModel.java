@@ -1,5 +1,6 @@
 package src.java.org.projet.model.modelLevelEditor;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**Classe pour gérer les données du menu de selection des items à placer
@@ -17,8 +18,8 @@ public  class SelectItemSectionModel {
         this.currentSelectedItem = currentSelectedItem;
     }
 
-    public SelectItemSectionModel(List<ItemToPlaceOnMap> itemsOfSelectionMenu) {
-        this.itemsOfSelectionMenu = itemsOfSelectionMenu;
+    public SelectItemSectionModel() {
+        this.itemsOfSelectionMenu = new ArrayList<ItemToPlaceOnMap>();
     }
 
     public void addItem(ItemToPlaceOnMap item) {

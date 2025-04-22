@@ -14,6 +14,21 @@ public class LevelEditorModel{
     int nbOfCols;
     private SelectItemSectionModel selectItemSectionModel;
     String urlBackground;
+    public LevelEditorModel(){}
+    public LevelEditorModel(int nbOfRows, int nbOfCols, String urlBackground, SelectItemSectionModel selectItemSectionModel) {
+        //Ajout de la liste d'items du menu de choix des items dans la casse parent
+
+        if (nbOfRows <= 0 || nbOfCols <= 0) {
+            throw new IllegalArgumentException("Le nombre de lignes et de colonnes doit être supérieur à zéro.");
+        }
+        this.nbOfRows = nbOfRows;
+        this.nbOfCols = nbOfCols;
+        this.matrixEditorLvl = new CaseMatrix[nbOfRows][nbOfCols];
+        this.selectItemSectionModel = selectItemSectionModel;
+        this.urlBackground = urlBackground; //Chemin vers l'image de l'arrière-plan de la grille
+
+        initCaseMatrixEditorLvl();
+    }
 
     public CaseMatrix[][] getMatrixEditorLvl() {
         return matrixEditorLvl;
@@ -47,20 +62,7 @@ public class LevelEditorModel{
         this.urlBackground = urlBackground;
     }
 
-    public LevelEditorModel(int nbOfRows, int nbOfCols, String urlBackground, SelectItemSectionModel selectItemSectionModel) {
-        //Ajout de la liste d'items du menu de choix des items dans la casse parent
 
-        if (nbOfRows <= 0 || nbOfCols <= 0) {
-            throw new IllegalArgumentException("Le nombre de lignes et de colonnes doit être supérieur à zéro.");
-        }
-        this.nbOfRows = nbOfRows;
-        this.nbOfCols = nbOfCols;
-        this.matrixEditorLvl = new CaseMatrix[nbOfRows][nbOfCols];
-        this.selectItemSectionModel = selectItemSectionModel;
-        this.urlBackground = urlBackground; //Chemin vers l'image de l'arrière-plan de la grille
-
-        initCaseMatrixEditorLvl();
-    }
 
     /**
      * Teste la validité des coordonnées
@@ -75,7 +77,7 @@ public class LevelEditorModel{
     public void initCaseMatrixEditorLvl() {
         for (int i = 0; i < nbOfRows; i++) {
             for (int j = 0; j < nbOfCols; j++) {
-                matrixEditorLvl[nbOfRows][nbOfCols] = new CaseMatrix("",0,0);
+                matrixEditorLvl[i][j] = new CaseMatrix("",i,j);
             }
         }
     }
@@ -124,11 +126,11 @@ public class LevelEditorModel{
 
     @Override
     public String toString() {
-        return "LevelEditorModel{" +
+        return "LevelEditorModel{\n" +
                 "ItemsChoiceList=" + selectItemSectionModel +
-                ", nbOfColsMatrix=" + nbOfCols +
-                ", nbOfRowsMatrix=" + nbOfRows +
-                ", matrixEditorLvl=" + Arrays.toString(matrixEditorLvl) +
+                "\n, nbOfColsMatrix=" + nbOfCols +
+                "\n, nbOfRowsMatrix=" + nbOfRows +
+                "\n, matrixEditorLvl=" + Arrays.deepToString(matrixEditorLvl) +
                 '}';
     }
 }

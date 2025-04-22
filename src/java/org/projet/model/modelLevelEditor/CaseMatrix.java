@@ -18,6 +18,7 @@ public class CaseMatrix {
         this.classNameITem = classNameITem;
     }
 
+    public CaseMatrix(){}
     public CaseMatrix(String urlImgToShow, String classNameItem, int coordX, int coordY, int width, int height) {
         this.urlImgToShow = urlImgToShow;
         this.coordX = coordX;

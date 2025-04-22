@@ -1,8 +1,6 @@
 package src.java.org.projet.view.levelEditorView;
 
 import javafx.scene.layout.BorderPane;
-import src.java.org.projet.controler.LevelEditorController;
-import src.java.org.projet.model.modelLevelEditor.LevelEditorModel;
 
 /**Vue contenant à la fois la map contenant les objets selectionnés(MatrixLvlEditorView)
  * et le menu de selection  */

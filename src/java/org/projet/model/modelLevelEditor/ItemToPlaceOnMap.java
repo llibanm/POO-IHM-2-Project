@@ -1,5 +1,7 @@
 package src.java.org.projet.model.modelLevelEditor;
 
+import src.java.org.projet.model.modelItems.Item;
+
 /**
  * Juste la liste des items qu'on choisira pour placer sur la map de l'editeur de  niveau
  */
@@ -8,6 +10,9 @@ public class ItemToPlaceOnMap {
     String urlOfItemImg;
     String nameOfItem;
 
+    public ItemToPlaceOnMap() {
+
+    }
     public ItemToPlaceOnMap(Class<?> classOfItems, String urlOfItemImg, String nameOfItem) {
         this.classOfItems = classOfItems;
         this.urlOfItemImg = urlOfItemImg;

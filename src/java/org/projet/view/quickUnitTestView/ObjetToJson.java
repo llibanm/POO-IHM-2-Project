@@ -2,6 +2,12 @@ package src.java.org.projet.view.quickUnitTestView;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import src.java.org.projet.model.modelCharacter.Hero;
+import src.java.org.projet.model.modelLevelEditor.ItemToPlaceOnMap;
+import src.java.org.projet.model.modelLevelEditor.LevelEditorModel;
+import src.java.org.projet.model.modelLevelEditor.SelectItemSectionModel;
+import src.java.org.projet.view.levelEditorView.LvlEditorView;
+import src.java.org.projet.view.levelEditorView.MatrixLvLEditorView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,6 +16,7 @@ public class ObjetToJson {
 
     public static void main(String[] args) throws JsonProcessingException {
         ObjetToJson.objetToJsonTest();
+        ObjetToJson.levelEditorModelToJson();
     }
     public static void objetToJsonTest    () throws JsonProcessingException {
 
@@ -26,6 +33,23 @@ public class ObjetToJson {
         Obj regetObj = mapper.readValue(json, Obj.class);
         System.out.println(regetObj);
 
+
+    }
+
+    public static void levelEditorModelToJson() throws JsonProcessingException {
+        var menu = new SelectItemSectionModel();
+        ItemToPlaceOnMap item = new ItemToPlaceOnMap(Hero.class,"","Hero");
+        menu.addItem(item);
+        var lv = new LevelEditorModel(40,40,"",menu);
+
+        //Conversion de l'objet en json
+        ObjectMapper mapper = new ObjectMapper();
+        String json = mapper.writeValueAsString(lv);
+        System.out.println(json+"\n LevelEditorModel Class-> toJson");
+
+        //Récupération du json-> objet
+        LevelEditorModel regetObj = mapper.readValue(json, LevelEditorModel.class);
+        System.out.println(regetObj+"\n LevelEditorModel json->class");
 
     }
 
