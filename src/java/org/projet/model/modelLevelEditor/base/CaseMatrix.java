@@ -3,29 +3,32 @@ package src.java.org.projet.model.modelLevelEditor.base;
 public class CaseMatrix {
     //Image de l'item
     String urlImgToShow;
-    String classNameITem;
+    Class<?> classOfItems;
     int coordX;
+
+    public Class<?> getClassOfItems() {
+        return classOfItems;
+    }
+
+    public void setClassOfItems(Class<?> classOfItems) {
+        this.classOfItems = classOfItems;
+    }
+
     int coordY;
     //largeur,hauteur occupé par l'item sur la matrice de l'éditeur de niveau
     int width;
     int height;
 
-    public String getClassNameITem() {
-        return classNameITem;
-    }
 
-    public void setClassNameITem(String classNameITem) {
-        this.classNameITem = classNameITem;
-    }
 
     public CaseMatrix(){}
-    public CaseMatrix(String urlImgToShow, String classNameItem, int coordX, int coordY, int width, int height) {
+    public CaseMatrix(String urlImgToShow, Class<?> classOfItems, int coordX, int coordY, int width, int height) {
         this.urlImgToShow = urlImgToShow;
         this.coordX = coordX;
         this.coordY = coordY;
         this.width = width;
         this.height = height;
-        this.classNameITem = classNameItem;
+        this.classOfItems = classOfItems;
     }
     //Constructeur secondaire pour le cas ou l'objet occupe une seule case de la matrice
     public CaseMatrix(String urlImgToShow, int coordX, int coordY) {
@@ -40,7 +43,7 @@ public class CaseMatrix {
     public String toString() {
         return "CaseMatrix{" +
                 "urlImgToShow='" + urlImgToShow + '\'' +
-                ", classNameITem='" + classNameITem + '\'' +
+                ", classNameITem='" + classOfItems + '\'' +
                 ", coordX=" + coordX +
                 ", coordY=" + coordY +
                 ", width=" + width +

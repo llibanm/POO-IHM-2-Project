@@ -3,9 +3,9 @@ package src.java.org.projet.view.quickUnitTestView;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import src.java.org.projet.model.modelCharacter.Hero;
-import src.java.org.projet.model.modelLevelEditor.base.ItemToPlaceOnMap;
 import src.java.org.projet.model.modelLevelEditor.MatrixLvlEditorModel;
 import src.java.org.projet.model.modelLevelEditor.SelectItemSectionModel;
+import src.java.org.projet.model.modelLevelEditor.base.CaseMatrix;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -35,9 +35,14 @@ public class ObjetToJson {
     }
 
     public static void levelEditorModelToJson() throws JsonProcessingException {
+       /*
         var menu = new SelectItemSectionModel();
-        ItemToPlaceOnMap item = new ItemToPlaceOnMap(Hero.class,"","Hero");
+        CaseMatrix item = new CaseMatrix("src/java/org/projet/assets/character/ennemy/img.png",Hero.class,0,0,1,1);
         menu.addItem(item);
+
+        */
+
+
         var lv = new MatrixLvlEditorModel(40,40,"");
 
         //Conversion de l'objet en json

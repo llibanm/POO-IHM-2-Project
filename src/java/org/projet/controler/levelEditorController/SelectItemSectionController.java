@@ -1,6 +1,8 @@
 package src.java.org.projet.controler.levelEditorController;
 
+import javafx.scene.layout.HBox;
 import src.java.org.projet.model.modelLevelEditor.SelectItemSectionModel;
+import src.java.org.projet.model.modelLevelEditor.base.CaseMatrix;
 import src.java.org.projet.view.levelEditorView.SelectItemView;
 
 public class SelectItemSectionController {
@@ -12,7 +14,8 @@ public class SelectItemSectionController {
         this.view = view;
     }
 
-    public  void onItemClicked(){
-        System.out.println("onItemClicked");
+    public  void onItemClicked(CaseMatrix caseMatrix) {
+
+        System.out.println("onItemClicked"+ caseMatrix);
     }
 }

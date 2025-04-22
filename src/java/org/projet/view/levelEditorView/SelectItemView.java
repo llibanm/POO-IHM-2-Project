@@ -17,11 +17,13 @@ import javafx.scene.layout.HBox;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import src.java.org.projet.controler.levelEditorController.SelectItemSectionController;
+import src.java.org.projet.model.modelLevelEditor.base.CaseMatrix;
 
 public class SelectItemView extends ScrollPane {
 
     VBox vbox;
     SelectItemSectionController controller;
+
 
     public SelectItemSectionController getController() {
         return controller;
@@ -40,26 +42,26 @@ public class SelectItemView extends ScrollPane {
         this.setFitToWidth(true);
     }
 
-    public void addItem(String description, String urlImg) {
+    public void addItem(CaseMatrix caseMatrix) {
         HBox itemContainer = new HBox(10);
         itemContainer.setAlignment(Pos.CENTER_LEFT);
 
-        Label descriptionLabel = new Label(description);
+        Label descriptionLabel = new Label(caseMatrix.getClassOfItems().getSimpleName());
         ImageView imageView = new ImageView();
         imageView.setFitWidth(50);
         imageView.setFitHeight(50);
         imageView.setPreserveRatio(true);
 
         try {
-            Image image = new Image(urlImg, true);
+            Image image = new Image(caseMatrix.getUrlImgToShow(), true);
             imageView.setImage(image);
         } catch (IllegalArgumentException e) {
-            System.err.println("Erreur lors du chargement de l'image : " + urlImg + " - " + e.getMessage());
+            System.err.println("Erreur lors du chargement de l'image : " + caseMatrix.getUrlImgToShow() + " - " + e.getMessage());
             imageView.setImage(new Image("file:path/to/default_image.png", true));
         }
 
         itemContainer.getChildren().addAll(descriptionLabel, imageView);
-        itemContainer.setOnMouseClicked(e->controller.onItemClicked());
+        itemContainer.setOnMouseClicked(e->controller.onItemClicked(caseMatrix));
         vbox.getChildren().add(itemContainer);
     }
 }
