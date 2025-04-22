@@ -61,21 +61,21 @@ public class SelectItemView extends ScrollPane {
         this.setFitToWidth(true);
     }
     /**Ajouter un item dans le menu de selection des items */
-    public void addItem(CaseMatrix caseMatrix) {
+    public void addItem(String urlImage, Class<?> className) {
         HBox itemContainer = new HBox(10);
         itemContainer.setAlignment(Pos.CENTER_LEFT);
 
-        Label descriptionLabel = new Label(caseMatrix.getClassOfItems().getSimpleName());
+        Label descriptionLabel = new Label(className.getSimpleName());
         ImageView imageView = new ImageView();
         imageView.setFitWidth(50);
         imageView.setFitHeight(50);
         imageView.setPreserveRatio(true);
 
         try {
-            Image image = new Image(caseMatrix.getUrlImgToShow(), true);
+            Image image = new Image(urlImage, true);
             imageView.setImage(image);
         } catch (IllegalArgumentException e) {
-            System.err.println("Erreur lors du chargement de l'image : " + caseMatrix.getUrlImgToShow() + " - " + e.getMessage());
+            System.err.println("Erreur lors du chargement de l'image : " + urlImage + " - " + e.getMessage());
             imageView.setImage(new Image("file:path/to/default_image.png", true));
         }
 

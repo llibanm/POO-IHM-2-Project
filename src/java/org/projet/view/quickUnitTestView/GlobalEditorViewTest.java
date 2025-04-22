@@ -22,6 +22,7 @@ public class GlobalEditorViewTest extends Application {
 
 
         SelectItemSectionModel model = new SelectItemSectionModel();
+
         SelectItemView selectItemView = new SelectItemView();
 
         SelectItemSectionController controller = new SelectItemSectionController(model, selectItemView);
@@ -29,7 +30,8 @@ public class GlobalEditorViewTest extends Application {
 
         for (int i = 0; i < 10; i++) {
             CaseMatrix caseMatrix = new CaseMatrix("src/java/org/projet/assets/character/ennemy/img.png", Agressor.class, 0, 0, 1, 1);
-            selectItemView.addItem(caseMatrix);
+            model.addItem(caseMatrix);
+            selectItemView.addItem(caseMatrix.getUrlImgToShow(), caseMatrix.getClassOfItems());
         }
         controller.addListenerToIems();
         root.setCenter(mv);

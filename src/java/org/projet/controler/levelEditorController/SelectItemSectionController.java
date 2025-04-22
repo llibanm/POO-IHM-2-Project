@@ -23,11 +23,16 @@ public class SelectItemSectionController extends AbstractControler {
 
     public void addListenerToIems() {
         VBox vbox = view.getVbox();
+        int i = 0;
+        var itemsList = model.getItemsOfSelectionMenu();
         if (vbox != null) {
             for (Node item : vbox.getChildren()) {
+                i++;
+                int finalI = i;
                 item.setOnMouseClicked(e-> {
-
-                    System.out.println("Item cliqué : " + item);
+                    System.out.println("Item click from menu : " + item);
+                    model.setCurrentSelectedItem(itemsList.get(finalI));
+                    System.out.println("Item selected from menu "+model.getCurrentSelectedItem());
                 });
             }
         }

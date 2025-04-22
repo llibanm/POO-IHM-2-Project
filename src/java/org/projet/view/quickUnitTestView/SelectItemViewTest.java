@@ -23,7 +23,7 @@ public class SelectItemViewTest extends Application {
 
         for (int i = 0; i < 50; i++) {
             CaseMatrix caseMatrix = new CaseMatrix("src/java/org/projet/assets/character/ennemy/img.png", Agressor.class,0,0,1,1);
-            selectItemView.addItem(caseMatrix );
+            selectItemView.addItem(caseMatrix.getUrlImgToShow(), caseMatrix.getClassOfItems() );
         }
         Scene scene = new Scene(selectItemView,800,800);
         primaryStage.setScene(scene);
