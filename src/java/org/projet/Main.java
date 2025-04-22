@@ -9,7 +9,7 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 import src.java.org.projet.view.StartView;
 import src.java.org.projet.view.StartingBackground;
-import src.java.org.projet.view.levelEditorView.LvlEditorView;
+import src.java.org.projet.view.levelEditorView.GlobalEditorView;
 
 public class Main extends Application {
 
@@ -27,7 +27,7 @@ public class Main extends Application {
     }
 
     public  void LvlEditorView(Stage primaryStage){
-        var s = new LvlEditorView(800,800,50,50);
+        var s = new GlobalEditorView(800,800,50,50);
         Scene scene = new Scene(s,800,800);
         primaryStage.setScene(scene);
         primaryStage.show();
