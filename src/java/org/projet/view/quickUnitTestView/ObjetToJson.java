@@ -38,7 +38,7 @@ public class ObjetToJson {
         var menu = new SelectItemSectionModel();
         ItemToPlaceOnMap item = new ItemToPlaceOnMap(Hero.class,"","Hero");
         menu.addItem(item);
-        var lv = new LevelEditorModel(40,40,"",menu);
+        var lv = new LevelEditorModel(40,40,"");
 
         //Conversion de l'objet en json
         ObjectMapper mapper = new ObjectMapper();

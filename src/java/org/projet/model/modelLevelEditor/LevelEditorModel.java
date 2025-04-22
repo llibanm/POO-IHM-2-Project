@@ -13,10 +13,9 @@ public class LevelEditorModel extends  ConvertToJson<LevelEditorModel>{
     private CaseMatrix[][] matrixEditorLvl;
     int nbOfRows;
     int nbOfCols;
-    private SelectItemSectionModel selectItemSectionModel;
     String urlBackground;
     public LevelEditorModel(){}
-    public LevelEditorModel(int nbOfRows, int nbOfCols, String urlBackground, SelectItemSectionModel selectItemSectionModel) {
+    public LevelEditorModel(int nbOfRows, int nbOfCols, String urlBackground) {
         super(LevelEditorModel.class);
         //Ajout de la liste d'items du menu de choix des items dans la casse parent
 
@@ -26,7 +25,6 @@ public class LevelEditorModel extends  ConvertToJson<LevelEditorModel>{
         this.nbOfRows = nbOfRows;
         this.nbOfCols = nbOfCols;
         this.matrixEditorLvl = new CaseMatrix[nbOfRows][nbOfCols];
-        this.selectItemSectionModel = selectItemSectionModel;
         this.urlBackground = urlBackground; //Chemin vers l'image de l'arrière-plan de la grille
 
         initCaseMatrixEditorLvl();
@@ -48,13 +46,6 @@ public class LevelEditorModel extends  ConvertToJson<LevelEditorModel>{
         this.nbOfCols = nbOfCols;
     }
 
-    public SelectItemSectionModel getSelectItemSectionModel() {
-        return selectItemSectionModel;
-    }
-
-    public void setSelectItemSectionModel(SelectItemSectionModel selectItemSectionModel) {
-        this.selectItemSectionModel = selectItemSectionModel;
-    }
 
     public String getUrlBackground() {
         return urlBackground;
