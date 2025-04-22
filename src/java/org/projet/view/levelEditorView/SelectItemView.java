@@ -1,23 +1,65 @@
 package src.java.org.projet.view.levelEditorView;
 
+import javafx.scene.control.Label;
+import javafx.scene.control.ScrollPane;
+import javafx.scene.image.ImageView;
 import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.VBox;
 
-/**Vue de Selection des items*/
-public class SelectItemView extends BorderPane {
+/**Vue de Selection des items
+ * */
+import javafx.scene.control.Label;
+import javafx.scene.control.ScrollPane;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
+import javafx.scene.layout.VBox;
+import javafx.scene.layout.HBox;
+import javafx.geometry.Insets;
+import javafx.geometry.Pos;
+import src.java.org.projet.controler.levelEditorController.SelectItemSectionController;
 
+public class SelectItemView extends ScrollPane {
 
-    public SelectItemView(int width, int height, int nbOfRows,
-                          int nbOfColumns) {
-        super();
+    VBox vbox;
+    SelectItemSectionController controller;
 
-        this.setWidth(width);
-        this.setHeight(height);
-
-
-
-
+    public SelectItemSectionController getController() {
+        return controller;
     }
 
+    public void setController(SelectItemSectionController controller) {
+        this.controller = controller;
+    }
 
+    public SelectItemView() {
+        super();
+        vbox = new VBox();
+        vbox.setSpacing(10);
+        vbox.setPadding(new Insets(10));
+        this.setContent(vbox);
+        this.setFitToWidth(true);
+    }
 
+    public void addItem(String description, String urlImg) {
+        HBox itemContainer = new HBox(10);
+        itemContainer.setAlignment(Pos.CENTER_LEFT);
+
+        Label descriptionLabel = new Label(description);
+        ImageView imageView = new ImageView();
+        imageView.setFitWidth(50);
+        imageView.setFitHeight(50);
+        imageView.setPreserveRatio(true);
+
+        try {
+            Image image = new Image(urlImg, true);
+            imageView.setImage(image);
+        } catch (IllegalArgumentException e) {
+            System.err.println("Erreur lors du chargement de l'image : " + urlImg + " - " + e.getMessage());
+            imageView.setImage(new Image("file:path/to/default_image.png", true));
+        }
+
+        itemContainer.getChildren().addAll(descriptionLabel, imageView);
+        itemContainer.setOnMouseClicked(e->controller.onItemClicked());
+        vbox.getChildren().add(itemContainer);
+    }
 }
