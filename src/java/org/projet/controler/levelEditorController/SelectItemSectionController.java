@@ -4,23 +4,27 @@ import javafx.scene.Node;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import src.java.org.projet.controler.AbstractControler;
+import src.java.org.projet.interfaces.MyConcreteObservable;
 import src.java.org.projet.model.modelLevelEditor.SelectItemSectionModel;
 import src.java.org.projet.model.modelLevelEditor.base.CaseMatrix;
 import src.java.org.projet.view.levelEditorView.SelectItemView;
 
-public class SelectItemSectionController extends AbstractControler {
+public class SelectItemSectionController extends MyConcreteObservable {
         SelectItemSectionModel model;
         SelectItemView view;
+
 
     public SelectItemSectionController(SelectItemSectionModel model, SelectItemView view) {
         this.model = model;
         this.view = view;
-        model.addPropertyChangeListener(this.getPropertyChangeListener());
+        //model.addPropertyChangeListener(this.getPropertyChangeListener());
         //var listItem = this.view.getVbox().getChildren();
         //addListenerToIems();
 
     }
 
+    /**On ajoute des listener pour chaque item du menu
+     *  */
     public void addListenerToIems() {
         VBox vbox = view.getVbox();
         int i = 0;
