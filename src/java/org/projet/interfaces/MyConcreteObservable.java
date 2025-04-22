@@ -18,4 +18,7 @@ public abstract  class MyConcreteObservable implements  MyObservable {
             this.propertyChangeSupport.removePropertyChangeListener(propertyChangeListener);
         }
 
+    public PropertyChangeSupport getPropertyChangeSupport() {
+        return propertyChangeSupport;
+    }
 }

@@ -37,6 +37,7 @@ public class SelectItemSectionController extends MyConcreteObservable {
                     System.out.println("Item click from menu : " + item);
                     model.setCurrentSelectedItem(itemsList.get(finalI));
                     System.out.println("Item selected from menu "+model.getCurrentSelectedItem());
+                    this.getPropertyChangeSupport().firePropertyChange("selectedItem", model.getCurrentSelectedItem(), itemsList.get(finalI));
                 });
             }
         }
