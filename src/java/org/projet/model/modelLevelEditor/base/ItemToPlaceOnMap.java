@@ -1,6 +1,4 @@
-package src.java.org.projet.model.modelLevelEditor;
-
-import src.java.org.projet.model.modelItems.Item;
+package src.java.org.projet.model.modelLevelEditor.base;
 
 /**
  * Juste la liste des items qu'on choisira pour placer sur la map de l'editeur de  niveau

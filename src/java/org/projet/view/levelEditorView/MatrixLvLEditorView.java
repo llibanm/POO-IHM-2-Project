@@ -3,7 +3,7 @@ package src.java.org.projet.view.levelEditorView;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.*;
-import src.java.org.projet.model.modelLevelEditor.CaseMatrix;
+import src.java.org.projet.model.modelLevelEditor.base.CaseMatrix;
 
 /**Vue qui affichera sur une map les items(perso, objets)  selectionnés depuis le menu de sélection
  * dans l'éditeur de  niveaux */

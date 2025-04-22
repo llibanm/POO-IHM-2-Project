@@ -3,11 +3,9 @@ package src.java.org.projet.view.quickUnitTestView;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import src.java.org.projet.model.modelCharacter.Hero;
-import src.java.org.projet.model.modelLevelEditor.ItemToPlaceOnMap;
+import src.java.org.projet.model.modelLevelEditor.base.ItemToPlaceOnMap;
 import src.java.org.projet.model.modelLevelEditor.LevelEditorModel;
 import src.java.org.projet.model.modelLevelEditor.SelectItemSectionModel;
-import src.java.org.projet.view.levelEditorView.LvlEditorView;
-import src.java.org.projet.view.levelEditorView.MatrixLvLEditorView;
 
 import java.util.ArrayList;
 import java.util.List;

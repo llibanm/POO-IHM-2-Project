@@ -1,4 +1,4 @@
-package src.java.org.projet.model.modelLevelEditor;
+package src.java.org.projet.model.modelLevelEditor.base;
 
 public class CaseMatrix {
     //Image de l'item

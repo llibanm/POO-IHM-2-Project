@@ -1,5 +1,7 @@
 package src.java.org.projet.model.modelLevelEditor;
 
+import src.java.org.projet.model.modelLevelEditor.base.ItemToPlaceOnMap;
+
 import java.util.ArrayList;
 import java.util.List;
 
