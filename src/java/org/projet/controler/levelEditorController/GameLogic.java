@@ -43,6 +43,7 @@ public class GameLogic {
 
     public void moveEnemies() {
         for (Ennemy ennemy : model.getEnnemies()) {
+            System.out.println(ennemy);
             Coord oldPos = ennemy.getPosition();
             System.out.println("oldPos: " + oldPos);
             Coord newPos = aiComputeNextMove(ennemy);
