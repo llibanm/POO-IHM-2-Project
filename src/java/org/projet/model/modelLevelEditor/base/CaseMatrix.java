@@ -1,5 +1,12 @@
 package src.java.org.projet.model.modelLevelEditor.base;
 
+
+/**
+ * Un case de la matrice de jeux contient les éléments principaux l'image de fond, son
+ *état occupé ou non, et ses coordonnées les items seront insérés dessus
+ *
+ *
+ */
 public class CaseMatrix {
     //Image de l'item
     String urlImgToShow;

@@ -1,5 +1,6 @@
 package src.java.org.projet.model.modelLevelEditor.base;
-
+/**Coordonnées dans la Matrice
+ *  */
 public class Coord {
     private int row,col;
 

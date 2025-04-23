@@ -13,8 +13,10 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-/**Cette classe contient à la fois la map de l'éditeur de niveau pour placer les items
- * et le menu de sélection ou on choisit ces derniers */
+/**Matrice de l'éditeur de niveau et également celle du jeu principal (similarité)
+ *elle stockera une liste de case ainsi que la l'état lié aux héros, ennemies et leurs position
+ *
+ * */
 public class MatrixLvlEditorModel extends AbstractModel {
 
     //Matrice de l'éditeur de niveau qui contiendra les items selectionnés dans le menu de choix des items
@@ -164,7 +166,7 @@ public class MatrixLvlEditorModel extends AbstractModel {
             System.out.println("Ajout du héro  fillHeroAndEnnemyList");
         }
         else if (classOfItems instanceof Ennemy) {
-            Ennemy ennemy = new Agressor("ee",10); //!!!
+            Ennemy ennemy = new Agressor("ee",10); // TODO
             ennemy.setPosition(new Coord(row, col));
             this.ennemies.add(ennemy);
             System.out.println("Ajout d'un ennemie  fillHeroAndEnnemyList+ "+ennemies);
