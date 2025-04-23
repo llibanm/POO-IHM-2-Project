@@ -124,6 +124,14 @@ public class MatrixLvlEditorModel extends AbstractModel {
         }
     }
 
+    public boolean isOccupedCase(int row, int col) {
+       return this.getCaseMatrix(row, col).isOccuped();
+    }
+
+    public void setOccuped(Coord newPos, boolean occuped) {
+        this.getCaseMatrix(newPos.getRow(), newPos.getCol()).setOccuped(occuped);
+    }
+
     public boolean moveHero(int rowX, int colY) {
         int rowHero = hero.getCoord().getRow();
         int colHero = hero.getCoord().getCol();
@@ -157,7 +165,7 @@ public class MatrixLvlEditorModel extends AbstractModel {
         }
         else if (classOfItems instanceof Ennemy) {
             Ennemy ennemy = (Ennemy) classOfItems;
-            ennemy.setCoord(new Coord(row, col));
+            ennemy.setPosition(new Coord(row, col));
             this.ennemies.add(ennemy);
             System.out.println("Ajout du ennemie  fillHeroAndEnnemyList");
         }

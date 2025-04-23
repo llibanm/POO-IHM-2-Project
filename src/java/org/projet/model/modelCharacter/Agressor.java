@@ -2,6 +2,7 @@
 package src.java.org.projet.model.modelCharacter;
 
 import src.java.org.projet.interfaces.Ennemy;
+import src.java.org.projet.model.modelLevelEditor.base.Coord;
 
 public class Agressor extends MyCharacter implements Ennemy {
 
@@ -70,4 +71,23 @@ public class Agressor extends MyCharacter implements Ennemy {
 
     public void mission(Hero hero){}
 
+    @Override
+    public Coord getPosition() {
+        return coord;
+    }
+
+    @Override
+    public void setPosition(Coord position) {
+        setCoord(position);
+    }
+
+    @Override
+    public int getSpeed() {
+        return 1;
+    }
+
+    @Override
+    public void attack() {
+
+    }
 }

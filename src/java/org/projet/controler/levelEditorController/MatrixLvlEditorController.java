@@ -25,7 +25,7 @@ public class MatrixLvlEditorController implements PropertyChangeListener {
         this.model = model;
         this.view = view;
         addGridListenersOnView();
-        gameLogic = new GameLogic(model);
+        gameLogic = new GameLogic(model,view);
 
     }
 
@@ -33,7 +33,7 @@ public class MatrixLvlEditorController implements PropertyChangeListener {
     public MatrixLvlEditorController(MatrixLvlEditorModel model, MatrixLvLEditorView view, SelectItemSectionController selectItemSectionController) {
         this.model = model;
         this.view = view;
-        gameLogic = new GameLogic(model);
+
         //selectItemSectionController.addPropertyChangeListener(this.getPropertyChangeListener());
         addGridListenersOnView();
         selectItemSectionController.addPropertyChangeListener(this);
@@ -41,7 +41,7 @@ public class MatrixLvlEditorController implements PropertyChangeListener {
 
         getFocusOnMatrixView();
         this.view.setOnKeyPressed(this::handleKeyPressed);
-
+        gameLogic = new GameLogic(model,view);
 
 
     }
@@ -53,7 +53,7 @@ public class MatrixLvlEditorController implements PropertyChangeListener {
         int newCol = model.getHero().getCoord().getCol() + colY;
 
         if(gameLogic.moveHero(rowX,colY)) {
-            model.getHero().setCoord(new Coord(rowX + oldRowHero, colY + oldColHero));
+            //model.getHero().setCoord(new Coord(rowX + oldRowHero, colY + oldColHero));
             String url = model.getHero().coordToImage(rowX, colY);
             Rectangle addedRec = view.updateHeroPositionView(oldRowHero, oldColHero, url, newRow, newCol);
             setNodeListener(addedRec);
@@ -120,6 +120,11 @@ public class MatrixLvlEditorController implements PropertyChangeListener {
             currentSelectedCaseMatrix = (CaseMatrix) evt.getNewValue();
             System.out.println("Current selectedCaseMatrix is "+currentSelectedCaseMatrix);
         }
+        else if ("MoveEnnemy".equals(evt.getPropertyName())) {
+            currentSelectedCaseMatrix = (CaseMatrix) evt.getNewValue();
+            System.out.println("Current selectedCaseMatrix is "+currentSelectedCaseMatrix);
+        }
+
         else {
             System.out.println("Erreur propertyChange");
         }

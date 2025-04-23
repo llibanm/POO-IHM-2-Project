@@ -23,5 +23,13 @@ public class Coord {
     public void setCol(int col) {
         this.col = col;
     }
+
+    @Override
+    public String toString() {
+        return "Coord{" +
+                "row=" + row +
+                ", col=" + col +
+                '}';
+    }
 }
 

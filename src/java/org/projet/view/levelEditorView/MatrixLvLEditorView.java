@@ -37,19 +37,7 @@ public class MatrixLvLEditorView extends GridPane {
         CaseMatrix caseMatrix;
         for (int row = 0; row < nbOfRows; row++){
             for (int col = 0; col < nbOfCols; col++){
-                //TODO connecter ici les données du modèle LevelEditorModel
-                /*
-                caseMatrix = model.getCaseMatrix(nbOfRows,nbOfCols);
-                imgUrl = caseMatrix.getUrlImgToShow();
-
-                 */
-
-                //imgUrl="src/java/org/projet/assets/character/hero/run1.png";
-                //placeItemImg(imgUrl, col, row);
                 addRectOnGrid(row,col);
-
-
-
             }
         }
         /*
@@ -194,6 +182,7 @@ public class MatrixLvLEditorView extends GridPane {
         this.placeItemImgBis(url, newRow, newCol);
         return rectangle;
     }
+
     public Rectangle setRecBis(int oldRow, int oldCol){
         Rectangle rec = this.getRect();
         GridPane.setRowIndex(rec, oldRow);
