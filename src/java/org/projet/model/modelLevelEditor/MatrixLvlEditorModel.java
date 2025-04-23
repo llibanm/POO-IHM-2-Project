@@ -164,7 +164,7 @@ public class MatrixLvlEditorModel extends AbstractModel {
             System.out.println("Ajout du héro  fillHeroAndEnnemyList");
         }
         else if (classOfItems instanceof Ennemy) {
-            Ennemy ennemy = new Agressor("ee",10);
+            Ennemy ennemy = new Agressor("ee",10); //!!!
             ennemy.setPosition(new Coord(row, col));
             this.ennemies.add(ennemy);
             System.out.println("Ajout d'un ennemie  fillHeroAndEnnemyList+ "+ennemies);

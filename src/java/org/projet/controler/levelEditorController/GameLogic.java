@@ -69,10 +69,10 @@ public class GameLogic {
         int newRow = ennemyPos.getRow();
         int newCol = ennemyPos.getCol();
 
+
         if (heroPos.getRow() < ennemyPos.getRow()) newRow--;
         else if (heroPos.getRow() > ennemyPos.getRow()) newRow++;
-
-        if (heroPos.getCol() < ennemyPos.getCol()) newCol--;
+        else if (heroPos.getCol() < ennemyPos.getCol()) newCol--;
         else if (heroPos.getCol() > ennemyPos.getCol()) newCol++;
 
         if (!model.isOccupedCase(newRow, newCol)) {
@@ -81,6 +81,7 @@ public class GameLogic {
             return ennemyPos;
         }
     }
+
 
 
 }
