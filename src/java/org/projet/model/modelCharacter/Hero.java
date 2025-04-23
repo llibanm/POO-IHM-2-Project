@@ -30,6 +30,14 @@ public class Hero extends MyCharacter{
 
     }
 
+    public Hero(String name, int hp){
+        super(name, hp);
+        H_bow = new Bow();
+        H_sabre = new Sabre();
+        backpack = new Back_pack();
+
+    }
+
    /* @Override
     public void printCharacter() {
         System.out.println(getName());

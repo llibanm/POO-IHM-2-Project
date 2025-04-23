@@ -1,10 +1,17 @@
 package src.java.org.projet.model.modelLevelEditor;
 
 
+import src.java.org.projet.interfaces.Ennemy;
 import src.java.org.projet.model.AbstractModel;
+import src.java.org.projet.model.modelCharacter.Agressor;
+import src.java.org.projet.model.modelCharacter.Hero;
 import src.java.org.projet.model.modelLevelEditor.base.CaseMatrix;
+import src.java.org.projet.model.modelLevelEditor.base.Coord;
+import src.java.org.projet.model.modelMap.Location;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 /**Cette classe contient à la fois la map de l'éditeur de niveau pour placer les items
  * et le menu de sélection ou on choisit ces derniers */
@@ -12,6 +19,26 @@ public class MatrixLvlEditorModel extends AbstractModel {
 
     //Matrice de l'éditeur de niveau qui contiendra les items selectionnés dans le menu de choix des items
     private CaseMatrix[][] matrixEditorLvl;
+    Hero hero;
+
+    public Hero getHero() {
+        return hero;
+    }
+
+    public void setHero(Hero hero) {
+        this.hero = hero;
+    }
+
+    public List<Ennemy> getEnnemies() {
+        return ennemies;
+    }
+
+    public void setEnnemies(List<Ennemy> ennemies) {
+        this.ennemies = ennemies;
+    }
+
+    List<Ennemy> ennemies = new ArrayList<Ennemy>();
+
     int nbOfRows;
     int nbOfCols;
     String urlBackground;
@@ -85,14 +112,58 @@ public class MatrixLvlEditorModel extends AbstractModel {
      * @param items La représentation de l'items(url image, coordonnées, Classe liée)
      */
     public void addItemMatrice(int row, int col, CaseMatrix items) {
+        System.out.println("Ajout item addItemMatrice");
         if (isValidCoordinate(row, col)) {
             matrixEditorLvl[row][col]=items;
+            matrixEditorLvl[row][col].setOccuped(true);
+            fillHeroAndEnnemyList( row, col,items);
         } else {
             System.err.println("Erreur: Coordonnées invalides pour ajouter l'item (" + row + ", " + col + ").");
-            throw new IllegalArgumentException(" ");
+            System.out.println("nbofRows=" + nbOfRows + ", nbOfCols=" + nbOfCols);
+            throw new IllegalArgumentException("Erreur: Coordonnées invalides pour ajouter l'item ");
         }
     }
 
+    public boolean moveHero(int rowX, int colY) {
+        int rowHero = hero.getCoord().getRow();
+        int colHero = hero.getCoord().getCol();
+        int row = rowHero + rowX;
+        int col = colHero + colY;
+        if(isValidCoordinate(row, col)){
+            hero.setCoord(new Coord(rowHero,colHero));
+            resetItemMatrice(rowHero,colHero);
+            System.out.println("Déplacement du hero, nouvelle coord "+hero.getCoord().getCol()+" et "+hero.getCoord().getRow());
+
+        return true;}
+        else {
+            System.out.println("Le héros ne peut pas se déplacer");
+            return false;
+        }
+
+    }
+
+
+
+    public void fillHeroAndEnnemyList(int row, int col,CaseMatrix items) {
+        Object classOfItems = items.getClassOfItems();
+        System.out.println("fillHeroAndEnnemyList "+classOfItems);
+
+        if (classOfItems instanceof Hero) {
+            this.hero = (Hero) classOfItems;
+            hero.setCoord(new Coord(row, col));
+            System.out.println("Ajout du héro  fillHeroAndEnnemyList");
+        }
+        else if (classOfItems instanceof Ennemy) {
+            Ennemy ennemy = (Ennemy) classOfItems;
+            ennemy.setCoord(new Coord(row, col));
+            this.ennemies.add(ennemy);
+            System.out.println("Ajout du ennemie  fillHeroAndEnnemyList");
+        }
+        else {
+            System.out.println("L'item n'est ni un heros, ni un ennemi");
+        }
+
+    }
     /**
      * Remettre à zero une case de la matrice
      * @param row

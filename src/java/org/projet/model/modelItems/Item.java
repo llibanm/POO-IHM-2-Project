@@ -1,10 +1,12 @@
 package src.java.org.projet.model.modelItems;
 
 
+import src.java.org.projet.model.modelLevelEditor.base.Coord;
 
 public abstract class Item {
     private final String name;
     private String description;
+    private Coord coord;
 
     public Item(String name, String d){
         this.name = name;

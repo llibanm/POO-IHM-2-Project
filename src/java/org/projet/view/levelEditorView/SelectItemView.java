@@ -3,20 +3,14 @@ package src.java.org.projet.view.levelEditorView;
 import javafx.scene.control.Label;
 import javafx.scene.control.ScrollPane;
 import javafx.scene.image.ImageView;
-import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.VBox;
 
 /**Vue de Selection des items
  * */
-import javafx.scene.control.Label;
-import javafx.scene.control.ScrollPane;
 import javafx.scene.image.Image;
-import javafx.scene.image.ImageView;
-import javafx.scene.layout.VBox;
 import javafx.scene.layout.HBox;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
-import src.java.org.projet.controler.levelEditorController.SelectItemSectionController;
 import src.java.org.projet.model.modelLevelEditor.base.CaseMatrix;
 
 import java.util.function.Consumer;
@@ -61,11 +55,11 @@ public class SelectItemView extends ScrollPane {
         this.setFitToWidth(true);
     }
     /**Ajouter un item dans le menu de selection des items */
-    public void addItem(String urlImage, Class<?> className) {
+    public void addItem(String urlImage, Object className) {
         HBox itemContainer = new HBox(10);
         itemContainer.setAlignment(Pos.CENTER_LEFT);
 
-        Label descriptionLabel = new Label(className.getSimpleName());
+        Label descriptionLabel = new Label(className.getClass().getSimpleName());
         ImageView imageView = new ImageView();
         imageView.setFitWidth(50);
         imageView.setFitHeight(50);

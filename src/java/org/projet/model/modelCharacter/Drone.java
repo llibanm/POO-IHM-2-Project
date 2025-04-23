@@ -1,6 +1,8 @@
 package src.java.org.projet.model.modelCharacter;
 
-public class Drone extends MyCharacter{
+import src.java.org.projet.interfaces.Ennemy;
+
+public class Drone extends MyCharacter implements Ennemy {
 
     public Drone(String name, int hp){
         super(name, hp);

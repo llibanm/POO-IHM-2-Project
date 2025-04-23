@@ -1,9 +1,27 @@
 package src.java.org.projet.model.modelCharacter;
 
 
-public abstract class MyCharacter {
+import src.java.org.projet.interfaces.Views4OrientationImgCharacter;
+import src.java.org.projet.model.modelLevelEditor.base.Coord;
+
+public abstract class MyCharacter extends Views4OrientationImgCharacter {
+
+
     private final String name;
     private int HP;
+    Coord coord;
+
+    public Coord getCoord() {
+        return coord;
+    }
+
+    public void setCoord(Coord coord) {
+        this.coord = coord;
+    }
+
+    public void setHP(int HP) {
+        this.HP = HP;
+    }
 
     public MyCharacter(String name, int hp) {
         this.name = name;
@@ -34,4 +52,12 @@ public abstract class MyCharacter {
     public abstract void mission(Hero hero);
     public abstract void attack(MyCharacter hero);
 
+    @Override
+    public String toString() {
+        return "MyCharacter{" +
+                "name='" + name + '\'' +
+                ", HP=" + HP +
+                ", coord=" + coord +
+                '}';
+    }
 }

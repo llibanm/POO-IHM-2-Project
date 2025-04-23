@@ -3,18 +3,10 @@ package src.java.org.projet.model.modelLevelEditor.base;
 public class CaseMatrix {
     //Image de l'item
     String urlImgToShow;
-    Class<?> classOfItems;
-    int coordX;
-
-    public Class<?> getClassOfItems() {
-        return classOfItems;
-    }
-
-    public void setClassOfItems(Class<?> classOfItems) {
-        this.classOfItems = classOfItems;
-    }
-
-    int coordY;
+    Object classOfItems;
+    boolean isOccuped;
+    int coordRow;
+    int coordCol;
     //largeur,hauteur occupé par l'item sur la matrice de l'éditeur de niveau
     int width;
     int height;
@@ -22,21 +14,37 @@ public class CaseMatrix {
 
 
     public CaseMatrix(){}
-    public CaseMatrix(String urlImgToShow, Class<?> classOfItems, int coordX, int coordY, int width, int height) {
+    public CaseMatrix(String urlImgToShow, Object classOfItems, int coordrow, int coordcol, int width, int height) {
         this.urlImgToShow = urlImgToShow;
-        this.coordX = coordX;
-        this.coordY = coordY;
+        this.coordRow = coordrow;
+        this.coordCol = coordcol;
         this.width = width;
         this.height = height;
         this.classOfItems = classOfItems;
     }
     //Constructeur secondaire pour le cas ou l'objet occupe une seule case de la matrice
-    public CaseMatrix(String urlImgToShow, int coordX, int coordY) {
+    public CaseMatrix(String urlImgToShow, int coordrow, int coordcol) {
         this.urlImgToShow = urlImgToShow;
-        this.coordX = coordX;
-        this.coordY = coordY;
+        this.coordRow = coordrow;
+        this.coordCol = coordcol;
         this.width = 1;
         this.height = 1;
+    }
+
+    public boolean isOccuped() {
+        return isOccuped;
+    }
+
+    public void setOccuped(boolean occuped) {
+        isOccuped = occuped;
+    }
+
+    public Object getClassOfItems() {
+        return classOfItems;
+    }
+
+    public void setClassOfItems(Object classOfItems) {
+        this.classOfItems = classOfItems;
     }
 
     @Override
@@ -44,8 +52,8 @@ public class CaseMatrix {
         return "CaseMatrix{" +
                 "urlImgToShow='" + urlImgToShow + '\'' +
                 ", classNameITem='" + classOfItems + '\'' +
-                ", coordX=" + coordX +
-                ", coordY=" + coordY +
+                ", coordRow=" + coordRow +
+                ", coordCol=" + coordCol +
                 ", width=" + width +
                 ", height=" + height +
                 '}';
@@ -59,20 +67,20 @@ public class CaseMatrix {
         this.urlImgToShow = urlImgToShow;
     }
 
-    public int getCoordX() {
-        return coordX;
+    public int getCoordRow() {
+        return coordRow;
     }
 
-    public void setCoordX(int coordX) {
-        this.coordX = coordX;
+    public void setCoordRow(int coordRow) {
+        this.coordRow = coordRow;
     }
 
-    public int getCoordY() {
-        return coordY;
+    public int getCoordCol() {
+        return coordCol;
     }
 
-    public void setCoordY(int coordY) {
-        this.coordY = coordY;
+    public void setCoordCol(int coordCol) {
+        this.coordCol = coordCol;
     }
 
     public int getWidth() {

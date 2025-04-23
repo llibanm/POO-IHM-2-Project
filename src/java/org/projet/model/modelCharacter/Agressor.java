@@ -1,6 +1,9 @@
 
 package src.java.org.projet.model.modelCharacter;
-public class Agressor extends MyCharacter {
+
+import src.java.org.projet.interfaces.Ennemy;
+
+public class Agressor extends MyCharacter implements Ennemy {
 
 
     public Agressor(String name, int hp) {

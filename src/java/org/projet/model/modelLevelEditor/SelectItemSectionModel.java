@@ -18,7 +18,9 @@ public  class SelectItemSectionModel extends AbstractModel {
     }
 
     public void setCurrentSelectedItem(CaseMatrix currentSelectedItem) {
+        CaseMatrix oldValue = this.currentSelectedItem;
         this.currentSelectedItem = currentSelectedItem;
+        this.getPropertyChangeSupport().firePropertyChange("currentSelectedItem", oldValue, currentSelectedItem);
     }
 
     public SelectItemSectionModel() {

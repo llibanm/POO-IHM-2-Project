@@ -23,11 +23,12 @@ public class SelectItemSectionController extends MyConcreteObservable {
 
     }
 
-    /**On ajoute des listener pour chaque item du menu
+    /**On ajoute des listener pour chaque item du menu afin de les selectionner pour déposer
+     * sur la map
      *  */
     public void addListenerToIems() {
         VBox vbox = view.getVbox();
-        int i = 0;
+        int i = -1;
         var itemsList = model.getItemsOfSelectionMenu();
         if (vbox != null) {
             for (Node item : vbox.getChildren()) {
@@ -37,7 +38,8 @@ public class SelectItemSectionController extends MyConcreteObservable {
                     System.out.println("Item click from menu : " + item);
                     model.setCurrentSelectedItem(itemsList.get(finalI));
                     System.out.println("Item selected from menu "+model.getCurrentSelectedItem());
-                    this.getPropertyChangeSupport().firePropertyChange("selectedItem", model.getCurrentSelectedItem(), itemsList.get(finalI));
+                    this.getPropertyChangeSupport().firePropertyChange("selectedItem", null, model.getCurrentSelectedItem());
+
                 });
             }
         }
@@ -48,5 +50,6 @@ public class SelectItemSectionController extends MyConcreteObservable {
     public  void onItemClicked(CaseMatrix caseMatrix) {
 
         System.out.println("onItemClicked"+ caseMatrix);
+
     }
 }
