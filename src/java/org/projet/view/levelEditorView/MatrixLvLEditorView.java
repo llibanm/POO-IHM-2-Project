@@ -188,6 +188,12 @@ public class MatrixLvLEditorView extends GridPane {
         }
     }
 
+    public  Rectangle updateHeroPositionView(int oldRowHero, int oldColHero, String url, int newRow, int newCol) {
+        this.removeItemFromGridPane(oldRowHero, oldColHero);
+        Rectangle rectangle = this.setRecBis(oldRowHero, oldColHero);
+        this.placeItemImgBis(url, newRow, newCol);
+        return rectangle;
+    }
     public Rectangle setRecBis(int oldRow, int oldCol){
         Rectangle rec = this.getRect();
         GridPane.setRowIndex(rec, oldRow);

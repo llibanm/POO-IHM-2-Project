@@ -33,9 +33,11 @@ public class MatrixLvlEditorController implements PropertyChangeListener {
     public MatrixLvlEditorController(MatrixLvlEditorModel model, MatrixLvLEditorView view, SelectItemSectionController selectItemSectionController) {
         this.model = model;
         this.view = view;
+        gameLogic = new GameLogic(model);
         //selectItemSectionController.addPropertyChangeListener(this.getPropertyChangeListener());
         addGridListenersOnView();
         selectItemSectionController.addPropertyChangeListener(this);
+
 
         getFocusOnMatrixView();
         this.view.setOnKeyPressed(this::handleKeyPressed);
@@ -51,17 +53,17 @@ public class MatrixLvlEditorController implements PropertyChangeListener {
         int oldColHero = model.getHero().getCoord().getCol();
         int newRow = model.getHero().getCoord().getRow() + rowX;
         int newCol = model.getHero().getCoord().getCol() + colY;
-        if(model.moveHero(rowX,colY)) {
+        if(gameLogic.moveHero(rowX,colY)) {
             model.getHero().setCoord(new Coord(rowX + oldRowHero, colY + oldColHero));
-
-            view.removeItemFromGridPane(oldRowHero, oldColHero);
-            setNodeListener(view.setRecBis(oldRowHero, oldColHero));
             String url = model.getHero().coordToImage(rowX, colY);
-            view.placeItemImgBis(url,newRow,newCol);
+            Rectangle addedRec = view.updateHeroPositionView(oldRowHero, oldColHero, url, newRow, newCol);
+            setNodeListener(addedRec);
             System.out.println(url);
-
         }
     }
+
+
+
     public void handleKeyPressed(KeyEvent keyEvent) {
 
         //System.out.printf("Key pressed: %s\n", keyEvent.getCode());
