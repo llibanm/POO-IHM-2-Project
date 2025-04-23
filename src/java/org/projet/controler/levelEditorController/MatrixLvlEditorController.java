@@ -46,13 +46,12 @@ public class MatrixLvlEditorController implements PropertyChangeListener {
 
     }
 
-
-
     public void movelogic(int rowX, int colY) {
         int oldRowHero = model.getHero().getCoord().getRow();
         int oldColHero = model.getHero().getCoord().getCol();
         int newRow = model.getHero().getCoord().getRow() + rowX;
         int newCol = model.getHero().getCoord().getCol() + colY;
+
         if(gameLogic.moveHero(rowX,colY)) {
             model.getHero().setCoord(new Coord(rowX + oldRowHero, colY + oldColHero));
             String url = model.getHero().coordToImage(rowX, colY);
@@ -66,30 +65,19 @@ public class MatrixLvlEditorController implements PropertyChangeListener {
 
     public void handleKeyPressed(KeyEvent keyEvent) {
 
-        //System.out.printf("Key pressed: %s\n", keyEvent.getCode());
+
         String code = keyEvent.getCode().toString();
-        if(code.equals("Z")) {
-            System.out.println("Appui sur Z");
-            movelogic(-1,0);
-            //view.removeItemFromGridPane(oldRowHero, oldColHero);
-        }
-        else if(code.equals("D")) {
-            System.out.println("Appui sur D");
-            movelogic(0,1);
-        }
-        else if(code.equals("S")) {
-            System.out.println("Appui sur S");
-            movelogic(1,0);
 
+        switch (code) {
+            case "Z" -> {System.out.println("Appui sur Z"); movelogic(-1, 0);}
+            case "D" -> {System.out.println("Appui sur D"); movelogic(0, 1);}
+            case "S" -> {System.out.println("Appui sur S"); movelogic(1, 0);}
+            case "Q" -> {System.out.println("Appui sur Q"); movelogic(0, -1);}
+            case "T" -> System.out.println("Héro tire!!");
         }
-        else if(code.equals("Q")) {
-            System.out.println("Appui sur Q");
-            movelogic(0,-1);
-        } else if (code.equals("T")) {
-            System.out.println("Héro tire!!");
-        }
-
     }
+
+
     public  void getFocusOnMatrixView(){
         view.setFocusTraversable(true);
         view.requestFocus();
@@ -124,6 +112,7 @@ public class MatrixLvlEditorController implements PropertyChangeListener {
             System.out.println("Erreur addGridListenersOnView currentSelectedCaseMatrix == null");
         }
     }
+
     @Override
     public void propertyChange(PropertyChangeEvent evt) {
         System.out.println("Changement "+evt.getPropertyName()+" propertyChange");
