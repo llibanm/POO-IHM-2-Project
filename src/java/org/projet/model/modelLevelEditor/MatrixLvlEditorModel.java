@@ -129,7 +129,9 @@ public class MatrixLvlEditorModel extends AbstractModel {
         int colHero = hero.getCoord().getCol();
         int row = rowHero + rowX;
         int col = colHero + colY;
-        if(isValidCoordinate(row, col)){
+        boolean isOccuped = this.getCaseMatrix(row, col).isOccuped();
+
+        if(isValidCoordinate(row, col) && !isOccuped) {
             hero.setCoord(new Coord(rowHero,colHero));
             resetItemMatrice(rowHero,colHero);
             System.out.println("Déplacement du hero, nouvelle coord "+hero.getCoord().getCol()+" et "+hero.getCoord().getRow());
