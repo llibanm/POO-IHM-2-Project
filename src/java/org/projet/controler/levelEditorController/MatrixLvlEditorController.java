@@ -19,11 +19,13 @@ public class MatrixLvlEditorController implements PropertyChangeListener {
     private final MatrixLvlEditorModel model;
     private final MatrixLvLEditorView view;
     private CaseMatrix currentSelectedCaseMatrix;
+    private GameLogic gameLogic;
 
     public MatrixLvlEditorController(MatrixLvlEditorModel model, MatrixLvLEditorView view) {
         this.model = model;
         this.view = view;
         addGridListenersOnView();
+        gameLogic = new GameLogic(model);
 
     }
 
@@ -42,6 +44,8 @@ public class MatrixLvlEditorController implements PropertyChangeListener {
 
     }
 
+
+
     public void movelogic(int rowX, int colY) {
         int oldRowHero = model.getHero().getCoord().getRow();
         int oldColHero = model.getHero().getCoord().getCol();
@@ -49,14 +53,12 @@ public class MatrixLvlEditorController implements PropertyChangeListener {
         int newCol = model.getHero().getCoord().getCol() + colY;
         if(model.moveHero(rowX,colY)) {
             model.getHero().setCoord(new Coord(rowX + oldRowHero, colY + oldColHero));
-            //view.moveItemFromGridPane(oldRowHero,oldColHero, oldRowHero+1,oldColHero);
+
             view.removeItemFromGridPane(oldRowHero, oldColHero);
-            // view.removeImgFromGridPane(oldRowHero, oldColHero);
             setNodeListener(view.setRecBis(oldRowHero, oldColHero));
             String url = model.getHero().coordToImage(rowX, colY);
-            System.out.println(url);
             view.placeItemImgBis(url,newRow,newCol);
-
+            System.out.println(url);
 
         }
     }
@@ -81,6 +83,8 @@ public class MatrixLvlEditorController implements PropertyChangeListener {
         else if(code.equals("Q")) {
             System.out.println("Appui sur Q");
             movelogic(0,-1);
+        } else if (code.equals("T")) {
+            System.out.println("Héro tire!!");
         }
 
     }
