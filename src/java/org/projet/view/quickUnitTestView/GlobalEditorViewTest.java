@@ -23,9 +23,6 @@ public class GlobalEditorViewTest extends Application {
     public void start(Stage primaryStage) {
         BorderPane root = new BorderPane();
 
-
-
-
         SelectItemSectionModel model = new SelectItemSectionModel();
         SelectItemView selectItemView = new SelectItemView();
         SelectItemSectionController selectController = new SelectItemSectionController(model, selectItemView);

@@ -1,7 +1,10 @@
 package src.java.org.projet.model.modelCharacter;
+import src.java.org.projet.controler.levelEditorController.SpriteService;
+import src.java.org.projet.interfaces.MoveRangeOnSprite;
 import src.java.org.projet.model.modelItems.Back_pack;
 import src.java.org.projet.model.modelItems.Bow;
 import src.java.org.projet.model.modelItems.Sabre;
+import src.java.org.projet.model.modelLevelEditor.base.Coord;
 import src.java.org.projet.model.modelMap.Location;
 
 import java.util.ArrayList;
@@ -22,7 +25,12 @@ public class Hero extends MyCharacter{
     }*/
 
     public Hero(String name, int hp, Location loc){
-        super(name, hp);
+
+
+        super(name, hp,
+        new MoveRangeOnSprite(new Coord(3,-1), new Coord(2,-1),new Coord(1,-1),new Coord(0,-1)),
+                new SpriteService("src/java/org/projet/assets/Hero.png",32,48,4,4)
+        );
         H_bow = new Bow();
         H_sabre = new Sabre();
         backpack = new Back_pack();
@@ -31,7 +39,10 @@ public class Hero extends MyCharacter{
     }
 
     public Hero(String name, int hp){
-        super(name, hp);
+        super(name, hp,
+                new MoveRangeOnSprite(new Coord(3,-1), new Coord(2,-1),new Coord(1,-1),new Coord(0,-1)),
+                new SpriteService("src/java/org/projet/assets/Hero.png",32,48,4,4)
+        );
         H_bow = new Bow();
         H_sabre = new Sabre();
         backpack = new Back_pack();

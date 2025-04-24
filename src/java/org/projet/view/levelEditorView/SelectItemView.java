@@ -11,12 +11,14 @@ import javafx.scene.image.Image;
 import javafx.scene.layout.HBox;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
+import src.java.org.projet.controler.levelEditorController.MatrixLvlEditorController;
 import src.java.org.projet.model.modelLevelEditor.base.CaseMatrix;
 
 import java.util.function.Consumer;
+import java.util.logging.Logger;
 
 public class SelectItemView extends ScrollPane {
-
+    private  final Logger logger = Logger.getLogger(SelectItemView.class.getName());
     VBox vbox;
 
     public VBox getVbox() {

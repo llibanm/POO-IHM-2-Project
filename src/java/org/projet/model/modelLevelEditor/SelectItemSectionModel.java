@@ -1,14 +1,17 @@
 package src.java.org.projet.model.modelLevelEditor;
 
+import src.java.org.projet.controler.levelEditorController.MatrixLvlEditorController;
 import src.java.org.projet.model.AbstractModel;
 import src.java.org.projet.model.modelLevelEditor.base.CaseMatrix;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.logging.Logger;
 
 /**Classe pour gérer les données du menu de selection des items à placer
  * sur la map de l'éditeur de niveau */
 public  class SelectItemSectionModel extends AbstractModel {
+    private  final Logger logger = Logger.getLogger(SelectItemSectionModel.class.getName());
     List<CaseMatrix> itemsOfSelectionMenu;
     //Item que l'utilisateur a selectionné pour positionner sur le plateau
     CaseMatrix currentSelectedItem;
@@ -20,6 +23,7 @@ public  class SelectItemSectionModel extends AbstractModel {
     public void setCurrentSelectedItem(CaseMatrix currentSelectedItem) {
         CaseMatrix oldValue = this.currentSelectedItem;
         this.currentSelectedItem = currentSelectedItem;
+        logger.info(oldValue + " " + this.currentSelectedItem);
         this.getPropertyChangeSupport().firePropertyChange("currentSelectedItem", oldValue, currentSelectedItem);
     }
 

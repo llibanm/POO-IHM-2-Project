@@ -6,16 +6,19 @@ import javafx.scene.image.ImageView;
 import javafx.scene.layout.*;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Rectangle;
+import src.java.org.projet.controler.levelEditorController.MatrixLvlEditorController;
 import src.java.org.projet.model.modelLevelEditor.base.CaseMatrix;
 
 import javax.swing.*;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+import java.util.logging.Logger;
 
 /**Vue qui affichera sur une map les items(perso, objets)  selectionnés depuis le menu de sélection
  * dans l'éditeur de  niveaux */
 public class MatrixLvLEditorView extends GridPane {
+    private  final Logger logger = Logger.getLogger(MatrixLvLEditorView.class.getName());
     int nbOfRows;
     int nbOfCols;
     int default_case_size = 40;
@@ -56,7 +59,7 @@ public class MatrixLvLEditorView extends GridPane {
 
     public Rectangle getRect(){
         Rectangle cell = new Rectangle(default_case_size,default_case_size, Color.TRANSPARENT);
-        cell.setStroke(Color.BLACK);
+        cell.setStroke(Color.TRANSPARENT);
         return cell;
     }
 
@@ -82,8 +85,6 @@ public class MatrixLvLEditorView extends GridPane {
         if (newNode.getParent() != null) {
             ((Pane)newNode.getParent()).getChildren().remove(newNode);
         }
-
-
         this.add(newNode, col, row);
     }
 
@@ -100,15 +101,15 @@ public class MatrixLvLEditorView extends GridPane {
 
             if (rowIndex != null && rowIndex == oldRow && columnIndex != null
                     && columnIndex == oldCol && node instanceof ImageView) {
-                System.out.println("Element trouvé à déplacer : " + node);
+                logger.info("Element trouvé à déplacer : " + node);
                 this.replaceNodeAt(newRow, newCol, node);
-                System.out.println("Element déplacé de la grille moveItemFromGridPane");
+                logger.info("Element déplacé de la grille moveItemFromGridPane");
                 itemMoved = true;
             }
         }
 
         if (!itemMoved) {
-            System.out.println("Element non déplacé de la grille moveItemFromGridPane");
+            logger.info("Element non déplacé de la grille moveItemFromGridPane");
         }
     }
 
@@ -126,11 +127,11 @@ public class MatrixLvLEditorView extends GridPane {
         if (!nodesToRemove.isEmpty()) {
 
             this.getChildren().removeAll(nodesToRemove);
-            System.out.println("Éléments supprimés de la grille removeAllItemsFromGridPane");
+            logger.info("Éléments supprimés de la grille removeAllItemsFromGridPane");
             return true;
         }
 
-        System.out.println("Aucun élément supprimé de la grille removeAllItemsFromGridPane");
+        logger.info("Aucun élément supprimé de la grille removeAllItemsFromGridPane");
         return false;
     }
 
@@ -156,13 +157,30 @@ public class MatrixLvLEditorView extends GridPane {
         }
 
         if (removed) {
-            System.out.println("Image(s) supprimée(s) de la grille");
+            logger.info("Image(s) supprimée(s) de la grille");
         } else {
-            System.out.println("Aucune image trouvée à cette position");
+            logger.info("Aucune image trouvée à cette position");
         }
 
         return removed;
     }
+
+    public  Node getNodeAt( int row, int column) {
+        for (Node node : this.getChildren()) {
+            Integer rowIndex = GridPane.getRowIndex(node);
+            Integer columnIndex = GridPane.getColumnIndex(node);
+
+            // Gère les valeurs null (par défaut 0)
+            int actualRow = rowIndex == null ? 0 : rowIndex;
+            int actualCol = columnIndex == null ? 0 : columnIndex;
+
+            if (actualRow == row && actualCol == column) {
+                return node;
+            }
+        }
+        return null;
+    }
+
 
 
     public void placeItemImgBis(String url, int row, int col){
@@ -182,6 +200,14 @@ public class MatrixLvLEditorView extends GridPane {
         this.placeItemImgBis(url, newRow, newCol);
         return rectangle;
     }
+    public  Rectangle updateHeroPositionViewBis(int oldRowHero, int oldColHero, ImageView url, int newRow, int newCol) {
+        this.removeItemFromGridPane(oldRowHero, oldColHero);
+        Rectangle rectangle = this.setRecBis(oldRowHero, oldColHero);
+        url.setFitHeight(rectangle.getHeight());
+        url.setFitWidth(rectangle.getWidth());
+        this.placeItemImgBis(url, newRow, newCol);
+        return rectangle;
+    }
 
     public Rectangle setRecBis(int oldRow, int oldCol){
         Rectangle rec = this.getRect();
@@ -192,11 +218,18 @@ public class MatrixLvLEditorView extends GridPane {
         return rec;
     }
 
+    public void placeItemImgBis(ImageView img, int row, int col){
+        if(img != null  && isValidCoordinate(row, col)){
+            StackPane pane = new StackPane();
+            pane.getChildren().addAll(getRect(),img);
+            this.add(pane, col, row);
+        }
+    }
     public void placeItemImg(String url, int row, int col){
         if(url != null && !url.isEmpty() && isValidCoordinate(row, col)){
             StackPane pane = new StackPane();
             ImageView img = createImg(url);
-            pane.getChildren().addAll(getRect(),img);
+            pane.getChildren().addAll(/*getRect(),*/img);
             this.add(pane, col, row);
         }
     }

@@ -1,6 +1,7 @@
 package src.java.org.projet.model.modelLevelEditor;
 
 
+import src.java.org.projet.controler.levelEditorController.MatrixLvlEditorController;
 import src.java.org.projet.interfaces.Ennemy;
 import src.java.org.projet.model.AbstractModel;
 import src.java.org.projet.model.modelCharacter.Agressor;
@@ -12,16 +13,27 @@ import src.java.org.projet.model.modelMap.Location;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.logging.Logger;
 
 /**Matrice de l'éditeur de niveau et également celle du jeu principal (similarité)
  *elle stockera une liste de case ainsi que la l'état lié aux héros, ennemies et leurs position
  *
  * */
 public class MatrixLvlEditorModel extends AbstractModel {
-
+    private  final Logger logger = Logger.getLogger(MatrixLvlEditorModel.class.getName());
     //Matrice de l'éditeur de niveau qui contiendra les items selectionnés dans le menu de choix des items
     private CaseMatrix[][] matrixEditorLvl;
     Hero hero;
+    List<Ennemy> ennemies = new ArrayList<Ennemy>();
+    Ennemy ActiveEnnemy ;
+
+    public Ennemy getActiveEnnemy() {
+        return ActiveEnnemy;
+    }
+
+    public void setActiveEnnemy(Ennemy activeEnnemy) {
+        ActiveEnnemy = activeEnnemy;
+    }
 
     public Hero getHero() {
         return hero;
@@ -39,7 +51,7 @@ public class MatrixLvlEditorModel extends AbstractModel {
         this.ennemies = ennemies;
     }
 
-    List<Ennemy> ennemies = new ArrayList<Ennemy>();
+
 
     int nbOfRows;
     int nbOfCols;
@@ -114,20 +126,24 @@ public class MatrixLvlEditorModel extends AbstractModel {
      * @param items La représentation de l'items(url image, coordonnées, Classe liée)
      */
     public void addItemMatrice(int row, int col, CaseMatrix items) {
-        System.out.println("Ajout item addItemMatrice");
+        logger.info("Ajout item addItemMatrice");
         if (isValidCoordinate(row, col)) {
             matrixEditorLvl[row][col]=items;
             matrixEditorLvl[row][col].setOccuped(true);
             fillHeroAndEnnemyList( row, col,items);
         } else {
             System.err.println("Erreur: Coordonnées invalides pour ajouter l'item (" + row + ", " + col + ").");
-            System.out.println("nbofRows=" + nbOfRows + ", nbOfCols=" + nbOfCols);
+            logger.info("nbofRows=" + nbOfRows + ", nbOfCols=" + nbOfCols);
             throw new IllegalArgumentException("Erreur: Coordonnées invalides pour ajouter l'item ");
         }
     }
 
     public boolean isOccupedCase(int row, int col) {
        return this.getCaseMatrix(row, col).isOccuped();
+    }
+
+    public boolean isOccupedCaseCoord(Coord coord) {
+        return this.getCaseMatrix(coord.getRow(), coord.getCol()).isOccuped();
     }
 
     public void setOccuped(Coord newPos, boolean occuped) {
@@ -144,11 +160,11 @@ public class MatrixLvlEditorModel extends AbstractModel {
         if(isValidCoordinate(row, col) && !isOccuped) {
             hero.setCoord(new Coord(rowHero,colHero));
             resetItemMatrice(rowHero,colHero);
-            System.out.println("Déplacement du hero, nouvelle coord "+hero.getCoord().getCol()+" et "+hero.getCoord().getRow());
+            logger.info("Déplacement du hero, nouvelle coord "+hero.getCoord().getCol()+" et "+hero.getCoord().getRow());
 
         return true;}
         else {
-            System.out.println("Le héros ne peut pas se déplacer");
+            logger.info("Le héros ne peut pas se déplacer");
             return false;
         }
 
@@ -158,21 +174,21 @@ public class MatrixLvlEditorModel extends AbstractModel {
 
     public void fillHeroAndEnnemyList(int row, int col,CaseMatrix items) {
         Object classOfItems = items.getClassOfItems();
-        System.out.println("fillHeroAndEnnemyList "+classOfItems);
+        logger.info("fillHeroAndEnnemyList "+classOfItems);
 
         if (classOfItems instanceof Hero) {
             this.hero = (Hero) classOfItems;
             hero.setCoord(new Coord(row, col));
-            System.out.println("Ajout du héro  fillHeroAndEnnemyList");
+            logger.info("Ajout du héro  fillHeroAndEnnemyList");
         }
         else if (classOfItems instanceof Ennemy) {
             Ennemy ennemy = new Agressor("ee",10); // TODO
             ennemy.setPosition(new Coord(row, col));
             this.ennemies.add(ennemy);
-            System.out.println("Ajout d'un ennemie  fillHeroAndEnnemyList+ "+ennemies);
+            logger.info("Ajout d'un ennemie  fillHeroAndEnnemyList+ "+ennemies);
         }
         else {
-            System.out.println("L'item n'est ni un heros, ni un ennemi");
+            logger.info("L'item n'est ni un heros, ni un ennemi");
         }
 
     }
@@ -210,5 +226,17 @@ public class MatrixLvlEditorModel extends AbstractModel {
                 "\n, nbOfRowsMatrix=" + nbOfRows +
                 "\n, matrixEditorLvl=" + Arrays.deepToString(matrixEditorLvl) +
                 '}';
+    }
+
+
+    public void freeLastCastOccupedNewCase(Coord oldPos, Coord newPos) {
+        this.setOccuped(oldPos, false);
+        logger.info("Etat ancienne case  (assert false)"+ isOccupedCaseCoord(oldPos));
+        this.setOccuped(newPos, true);
+        logger.info("Etat ancienne case  (assert true)"+ isOccupedCaseCoord(newPos));
+        this.getPropertyChangeSupport().firePropertyChange("moveE", oldPos, getActiveEnnemy());
+
+
+
     }
 }

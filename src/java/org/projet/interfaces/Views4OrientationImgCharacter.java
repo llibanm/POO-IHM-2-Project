@@ -1,77 +1,73 @@
 package src.java.org.projet.interfaces;
 
-public abstract class Views4OrientationImgCharacter {
-    private   String upUrlImg = "src/java/org/projet/assets/character/hero/u.png";
-    private  String downUrlImg = "src/java/org/projet/assets/character/hero/d.png";
-    private  String rightUrlImg = "src/java/org/projet/assets/character/hero/r.png";
-    private   String leftUrlImg = "src/java/org/projet/assets/character/hero/l.png";
+import javafx.scene.image.ImageView;
+import src.java.org.projet.controler.levelEditorController.SpriteService;
+import src.java.org.projet.model.modelLevelEditor.base.Coord;
 
-    public Views4OrientationImgCharacter() {}
-    public Views4OrientationImgCharacter(String upUrlImg, String downUrlImg, String rightUrlImg, String leftUrlImg) {
-        this.upUrlImg = upUrlImg;
-        this.downUrlImg = downUrlImg;
-        this.rightUrlImg = rightUrlImg;
-        this.leftUrlImg = leftUrlImg;
+import java.util.List;
+import java.util.logging.Logger;
+
+
+
+public abstract class Views4OrientationImgCharacter  {
+
+    private Direction lastDirection;
+    private int currentFrameIndex = 0;
+    private List<ImageView> moveRightSequences;
+    private List<ImageView> moveLeftSequences;
+    private List<ImageView> moveUpSequences;
+    private List<ImageView> moveDownSequences;
+    private List<ImageView> currentMoveSequence;
+    private  SpriteService spriteService;
+
+
+    private final Logger logger = Logger.getLogger(Views4OrientationImgCharacter.class.getName());
+
+    public Views4OrientationImgCharacter(
+            SpriteService spriteService,
+        MoveRangeOnSprite moveRangeOnSprite
+    ) {
+        this.spriteService = spriteService;
+        this.lastDirection = Direction.DOWN;
+        this.moveLeftSequences = spriteService.getRangeSprite(moveRangeOnSprite.spriteMoveLeftRange);
+        this.moveRightSequences = spriteService.getRangeSprite(moveRangeOnSprite.spriteMoveRightRange);
+        this.moveUpSequences = spriteService.getRangeSprite(moveRangeOnSprite.spriteMoveUpRange);
+        this.moveDownSequences = spriteService.getRangeSprite(moveRangeOnSprite.spriteMoveDownRange);
+
     }
 
-    public String getUpUrlImg() {
-        return upUrlImg;
+
+
+    public Direction coordToDirection(int row, int col) {
+        if (row == -1 && col == 0) return Direction.UP;
+        if (row == 1 && col == 0) return Direction.DOWN;
+        if (row == 0 && col == 1) return Direction.RIGHT;
+        if (row == 0 && col == -1) return Direction.LEFT;
+        logger.warning("Invalid direction input.");
+        return lastDirection;
     }
 
-    public void setUpUrlImg(String upUrlImg) {
-        this.upUrlImg = upUrlImg;
-    }
-
-    public String getDownUrlImg() {
-        return downUrlImg;
-    }
-
-    public void setDownUrlImg(String downUrlImg) {
-        this.downUrlImg = downUrlImg;
-    }
-
-    public String getRightUrlImg() {
-        return rightUrlImg;
-    }
-
-    public void setRightUrlImg(String rightUrlImg) {
-        this.rightUrlImg = rightUrlImg;
-    }
-
-    public String getLeftUrlImg() {
-        return leftUrlImg;
-    }
-
-    public void setLeftUrlImg(String leftUrlImg) {
-        this.leftUrlImg = leftUrlImg;
-    }
-
-    public  String coordToImage(int Row, int Col) {
-        if (Row == -1 && Col == 0) {
-            return upUrlImg;
-        }
-        else if (Row == 1 && Col == 0) {
-            return downUrlImg;
-        }
-        else if (Row == 0 && Col == 1) {
-            return rightUrlImg;
-        }
-        else if (Row == 0 && Col == -1) {
-            return leftUrlImg;
-        }
-        else {
-            System.out.println("Paramètre non adapté coordToImage");
-            return "";
+    public void updateCurrentSequence(Direction direction) {
+        switch (direction) {
+            case RIGHT -> currentMoveSequence = moveRightSequences;
+            case LEFT -> currentMoveSequence = moveLeftSequences;
+            case UP -> currentMoveSequence = moveUpSequences;
+            case DOWN -> currentMoveSequence = moveDownSequences;
         }
     }
 
-    @Override
-    public String toString() {
-        return "Views4OrientationImgCharacter{" +
-                "upUrlImg='" + upUrlImg + '\'' +
-                ", downUrlImg='" + downUrlImg + '\'' +
-                ", rightUrlImg='" + rightUrlImg + '\'' +
-                ", leftUrlImg='" + leftUrlImg + '\'' +
-                '}';
+    public ImageView nextImage(int row, int col) {
+        Direction direction = coordToDirection(row, col);
+
+        // Si direction change → reset frame
+        if (direction != lastDirection) {
+            updateCurrentSequence(direction);
+            currentFrameIndex = 0;
+            lastDirection = direction;
+        }
+
+        ImageView frame = currentMoveSequence.get(currentFrameIndex);
+        currentFrameIndex = (currentFrameIndex + 1) % currentMoveSequence.size();
+        return frame;
     }
 }

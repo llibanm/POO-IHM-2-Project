@@ -9,10 +9,16 @@ import src.java.org.projet.model.modelLevelEditor.MatrixLvlEditorModel;
 import src.java.org.projet.model.modelLevelEditor.base.Coord;
 import src.java.org.projet.view.levelEditorView.MatrixLvLEditorView;
 
+import java.util.List;
+import java.util.logging.Logger;
+
 public class GameLogic {
     private final MatrixLvlEditorModel model;
     private final MatrixLvLEditorView view;
+
+
     Timeline enemyMovementLoop;
+    private  final Logger logger = Logger.getLogger(GameLogic.class.getName());
 
     public GameLogic(MatrixLvlEditorModel model, MatrixLvLEditorView view) {
         this.model = model;
@@ -42,28 +48,29 @@ public class GameLogic {
     }
 
     public void moveEnemies() {
-        for (Ennemy ennemy : model.getEnnemies()) {
-            System.out.println(ennemy);
+        List<Ennemy> ennemies = model.getEnnemies();
+        int i = 0;
+
+        while (i < ennemies.size()) {
+            Ennemy ennemy = ennemies.get(i);
+            logger.info(ennemy.toString());
+            model.setActiveEnnemy(ennemy);
             Coord oldPos = ennemy.getPosition();
-            System.out.println("oldPos: " + oldPos);
+            logger.info("oldPos: " + oldPos);
             Coord newPos = aiComputeNextMove(ennemy);
-            System.out.println("newPos: " + newPos);
+            logger.info("newPos: " + newPos);
 
-            //view.moveItem(oldPos, newPos);
-
-            if(!model.isOccupedCase(newPos.getRow(), newPos.getCol())) {
+            if (!model.isOccupedCase(newPos.getRow(), newPos.getCol())) {
                 ennemy.setPosition(newPos);
-                model.setOccuped(oldPos, false);
-                model.setOccuped(newPos, true);
-                view.updateHeroPositionView(oldPos.getRow(),oldPos.getCol(),"src/java/org/projet/assets/character/ennemy/img.png",newPos.getRow(),newPos.getCol());
+                model.freeLastCastOccupedNewCase(oldPos, newPos);
             }
+            i++;
         }
     }
 
-
-
     public Coord aiComputeNextMove(Ennemy ennemy) {
         Coord heroPos = model.getHero().getCoord();
+        logger.info("heroPos: " + heroPos);
         Coord ennemyPos = ennemy.getPosition();
 
         int newRow = ennemyPos.getRow();
@@ -74,14 +81,18 @@ public class GameLogic {
         else if (heroPos.getRow() > ennemyPos.getRow()) newRow++;
         else if (heroPos.getCol() < ennemyPos.getCol()) newCol--;
         else if (heroPos.getCol() > ennemyPos.getCol()) newCol++;
-
+        logger.info("for ennemy newRow: " + newRow + " newCol: " + newCol);
         if (!model.isOccupedCase(newRow, newCol)) {
+
             return new Coord(newRow, newCol);
         } else {
+            logger.info("l'ennemy already occuped "+ennemyPos.toString());
             return ennemyPos;
         }
     }
 
 
+    public void heroShot() {
 
+    }
 }

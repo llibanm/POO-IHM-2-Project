@@ -1,6 +1,9 @@
 package src.java.org.projet.model.modelCharacter;
 
 
+import src.java.org.projet.controler.levelEditorController.SpriteService;
+import src.java.org.projet.interfaces.MoveRangeOnSprite;
+import src.java.org.projet.interfaces.MoveSequences;
 import src.java.org.projet.interfaces.Views4OrientationImgCharacter;
 import src.java.org.projet.model.modelLevelEditor.base.Coord;
 
@@ -10,6 +13,13 @@ public abstract class MyCharacter extends Views4OrientationImgCharacter {
     private final String name;
     private int HP;
     Coord coord;
+
+
+    public MyCharacter(String name, int hp, MoveRangeOnSprite moveRangeOnSprite, SpriteService spriteService) {
+        super(spriteService,moveRangeOnSprite);
+        this.name = name;
+        this.HP = hp;
+    }
 
     public Coord getCoord() {
         return coord;
@@ -23,10 +33,7 @@ public abstract class MyCharacter extends Views4OrientationImgCharacter {
         this.HP = HP;
     }
 
-    public MyCharacter(String name, int hp) {
-        this.name = name;
-        this.HP = hp;
-    }
+
 
     public void decreaseHP(int nbp){
         this.HP -= nbp;

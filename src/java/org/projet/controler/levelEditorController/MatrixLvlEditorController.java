@@ -1,11 +1,11 @@
 package src.java.org.projet.controler.levelEditorController;
 
 import javafx.scene.Node;
+import javafx.scene.image.ImageView;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.GridPane;
 import javafx.scene.shape.Rectangle;
-import src.java.org.projet.controler.AbstractControler;
-import src.java.org.projet.interfaces.MyConcreteObservable;
+import src.java.org.projet.interfaces.Ennemy;
 import src.java.org.projet.model.modelLevelEditor.MatrixLvlEditorModel;
 import src.java.org.projet.model.modelLevelEditor.base.CaseMatrix;
 import src.java.org.projet.model.modelLevelEditor.base.Coord;
@@ -13,8 +13,11 @@ import src.java.org.projet.view.levelEditorView.MatrixLvLEditorView;
 
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
+import java.util.logging.Logger;
 
 public class MatrixLvlEditorController implements PropertyChangeListener {
+    private  final Logger logger = Logger.getLogger(MatrixLvlEditorController.class.getName());
+
 
     private final MatrixLvlEditorModel model;
     private final MatrixLvLEditorView view;
@@ -37,9 +40,8 @@ public class MatrixLvlEditorController implements PropertyChangeListener {
         //selectItemSectionController.addPropertyChangeListener(this.getPropertyChangeListener());
         addGridListenersOnView();
         selectItemSectionController.addPropertyChangeListener(this);
-
-
         getFocusOnMatrixView();
+        model.addPropertyChangeListener(this);
         this.view.setOnKeyPressed(this::handleKeyPressed);
         gameLogic = new GameLogic(model,view);
 
@@ -54,10 +56,10 @@ public class MatrixLvlEditorController implements PropertyChangeListener {
 
         if(gameLogic.moveHero(rowX,colY)) {
             //model.getHero().setCoord(new Coord(rowX + oldRowHero, colY + oldColHero));
-            String url = model.getHero().coordToImage(rowX, colY);
-            Rectangle addedRec = view.updateHeroPositionView(oldRowHero, oldColHero, url, newRow, newCol);
+            ImageView url = model.getHero().nextImage(rowX,colY);
+            Rectangle addedRec = view.updateHeroPositionViewBis(oldRowHero, oldColHero, url, newRow, newCol);
             setNodeListener(addedRec);
-            System.out.println(url);
+            logger.info(url.toString());
         }
     }
 
@@ -69,11 +71,11 @@ public class MatrixLvlEditorController implements PropertyChangeListener {
         String code = keyEvent.getCode().toString();
 
         switch (code) {
-            case "Z" -> {System.out.println("Appui sur Z"); movelogic(-1, 0);}
-            case "D" -> {System.out.println("Appui sur D"); movelogic(0, 1);}
-            case "S" -> {System.out.println("Appui sur S"); movelogic(1, 0);}
-            case "Q" -> {System.out.println("Appui sur Q"); movelogic(0, -1);}
-            case "T" -> System.out.println("Héro tire!!");
+            case "Z" -> {logger.info("Appui sur Z"); movelogic(-1, 0);}
+            case "D" -> {logger.info("Appui sur D"); movelogic(0, 1);}
+            case "S" -> {logger.info("Appui sur S"); movelogic(1, 0);}
+            case "Q" -> {logger.info("Appui sur Q"); movelogic(0, -1);}
+            case "E" -> {logger.info("Héro tire!!"); gameLogic.heroShot();}
         }
     }
 
@@ -96,7 +98,7 @@ public class MatrixLvlEditorController implements PropertyChangeListener {
         });
     }
     private  void handleGridClick(Node node) {
-        System.out.println("clicked on grid");
+        logger.info("clicked on grid");
         getFocusOnMatrixView();
         if (currentSelectedCaseMatrix != null) {
             Integer col = GridPane.getColumnIndex(node);
@@ -109,24 +111,35 @@ public class MatrixLvlEditorController implements PropertyChangeListener {
             }
         }
         else{
-            System.out.println("Erreur addGridListenersOnView currentSelectedCaseMatrix == null");
+            logger.info("Erreur addGridListenersOnView currentSelectedCaseMatrix == null");
         }
     }
 
     @Override
     public void propertyChange(PropertyChangeEvent evt) {
-        System.out.println("Changement "+evt.getPropertyName()+" propertyChange");
+        logger.severe("Changement "+evt.getPropertyName()+" propertyChange");
+
         if ("selectedItem".equals(evt.getPropertyName())) {
             currentSelectedCaseMatrix = (CaseMatrix) evt.getNewValue();
-            System.out.println("Current selectedCaseMatrix is "+currentSelectedCaseMatrix);
+            logger.info("Current selectedCaseMatrix is "+currentSelectedCaseMatrix);
         }
-        else if ("MoveEnnemy".equals(evt.getPropertyName())) {
-            currentSelectedCaseMatrix = (CaseMatrix) evt.getNewValue();
-            System.out.println("Current selectedCaseMatrix is "+currentSelectedCaseMatrix);
+        else if ("moveE".equals(evt.getPropertyName())) {
+            Coord old = (Coord) evt.getOldValue();
+            Ennemy newv = (Ennemy) evt.getNewValue();
+            logger.info("old coord is "+old);
+            logger.info("newv coord is "+newv);
+
+            Ennemy ennemy = (Ennemy) evt.getNewValue();
+            int rowX = ennemy.getPosition().getRow() - old.getRow();
+            int rowY = ennemy.getPosition().getCol() - old.getCol();
+            ImageView url = ennemy.nextImage(rowX, rowY);
+            view.updateHeroPositionViewBis(old.getRow(),old.getCol(),url,ennemy.getPosition().getRow(),ennemy.getPosition().getCol());
+            setNodeListener(view.getNodeAt(old.getRow(),old.getCol()));
+            logger.info("Current selectedCaseMatrix is "+currentSelectedCaseMatrix);
         }
 
         else {
-            System.out.println("Erreur propertyChange");
+            logger.info("Erreur propertyChange");
         }
     }
 }

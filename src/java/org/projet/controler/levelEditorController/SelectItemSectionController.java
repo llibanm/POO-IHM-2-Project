@@ -9,7 +9,10 @@ import src.java.org.projet.model.modelLevelEditor.SelectItemSectionModel;
 import src.java.org.projet.model.modelLevelEditor.base.CaseMatrix;
 import src.java.org.projet.view.levelEditorView.SelectItemView;
 
+import java.util.logging.Logger;
+
 public class SelectItemSectionController extends MyConcreteObservable {
+    private  final Logger logger = Logger.getLogger(SelectItemSectionController.class.getName());
         SelectItemSectionModel model;
         SelectItemView view;
 
@@ -35,21 +38,21 @@ public class SelectItemSectionController extends MyConcreteObservable {
                 i++;
                 int finalI = i;
                 item.setOnMouseClicked(e-> {
-                    System.out.println("Item click from menu : " + item);
+                    logger.info("Item click from menu : " + item);
                     model.setCurrentSelectedItem(itemsList.get(finalI));
-                    System.out.println("Item selected from menu "+model.getCurrentSelectedItem());
+                    logger.info("Item selected from menu "+model.getCurrentSelectedItem());
                     this.getPropertyChangeSupport().firePropertyChange("selectedItem", null, model.getCurrentSelectedItem());
 
                 });
             }
         }
         else {
-            System.out.println("VBox is null");
+            logger.info("VBox is null");
         }
     }
     public  void onItemClicked(CaseMatrix caseMatrix) {
 
-        System.out.println("onItemClicked"+ caseMatrix);
+        logger.info("onItemClicked"+ caseMatrix);
 
     }
 }
