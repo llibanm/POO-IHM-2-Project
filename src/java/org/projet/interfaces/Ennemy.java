@@ -3,12 +3,11 @@ package src.java.org.projet.interfaces;
 import javafx.scene.image.ImageView;
 import src.java.org.projet.model.modelLevelEditor.base.Coord;
 
-public interface Ennemy {
+public interface Ennemy extends Movable {
 
-    public Coord getPosition();
-    public void setPosition(Coord position);
-    public int getSpeed();
+
+
     public void attack();
-    public ImageView nextImage(int rowX, int rowY);
+
 
 }

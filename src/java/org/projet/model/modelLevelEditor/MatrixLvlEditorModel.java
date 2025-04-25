@@ -1,24 +1,23 @@
 package src.java.org.projet.model.modelLevelEditor;
 
 
-import src.java.org.projet.controler.levelEditorController.MatrixLvlEditorController;
 import src.java.org.projet.interfaces.Ennemy;
+import src.java.org.projet.interfaces.Movable;
+import src.java.org.projet.interfaces.MoveAction;
 import src.java.org.projet.model.AbstractModel;
 import src.java.org.projet.model.modelCharacter.Agressor;
 import src.java.org.projet.model.modelCharacter.Hero;
 import src.java.org.projet.model.modelLevelEditor.base.CaseMatrix;
 import src.java.org.projet.model.modelLevelEditor.base.Coord;
-import src.java.org.projet.model.modelMap.Location;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 import java.util.logging.Logger;
 
 /**Matrice de l'éditeur de niveau et également celle du jeu principal (similarité)
  *elle stockera une liste de case ainsi que la l'état lié aux héros, ennemies et leurs position
  *
  * */
+
 public class MatrixLvlEditorModel extends AbstractModel {
     private  final Logger logger = Logger.getLogger(MatrixLvlEditorModel.class.getName());
     //Matrice de l'éditeur de niveau qui contiendra les items selectionnés dans le menu de choix des items
@@ -26,6 +25,15 @@ public class MatrixLvlEditorModel extends AbstractModel {
     Hero hero;
     List<Ennemy> ennemies = new ArrayList<Ennemy>();
     Ennemy ActiveEnnemy ;
+    Queue<MoveAction> moveQueue = new LinkedList<>();
+
+    public Queue<MoveAction> getMoveQueue() {
+        return moveQueue;
+    }
+
+    public void setMoveQueue(Queue<MoveAction> moveQueue) {
+        this.moveQueue = moveQueue;
+    }
 
     public Ennemy getActiveEnnemy() {
         return ActiveEnnemy;
@@ -171,19 +179,62 @@ public class MatrixLvlEditorModel extends AbstractModel {
     }
 
 
+    public boolean moveItem(Movable item, int rowX, int colY) {
+        int rowItem = item.getCoord().getRow();
+        int colItem = item.getCoord().getCol();
+        int row = rowItem + rowX;
+        int col = colItem + colY;
+        boolean isOccuped = this.getCaseMatrix(row, col).isOccuped();
+
+        if(isValidCoordinate(row, col) && !isOccuped) {
+            hero.setCoord(new Coord(rowItem,colItem));
+            resetItemMatrice(rowItem,colItem);
+            logger.info("Déplacement du hero, nouvelle coord "+hero.getCoord().getCol()+" et "+hero.getCoord().getRow());
+            Coord coord = new Coord(
+                    item.getCoord().getRow() + rowX,
+                    item.getCoord().getCol() + colY
+            );
+            item.setCoord(coord);
+            this.setOccuped(coord, true);
+            freeLastCastOccupedNewCase(new Coord(rowItem,colItem), coord);
+            this.getPropertyChangeSupport().firePropertyChange("move", new Coord(rowItem,colItem), item);
+
+            return true;}
+        else {
+            logger.info("Le héros ne peut pas se déplacer");
+            return false;
+        }
+
+    }
+
+
+    public void addDynamicBow(){
+        Coord heroPos = hero.getCoord();
+        int row = heroPos.getRow();
+        int col = heroPos.getCol();
+        Coord direction = hero.directionToCoord(hero.getLastDirection());
+        int rowBow = row + direction.getRow();
+        int colBow = col + direction.getCol();
+        CaseMatrix bow = new CaseMatrix("src/java/org/projet/assets/bule.png", rowBow, colBow);
+        bow.setOccuped(true);
+        this.addItemMatrice(row, col, bow);
+        this.getPropertyChangeSupport().firePropertyChange("heroFire", null, bow);
+        logger.info("Ajout d'un arc à la position du héros");
+
+    }
 
     public void fillHeroAndEnnemyList(int row, int col,CaseMatrix items) {
         Object classOfItems = items.getClassOfItems();
         logger.info("fillHeroAndEnnemyList "+classOfItems);
 
         if (classOfItems instanceof Hero) {
-            this.hero = (Hero) classOfItems;
+            this.hero = new Hero("marcel",10);
             hero.setCoord(new Coord(row, col));
             logger.info("Ajout du héro  fillHeroAndEnnemyList");
         }
         else if (classOfItems instanceof Ennemy) {
             Ennemy ennemy = new Agressor("ee",10); // TODO
-            ennemy.setPosition(new Coord(row, col));
+            ennemy.setCoord(new Coord(row, col));
             this.ennemies.add(ennemy);
             logger.info("Ajout d'un ennemie  fillHeroAndEnnemyList+ "+ennemies);
         }
@@ -234,8 +285,6 @@ public class MatrixLvlEditorModel extends AbstractModel {
         logger.info("Etat ancienne case  (assert false)"+ isOccupedCaseCoord(oldPos));
         this.setOccuped(newPos, true);
         logger.info("Etat ancienne case  (assert true)"+ isOccupedCaseCoord(newPos));
-        this.getPropertyChangeSupport().firePropertyChange("moveE", oldPos, getActiveEnnemy());
-
 
 
     }

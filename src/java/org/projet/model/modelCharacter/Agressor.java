@@ -76,15 +76,6 @@ public class Agressor extends MyCharacter implements Ennemy {
 
     public void mission(Hero hero){}
 
-    @Override
-    public Coord getPosition() {
-        return coord;
-    }
-
-    @Override
-    public void setPosition(Coord position) {
-        setCoord(position);
-    }
 
     @Override
     public int getSpeed() {

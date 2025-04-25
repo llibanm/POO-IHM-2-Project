@@ -37,4 +37,8 @@ public class Doctor extends MyCharacter{
         //TODO make controller interact with model for this
     }
 
+    @Override
+    public int getSpeed() {
+        return 0;
+    }
 }

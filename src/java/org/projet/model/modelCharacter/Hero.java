@@ -11,24 +11,15 @@ import java.util.ArrayList;
 
 public class Hero extends MyCharacter{
 
-
     private Bow H_bow;
     private Sabre H_sabre;
     private Back_pack backpack;
-    private Location H_position;
-
-    //TODO make controller interact with model for this
-   /* @Override
-    public void describe() {
-        System.out.println("Your character is the hero, he had a bow and a sabre and back_pack full of items." +
-                " your health points : " + this.getHP());
-    }*/
 
     public Hero(String name, int hp, Location loc){
 
 
         super(name, hp,
-        new MoveRangeOnSprite(new Coord(3,-1), new Coord(2,-1),new Coord(1,-1),new Coord(0,-1)),
+                new MoveRangeOnSprite(new Coord(3,-1), new Coord(2,-1),new Coord(1,-1),new Coord(0,-1)),
                 new SpriteService("src/java/org/projet/assets/Hero.png",32,48,4,4)
         );
         H_bow = new Bow();
@@ -48,6 +39,38 @@ public class Hero extends MyCharacter{
         backpack = new Back_pack();
 
     }
+
+
+
+    public void setH_bow(Bow h_bow) {
+        H_bow = h_bow;
+    }
+
+    public void setH_sabre(Sabre h_sabre) {
+        H_sabre = h_sabre;
+    }
+
+    public void setBackpack(Back_pack backpack) {
+        this.backpack = backpack;
+    }
+
+    public Location getH_position() {
+        return H_position;
+    }
+
+    public void setH_position(Location h_position) {
+        H_position = h_position;
+    }
+
+    private Location H_position;
+
+    //TODO make controller interact with model for this
+   /* @Override
+    public void describe() {
+        System.out.println("Your character is the hero, he had a bow and a sabre and back_pack full of items." +
+                " your health points : " + this.getHP());
+    }*/
+
 
    /* @Override
     public void printCharacter() {
@@ -102,9 +125,17 @@ public class Hero extends MyCharacter{
         decreaseHP(2);
     }
 
+    @Override
+    public int getSpeed() {
+        return 0;
+    }
+
     public Location getPosition(){
         return H_position;
     }
+
+
+
 
     public Back_pack getBackpack() {
         return backpack;

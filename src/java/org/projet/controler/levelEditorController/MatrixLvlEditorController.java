@@ -6,6 +6,7 @@ import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.GridPane;
 import javafx.scene.shape.Rectangle;
 import src.java.org.projet.interfaces.Ennemy;
+import src.java.org.projet.interfaces.Movable;
 import src.java.org.projet.model.modelLevelEditor.MatrixLvlEditorModel;
 import src.java.org.projet.model.modelLevelEditor.base.CaseMatrix;
 import src.java.org.projet.model.modelLevelEditor.base.Coord;
@@ -75,7 +76,7 @@ public class MatrixLvlEditorController implements PropertyChangeListener {
             case "D" -> {logger.info("Appui sur D"); movelogic(0, 1);}
             case "S" -> {logger.info("Appui sur S"); movelogic(1, 0);}
             case "Q" -> {logger.info("Appui sur Q"); movelogic(0, -1);}
-            case "E" -> {logger.info("Héro tire!!"); gameLogic.heroShot();}
+            case "F" -> {logger.info("Héro tire!!"); gameLogic.heroShot();}
         }
     }
 
@@ -123,17 +124,32 @@ public class MatrixLvlEditorController implements PropertyChangeListener {
             currentSelectedCaseMatrix = (CaseMatrix) evt.getNewValue();
             logger.info("Current selectedCaseMatrix is "+currentSelectedCaseMatrix);
         }
-        else if ("moveE".equals(evt.getPropertyName())) {
+        else if ("move".equals(evt.getPropertyName())) {
+            Coord old = (Coord) evt.getOldValue();
+            Movable newv = (Movable) evt.getNewValue();
+            logger.info("old coord is "+old);
+            logger.info("newv coord is "+newv);
+
+            Movable ennemy = (Movable) evt.getNewValue();
+            int rowX = ennemy.getCoord().getRow() - old.getRow();
+            int rowY = ennemy.getCoord().getCol() - old.getCol();
+            ImageView url = ennemy.nextImage(rowX, rowY);
+            view.updateHeroPositionViewBis(old.getRow(),old.getCol(),url,ennemy.getCoord().getRow(),ennemy.getCoord().getCol());
+            setNodeListener(view.getNodeAt(old.getRow(),old.getCol()));
+            logger.info("Current selectedCaseMatrix is "+currentSelectedCaseMatrix);
+        }
+
+        else if ("fireHero".equals(evt.getPropertyName())) {
             Coord old = (Coord) evt.getOldValue();
             Ennemy newv = (Ennemy) evt.getNewValue();
             logger.info("old coord is "+old);
             logger.info("newv coord is "+newv);
 
             Ennemy ennemy = (Ennemy) evt.getNewValue();
-            int rowX = ennemy.getPosition().getRow() - old.getRow();
-            int rowY = ennemy.getPosition().getCol() - old.getCol();
+            int rowX = ennemy.getCoord().getRow() - old.getRow();
+            int rowY = ennemy.getCoord().getCol() - old.getCol();
             ImageView url = ennemy.nextImage(rowX, rowY);
-            view.updateHeroPositionViewBis(old.getRow(),old.getCol(),url,ennemy.getPosition().getRow(),ennemy.getPosition().getCol());
+            view.updateHeroPositionViewBis(old.getRow(),old.getCol(),url,ennemy.getCoord().getRow(),ennemy.getCoord().getCol());
             setNodeListener(view.getNodeAt(old.getRow(),old.getCol()));
             logger.info("Current selectedCaseMatrix is "+currentSelectedCaseMatrix);
         }

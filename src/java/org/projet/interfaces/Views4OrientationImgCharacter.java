@@ -12,6 +12,11 @@ import java.util.logging.Logger;
 public abstract class Views4OrientationImgCharacter  {
 
     private Direction lastDirection;
+
+    public Direction getLastDirection() {
+        return lastDirection;
+    }
+
     private int currentFrameIndex = 0;
     private List<ImageView> moveRightSequences;
     private List<ImageView> moveLeftSequences;
@@ -46,6 +51,16 @@ public abstract class Views4OrientationImgCharacter  {
         logger.warning("Invalid direction input.");
         return lastDirection;
     }
+
+    public Coord directionToCoord(Direction direction) {
+        return switch (direction) {
+            case UP -> new Coord(-1, 0);
+            case DOWN -> new Coord(1, 0);
+            case RIGHT -> new Coord(0, 1);
+            case LEFT -> new Coord(0, -1);
+        };
+    }
+
 
     public void updateCurrentSequence(Direction direction) {
         switch (direction) {

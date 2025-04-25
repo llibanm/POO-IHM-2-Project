@@ -2,12 +2,13 @@ package src.java.org.projet.model.modelCharacter;
 
 
 import src.java.org.projet.controler.levelEditorController.SpriteService;
+import src.java.org.projet.interfaces.Movable;
 import src.java.org.projet.interfaces.MoveRangeOnSprite;
 import src.java.org.projet.interfaces.MoveSequences;
 import src.java.org.projet.interfaces.Views4OrientationImgCharacter;
 import src.java.org.projet.model.modelLevelEditor.base.Coord;
 
-public abstract class MyCharacter extends Views4OrientationImgCharacter {
+public abstract class MyCharacter extends Views4OrientationImgCharacter implements Movable {
 
 
     private final String name;

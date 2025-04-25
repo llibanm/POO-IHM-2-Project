@@ -89,12 +89,12 @@ public class Drone extends MyCharacter implements Ennemy {
     public void mission(Hero hero){}
 
     @Override
-    public Coord getPosition() {
+    public Coord getCoord() {
         return coord;
     }
 
     @Override
-    public void setPosition(Coord position) {
+    public void setCoord(Coord position) {
         setCoord(position);
     }
 
