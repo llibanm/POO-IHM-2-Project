@@ -27,15 +27,15 @@ public class GlobalEditorViewTest extends Application {
         SelectItemView selectItemView = new SelectItemView();
         SelectItemSectionController selectController = new SelectItemSectionController(model, selectItemView);
 
-        MatrixLvLEditorView mv = new MatrixLvLEditorView(50,50);
-        MatrixLvlEditorModel mdl = new MatrixLvlEditorModel(50,50,"");
-        MatrixLvlEditorController cmv = new MatrixLvlEditorController(mdl,mv, selectController);
+        MatrixLvLEditorView matrixLvLEditorView = new MatrixLvLEditorView(50,50);
+        MatrixLvlEditorModel matrixLvlEditorModel = new MatrixLvlEditorModel(50,50,"");
+        MatrixLvlEditorController matrixLvlEditorController = new MatrixLvlEditorController(matrixLvlEditorModel,matrixLvLEditorView, selectController);
+
         StackPane stackPane = new StackPane();
-        ImageView img = createImg("src/java/org/projet/spaceImagesProject/Space_Background.png");
         Background imgBackground = createImgBackground("src/java/org/projet/assets/planet/planet00.png",100,100);
         stackPane.setBackground(imgBackground);
-        stackPane.getChildren().add(mv);
-        cmv.addGridListenersOnView();
+        stackPane.getChildren().add(matrixLvLEditorView);
+        matrixLvlEditorController.addGridListenersOnView();
         /*selectItemView.setController(selectController); */
 
 

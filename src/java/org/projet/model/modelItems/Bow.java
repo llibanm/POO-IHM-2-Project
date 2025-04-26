@@ -64,7 +64,7 @@ public class Bow extends Item implements Movable {
 
     @Override
     public int getSpeed() {
-        return 0;
+        return 3;
     }
 
 

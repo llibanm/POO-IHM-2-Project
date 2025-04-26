@@ -11,9 +11,25 @@ import javafx.util.Duration;
 import src.java.org.projet.interfaces.Views4OrientationImgCharacter;
 import src.java.org.projet.model.modelLevelEditor.base.Coord;
 
+import java.util.*;
+import java.util.logging.Logger;
+
+
+
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
+import javafx.geometry.Rectangle2D;
+
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import org.w3c.dom.Document;
+import org.w3c.dom.Element;
+import org.w3c.dom.NodeList;
+
+import java.io.File;
+import java.io.FileInputStream;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.logging.Logger;
 
 public class SpriteService {
     private Image spriteSheet;
@@ -43,9 +59,47 @@ public class SpriteService {
         return view;
     }
 
-    public ImageView getSpriteVariousSize(int col, int row) {
-        ImageView view = new ImageView(spriteSheet);
-        view.setViewport(new Rectangle2D(col * frameWidth, row * frameHeight, frameWidth, frameHeight));
+    // Méthode qui charge les sprites depuis le XML et retourne une HashMap
+    public static  HashMap<String, ImageView> loadSprites(String imagePath, String xmlFilePath) throws Exception {
+        HashMap<String, ImageView> spriteMap = new HashMap<>();
+
+        // Charger le fichier XML
+        File xmlFile = new File(xmlFilePath);
+        DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+        DocumentBuilder builder = factory.newDocumentBuilder();
+        Document doc = builder.parse(xmlFile);
+
+        // Charger l'image principale
+        Image spriteSheet = new Image(new FileInputStream(imagePath));
+
+        // Parcourir les sous-textures du fichier XML
+        NodeList subTextures = doc.getElementsByTagName("SubTexture");
+        for (int i = 0; i < subTextures.getLength(); i++) {
+            Element subTexture = (Element) subTextures.item(i);
+
+            // Récupérer les informations pour chaque sous-texture
+            String name = subTexture.getAttribute("name");
+            int x = Integer.parseInt(subTexture.getAttribute("x"));
+            int y = Integer.parseInt(subTexture.getAttribute("y"));
+            int width = Integer.parseInt(subTexture.getAttribute("width"));
+            int height = Integer.parseInt(subTexture.getAttribute("height"));
+
+            // Créer l'ImageView pour la sous-texture
+            ImageView imageView = new ImageView(spriteSheet);
+            imageView.setViewport(new Rectangle2D(x, y, width, height));
+
+            // Ajouter l'ImageView à la HashMap avec le nom comme clé
+            spriteMap.put(name, imageView);
+        }
+
+        // Retourner la HashMap
+        return spriteMap;
+    }
+
+
+    public static ImageView getSpriteVariousSize(String urlSprite, int xcol, int yrow, int frameWidth, int frameHeight) {
+        ImageView view = new ImageView(urlSprite);
+        view.setViewport(new Rectangle2D(xcol* frameWidth , yrow* frameHeight, frameWidth, frameHeight));
         return view;
     }
 

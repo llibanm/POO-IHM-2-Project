@@ -15,91 +15,105 @@ import src.java.org.projet.model.modelLevelEditor.MatrixLvlEditorModel;
 import src.java.org.projet.model.modelLevelEditor.base.Coord;
 import src.java.org.projet.view.levelEditorView.MatrixLvLEditorView;
 
+import java.util.HashMap;
 import java.util.List;
-import java.util.logging.Logger;
+import java.util.Map;
 
 public class GameLogic {
     private final MatrixLvlEditorModel model;
     private final MatrixLvLEditorView view;
-    private final MyLogger logger = new MyLogger(GameLogic.class) ;
+    private final MyLogger logger = new MyLogger(GameLogic.class);
     private Timeline enemyMovementLoop;
     private volatile boolean isProcessing = false;
+    private final Map<Movable, Double> movementProgress = new HashMap<>();
 
     public GameLogic(MatrixLvlEditorModel model, MatrixLvLEditorView view) {
         this.model = model;
         this.view = view;
-
+        initializeMovementProgress();
         startEnemyMovementLoop();
+    }
+
+    private void initializeMovementProgress() {
+        model.getEnnemies().forEach(enemy -> movementProgress.put(enemy, 0.0));
     }
 
     public void moveHero(int deltaRow, int deltaCol) {
         model.getMoveQueue().add(new MoveAction(model.getHero(), deltaRow, deltaCol));
-        logger.info("Ajout  du déplacement du Hero dans la queue "+model.getHero());
+        logger.info("Ajout du déplacement du Hero dans la queue " + model.getHero());
         processMoveQueue();
     }
 
     public void startEnemyMovementLoop() {
-       /* enemyMovementLoop = new Timeline(new KeyFrame(Duration.seconds(1.0), e -> {
-            moveEnemies();
-            moveDynamicBows();
-            processMoveQueue();
-        }));*/
-        Timeline enemyMovementLoop = new Timeline(new KeyFrame(Duration.seconds(0.5), e -> {
+        enemyMovementLoop = new Timeline(new KeyFrame(Duration.seconds(0.05), e -> {
             if (!isProcessing) {
-                moveEnemies();
-                moveDynamicBows();
-                processMoveQueue();
+                updateMovables(0.05);
             }
         }));
         enemyMovementLoop.setCycleCount(Animation.INDEFINITE);
         enemyMovementLoop.play();
     }
 
-    public void moveDynamicBows() {
-        List<Movable> ennemies = model.getEnnemies();
-        for (Movable e : ennemies) {
+    private void updateMovables(double deltaTime) {
+        isProcessing = true;
+        try {
+            for (Movable entity : model.getEnnemies()) {
+                if (!movementProgress.containsKey(entity)) {
+                    movementProgress.put(entity, 0.0);
+                }
 
-            if (e instanceof Bow) {
-                logger.severe("Ajout des mvt de la flèche " + e +" Direction:"+e.getMoveDirection());
-                model.getMoveQueue().add(new MoveAction(e, e.getMoveDirection().getRow(), e.getMoveDirection().getCol()));  // monte
+                double progress = movementProgress.get(entity) + deltaTime * entity.getSpeed();
+
+                if (progress >= 1.0) {
+                    if (entity instanceof Bow) {
+                        moveBow((Bow) entity);
+                    } else if (entity instanceof Ennemy) {
+                        moveEnemy((Ennemy) entity);
+                    }
+                    progress = 0.0;
+                }
+
+                movementProgress.put(entity, progress);
             }
+            processMoveQueue();
+        } finally {
+            isProcessing = false;
         }
     }
-    public void moveEnemies() {
-        if (isProcessing) return; // Évite les chevauchements
-        isProcessing = true;
 
-        try {
-            List<Movable> enemies = model.getEnnemies();
-            for (Movable enemy : enemies) {
-                if(enemy instanceof Ennemy) {
-                    logger.severe("Ajout des mvt de l'ennemi " + enemy);
-                    boolean enemyIsAttacking = ((Ennemy) enemy).attackHero(model.getHero());
-                    logger.info("enemyIsAttacking: " + enemyIsAttacking);
-                    if(!enemyIsAttacking) { //Déplacement
-                        Coord newPos = aiComputeNextMove(enemy);
+    private void moveBow(Bow bow) {
+        logger.severe("Ajout du mvt de la flèche " + bow + " Direction:" + bow.getMoveDirection());
+        model.getMoveQueue().add(new MoveAction(
+                bow,
+                bow.getMoveDirection().getRow(),
+                bow.getMoveDirection().getCol()
+        ));
+    }
 
-                        int rowX = newPos.getRow() - enemy.getCoord().getRow();
-                        int colY = newPos.getCol() - enemy.getCoord().getCol();
-                        enemy.setMoveDirection(rowX, colY);
-                        model.getMoveQueue().add(new MoveAction(enemy, rowX, colY));
-                    }
-                    else {
-                        logger.info("L'ennemi est en train d'attaquer le héros");
-                       if(enemy instanceof Agressor) {
-                           model.addDynamicBow((MyCharacter) enemy);
-                       }
-                    }
-                }
+
+
+    private void moveEnemy(Ennemy enemy) {
+        logger.severe("Ajout du mvt de l'ennemi " + enemy);
+        boolean enemyIsAttacking = enemy.attackHero(model.getHero());
+        logger.info("enemyIsAttacking: " + enemyIsAttacking);
+
+        if (!enemyIsAttacking) {
+            Coord newPos = aiComputeNextMove(enemy);
+            int rowX = newPos.getRow() - enemy.getCoord().getRow();
+            int colY = newPos.getCol() - enemy.getCoord().getCol();
+            enemy.setMoveDirection(rowX, colY);
+            model.getMoveQueue().add(new MoveAction(enemy, rowX, colY));
+        } else {
+            logger.info("L'ennemi est en train d'attaquer le héros");
+            if (enemy instanceof Agressor) {
+                model.addDynamicBow((MyCharacter) enemy);
+                movementProgress.put(enemy, 0.0); // Reset le compteur après attaque
             }
-        } finally {
-            isProcessing = false; // Réactive les ticks après traitement
         }
     }
 
     public void processMoveQueue() {
         var moveQueue = model.getMoveQueue();
-
         while (!moveQueue.isEmpty()) {
             MoveAction action = moveQueue.poll();
             logger.severe("Traitement des actions de la queue" + action.getEntity() + " " + action.getRowX() + " " + action.getColY());
@@ -108,10 +122,10 @@ public class GameLogic {
     }
 
     public Coord aiComputeNextMove(Movable ennemy) {
-
         if (ennemy instanceof Bow) {
-            return ((Bow) ennemy).getMoveDirection(); // Direction déjà figée
+            return ((Bow) ennemy).getMoveDirection();
         }
+
         Coord heroPos = model.getHero().getCoord();
         logger.info("heroPos: " + heroPos + "ennemy " + ennemy);
         Coord ennemyPos = ennemy.getCoord();
@@ -147,4 +161,14 @@ public class GameLogic {
             logger.info("Pas d'arc");
         }
     }
+
+    public void addNewEnemy(Movable enemy) {
+        movementProgress.put(enemy, 0.0);
+    }
+
+    public void removeEnemy(Movable enemy) {
+        movementProgress.remove(enemy);
+    }
+
+
 }

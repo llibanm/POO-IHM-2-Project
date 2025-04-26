@@ -132,7 +132,7 @@ public class Hero extends MyCharacter{
 
     @Override
     public Coord getMoveDirection() {
-        return null;
+       return directionToCoord(getLastDirection());
     }
 
     @Override

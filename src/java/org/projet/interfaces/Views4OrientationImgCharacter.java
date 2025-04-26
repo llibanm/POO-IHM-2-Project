@@ -13,6 +13,13 @@ public abstract class Views4OrientationImgCharacter  {
 
     private Direction lastDirection;
 
+    public void setLastDirection(Direction lastDirection) {
+        this.lastDirection = lastDirection;
+    }
+    public void setLastDirection(Coord lastDirection) {
+        this.lastDirection = coordToDirection(lastDirection.getRow(), lastDirection.getCol());
+    }
+
     public Direction getLastDirection() {
         return lastDirection;
     }
@@ -72,7 +79,7 @@ public abstract class Views4OrientationImgCharacter  {
     }
 
     public ImageView nextImage(int row, int col) {
-        logger.info("Prochaine image "+ row+" "+col);
+        logger.info("Prochaine image row :"+ row+" col "+col);
         Direction direction = coordToDirection(row, col);
 
         // Si direction change → reset frame

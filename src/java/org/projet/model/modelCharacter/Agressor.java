@@ -12,6 +12,7 @@ public class Agressor extends MyCharacter implements Ennemy {
 
     private final MyLogger logger = new MyLogger(Agressor.class);
 
+
     public Agressor(String name, int hp) {
         super(name, hp,
                 new MoveRangeOnSprite(new Coord(0,-1), new Coord(3,-1),new Coord(1,-1),new Coord(2,-1)),
@@ -87,11 +88,12 @@ public class Agressor extends MyCharacter implements Ennemy {
 
     @Override
     public Coord getMoveDirection() {
-        return null;
+        return directionToCoord(getLastDirection());
     }
 
     @Override
     public void setMoveDirection(int deltaRow, int deltaCol) {
+       // setLastDirection(new Coord(deltaRow, deltaCol));
 
     }
 
@@ -106,18 +108,33 @@ public class Agressor extends MyCharacter implements Ennemy {
     }
     @Override
     public boolean attackHero(Hero hero) {
-        if(isNearOfHero(hero.getCoord())){
+        boolean sameLine = (getCoord().getRow() == hero.getCoord().getRow()) || (getCoord().getCol() == hero.getCoord().getCol());
+
+        if(isNearOfHero(hero.getCoord()) && sameLine && isFacingHero(hero)) {
             logger.info("Agressor is attacking hero");
-            if((getCoord().getRow() == hero.getCoord().getRow()) || (getCoord().getCol()) == hero.getCoord().getCol()){
-                attack(hero);
+                        attack(hero);
+                return true;
             }
-            return true;
-        }
+        logger.info("Agressor is moving");
         return false;
     }
 
+        public boolean isFacingHero(Hero hero) {
+            Coord enemyPos =getCoord();
+            Coord heroPos = hero.getCoord();
+            Coord direction = getMoveDirection();
+
+            // Vérifie si l'ennemi regarde dans la direction du héros
+            if (direction.getRow() > 0 && heroPos.getRow() > enemyPos.getRow()) return true;
+            if (direction.getRow() < 0 && heroPos.getRow() < enemyPos.getRow()) return true;
+            if (direction.getCol() > 0 && heroPos.getCol() > enemyPos.getCol()) return true;
+            if (direction.getCol() < 0 && heroPos.getCol() < enemyPos.getCol()) return true;
+
+            return false;
+        }
+
     @Override
     public int getPorteeAtk(){
-        return 3;
+        return 6;
     }
 }
