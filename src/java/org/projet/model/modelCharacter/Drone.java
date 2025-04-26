@@ -99,6 +99,16 @@ public class Drone extends MyCharacter implements Ennemy {
     }
 
     @Override
+    public Coord getMoveDirection() {
+        return null;
+    }
+
+    @Override
+    public void setMoveDirection(int deltaRow, int deltaCol) {
+
+    }
+
+    @Override
     public int getSpeed() {
         return 2;
     }

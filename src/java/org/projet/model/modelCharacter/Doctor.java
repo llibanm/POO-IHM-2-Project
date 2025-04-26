@@ -41,4 +41,14 @@ public class Doctor extends MyCharacter{
     public int getSpeed() {
         return 0;
     }
+
+    @Override
+    public Coord getMoveDirection() {
+        return null;
+    }
+
+    @Override
+    public void setMoveDirection(int deltaRow, int deltaCol) {
+
+    }
 }

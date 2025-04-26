@@ -9,4 +9,6 @@ public interface Movable {
     public int getSpeed();
     public Coord getCoord();
     public void setCoord(Coord position);
+    public Coord getMoveDirection();
+    public void setMoveDirection(int deltaRow, int deltaCol);
 }

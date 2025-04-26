@@ -12,6 +12,12 @@ public abstract class Item {
         this.name = name;
         this.description = d;
     }
+    public Item(String name, String d, Coord c){
+        this.name = name;
+        this.description = d;
+        this.coord = c;
+    }
+
 
     public void setDescription(String d){
         description = d;
@@ -27,4 +33,11 @@ public abstract class Item {
 
     public abstract void taken();
 
+    public Coord getCoords() {
+        return coord;
+    }
+
+    public void setCoords(Coord coord) {
+        this.coord = coord;
+    }
 }

@@ -22,7 +22,7 @@ public class Hero extends MyCharacter{
                 new MoveRangeOnSprite(new Coord(3,-1), new Coord(2,-1),new Coord(1,-1),new Coord(0,-1)),
                 new SpriteService("src/java/org/projet/assets/Hero.png",32,48,4,4)
         );
-        H_bow = new Bow();
+        H_bow = new Bow(new Coord(0,0));
         H_sabre = new Sabre();
         backpack = new Back_pack();
         H_position = loc;
@@ -34,7 +34,7 @@ public class Hero extends MyCharacter{
                 new MoveRangeOnSprite(new Coord(3,-1), new Coord(2,-1),new Coord(1,-1),new Coord(0,-1)),
                 new SpriteService("src/java/org/projet/assets/Hero.png",32,48,4,4)
         );
-        H_bow = new Bow();
+        H_bow = new Bow(new Coord(0,0));
         H_sabre = new Sabre();
         backpack = new Back_pack();
 
@@ -128,6 +128,16 @@ public class Hero extends MyCharacter{
     @Override
     public int getSpeed() {
         return 0;
+    }
+
+    @Override
+    public Coord getMoveDirection() {
+        return null;
+    }
+
+    @Override
+    public void setMoveDirection(int deltaRow, int deltaCol) {
+
     }
 
     public Location getPosition(){
