@@ -36,8 +36,6 @@ public class GlobalEditorViewTest extends Application {
         stackPane.setBackground(imgBackground);
         stackPane.getChildren().add(matrixLvLEditorView);
         matrixLvlEditorController.addGridListenersOnView();
-        /*selectItemView.setController(selectController); */
-
 
         CaseMatrix agressorcaseMatrix = getCaseMatrix("src/java/org/projet/assets/character/ennemy/img.png", new Agressor("",0));
         CaseMatrix herocaseMatrix = getCaseMatrix("src/java/org/projet/assets/character/hero/d.png", new Hero("",0));
