@@ -7,6 +7,7 @@ import javafx.scene.layout.GridPane;
 import javafx.scene.shape.Rectangle;
 import src.java.org.projet.interfaces.Ennemy;
 import src.java.org.projet.interfaces.Movable;
+import src.java.org.projet.interfaces.MyLogger;
 import src.java.org.projet.model.modelLevelEditor.MatrixLvlEditorModel;
 import src.java.org.projet.model.modelLevelEditor.base.CaseMatrix;
 import src.java.org.projet.model.modelLevelEditor.base.Coord;
@@ -17,9 +18,7 @@ import java.beans.PropertyChangeListener;
 import java.util.logging.Logger;
 
 public class MatrixLvlEditorController implements PropertyChangeListener {
-    private final Logger logger = Logger.getLogger(MatrixLvlEditorController.class.getName());
-
-
+    private final MyLogger logger = new MyLogger(MatrixLvlEditorController.class);
     private final MatrixLvlEditorModel model;
     private final MatrixLvLEditorView view;
     private CaseMatrix currentSelectedCaseMatrix;
@@ -75,7 +74,13 @@ public class MatrixLvlEditorController implements PropertyChangeListener {
             logger.info("CaseMatrix  Flèche " + bullet);
 
             logger.info("Current selectedCaseMatrix is " + currentSelectedCaseMatrix);
-        } else {
+        }
+        else if ("removeItem".equals(evt.getPropertyName())) {
+            logger.severe("Reception du signal remove item");
+            Coord old = (Coord) evt.getOldValue();
+            view.resetCell(old.getRow(), old.getCol());
+                }
+        else {
             logger.info("Erreur propertyChange");
         }
     }

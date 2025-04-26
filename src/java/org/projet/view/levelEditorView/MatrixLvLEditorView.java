@@ -7,6 +7,7 @@ import javafx.scene.layout.*;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Rectangle;
 import src.java.org.projet.controler.levelEditorController.MatrixLvlEditorController;
+import src.java.org.projet.interfaces.MyLogger;
 import src.java.org.projet.model.modelLevelEditor.base.CaseMatrix;
 
 import javax.swing.*;
@@ -20,7 +21,7 @@ import java.util.logging.Logger;
  * dans l'éditeur de  niveaux
  */
 public class MatrixLvLEditorView extends GridPane {
-    private final Logger logger = Logger.getLogger(MatrixLvLEditorView.class.getName());
+    private final MyLogger logger = new MyLogger(MatrixLvLEditorView.class);
     int nbOfRows;
     int nbOfCols;
     int default_case_size = 40;

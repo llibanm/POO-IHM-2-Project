@@ -16,9 +16,9 @@ import src.java.org.projet.model.modelLevelEditor.base.CaseMatrix;
 
 import java.util.function.Consumer;
 import java.util.logging.Logger;
-
+import src.java.org.projet.interfaces.MyLogger;
 public class SelectItemView extends ScrollPane {
-    private  final Logger logger = Logger.getLogger(SelectItemView.class.getName());
+    private  final MyLogger logger = new MyLogger(SelectItemView.class);
     VBox vbox;
 
     public VBox getVbox() {

@@ -55,7 +55,10 @@ public class Bow extends Item implements Movable {
     @Override
     public ImageView nextImage(int rowX, int rowY) {
         Image image = new Image("src/java/org/projet/assets/bule.png");
-        return new ImageView(image);
+        var imgView = new ImageView(image);
+        imgView.setFitHeight(10);
+        imgView.setFitWidth(10);
+        return  imgView ;
 
     }
 
@@ -82,7 +85,11 @@ public class Bow extends Item implements Movable {
 
     @Override
     public void setMoveDirection(int deltaRow, int deltaCol) {
-        moveDirection = new Coord(deltaRow, deltaCol);
+        if (deltaRow >= -1 && deltaRow <= 1 && deltaCol >= -1 && deltaCol <= 1) {
+            moveDirection = new Coord(deltaRow, deltaCol);
+        } else {
+            throw new IllegalArgumentException("Les valeurs de deltaRow et deltaCol doivent être dans l'intervalle [-1, 1].");
+        }
     }
 
     public void taken() {}

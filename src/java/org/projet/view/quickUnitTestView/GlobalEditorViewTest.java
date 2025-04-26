@@ -32,7 +32,7 @@ public class GlobalEditorViewTest extends Application {
         MatrixLvlEditorController cmv = new MatrixLvlEditorController(mdl,mv, selectController);
         StackPane stackPane = new StackPane();
         ImageView img = createImg("src/java/org/projet/spaceImagesProject/Space_Background.png");
-        Background imgBackground = createImgBackground("src/java/org/projet/spaceImagesProject/Space_Background.png",100,100);
+        Background imgBackground = createImgBackground("src/java/org/projet/assets/planet/planet00.png",100,100);
         stackPane.setBackground(imgBackground);
         stackPane.getChildren().add(mv);
         cmv.addGridListenersOnView();

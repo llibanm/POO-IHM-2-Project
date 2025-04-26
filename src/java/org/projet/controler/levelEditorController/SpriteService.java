@@ -43,6 +43,12 @@ public class SpriteService {
         return view;
     }
 
+    public ImageView getSpriteVariousSize(int col, int row) {
+        ImageView view = new ImageView(spriteSheet);
+        view.setViewport(new Rectangle2D(col * frameWidth, row * frameHeight, frameWidth, frameHeight));
+        return view;
+    }
+
     public List<ImageView> getSpriteCol(int col) {
         List<ImageView> sprites = new ArrayList<>();
         for (int row = 0; row < rows; row++) {
@@ -134,7 +140,7 @@ public class SpriteService {
         return single;
     }
 
-    public   void AnimedSprite(SpriteService sheet, Pane root) {
+    public void AnimedSprite(SpriteService sheet, Pane root) {
         // Sprite animé
         ImageView animated = sheet.createAnimatedSprite(100, 50, 0.15);
         root.getChildren().add(animated);

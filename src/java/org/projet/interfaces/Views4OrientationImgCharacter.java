@@ -26,7 +26,7 @@ public abstract class Views4OrientationImgCharacter  {
     private  SpriteService spriteService;
 
 
-    private final Logger logger = Logger.getLogger(Views4OrientationImgCharacter.class.getName());
+    private final MyLogger logger = new MyLogger(Views4OrientationImgCharacter.class);
 
     public Views4OrientationImgCharacter(
             SpriteService spriteService,
@@ -34,13 +34,13 @@ public abstract class Views4OrientationImgCharacter  {
     ) {
         this.spriteService = spriteService;
         this.lastDirection = Direction.DOWN;
+
         this.moveLeftSequences = spriteService.getRangeSprite(moveRangeOnSprite.spriteMoveLeftRange);
         this.moveRightSequences = spriteService.getRangeSprite(moveRangeOnSprite.spriteMoveRightRange);
         this.moveUpSequences = spriteService.getRangeSprite(moveRangeOnSprite.spriteMoveUpRange);
         this.moveDownSequences = spriteService.getRangeSprite(moveRangeOnSprite.spriteMoveDownRange);
-
+        this.currentMoveSequence = moveDownSequences;
     }
-
 
 
     public Direction coordToDirection(int row, int col) {
@@ -72,15 +72,18 @@ public abstract class Views4OrientationImgCharacter  {
     }
 
     public ImageView nextImage(int row, int col) {
+        logger.info("Prochaine image "+ row+" "+col);
         Direction direction = coordToDirection(row, col);
 
         // Si direction change → reset frame
         if (direction != lastDirection) {
             updateCurrentSequence(direction);
+            logger.info("Changement de direction sequence courante  "+ direction);
             currentFrameIndex = 0;
             lastDirection = direction;
         }
 
+        logger.info("Current frame index: "+ currentFrameIndex+" Current MoveSequence "+currentMoveSequence);
         ImageView frame = currentMoveSequence.get(currentFrameIndex);
         currentFrameIndex = (currentFrameIndex + 1) % currentMoveSequence.size();
         return frame;

@@ -1,8 +1,10 @@
-package src.java.org.projet.model.modelCharacter;
+package src.java.org.projet.model.modelCharacter.puit;
 
 import src.java.org.projet.controler.levelEditorController.SpriteService;
 import src.java.org.projet.interfaces.Ennemy;
 import src.java.org.projet.interfaces.MoveRangeOnSprite;
+import src.java.org.projet.model.modelCharacter.Hero;
+import src.java.org.projet.model.modelCharacter.MyCharacter;
 import src.java.org.projet.model.modelLevelEditor.base.Coord;
 
 public class Drone extends MyCharacter implements Ennemy {
@@ -114,7 +116,11 @@ public class Drone extends MyCharacter implements Ennemy {
     }
 
     @Override
-    public void attack() {
-
+    public  boolean isNearOfHero(Coord c){
+        return  true;
+    }
+    @Override
+    public void attackHero() {
+        return  true;
     }
 }

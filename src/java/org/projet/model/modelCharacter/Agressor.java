@@ -4,10 +4,13 @@ package src.java.org.projet.model.modelCharacter;
 import src.java.org.projet.controler.levelEditorController.SpriteService;
 import src.java.org.projet.interfaces.Ennemy;
 import src.java.org.projet.interfaces.MoveRangeOnSprite;
+import src.java.org.projet.interfaces.MyLogger;
 import src.java.org.projet.model.modelLevelEditor.base.Coord;
+import src.java.org.projet.view.levelEditorView.MatrixLvLEditorView;
 
 public class Agressor extends MyCharacter implements Ennemy {
 
+    private final MyLogger logger = new MyLogger(Agressor.class);
 
     public Agressor(String name, int hp) {
         super(name, hp,
@@ -93,7 +96,28 @@ public class Agressor extends MyCharacter implements Ennemy {
     }
 
     @Override
-    public void attack() {
+    public  boolean isNearOfHero(Coord c){
+        int row = c.getRow();
+        int col = c.getCol();
+        boolean isNear = Math.sqrt(Math.pow(this.getCoord().getRow() - row, 2) + Math.pow(this.getCoord().getCol() - col, 2)) <= getPorteeAtk();
+        logger.info("isNearOfHero : " + isNear);
+        if(isNear) return true;
+        return false;
+    }
+    @Override
+    public boolean attackHero(Hero hero) {
+        if(isNearOfHero(hero.getCoord())){
+            logger.info("Agressor is attacking hero");
+            if((getCoord().getRow() == hero.getCoord().getRow()) || (getCoord().getCol()) == hero.getCoord().getCol()){
+                attack(hero);
+            }
+            return true;
+        }
+        return false;
+    }
 
+    @Override
+    public int getPorteeAtk(){
+        return 3;
     }
 }
