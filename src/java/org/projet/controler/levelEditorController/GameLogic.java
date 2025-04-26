@@ -75,27 +75,6 @@ public class GameLogic {
             isProcessing = false; // Réactive les ticks après traitement
         }
     }
-    public void moveEnemiesE() {
-        List<Movable> ennemies = model.getEnnemies();
-
-        for (Movable ennemy : ennemies) {
-
-            logger.info(ennemy.toString());
-            Coord oldPos = ennemy.getCoord();
-            logger.info("oldPos: " + oldPos);
-
-            Coord newPos = aiComputeNextMove(
-                    ennemy);
-            logger.info("newPos: " + newPos);
-
-
-            model.getMoveQueue().add(new MoveAction(
-                    ennemy,
-                    newPos.getRow() - oldPos.getRow(),
-                    newPos.getCol() - oldPos.getCol()
-            ));
-        }
-    }
 
     public void processMoveQueue() {
         var moveQueue = model.getMoveQueue();

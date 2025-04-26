@@ -58,11 +58,10 @@ public class MatrixLvlEditorController implements PropertyChangeListener {
         } else if ("move".equals(evt.getPropertyName())) {
             logger.severe("Movement " + evt.getPropertyName() + " propertyChange");
             Coord old = (Coord) evt.getOldValue();
-            Movable newv = (Movable) evt.getNewValue();
-            logger.info("old coord is " + old);
-            logger.info("newv coord is " + newv);
-
             Movable ennemy = (Movable) evt.getNewValue();
+            logger.info(ennemy+" old coord is " + old);
+            logger.info("Entity coord is " + ennemy);
+
             int rowX = ennemy.getCoord().getRow() - old.getRow();
             int rowY = ennemy.getCoord().getCol() - old.getCol();
             ImageView url = ennemy.nextImage(rowX, rowY);

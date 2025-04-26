@@ -73,23 +73,20 @@ public class MatrixLvlEditorModel extends AbstractModel {
 
     public boolean moveItem(Movable item, int rowX, int colY) {
         logger.warning("moveItem"+ item+ " rowX=" + rowX + " colY=" + colY);
-        int rowItem = item.getCoord().getRow();
-        int colItem = item.getCoord().getCol();
-        int row = rowItem + rowX;
-        int col = colItem + colY;
-        boolean isOccuped = this.getCaseMatrix(row, col).isOccuped();
+        logger.warning("moveItem"+ item+ " rowX=" + rowX + " colY=" + colY);
+        Coord currentItemPos = item.getCoord();
+        Coord newItemPos = Coord.addCoord(currentItemPos, new Coord(rowX,colY));
+        boolean isNextCaseOccuped = this.getCaseMatrixCoord(newItemPos).isOccuped();
 
-        if (isValidCoordinate(row, col) && !isOccuped) {
-            resetItemMatrice(rowItem, colItem);
-            Coord newCoord = new Coord(row, col);
-            item.setCoord(newCoord);
-            setOccuped(newCoord, true);
-            freeLastCastOccupedNewCase(new Coord(rowItem, colItem), newCoord);
-            this.getPropertyChangeSupport().firePropertyChange("move", new Coord(rowItem, colItem), item);
-            logger.info("Déplacement d'un item, nouvelle coord " + newCoord.getCol() + " et " + newCoord.getRow());
+        if (isValidCoordinateCoord(newItemPos) && !isNextCaseOccuped) {
+            resetItemMatriceCoord(currentItemPos);
+            item.setCoord(newItemPos);
+            freeLastCastOccupedNewCase(currentItemPos, newItemPos);
+            this.getPropertyChangeSupport().firePropertyChange("move", currentItemPos, item);
+            logger.info(item+ " Déplacement d'un item, nouvelle coord " + newItemPos);
             return true;
         } else {
-            logger.info("L'item ne peut pas se déplacer "+item);
+            logger.info(item+" L'item ne peut pas se déplacer "+item);
             return false;
         }
     }
@@ -142,6 +139,17 @@ public class MatrixLvlEditorModel extends AbstractModel {
         }
     }
 
+    public void resetItemMatriceCoord(Coord itemc) {
+        int row = itemc.getRow();
+        int col = itemc.getCol();
+        if (isValidCoordinate(row, col)) {
+            matrixEditorLvl[row][col] = new CaseMatrix("", 0, 0);
+        } else {
+            System.err.println("Erreur: Coordonnées invalides pour supprimer l'item (" + row + ", " + col + ").");
+            throw new IllegalArgumentException(" ");
+        }
+    }
+
     public void initCaseMatrixEditorLvl() {
         for (int i = 0; i < nbOfRows; i++) {
             for (int j = 0; j < nbOfCols; j++) {
@@ -152,21 +160,16 @@ public class MatrixLvlEditorModel extends AbstractModel {
 
 
     public void addDynamicBow() {
-        logger.info("tire de la flèche model");
+        logger.info("Tire de la flèche model");
         Coord heroPos = hero.getCoord();
-        int row = heroPos.getRow();
-        int col = heroPos.getCol();
-
         Coord direction = hero.directionToCoord(hero.getLastDirection());
-        int rowBow = row + direction.getRow();
-        int colBow = col + direction.getCol();
-        CaseMatrix bow = new CaseMatrix("src/java/org/projet/assets/bule.png", rowBow, colBow);
-        //bow.setOccuped(true);
-        Bow bowObj = new Bow(new Coord(rowBow, colBow));
+        Coord BowPos = Coord.addCoord(heroPos, direction);
+        CaseMatrix bow = new CaseMatrix("src/java/org/projet/assets/bule.png", BowPos);
+        Bow bowObj = new Bow(BowPos);
         bowObj.setMoveDirection(direction.getRow(), direction.getCol());
         ennemies.add(bowObj);
         getMoveQueue().add(new MoveAction(bowObj, direction.getRow(), direction.getCol()));
-        this.addItemMatrice(rowBow, colBow, bow);
+        this.addItemMatrice(BowPos.getRow(), BowPos.getCol(), bow);
         this.getPropertyChangeSupport().firePropertyChange("fireHero", null, bow);
         logger.info("Ajout d'un arc à la position du héros");
 
@@ -240,6 +243,11 @@ public class MatrixLvlEditorModel extends AbstractModel {
     public boolean isValidCoordinate(int row, int col) {
         return row >= 0 && row < nbOfRows && col >= 0 && col < nbOfCols;
     }
+    public boolean isValidCoordinateCoord(Coord c) {
+        int row = c.getRow();
+        int col = c.getCol();
+        return row >= 0 && row < nbOfRows && col >= 0 && col < nbOfCols;
+    }
 
 
     public boolean isOccupedCase(int row, int col) {
@@ -255,7 +263,23 @@ public class MatrixLvlEditorModel extends AbstractModel {
     }
 
     public CaseMatrix getCaseMatrix(int row, int col) {
-        return matrixEditorLvl[row][col];
+        if (row < nbOfRows && col < nbOfCols) {
+            return matrixEditorLvl[row][col];
+        }
+        else {
+            throw new RuntimeException("Case incorrect") ;
+        }
+    }
+
+    public CaseMatrix getCaseMatrixCoord(Coord coord) {
+        int row = coord.getRow();
+        int col = coord.getCol();
+        if (row < nbOfRows && col < nbOfCols) {
+            return matrixEditorLvl[row][col];
+        }
+        else {
+            throw new RuntimeException("Case incorrect") ;
+        }
     }
 
     public void addCaseMatrix(int row, int col, CaseMatrix caseMatrix) {

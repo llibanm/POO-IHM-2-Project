@@ -9,6 +9,12 @@ public class Coord {
         this.col = col;
     }
 
+    public  static Coord addCoord(Coord c1, Coord c2){
+        return new Coord(c1.getRow()+c2.getRow(), c1.getCol()+c2.getCol());
+    }
+    public static Coord subCoord(Coord c1, Coord c2){
+        return new Coord(c1.getRow()-c2.getRow(), c1.getCol()-c2.getCol());
+    }
     public int getRow() {
         return row;
     }
@@ -33,4 +39,3 @@ public class Coord {
                 '}';
     }
 }
-

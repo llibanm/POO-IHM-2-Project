@@ -37,6 +37,13 @@ public class CaseMatrix {
         this.width = 1;
         this.height = 1;
     }
+    public CaseMatrix(String urlImgToShow,Coord position) {
+        this.urlImgToShow = urlImgToShow;
+        this.coordRow = position.getRow();
+        this.coordCol = position.getCol();
+        this.width = 1;
+        this.height = 1;
+    }
 
     public boolean isOccuped() {
         return isOccuped;
