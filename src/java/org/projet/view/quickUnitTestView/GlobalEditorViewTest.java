@@ -14,6 +14,7 @@ import src.java.org.projet.model.modelItems.Item;
 import src.java.org.projet.model.modelLevelEditor.MatrixLvlEditorModel;
 import src.java.org.projet.model.modelLevelEditor.SelectItemSectionModel;
 import src.java.org.projet.model.modelLevelEditor.base.CaseMatrix;
+import src.java.org.projet.model.modelMap.SimpleDoor;
 import src.java.org.projet.view.levelEditorView.MatrixLvLEditorView;
 import src.java.org.projet.view.levelEditorView.SelectItemView;
 
@@ -36,16 +37,32 @@ public class GlobalEditorViewTest extends Application {
         stackPane.setBackground(imgBackground);
         stackPane.getChildren().add(matrixLvLEditorView);
         matrixLvlEditorController.addGridListenersOnView();
+        String commonPath = "src/java/org/projet/assets/";
+        String[] paths = {
+                "Agressor.png",
+                "character/hero/d.png",
+                "brick.png",
+                "ufoGreen.png",
+                "playerShip3_blue.png",
+                "powerupGreen_bolt.png"
 
-        CaseMatrix agressorcaseMatrix = getCaseMatrix("src/java/org/projet/assets/character/ennemy/img.png", new Agressor("",0));
-        CaseMatrix herocaseMatrix = getCaseMatrix("src/java/org/projet/assets/character/hero/d.png", new Hero("",0));
-        CaseMatrix brickcaseMatrix = getCaseMatrix("src/java/org/projet/assets/brick.png", Item.class);
-        model.addItem(agressorcaseMatrix);
-        model.addItem(herocaseMatrix);
-        model.addItem(brickcaseMatrix);
-        addItem(selectItemView, agressorcaseMatrix);
-        addItem(selectItemView, herocaseMatrix);
-        addItem(selectItemView, brickcaseMatrix);
+        };
+
+        Object[] objects = {
+                new Agressor("",0),
+                new Hero("",0),
+                Item.class,
+                SimpleDoor.class,
+                Item.class,
+                Item.class,
+        };
+
+        for (int i = 0; i < paths.length; i++) {
+            CaseMatrix cm = getCaseMatrix(commonPath+paths[i], objects[i]);
+            model.addItem(cm);
+            addItem(selectItemView, cm);
+        }
+
 
         selectController.addListenerToIems();
         root.setCenter(stackPane);

@@ -141,7 +141,7 @@ public class MatrixLvlEditorModel extends AbstractModel {
     public void fillHeroAndEnnemyList(int row, int col, CaseMatrix items) {
         Object classOfItems = items.getClassOfItems();
         logger.info("fillHeroAndEnnemyList " + classOfItems);
-
+        // TODO peut faire plus évolutif et moins couplé!!!
         if (classOfItems instanceof Hero) {
             this.hero = new Hero("mMrcel", 10);
             hero.setCoord(new Coord(row, col));
@@ -213,8 +213,18 @@ public class MatrixLvlEditorModel extends AbstractModel {
         Coord heroPos = character.getCoord();
         Coord direction = character.directionToCoord(character.getLastDirection());
         Coord BowPos = Coord.addCoord(heroPos, direction);
-        CaseMatrix bow = new CaseMatrix("src/java/org/projet/assets/bule.png", BowPos);
+        CaseMatrix bow;
         Bow bowObj = new Bow(BowPos);
+
+        if(character instanceof Hero) {
+
+            bowObj.setBowUrlImage("src/java/org/projet/assets/bule.png");
+            bow = new CaseMatrix(bowObj.getBowUrlImage(), BowPos);
+        }
+        else {
+            bowObj.setBowUrlImage("src/java/org/projet/assets/buleE.png");
+            bow = new CaseMatrix(bowObj.getBowUrlImage(), BowPos);
+        }
         bowObj.setMoveDirection(direction.getRow(), direction.getCol());
         ennemies.add(bowObj);
         getMoveQueue().add(new MoveAction(bowObj, direction.getRow(), direction.getCol()));

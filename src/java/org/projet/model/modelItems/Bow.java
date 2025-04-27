@@ -10,6 +10,8 @@ public class Bow extends Item implements Movable {
     private int Arrows = 10;
     private int BurningArrows = 2;
     Coord moveDirection;
+    String bowUrlImage= "src/java/org/projet/assets/bule.png";
+
 
     public Bow(Coord coord) {
         super("Bow", "It is the bow of your hero, you can use it with the normal arrows or the burning ones " +
@@ -19,6 +21,15 @@ public class Bow extends Item implements Movable {
                         + BurningArrows);*/
         //TODO find a way to bring the Arrow / burning arrow in a another way
     }
+    public String getBowUrlImage() {
+        return bowUrlImage;
+    }
+
+    public void setBowUrlImage(String bowUrlImage) {
+        this.bowUrlImage = bowUrlImage;
+    }
+
+
 
     public void add_arrows(int a) {
         Arrows += a;
@@ -54,7 +65,7 @@ public class Bow extends Item implements Movable {
 
     @Override
     public ImageView nextImage(int rowX, int rowY) {
-        Image image = new Image("src/java/org/projet/assets/bule.png");
+        Image image = new Image(getBowUrlImage());
         var imgView = new ImageView(image);
         imgView.setFitHeight(10);
         imgView.setFitWidth(10);

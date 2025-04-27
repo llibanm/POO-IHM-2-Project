@@ -11,6 +11,8 @@ import javafx.util.Duration;
 import src.java.org.projet.interfaces.Views4OrientationImgCharacter;
 import src.java.org.projet.model.modelLevelEditor.base.Coord;
 
+import java.awt.image.RenderedImage;
+import java.io.IOException;
 import java.util.*;
 import java.util.logging.Logger;
 
@@ -20,6 +22,7 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.geometry.Rectangle2D;
 
+import javax.imageio.ImageIO;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import org.w3c.dom.Document;
@@ -30,6 +33,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.util.ArrayList;
 import java.util.List;
+import javafx.embed.swing.SwingFXUtils;
 
 public class SpriteService {
     private Image spriteSheet;
@@ -120,6 +124,19 @@ public class SpriteService {
     }
 
 
+    public static void saveSprite(Image spriteSheet, int col, int row, int frameWidth, int frameHeight, String outputPath) {
+        ImageView view = new ImageView(spriteSheet);
+        view.setViewport(new Rectangle2D(col * frameWidth, row * frameHeight, frameWidth, frameHeight));
+        WritableImage snapshot = view.snapshot(null, null);
+
+        try {
+            RenderedImage renderedImage = javafx.embed.swing.SwingFXUtils.fromFXImage(snapshot, null);
+            ImageIO.write(renderedImage, "png", new File(outputPath));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
     public List<ImageView> getRangeSprite(Coord getRowOrColRange) {
         int row = getRowOrColRange.getRow();
         int col = getRowOrColRange.getCol();
@@ -185,9 +202,9 @@ public class SpriteService {
         return transparentImage;
     }
 
-    public   ImageView getSprite(SpriteService sheet, Pane root) {
+    public   ImageView getSprite(SpriteService sheet,int col, int row, Pane root) {
         // Sprite à (1,0)
-        ImageView single = sheet.getSprite(1, 0);
+        ImageView single = sheet.getSprite(col, row);
         single.setX(200);
         single.setY(50);
         root.getChildren().add(single);
@@ -208,6 +225,17 @@ public class SpriteService {
         transparentSprite.setX(300);
         transparentSprite.setY(50);
         root.getChildren().add(transparentSprite);
+    }
+
+    public   ImageView getRemoveBackGroundSprite(SpriteService sheet, ImageView single, Pane root) {
+        // Sprite sans fond
+        Image transparentImg = sheet.removeBackground(single, Color.WHITE);
+        ImageView transparentSprite = new ImageView(transparentImg);
+        transparentSprite.setViewport(single.getViewport());
+        transparentSprite.setX(300);
+        transparentSprite.setY(50);
+        root.getChildren().add(transparentSprite);
+        return transparentSprite;
     }
 
     public   void getAllSprite(SpriteService sheet, Pane root) {
