@@ -1,14 +1,672 @@
-[2025-04-28 23:34:04.968] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0]]
-[2025-04-28 23:34:04.971] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
-[2025-04-28 23:34:07.988] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0]]
-[2025-04-28 23:34:07.989] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
-[2025-04-28 23:34:11.390] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0]]
-[2025-04-28 23:34:11.392] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
-[2025-04-28 23:34:11.784] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [StackPane@77200a0]
-[2025-04-28 23:34:11.786] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
-[2025-04-28 23:34:11.964] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@2b2c0eac]
-[2025-04-28 23:34:11.966] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
-[2025-04-28 23:34:12.231] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@7855722a]
-[2025-04-28 23:34:12.233] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
-[2025-04-28 23:34:12.477] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@3c4b9ac2]
-[2025-04-28 23:34:12.478] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:00.845] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0]]
+[2025-04-28 23:38:00.848] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:01.222] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [StackPane@16012594]
+[2025-04-28 23:38:01.223] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:01.378] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@2043a318]
+[2025-04-28 23:38:01.381] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:01.595] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@3f927c6b]
+[2025-04-28 23:38:01.597] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:02.004] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@4a59b467]
+[2025-04-28 23:38:02.007] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:02.208] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@6c010b05]
+[2025-04-28 23:38:02.211] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:02.441] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@1fe695da]
+[2025-04-28 23:38:02.443] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:03.944] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0]]
+[2025-04-28 23:38:03.945] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:04.705] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0]]
+[2025-04-28 23:38:04.706] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:04.911] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [StackPane@16160f5a]
+[2025-04-28 23:38:04.912] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:05.115] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0]]
+[2025-04-28 23:38:05.116] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:05.630] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0]]
+[2025-04-28 23:38:05.631] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:05.679] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [StackPane@30dc7469]
+[2025-04-28 23:38:05.680] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:05.917] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@47f63c06]
+[2025-04-28 23:38:05.920] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:06.037] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@7c69710c]
+[2025-04-28 23:38:06.039] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:06.117] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [StackPane@313d0d09]
+[2025-04-28 23:38:06.120] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:06.263] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@633d11cf]
+[2025-04-28 23:38:06.265] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:06.478] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@12454463]
+[2025-04-28 23:38:06.479] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:06.611] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [StackPane@14c2f7b4]
+[2025-04-28 23:38:06.614] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:06.652] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@59b29250]
+[2025-04-28 23:38:06.653] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:06.723] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@1a027df]
+[2025-04-28 23:38:06.724] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:06.915] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@b5f0017]
+[2025-04-28 23:38:06.917] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:06.953] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@44dfda5a]
+[2025-04-28 23:38:06.954] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:07.100] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@6243ef0]
+[2025-04-28 23:38:07.101] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:07.139] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@99ba9ce]
+[2025-04-28 23:38:07.140] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:07.562] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@a2dd179]
+[2025-04-28 23:38:07.564] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:07.613] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@6b8d4945]
+[2025-04-28 23:38:07.613] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:07.661] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@1d8797fb]
+[2025-04-28 23:38:07.662] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:07.808] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@276f46d7]
+[2025-04-28 23:38:07.810] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:07.900] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@1a66b824]
+[2025-04-28 23:38:07.902] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:08.074] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@3fd9c38d]
+[2025-04-28 23:38:08.074] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:08.100] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@1d3668f4]
+[2025-04-28 23:38:08.100] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:08.271] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@54d88441]
+[2025-04-28 23:38:08.271] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:08.609] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@76757a99]
+[2025-04-28 23:38:08.610] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:08.703] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@4ef38af4]
+[2025-04-28 23:38:08.704] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:08.749] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@54496ab4]
+[2025-04-28 23:38:08.749] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:08.909] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@7089679f]
+[2025-04-28 23:38:08.911] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:08.963] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@5e383eac]
+[2025-04-28 23:38:08.964] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:09.004] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@4a946217]
+[2025-04-28 23:38:09.005] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:09.153] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@63bdc0ac]
+[2025-04-28 23:38:09.156] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:09.361] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@6ac5fb64]
+[2025-04-28 23:38:09.363] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:09.396] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@5d87ce95]
+[2025-04-28 23:38:09.398] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:09.610] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@1d846b05]
+[2025-04-28 23:38:09.611] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:09.662] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@6f5feef8]
+[2025-04-28 23:38:09.664] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:09.667] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@538aa796]
+[2025-04-28 23:38:09.667] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:09.709] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@6ce7e27d]
+[2025-04-28 23:38:09.709] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:09.859] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@7d68744]
+[2025-04-28 23:38:09.860] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:09.899] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@56d4d2a4]
+[2025-04-28 23:38:09.900] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:10.063] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@55aa85d5]
+[2025-04-28 23:38:10.064] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:10.157] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@636013fd]
+[2025-04-28 23:38:10.158] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:10.310] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@50484c5e]
+[2025-04-28 23:38:10.311] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:10.413] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@56de099]
+[2025-04-28 23:38:10.414] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:10.523] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@7f2cf7fd]
+[2025-04-28 23:38:10.525] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:10.655] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@631db553]
+[2025-04-28 23:38:10.656] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:10.659] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@51411f62]
+[2025-04-28 23:38:10.659] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:10.721] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@e1be8f]
+[2025-04-28 23:38:10.722] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:10.750] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@7e58b062]
+[2025-04-28 23:38:10.750] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:10.911] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@7e95c991]
+[2025-04-28 23:38:10.912] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:10.929] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@5ddc7e82]
+[2025-04-28 23:38:10.930] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:11.100] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@320734ae]
+[2025-04-28 23:38:11.101] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:11.146] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@5453cfba]
+[2025-04-28 23:38:11.147] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:11.404] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@7705b9ee]
+[2025-04-28 23:38:11.405] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:11.454] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@30df3ede]
+[2025-04-28 23:38:11.456] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:11.661] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@6cb98eb]
+[2025-04-28 23:38:11.662] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:11.708] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@6a49c456]
+[2025-04-28 23:38:11.708] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:11.746] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@3545b50c]
+[2025-04-28 23:38:11.747] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:11.805] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@2726bf08]
+[2025-04-28 23:38:11.805] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:11.901] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@180d8f9a]
+[2025-04-28 23:38:11.902] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:12.037] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@36a69eeb]
+[2025-04-28 23:38:12.037] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:12.054] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@67496d38]
+[2025-04-28 23:38:12.055] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:12.057] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@6f5729c8]
+[2025-04-28 23:38:12.057] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:12.156] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@7dbbcffc]
+[2025-04-28 23:38:12.157] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:12.280] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@77abbeaa]
+[2025-04-28 23:38:12.281] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:12.399] INFO - MatrixLvLEditorView.removeItemFromGridPane - Aucun élément supprimé de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:12.509] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@7d811cd7]
+[2025-04-28 23:38:12.510] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:12.523] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@5c44e34]
+[2025-04-28 23:38:12.523] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:12.653] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@6fa9784]
+[2025-04-28 23:38:12.654] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:12.656] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@45ed5a86]
+[2025-04-28 23:38:12.657] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:12.747] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@48f89319, StackPane@42d43332]
+[2025-04-28 23:38:12.748] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:12.760] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@f82d851]
+[2025-04-28 23:38:12.761] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:12.863] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@5e15d0ce]
+[2025-04-28 23:38:12.864] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:12.907] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@170b2d00]
+[2025-04-28 23:38:12.908] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:13.102] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@1822e526]
+[2025-04-28 23:38:13.102] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:13.125] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@305f6092]
+[2025-04-28 23:38:13.125] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:13.215] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@a16ea9a]
+[2025-04-28 23:38:13.216] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:13.379] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@4532b8ce]
+[2025-04-28 23:38:13.379] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:13.453] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@26c3291c]
+[2025-04-28 23:38:13.454] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:13.531] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@64b27712]
+[2025-04-28 23:38:13.532] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:13.548] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@4fd69be1]
+[2025-04-28 23:38:13.549] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:13.662] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@33c00307]
+[2025-04-28 23:38:13.662] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:13.665] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@e572498]
+[2025-04-28 23:38:13.665] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:13.780] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@20400274]
+[2025-04-28 23:38:13.781] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:13.800] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@2fcfa99d]
+[2025-04-28 23:38:13.800] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:13.903] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@69677fed]
+[2025-04-28 23:38:13.903] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:13.908] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@34a162ba]
+[2025-04-28 23:38:13.909] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:14.151] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@2254bf7c]
+[2025-04-28 23:38:14.152] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:14.155] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@57cf8201]
+[2025-04-28 23:38:14.155] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:14.254] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@7d852a76]
+[2025-04-28 23:38:14.254] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:14.415] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@252e6385]
+[2025-04-28 23:38:14.416] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:14.509] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@23e6e696]
+[2025-04-28 23:38:14.510] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:14.606] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@fdbd3b0]
+[2025-04-28 23:38:14.607] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:14.710] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@3f48b8ff]
+[2025-04-28 23:38:14.711] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:14.713] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@45fa111b]
+[2025-04-28 23:38:14.714] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:14.724] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@53000ba8]
+[2025-04-28 23:38:14.725] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:14.906] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@629ef953]
+[2025-04-28 23:38:14.907] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:14.910] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@709b4112]
+[2025-04-28 23:38:14.910] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:14.949] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@209f6bcd, StackPane@39b1df7d]
+[2025-04-28 23:38:14.950] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:15.004] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@3f09f065]
+[2025-04-28 23:38:15.004] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:15.008] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0]]
+[2025-04-28 23:38:15.008] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:15.127] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@636cf99b]
+[2025-04-28 23:38:15.127] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:15.262] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@60a170aa]
+[2025-04-28 23:38:15.263] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:15.268] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@72dc051c]
+[2025-04-28 23:38:15.269] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:15.272] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@7ce9a12b]
+[2025-04-28 23:38:15.272] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:15.357] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@59d0e9a8]
+[2025-04-28 23:38:15.358] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:15.530] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@679867d6]
+[2025-04-28 23:38:15.530] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:15.598] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@7ef0d6eb]
+[2025-04-28 23:38:15.598] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:15.602] INFO - MatrixLvLEditorView.removeItemFromGridPane - Aucun élément supprimé de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:15.707] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@32627371]
+[2025-04-28 23:38:15.708] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:15.710] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@53acdd4]
+[2025-04-28 23:38:15.710] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:15.829] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@549f2b6d]
+[2025-04-28 23:38:15.829] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:15.898] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@332748e7]
+[2025-04-28 23:38:15.899] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:15.947] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@d7b31d2]
+[2025-04-28 23:38:15.948] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:15.950] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@2a07fc70, StackPane@25dc41c5]
+[2025-04-28 23:38:15.951] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:16.060] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@47c44685]
+[2025-04-28 23:38:16.060] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:16.098] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@64acf4d7]
+[2025-04-28 23:38:16.098] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:16.300] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@654038ac]
+[2025-04-28 23:38:16.302] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:16.305] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@5ed4c9df]
+[2025-04-28 23:38:16.305] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:16.332] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@662afda7]
+[2025-04-28 23:38:16.332] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:16.396] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@72d3bcf4]
+[2025-04-28 23:38:16.396] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:16.605] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@29e7549e]
+[2025-04-28 23:38:16.605] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:16.652] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@295f1f]
+[2025-04-28 23:38:16.653] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:16.655] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@136eebc]
+[2025-04-28 23:38:16.656] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:16.698] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@3e799394]
+[2025-04-28 23:38:16.699] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:16.748] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@1bd1f483]
+[2025-04-28 23:38:16.748] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:16.910] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@44218e43]
+[2025-04-28 23:38:16.910] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:17.006] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@7b4b1c99]
+[2025-04-28 23:38:17.006] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:17.010] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@14be8822]
+[2025-04-28 23:38:17.010] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:17.102] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@40a51c19]
+[2025-04-28 23:38:17.102] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:17.210] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@79095cc]
+[2025-04-28 23:38:17.211] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:17.360] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@706e0a5d]
+[2025-04-28 23:38:17.361] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:17.367] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@87a0105]
+[2025-04-28 23:38:17.368] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:17.454] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@7c8221e7]
+[2025-04-28 23:38:17.455] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:17.506] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@539619d7]
+[2025-04-28 23:38:17.507] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:17.708] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@12433d04]
+[2025-04-28 23:38:17.709] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:17.711] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@58bfac86]
+[2025-04-28 23:38:17.711] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:17.715] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@14a09c4c]
+[2025-04-28 23:38:17.715] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:17.804] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@720007ec]
+[2025-04-28 23:38:17.804] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:17.899] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@13015e03]
+[2025-04-28 23:38:17.900] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:17.902] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@17ae8290]
+[2025-04-28 23:38:17.903] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:18.060] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@1facf202]
+[2025-04-28 23:38:18.061] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:18.063] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@c71b022]
+[2025-04-28 23:38:18.063] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:18.158] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@527066bf]
+[2025-04-28 23:38:18.158] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:18.169] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@6a005137]
+[2025-04-28 23:38:18.170] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:18.204] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@7529afbe]
+[2025-04-28 23:38:18.204] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:18.398] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@17aabf87]
+[2025-04-28 23:38:18.398] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:18.401] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@9ce1fba]
+[2025-04-28 23:38:18.402] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:18.508] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@21909eb6]
+[2025-04-28 23:38:18.508] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:18.511] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@5a5fbbd9]
+[2025-04-28 23:38:18.511] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:18.556] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@61084b39]
+[2025-04-28 23:38:18.556] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:18.632] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@7c08be46]
+[2025-04-28 23:38:18.632] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:18.748] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@50a662ba]
+[2025-04-28 23:38:18.749] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:18.814] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@278a36ae]
+[2025-04-28 23:38:18.814] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:18.820] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@48b3a746]
+[2025-04-28 23:38:18.821] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:18.921] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@1d675a18, StackPane@41bca95b]
+[2025-04-28 23:38:18.921] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:18.925] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@5477cc33]
+[2025-04-28 23:38:18.925] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:18.954] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@31f017c4]
+[2025-04-28 23:38:18.955] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:19.004] INFO - MatrixLvLEditorView.removeItemFromGridPane - Aucun élément supprimé de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:19.005] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@2f0550af]
+[2025-04-28 23:38:19.006] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:19.103] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@645ab7fa]
+[2025-04-28 23:38:19.103] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:19.199] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@7c7d6825]
+[2025-04-28 23:38:19.200] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:19.204] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@51168f0e]
+[2025-04-28 23:38:19.204] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:19.215] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@460e2da0]
+[2025-04-28 23:38:19.216] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:19.306] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@35c76551]
+[2025-04-28 23:38:19.307] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:19.356] INFO - MatrixLvLEditorView.removeItemFromGridPane - Aucun élément supprimé de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:19.452] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@d2872ae]
+[2025-04-28 23:38:19.453] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:19.508] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@605cc46d]
+[2025-04-28 23:38:19.508] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:19.547] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@3a9e624c]
+[2025-04-28 23:38:19.548] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:19.550] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@6006624]
+[2025-04-28 23:38:19.550] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:19.662] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@7ef0e18]
+[2025-04-28 23:38:19.663] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:19.697] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@3f648edb]
+[2025-04-28 23:38:19.697] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:19.709] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@1b00aeeb, StackPane@6ff608f6]
+[2025-04-28 23:38:19.709] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:19.755] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@3676fdcf]
+[2025-04-28 23:38:19.756] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:19.804] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@470f2dd6]
+[2025-04-28 23:38:19.804] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:19.901] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@2beb95e9]
+[2025-04-28 23:38:19.901] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:19.977] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@1ccd56ef]
+[2025-04-28 23:38:19.977] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:20.012] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@6445876e]
+[2025-04-28 23:38:20.012] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:20.058] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@118af7cb]
+[2025-04-28 23:38:20.059] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:20.156] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@23b503da]
+[2025-04-28 23:38:20.156] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:20.254] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@675fc673]
+[2025-04-28 23:38:20.254] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:20.265] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@4f8f939a]
+[2025-04-28 23:38:20.265] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:20.347] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@dc01ae]
+[2025-04-28 23:38:20.347] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:20.413] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@3bb8eaa3]
+[2025-04-28 23:38:20.414] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:20.518] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@790aaaf2]
+[2025-04-28 23:38:20.518] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:20.605] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@37644440]
+[2025-04-28 23:38:20.606] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:20.672] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@4310247b]
+[2025-04-28 23:38:20.672] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:20.700] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@53261270]
+[2025-04-28 23:38:20.703] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:20.747] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@7371cf43]
+[2025-04-28 23:38:20.748] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:20.751] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@579b1d90]
+[2025-04-28 23:38:20.751] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:20.862] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@780e154d]
+[2025-04-28 23:38:20.862] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:20.950] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@6359bf6c]
+[2025-04-28 23:38:20.951] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:20.954] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@1e6e7fb]
+[2025-04-28 23:38:20.955] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:21.054] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@58f6501e]
+[2025-04-28 23:38:21.055] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:21.099] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@6f9fd14]
+[2025-04-28 23:38:21.099] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:21.196] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@4a40deed]
+[2025-04-28 23:38:21.196] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:21.261] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@4a2a7b54]
+[2025-04-28 23:38:21.261] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:21.308] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@67233c69]
+[2025-04-28 23:38:21.308] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:21.357] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@22457299]
+[2025-04-28 23:38:21.358] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:21.403] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@7706bb78]
+[2025-04-28 23:38:21.404] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:21.549] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@7257cac3]
+[2025-04-28 23:38:21.550] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:21.577] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@4e781204]
+[2025-04-28 23:38:21.577] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:21.611] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@2c276c84]
+[2025-04-28 23:38:21.611] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:21.661] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@3e2e85e5]
+[2025-04-28 23:38:21.661] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:21.759] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@7b0e1140]
+[2025-04-28 23:38:21.760] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:21.763] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@22971e5e]
+[2025-04-28 23:38:21.764] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:21.885] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@7ebc1c8f]
+[2025-04-28 23:38:21.886] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:21.899] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@221702f0]
+[2025-04-28 23:38:21.900] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:21.947] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@8f53023]
+[2025-04-28 23:38:21.947] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:22.011] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@57d775bc]
+[2025-04-28 23:38:22.012] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:22.108] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@7d7bd31f]
+[2025-04-28 23:38:22.109] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:22.257] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@65626751]
+[2025-04-28 23:38:22.258] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:22.299] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@50d1064d]
+[2025-04-28 23:38:22.300] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:22.342] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@2c938dc]
+[2025-04-28 23:38:22.343] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:22.347] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@4533606d]
+[2025-04-28 23:38:22.348] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:22.459] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@1069774]
+[2025-04-28 23:38:22.460] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:22.603] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [StackPane@78e6cacc]
+[2025-04-28 23:38:22.604] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:22.615] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@747ca92]
+[2025-04-28 23:38:22.617] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:22.651] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@420b21bd]
+[2025-04-28 23:38:22.652] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:22.698] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@d850cf4]
+[2025-04-28 23:38:22.699] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:22.753] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@7d313c0a]
+[2025-04-28 23:38:22.759] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:22.816] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@41b1d234]
+[2025-04-28 23:38:22.818] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:22.956] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@60ffb334]
+[2025-04-28 23:38:22.957] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:23.003] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@26a0a065]
+[2025-04-28 23:38:23.004] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:23.051] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@53314cec]
+[2025-04-28 23:38:23.052] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:23.148] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@3d1c2a52]
+[2025-04-28 23:38:23.149] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:23.260] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@4ddb4866]
+[2025-04-28 23:38:23.260] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:23.310] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@88b3d0c]
+[2025-04-28 23:38:23.311] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:23.357] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@1e1e7f31]
+[2025-04-28 23:38:23.357] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:23.404] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@ea48412]
+[2025-04-28 23:38:23.405] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:23.482] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@28f9e689]
+[2025-04-28 23:38:23.483] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:23.501] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@1f66ffed]
+[2025-04-28 23:38:23.502] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:23.612] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@6a213c37]
+[2025-04-28 23:38:23.613] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:23.708] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@3ca6d85c]
+[2025-04-28 23:38:23.708] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:23.755] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@44ac7e9c]
+[2025-04-28 23:38:23.756] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:23.757] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@27e91287]
+[2025-04-28 23:38:23.758] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:23.803] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@53d262e7]
+[2025-04-28 23:38:23.803] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:23.807] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@91f4337]
+[2025-04-28 23:38:23.808] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:23.851] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@16e7c96d]
+[2025-04-28 23:38:23.852] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:23.962] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@1bd28dd0]
+[2025-04-28 23:38:23.963] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:24.019] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@7753a35a]
+[2025-04-28 23:38:24.020] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:24.059] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@6824e827]
+[2025-04-28 23:38:24.060] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:24.062] INFO - MatrixLvLEditorView.removeItemFromGridPane - Aucun élément supprimé de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:24.064] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@2658a34f]
+[2025-04-28 23:38:24.064] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:24.108] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@535dda0e]
+[2025-04-28 23:38:24.109] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:24.300] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@24258ce3]
+[2025-04-28 23:38:24.301] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:24.414] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@47a911e4]
+[2025-04-28 23:38:24.415] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:24.421] INFO - MatrixLvLEditorView.removeItemFromGridPane - Aucun élément supprimé de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:24.460] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@6ac45cb4]
+[2025-04-28 23:38:24.460] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:24.654] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@621b6cd0]
+[2025-04-28 23:38:24.655] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:24.750] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@7afd09e2]
+[2025-04-28 23:38:24.751] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:24.756] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@7855225, StackPane@17ce8e2e]
+[2025-04-28 23:38:24.757] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:24.796] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@5cf83a00]
+[2025-04-28 23:38:24.796] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:24.871] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@4dd1901c]
+[2025-04-28 23:38:24.872] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:25.003] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@8a3fba8]
+[2025-04-28 23:38:25.003] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:25.103] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@2b985da5]
+[2025-04-28 23:38:25.103] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:25.106] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@4bb67590]
+[2025-04-28 23:38:25.106] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:25.117] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@c68513d]
+[2025-04-28 23:38:25.117] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:25.149] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@702a3cc]
+[2025-04-28 23:38:25.150] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:25.371] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@3cb726d0]
+[2025-04-28 23:38:25.371] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:25.454] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@2338380e]
+[2025-04-28 23:38:25.454] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:25.457] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@344ca1b5]
+[2025-04-28 23:38:25.457] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:25.501] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@6f831a70]
+[2025-04-28 23:38:25.501] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:25.804] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@436efb5c]
+[2025-04-28 23:38:25.804] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:25.808] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@554d280e]
+[2025-04-28 23:38:25.809] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:25.851] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@7cc157ee]
+[2025-04-28 23:38:25.851] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:25.880] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@4297aeb5]
+[2025-04-28 23:38:25.880] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:25.913] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@41cc627e]
+[2025-04-28 23:38:25.913] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:25.947] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@1274fe9d]
+[2025-04-28 23:38:25.948] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:25.981] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@69ab9727]
+[2025-04-28 23:38:25.984] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:26.012] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@1d2a1b03]
+[2025-04-28 23:38:26.013] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:26.049] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@3f70a03b]
+[2025-04-28 23:38:26.050] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:26.081] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@6f5e99fe]
+[2025-04-28 23:38:26.081] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:26.114] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@1bc77f95]
+[2025-04-28 23:38:26.115] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:26.146] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@4d4d386]
+[2025-04-28 23:38:26.146] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:26.155] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@4cb0feb0]
+[2025-04-28 23:38:26.156] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:26.187] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@6b15757e]
+[2025-04-28 23:38:26.187] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:26.277] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@5fc4f717]
+[2025-04-28 23:38:26.278] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:26.508] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@47dc65f3]
+[2025-04-28 23:38:26.508] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:26.787] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@5b05ab1e]
+[2025-04-28 23:38:26.787] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:26.820] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@2d6ec33b]
+[2025-04-28 23:38:26.821] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:26.855] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@14d4f97f]
+[2025-04-28 23:38:26.856] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:26.859] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@4ba8711f]
+[2025-04-28 23:38:26.860] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:26.888] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@fd8b9a0]
+[2025-04-28 23:38:26.888] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:26.920] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@75ad22ab]
+[2025-04-28 23:38:26.921] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:26.951] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@7a81840a]
+[2025-04-28 23:38:26.952] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:27.108] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@26dadb57]
+[2025-04-28 23:38:27.109] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:27.215] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@3f4bed7d]
+[2025-04-28 23:38:27.215] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:27.549] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@112676bd]
+[2025-04-28 23:38:27.550] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:27.620] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@756fbf96]
+[2025-04-28 23:38:27.620] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:27.652] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@3b42e394]
+[2025-04-28 23:38:27.652] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:27.688] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@684e853a]
+[2025-04-28 23:38:27.689] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:27.718] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@1455e359]
+[2025-04-28 23:38:27.718] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:27.751] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@52702105]
+[2025-04-28 23:38:27.751] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:27.784] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@54305eb3]
+[2025-04-28 23:38:27.784] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:27.818] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@112df905]
+[2025-04-28 23:38:27.818] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:27.901] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@571fe357]
+[2025-04-28 23:38:27.902] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:27.999] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@110c2cb5]
+[2025-04-28 23:38:27.999] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:28.252] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@5a758ef5]
+[2025-04-28 23:38:28.252] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:28.266] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@3f2295c7]
+[2025-04-28 23:38:28.266] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:28.300] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@51b730a1]
+[2025-04-28 23:38:28.300] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:28.604] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@30b230ba]
+[2025-04-28 23:38:28.605] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:28.651] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@6798f90b]
+[2025-04-28 23:38:28.651] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:28.781] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@5220c5ff]
+[2025-04-28 23:38:28.783] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:28.810] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@6abdb05d]
+[2025-04-28 23:38:28.810] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:28.957] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@58d88b81]
+[2025-04-28 23:38:28.957] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:29.003] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@67b2fc09]
+[2025-04-28 23:38:29.004] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:29.308] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@37deec44]
+[2025-04-28 23:38:29.308] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:29.356] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@631cd00c]
+[2025-04-28 23:38:29.356] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:29.660] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@5219ec1b]
+[2025-04-28 23:38:29.661] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:29.707] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@12622ffc]
+[2025-04-28 23:38:29.708] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:30.012] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@18da1026]
+[2025-04-28 23:38:30.012] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:30.060] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@f2bc313]
+[2025-04-28 23:38:30.061] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:30.348] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@26962bc5]
+[2025-04-28 23:38:30.349] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:30.396] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@5267ae6e]
+[2025-04-28 23:38:30.396] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:30.701] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@6f70b159]
+[2025-04-28 23:38:30.701] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:30.747] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@63d88b39]
+[2025-04-28 23:38:30.747] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:31.052] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@4bc29ee]
+[2025-04-28 23:38:31.052] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:31.100] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@3f79fa86]
+[2025-04-28 23:38:31.101] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:31.404] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@70ea282b]
+[2025-04-28 23:38:31.404] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:31.451] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@6de98a4a]
+[2025-04-28 23:38:31.451] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:31.755] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@1fb809a4]
+[2025-04-28 23:38:31.755] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:31.803] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@67bb0975]
+[2025-04-28 23:38:31.803] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:32.108] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@32d2e34]
+[2025-04-28 23:38:32.109] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:32.156] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@7f820bea]
+[2025-04-28 23:38:32.156] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:32.460] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@d5e9c19]
+[2025-04-28 23:38:32.462] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:32.508] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@19826a1e]
+[2025-04-28 23:38:32.509] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:32.796] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@4d9744dd]
+[2025-04-28 23:38:32.796] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:32.859] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@4e825e42]
+[2025-04-28 23:38:32.859] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:33.243] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@cd11424]
+[2025-04-28 23:38:33.244] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
+[2025-04-28 23:38:33.250] INFO - MatrixLvLEditorView.removeItemFromGridPane - Noeud à supprimer de la grille : [Rectangle[x=0.0, y=0.0, width=40.0, height=40.0, fill=0x00000000, stroke=0x00000000, strokeWidth=1.0], StackPane@77021cc0]
+[2025-04-28 23:38:33.252] INFO - MatrixLvLEditorView.removeItemFromGridPane - Éléments supprimés de la grille removeAllItemsFromGridPane
