@@ -1,9 +1,7 @@
 package src.java.org.projet.controler.levelEditorController;
 
 import javafx.scene.Node;
-import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
-import src.java.org.projet.controler.AbstractControler;
 import src.java.org.projet.interfaces.MyConcreteObservable;
 import src.java.org.projet.model.modelLevelEditor.SelectItemSectionModel;
 import src.java.org.projet.model.modelLevelEditor.base.CaseMatrix;

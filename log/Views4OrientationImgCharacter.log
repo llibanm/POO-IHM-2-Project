@@ -1,74 +1,31 @@
-[2025-04-28 22:56:56.566] INFO - Views4OrientationImgCharacter.nextImage - Prochaine image row :0 col 1
-[2025-04-28 22:56:56.567] INFO - Views4OrientationImgCharacter.nextImage - Changement de direction sequence courante  RIGHT
-[2025-04-28 22:56:56.568] INFO - Views4OrientationImgCharacter.nextImage - Current frame index: 0 Current MoveSequence [ImageView@7c8ea1ef[styleClass=image-view], ImageView@30cc57c[styleClass=image-view], ImageView@23c4c7aa[styleClass=image-view], ImageView@9420f2[styleClass=image-view]]
-[2025-04-28 22:56:56.752] INFO - Views4OrientationImgCharacter.nextImage - Prochaine image row :0 col 1
-[2025-04-28 22:56:56.753] INFO - Views4OrientationImgCharacter.nextImage - Current frame index: 1 Current MoveSequence [ImageView@7c8ea1ef[styleClass=image-view], ImageView@30cc57c[styleClass=image-view], ImageView@23c4c7aa[styleClass=image-view], ImageView@9420f2[styleClass=image-view]]
-[2025-04-28 22:56:56.961] INFO - Views4OrientationImgCharacter.nextImage - Prochaine image row :0 col 1
-[2025-04-28 22:56:56.962] INFO - Views4OrientationImgCharacter.nextImage - Current frame index: 2 Current MoveSequence [ImageView@7c8ea1ef[styleClass=image-view], ImageView@30cc57c[styleClass=image-view], ImageView@23c4c7aa[styleClass=image-view], ImageView@9420f2[styleClass=image-view]]
-[2025-04-28 22:56:57.175] INFO - Views4OrientationImgCharacter.nextImage - Prochaine image row :1 col 0
-[2025-04-28 22:56:57.175] INFO - Views4OrientationImgCharacter.nextImage - Changement de direction sequence courante  DOWN
-[2025-04-28 22:56:57.176] INFO - Views4OrientationImgCharacter.nextImage - Current frame index: 0 Current MoveSequence [ImageView@2784284f[styleClass=image-view], ImageView@72f17c69[styleClass=image-view], ImageView@a54e64b[styleClass=image-view], ImageView@1af4a85[styleClass=image-view]]
-[2025-04-28 22:56:57.511] INFO - Views4OrientationImgCharacter.nextImage - Prochaine image row :0 col 1
-[2025-04-28 22:56:57.511] INFO - Views4OrientationImgCharacter.nextImage - Changement de direction sequence courante  RIGHT
-[2025-04-28 22:56:57.511] INFO - Views4OrientationImgCharacter.nextImage - Current frame index: 0 Current MoveSequence [ImageView@7c8ea1ef[styleClass=image-view], ImageView@30cc57c[styleClass=image-view], ImageView@23c4c7aa[styleClass=image-view], ImageView@9420f2[styleClass=image-view]]
-[2025-04-28 22:56:57.716] INFO - Views4OrientationImgCharacter.nextImage - Prochaine image row :0 col 1
-[2025-04-28 22:56:57.716] INFO - Views4OrientationImgCharacter.nextImage - Current frame index: 1 Current MoveSequence [ImageView@7c8ea1ef[styleClass=image-view], ImageView@30cc57c[styleClass=image-view], ImageView@23c4c7aa[styleClass=image-view], ImageView@9420f2[styleClass=image-view]]
-[2025-04-28 22:56:58.035] INFO - Views4OrientationImgCharacter.nextImage - Prochaine image row :1 col 0
-[2025-04-28 22:56:58.035] INFO - Views4OrientationImgCharacter.nextImage - Changement de direction sequence courante  DOWN
-[2025-04-28 22:56:58.035] INFO - Views4OrientationImgCharacter.nextImage - Current frame index: 0 Current MoveSequence [ImageView@2784284f[styleClass=image-view], ImageView@72f17c69[styleClass=image-view], ImageView@a54e64b[styleClass=image-view], ImageView@1af4a85[styleClass=image-view]]
-[2025-04-28 22:56:59.636] INFO - Views4OrientationImgCharacter.nextImage - Prochaine image row :1 col 0
-[2025-04-28 22:56:59.637] INFO - Views4OrientationImgCharacter.nextImage - Current frame index: 1 Current MoveSequence [ImageView@2784284f[styleClass=image-view], ImageView@72f17c69[styleClass=image-view], ImageView@a54e64b[styleClass=image-view], ImageView@1af4a85[styleClass=image-view]]
-[2025-04-28 22:56:59.744] INFO - Views4OrientationImgCharacter.nextImage - Prochaine image row :1 col 0
-[2025-04-28 22:56:59.744] INFO - Views4OrientationImgCharacter.nextImage - Current frame index: 2 Current MoveSequence [ImageView@2784284f[styleClass=image-view], ImageView@72f17c69[styleClass=image-view], ImageView@a54e64b[styleClass=image-view], ImageView@1af4a85[styleClass=image-view]]
-[2025-04-28 22:56:59.796] INFO - Views4OrientationImgCharacter.nextImage - Prochaine image row :1 col 0
-[2025-04-28 22:56:59.796] INFO - Views4OrientationImgCharacter.nextImage - Current frame index: 3 Current MoveSequence [ImageView@2784284f[styleClass=image-view], ImageView@72f17c69[styleClass=image-view], ImageView@a54e64b[styleClass=image-view], ImageView@1af4a85[styleClass=image-view]]
-[2025-04-28 22:57:00.047] INFO - Views4OrientationImgCharacter.nextImage - Prochaine image row :1 col 0
-[2025-04-28 22:57:00.047] INFO - Views4OrientationImgCharacter.nextImage - Current frame index: 0 Current MoveSequence [ImageView@2784284f[styleClass=image-view], ImageView@72f17c69[styleClass=image-view], ImageView@a54e64b[styleClass=image-view], ImageView@1af4a85[styleClass=image-view]]
-[2025-04-28 22:57:00.499] INFO - Views4OrientationImgCharacter.nextImage - Prochaine image row :1 col 0
-[2025-04-28 22:57:00.499] INFO - Views4OrientationImgCharacter.nextImage - Current frame index: 1 Current MoveSequence [ImageView@2784284f[styleClass=image-view], ImageView@72f17c69[styleClass=image-view], ImageView@a54e64b[styleClass=image-view], ImageView@1af4a85[styleClass=image-view]]
-[2025-04-28 22:57:00.778] INFO - Views4OrientationImgCharacter.nextImage - Prochaine image row :1 col 0
-[2025-04-28 22:57:00.778] INFO - Views4OrientationImgCharacter.nextImage - Current frame index: 2 Current MoveSequence [ImageView@2784284f[styleClass=image-view], ImageView@72f17c69[styleClass=image-view], ImageView@a54e64b[styleClass=image-view], ImageView@1af4a85[styleClass=image-view]]
-[2025-04-28 22:57:01.128] INFO - Views4OrientationImgCharacter.nextImage - Prochaine image row :-1 col 0
-[2025-04-28 22:57:01.128] INFO - Views4OrientationImgCharacter.nextImage - Changement de direction sequence courante  UP
-[2025-04-28 22:57:01.129] INFO - Views4OrientationImgCharacter.nextImage - Current frame index: 0 Current MoveSequence [ImageView@9ea5402[styleClass=image-view], ImageView@7b91323c[styleClass=image-view], ImageView@2a3c81b2[styleClass=image-view], ImageView@4aa5f383[styleClass=image-view]]
-[2025-04-28 22:57:01.383] INFO - Views4OrientationImgCharacter.nextImage - Prochaine image row :-1 col 0
-[2025-04-28 22:57:01.383] INFO - Views4OrientationImgCharacter.nextImage - Current frame index: 1 Current MoveSequence [ImageView@9ea5402[styleClass=image-view], ImageView@7b91323c[styleClass=image-view], ImageView@2a3c81b2[styleClass=image-view], ImageView@4aa5f383[styleClass=image-view]]
-[2025-04-28 22:57:01.639] INFO - Views4OrientationImgCharacter.nextImage - Prochaine image row :-1 col 0
-[2025-04-28 22:57:01.639] INFO - Views4OrientationImgCharacter.nextImage - Current frame index: 2 Current MoveSequence [ImageView@9ea5402[styleClass=image-view], ImageView@7b91323c[styleClass=image-view], ImageView@2a3c81b2[styleClass=image-view], ImageView@4aa5f383[styleClass=image-view]]
-[2025-04-28 22:57:02.503] INFO - Views4OrientationImgCharacter.nextImage - Prochaine image row :1 col 0
-[2025-04-28 22:57:02.503] INFO - Views4OrientationImgCharacter.nextImage - Changement de direction sequence courante  DOWN
-[2025-04-28 22:57:02.503] INFO - Views4OrientationImgCharacter.nextImage - Current frame index: 0 Current MoveSequence [ImageView@2784284f[styleClass=image-view], ImageView@72f17c69[styleClass=image-view], ImageView@a54e64b[styleClass=image-view], ImageView@1af4a85[styleClass=image-view]]
-[2025-04-28 22:57:02.778] INFO - Views4OrientationImgCharacter.nextImage - Prochaine image row :1 col 0
-[2025-04-28 22:57:02.778] INFO - Views4OrientationImgCharacter.nextImage - Current frame index: 1 Current MoveSequence [ImageView@2784284f[styleClass=image-view], ImageView@72f17c69[styleClass=image-view], ImageView@a54e64b[styleClass=image-view], ImageView@1af4a85[styleClass=image-view]]
-[2025-04-28 22:57:03.023] INFO - Views4OrientationImgCharacter.nextImage - Prochaine image row :1 col 0
-[2025-04-28 22:57:03.024] INFO - Views4OrientationImgCharacter.nextImage - Current frame index: 2 Current MoveSequence [ImageView@2784284f[styleClass=image-view], ImageView@72f17c69[styleClass=image-view], ImageView@a54e64b[styleClass=image-view], ImageView@1af4a85[styleClass=image-view]]
-[2025-04-28 22:57:03.238] INFO - Views4OrientationImgCharacter.nextImage - Prochaine image row :1 col 0
-[2025-04-28 22:57:03.239] INFO - Views4OrientationImgCharacter.nextImage - Current frame index: 3 Current MoveSequence [ImageView@2784284f[styleClass=image-view], ImageView@72f17c69[styleClass=image-view], ImageView@a54e64b[styleClass=image-view], ImageView@1af4a85[styleClass=image-view]]
-[2025-04-28 22:57:03.462] INFO - Views4OrientationImgCharacter.nextImage - Prochaine image row :1 col 0
-[2025-04-28 22:57:03.464] INFO - Views4OrientationImgCharacter.nextImage - Current frame index: 0 Current MoveSequence [ImageView@2784284f[styleClass=image-view], ImageView@72f17c69[styleClass=image-view], ImageView@a54e64b[styleClass=image-view], ImageView@1af4a85[styleClass=image-view]]
-[2025-04-28 22:57:03.528] INFO - Views4OrientationImgCharacter.nextImage - Prochaine image row :0 col -1
-[2025-04-28 22:57:03.529] INFO - Views4OrientationImgCharacter.nextImage - Changement de direction sequence courante  LEFT
-[2025-04-28 22:57:03.529] INFO - Views4OrientationImgCharacter.nextImage - Current frame index: 0 Current MoveSequence [ImageView@1a2cfd24[styleClass=image-view], ImageView@579de93c[styleClass=image-view], ImageView@6c9ce8d2[styleClass=image-view], ImageView@4b0986d1[styleClass=image-view]]
-[2025-04-28 22:57:03.770] INFO - Views4OrientationImgCharacter.nextImage - Prochaine image row :0 col -1
-[2025-04-28 22:57:03.771] INFO - Views4OrientationImgCharacter.nextImage - Current frame index: 1 Current MoveSequence [ImageView@1a2cfd24[styleClass=image-view], ImageView@579de93c[styleClass=image-view], ImageView@6c9ce8d2[styleClass=image-view], ImageView@4b0986d1[styleClass=image-view]]
-[2025-04-28 22:57:04.059] INFO - Views4OrientationImgCharacter.nextImage - Prochaine image row :0 col -1
-[2025-04-28 22:57:04.060] INFO - Views4OrientationImgCharacter.nextImage - Current frame index: 2 Current MoveSequence [ImageView@1a2cfd24[styleClass=image-view], ImageView@579de93c[styleClass=image-view], ImageView@6c9ce8d2[styleClass=image-view], ImageView@4b0986d1[styleClass=image-view]]
-[2025-04-28 22:57:04.116] INFO - Views4OrientationImgCharacter.nextImage - Prochaine image row :-1 col 0
-[2025-04-28 22:57:04.117] INFO - Views4OrientationImgCharacter.nextImage - Changement de direction sequence courante  UP
-[2025-04-28 22:57:04.117] INFO - Views4OrientationImgCharacter.nextImage - Current frame index: 0 Current MoveSequence [ImageView@9ea5402[styleClass=image-view], ImageView@7b91323c[styleClass=image-view], ImageView@2a3c81b2[styleClass=image-view], ImageView@4aa5f383[styleClass=image-view]]
-[2025-04-28 22:57:04.362] INFO - Views4OrientationImgCharacter.nextImage - Prochaine image row :0 col 1
-[2025-04-28 22:57:04.363] INFO - Views4OrientationImgCharacter.nextImage - Changement de direction sequence courante  RIGHT
-[2025-04-28 22:57:04.363] INFO - Views4OrientationImgCharacter.nextImage - Current frame index: 0 Current MoveSequence [ImageView@7c8ea1ef[styleClass=image-view], ImageView@30cc57c[styleClass=image-view], ImageView@23c4c7aa[styleClass=image-view], ImageView@9420f2[styleClass=image-view]]
-[2025-04-28 22:57:04.737] INFO - Views4OrientationImgCharacter.nextImage - Prochaine image row :0 col 1
-[2025-04-28 22:57:04.737] INFO - Views4OrientationImgCharacter.nextImage - Current frame index: 1 Current MoveSequence [ImageView@7c8ea1ef[styleClass=image-view], ImageView@30cc57c[styleClass=image-view], ImageView@23c4c7aa[styleClass=image-view], ImageView@9420f2[styleClass=image-view]]
-[2025-04-28 22:57:04.949] INFO - Views4OrientationImgCharacter.nextImage - Prochaine image row :0 col 1
-[2025-04-28 22:57:04.950] INFO - Views4OrientationImgCharacter.nextImage - Current frame index: 2 Current MoveSequence [ImageView@7c8ea1ef[styleClass=image-view], ImageView@30cc57c[styleClass=image-view], ImageView@23c4c7aa[styleClass=image-view], ImageView@9420f2[styleClass=image-view]]
-[2025-04-28 22:57:05.206] INFO - Views4OrientationImgCharacter.nextImage - Prochaine image row :0 col 1
-[2025-04-28 22:57:05.206] INFO - Views4OrientationImgCharacter.nextImage - Current frame index: 3 Current MoveSequence [ImageView@7c8ea1ef[styleClass=image-view], ImageView@30cc57c[styleClass=image-view], ImageView@23c4c7aa[styleClass=image-view], ImageView@9420f2[styleClass=image-view]]
-[2025-04-28 22:57:05.490] INFO - Views4OrientationImgCharacter.nextImage - Prochaine image row :-1 col 0
-[2025-04-28 22:57:05.491] INFO - Views4OrientationImgCharacter.nextImage - Changement de direction sequence courante  UP
-[2025-04-28 22:57:05.491] INFO - Views4OrientationImgCharacter.nextImage - Current frame index: 0 Current MoveSequence [ImageView@9ea5402[styleClass=image-view], ImageView@7b91323c[styleClass=image-view], ImageView@2a3c81b2[styleClass=image-view], ImageView@4aa5f383[styleClass=image-view]]
-[2025-04-28 22:57:05.741] INFO - Views4OrientationImgCharacter.nextImage - Prochaine image row :-1 col 0
-[2025-04-28 22:57:05.741] INFO - Views4OrientationImgCharacter.nextImage - Current frame index: 1 Current MoveSequence [ImageView@9ea5402[styleClass=image-view], ImageView@7b91323c[styleClass=image-view], ImageView@2a3c81b2[styleClass=image-view], ImageView@4aa5f383[styleClass=image-view]]
-[2025-04-28 22:57:06.018] INFO - Views4OrientationImgCharacter.nextImage - Prochaine image row :-1 col 0
-[2025-04-28 22:57:06.019] INFO - Views4OrientationImgCharacter.nextImage - Current frame index: 2 Current MoveSequence [ImageView@9ea5402[styleClass=image-view], ImageView@7b91323c[styleClass=image-view], ImageView@2a3c81b2[styleClass=image-view], ImageView@4aa5f383[styleClass=image-view]]
+[2025-04-28 23:11:20.396] INFO - Views4OrientationImgCharacter.nextImage - Prochaine image row :0 col 1
+[2025-04-28 23:11:20.397] INFO - Views4OrientationImgCharacter.nextImage - Changement de direction sequence courante  RIGHT
+[2025-04-28 23:11:20.398] INFO - Views4OrientationImgCharacter.nextImage - Current frame index: 0 Current MoveSequence [ImageView@140dbda4[styleClass=image-view], ImageView@6e50a0e5[styleClass=image-view], ImageView@148b2014[styleClass=image-view], ImageView@f883198[styleClass=image-view]]
+[2025-04-28 23:11:20.603] INFO - Views4OrientationImgCharacter.nextImage - Prochaine image row :0 col 1
+[2025-04-28 23:11:20.605] INFO - Views4OrientationImgCharacter.nextImage - Current frame index: 1 Current MoveSequence [ImageView@140dbda4[styleClass=image-view], ImageView@6e50a0e5[styleClass=image-view], ImageView@148b2014[styleClass=image-view], ImageView@f883198[styleClass=image-view]]
+[2025-04-28 23:11:21.017] INFO - Views4OrientationImgCharacter.nextImage - Prochaine image row :1 col 0
+[2025-04-28 23:11:21.018] INFO - Views4OrientationImgCharacter.nextImage - Changement de direction sequence courante  DOWN
+[2025-04-28 23:11:21.018] INFO - Views4OrientationImgCharacter.nextImage - Current frame index: 0 Current MoveSequence [ImageView@e11ee72[styleClass=image-view], ImageView@7a3ea3e0[styleClass=image-view], ImageView@7b2c2547[styleClass=image-view], ImageView@74a32e80[styleClass=image-view]]
+[2025-04-28 23:11:21.239] INFO - Views4OrientationImgCharacter.nextImage - Prochaine image row :1 col 0
+[2025-04-28 23:11:21.240] INFO - Views4OrientationImgCharacter.nextImage - Current frame index: 1 Current MoveSequence [ImageView@e11ee72[styleClass=image-view], ImageView@7a3ea3e0[styleClass=image-view], ImageView@7b2c2547[styleClass=image-view], ImageView@74a32e80[styleClass=image-view]]
+[2025-04-28 23:11:21.416] INFO - Views4OrientationImgCharacter.nextImage - Prochaine image row :1 col 0
+[2025-04-28 23:11:21.417] INFO - Views4OrientationImgCharacter.nextImage - Current frame index: 2 Current MoveSequence [ImageView@e11ee72[styleClass=image-view], ImageView@7a3ea3e0[styleClass=image-view], ImageView@7b2c2547[styleClass=image-view], ImageView@74a32e80[styleClass=image-view]]
+[2025-04-28 23:11:22.193] INFO - Views4OrientationImgCharacter.nextImage - Prochaine image row :-1 col 0
+[2025-04-28 23:11:22.193] INFO - Views4OrientationImgCharacter.nextImage - Changement de direction sequence courante  UP
+[2025-04-28 23:11:22.194] INFO - Views4OrientationImgCharacter.nextImage - Current frame index: 0 Current MoveSequence [ImageView@757ba65a[styleClass=image-view], ImageView@2218f146[styleClass=image-view], ImageView@574e78ab[styleClass=image-view], ImageView@326709a2[styleClass=image-view]]
+[2025-04-28 23:11:22.949] INFO - Views4OrientationImgCharacter.nextImage - Prochaine image row :0 col -1
+[2025-04-28 23:11:22.950] INFO - Views4OrientationImgCharacter.nextImage - Changement de direction sequence courante  LEFT
+[2025-04-28 23:11:22.950] INFO - Views4OrientationImgCharacter.nextImage - Current frame index: 0 Current MoveSequence [ImageView@51fefca0[styleClass=image-view], ImageView@7a55c67d[styleClass=image-view], ImageView@ed060fa[styleClass=image-view], ImageView@2380d894[styleClass=image-view]]
+[2025-04-28 23:11:23.020] INFO - Views4OrientationImgCharacter.nextImage - Prochaine image row :-1 col 0
+[2025-04-28 23:11:23.020] INFO - Views4OrientationImgCharacter.nextImage - Changement de direction sequence courante  UP
+[2025-04-28 23:11:23.020] INFO - Views4OrientationImgCharacter.nextImage - Current frame index: 0 Current MoveSequence [ImageView@757ba65a[styleClass=image-view], ImageView@2218f146[styleClass=image-view], ImageView@574e78ab[styleClass=image-view], ImageView@326709a2[styleClass=image-view]]
+[2025-04-28 23:11:23.037] INFO - Views4OrientationImgCharacter.nextImage - Prochaine image row :0 col 1
+[2025-04-28 23:11:23.038] INFO - Views4OrientationImgCharacter.nextImage - Changement de direction sequence courante  RIGHT
+[2025-04-28 23:11:23.039] INFO - Views4OrientationImgCharacter.nextImage - Current frame index: 0 Current MoveSequence [ImageView@140dbda4[styleClass=image-view], ImageView@6e50a0e5[styleClass=image-view], ImageView@148b2014[styleClass=image-view], ImageView@f883198[styleClass=image-view]]
+[2025-04-28 23:11:23.326] INFO - Views4OrientationImgCharacter.nextImage - Prochaine image row :0 col 1
+[2025-04-28 23:11:23.327] INFO - Views4OrientationImgCharacter.nextImage - Current frame index: 1 Current MoveSequence [ImageView@140dbda4[styleClass=image-view], ImageView@6e50a0e5[styleClass=image-view], ImageView@148b2014[styleClass=image-view], ImageView@f883198[styleClass=image-view]]
+[2025-04-28 23:11:23.638] INFO - Views4OrientationImgCharacter.nextImage - Prochaine image row :1 col 0
+[2025-04-28 23:11:23.638] INFO - Views4OrientationImgCharacter.nextImage - Changement de direction sequence courante  DOWN
+[2025-04-28 23:11:23.638] INFO - Views4OrientationImgCharacter.nextImage - Current frame index: 0 Current MoveSequence [ImageView@e11ee72[styleClass=image-view], ImageView@7a3ea3e0[styleClass=image-view], ImageView@7b2c2547[styleClass=image-view], ImageView@74a32e80[styleClass=image-view]]
+[2025-04-28 23:11:23.866] INFO - Views4OrientationImgCharacter.nextImage - Prochaine image row :1 col 0
+[2025-04-28 23:11:23.868] INFO - Views4OrientationImgCharacter.nextImage - Current frame index: 1 Current MoveSequence [ImageView@e11ee72[styleClass=image-view], ImageView@7a3ea3e0[styleClass=image-view], ImageView@7b2c2547[styleClass=image-view], ImageView@74a32e80[styleClass=image-view]]

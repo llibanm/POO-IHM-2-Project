@@ -1,4 +1,4 @@
-package src.java.org.projet.view.quickUnitTestView;
+package src.java.org.projet.view;
 
 import javafx.application.Application;
 import javafx.scene.Scene;
@@ -18,7 +18,7 @@ import src.java.org.projet.model.modelMap.SimpleDoor;
 import src.java.org.projet.view.levelEditorView.MatrixLvLEditorView;
 import src.java.org.projet.view.levelEditorView.SelectItemView;
 
-public class GlobalEditorViewTest extends Application {
+public class MainGameView extends Application {
 
 
     public void start(Stage primaryStage) {
