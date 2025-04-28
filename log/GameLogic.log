@@ -1,24 +1,8 @@
-[2025-04-28 23:11:20.372] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=3, col=3}}
-[2025-04-28 23:11:20.382] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=3, col=3}} 0 1
-[2025-04-28 23:11:20.585] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=3, col=4}}
-[2025-04-28 23:11:20.588] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=3, col=4}} 0 1
-[2025-04-28 23:11:20.990] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=3, col=5}}
-[2025-04-28 23:11:20.992] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=3, col=5}} 1 0
-[2025-04-28 23:11:21.224] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=4, col=5}}
-[2025-04-28 23:11:21.226] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=4, col=5}} 1 0
-[2025-04-28 23:11:21.410] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=5, col=5}}
-[2025-04-28 23:11:21.410] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=5, col=5}} 1 0
-[2025-04-28 23:11:22.187] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=6, col=5}}
-[2025-04-28 23:11:22.190] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=6, col=5}} -1 0
-[2025-04-28 23:11:22.252] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=5, col=5}}
-[2025-04-28 23:11:22.252] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=5, col=5}} 0 -1
-[2025-04-28 23:11:22.998] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=5, col=4}}
-[2025-04-28 23:11:22.998] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=5, col=4}} -1 0
-[2025-04-28 23:11:23.032] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=4, col=4}}
-[2025-04-28 23:11:23.032] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=4, col=4}} 0 1
-[2025-04-28 23:11:23.324] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=4, col=5}}
-[2025-04-28 23:11:23.324] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=4, col=5}} 0 1
-[2025-04-28 23:11:23.632] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=4, col=6}}
-[2025-04-28 23:11:23.632] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=4, col=6}} 1 0
-[2025-04-28 23:11:23.855] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=5, col=6}}
-[2025-04-28 23:11:23.856] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=5, col=6}} 1 0
+[2025-04-28 23:34:11.761] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=2, col=0}}
+[2025-04-28 23:34:11.768] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=2, col=0}} 0 1
+[2025-04-28 23:34:11.960] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=2, col=1}}
+[2025-04-28 23:34:11.960] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=2, col=1}} 0 1
+[2025-04-28 23:34:12.227] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=2, col=2}}
+[2025-04-28 23:34:12.228] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=2, col=2}} 0 1
+[2025-04-28 23:34:12.472] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=2, col=3}}
+[2025-04-28 23:34:12.472] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=2, col=3}} 1 0
