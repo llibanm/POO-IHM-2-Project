@@ -2,5 +2,6 @@
 *.exe
 *.py
 *.bat
+*.log
 
 /target
