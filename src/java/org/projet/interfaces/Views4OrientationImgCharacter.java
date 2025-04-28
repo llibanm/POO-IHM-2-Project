@@ -1,12 +1,10 @@
 package src.java.org.projet.interfaces;
 
 import javafx.scene.image.ImageView;
-import src.java.org.projet.controler.levelEditorController.SpriteService;
+import src.java.org.projet.services.SpriteService;
 import src.java.org.projet.model.modelLevelEditor.base.Coord;
 
 import java.util.List;
-import java.util.logging.Logger;
-
 
 
 public abstract class Views4OrientationImgCharacter  {

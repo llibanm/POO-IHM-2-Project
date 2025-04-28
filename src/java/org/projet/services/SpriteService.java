@@ -1,4 +1,4 @@
-package src.java.org.projet.controler.levelEditorController;
+package src.java.org.projet.services;
 
 import javafx.animation.Animation;
 import javafx.animation.KeyFrame;
@@ -8,7 +8,6 @@ import javafx.scene.image.*;
 import javafx.scene.layout.Pane;
 import javafx.scene.paint.Color;
 import javafx.util.Duration;
-import src.java.org.projet.interfaces.Views4OrientationImgCharacter;
 import src.java.org.projet.model.modelLevelEditor.base.Coord;
 
 import java.awt.image.RenderedImage;
@@ -20,7 +19,6 @@ import java.util.logging.Logger;
 
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import javafx.geometry.Rectangle2D;
 
 import javax.imageio.ImageIO;
 import javax.xml.parsers.DocumentBuilder;
@@ -33,7 +31,6 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.util.ArrayList;
 import java.util.List;
-import javafx.embed.swing.SwingFXUtils;
 
 public class SpriteService {
     private Image spriteSheet;

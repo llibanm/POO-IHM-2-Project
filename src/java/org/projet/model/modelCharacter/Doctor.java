@@ -1,6 +1,6 @@
 package src.java.org.projet.model.modelCharacter;
 
-import src.java.org.projet.controler.levelEditorController.SpriteService;
+import src.java.org.projet.services.SpriteService;
 import src.java.org.projet.interfaces.MoveRangeOnSprite;
 import src.java.org.projet.model.modelLevelEditor.base.Coord;
 

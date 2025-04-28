@@ -1,7 +1,7 @@
 package src.java.org.projet.interfaces;
 
 import javafx.scene.image.ImageView;
-import src.java.org.projet.controler.levelEditorController.SpriteService;
+import src.java.org.projet.services.SpriteService;
 
 import java.util.List;
 

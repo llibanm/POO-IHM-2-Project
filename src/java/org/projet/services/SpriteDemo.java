@@ -1,4 +1,4 @@
-package src.java.org.projet.controler.levelEditorController;
+package src.java.org.projet.services;
 
 import javafx.application.Application;
 import javafx.embed.swing.SwingFXUtils;
@@ -6,17 +6,11 @@ import javafx.scene.Scene;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 import javafx.scene.image.*;
-import javafx.geometry.Rectangle2D;
-import javafx.animation.*;
-import javafx.util.Duration;
-import javafx.scene.paint.Color;
 
 import javax.imageio.ImageIO;
 import java.io.File;
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 
 public class SpriteDemo extends Application {
 

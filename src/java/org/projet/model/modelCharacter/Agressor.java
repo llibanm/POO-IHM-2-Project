@@ -1,12 +1,11 @@
 
 package src.java.org.projet.model.modelCharacter;
 
-import src.java.org.projet.controler.levelEditorController.SpriteService;
+import src.java.org.projet.services.SpriteService;
 import src.java.org.projet.interfaces.Ennemy;
 import src.java.org.projet.interfaces.MoveRangeOnSprite;
 import src.java.org.projet.interfaces.MyLogger;
 import src.java.org.projet.model.modelLevelEditor.base.Coord;
-import src.java.org.projet.view.levelEditorView.MatrixLvLEditorView;
 
 public class Agressor extends MyCharacter implements Ennemy {
 

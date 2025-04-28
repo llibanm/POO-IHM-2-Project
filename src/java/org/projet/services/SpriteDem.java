@@ -1,4 +1,4 @@
-package src.java.org.projet.controler.levelEditorController;
+package src.java.org.projet.services;
 
 import javafx.application.Application;
 import javafx.scene.Scene;
