@@ -271,9 +271,9 @@ public class MatrixLvLEditorView extends GridPane {
     /**
      * Placer le fond d'écran de la grille de l'éditeur de niveau
      */
-    public void setBackground() {
+    public void setBackground(String url) {
         //model.getUrlBackground()
-        var backgroundImage = new Image("src/java/org/projet/spaceImagesProject/Space_Background.png");
+        var backgroundImage = new Image(url);
 
         BackgroundImage background = new BackgroundImage(
                 backgroundImage,

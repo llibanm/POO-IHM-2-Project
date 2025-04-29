@@ -29,11 +29,15 @@ public class MainGameView extends Application {
         SelectItemSectionController selectController = new SelectItemSectionController(model, selectItemView);
 
         MatrixLvLEditorView matrixLvLEditorView = new MatrixLvLEditorView(50,50);
-        MatrixLvlEditorModel matrixLvlEditorModel = new MatrixLvlEditorModel(50,50,"");
+        MatrixLvlEditorModel matrixLvlEditorModel = new MatrixLvlEditorModel(50,50,"src/java/org/projet/assets/planet/planet03.png");
+        MatrixLvlEditorModel matrixLvlEditorModelMars = new MatrixLvlEditorModel(50,50,"src/java/org/projet/assets/planet/planet00.png");
+        MatrixLvlEditorModel matrixLvlEditorModelSaturn = new MatrixLvlEditorModel(50,50,"src/java/org/projet/assets/planet/planet02.png");
+        MatrixLvlEditorModel matrixLvlEditorModelJupiter = new MatrixLvlEditorModel(50,50,"src/java/org/projet/assets/planet/planet04.png");
+
         MatrixLvlEditorController matrixLvlEditorController = new MatrixLvlEditorController(matrixLvlEditorModel,matrixLvLEditorView, selectController);
 
         StackPane stackPane = new StackPane();
-        Background imgBackground = createImgBackground("src/java/org/projet/assets/planet/planet00.png",100,100);
+        Background imgBackground = createImgBackground("src/java/org/projet/assets/planet/planet01.png",100,100);
         stackPane.setBackground(imgBackground);
         stackPane.getChildren().add(matrixLvLEditorView);
         matrixLvlEditorController.addGridListenersOnView();

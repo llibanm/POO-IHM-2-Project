@@ -37,6 +37,7 @@ public class MatrixLvlEditorController implements PropertyChangeListener {
         this.view = view;
 
         //selectItemSectionController.addPropertyChangeListener(this.getPropertyChangeListener());
+        this.view.setBackground(model.getUrlBackground());
         addGridListenersOnView();
         selectItemSectionController.addPropertyChangeListener(this);
         getFocusOnMatrixView();

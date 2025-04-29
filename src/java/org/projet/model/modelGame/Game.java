@@ -7,4 +7,6 @@ import java.util.List;
 public class Game {
     List<MatrixLvlEditorModel> allLevels;
 
+    MatrixLvlEditorModel currentLevel;
+
 }
