@@ -8,6 +8,7 @@ import javafx.scene.shape.Rectangle;
 import src.java.org.projet.interfaces.Ennemy;
 import src.java.org.projet.interfaces.Movable;
 import src.java.org.projet.interfaces.MyLogger;
+import src.java.org.projet.model.modelGame.GameModel;
 import src.java.org.projet.model.modelLevelEditor.MatrixLvlEditorModel;
 import src.java.org.projet.model.modelLevelEditor.base.CaseMatrix;
 import src.java.org.projet.model.modelLevelEditor.base.Coord;
@@ -23,6 +24,7 @@ public class MatrixLvlEditorController implements PropertyChangeListener {
     private final MatrixLvLEditorView view;
     private CaseMatrix currentSelectedCaseMatrix;
     private GameLogic gameLogic;
+    GameModel gameModel;
 
     public MatrixLvlEditorController(MatrixLvlEditorModel model, MatrixLvLEditorView view) {
         this.model = model;
@@ -32,9 +34,11 @@ public class MatrixLvlEditorController implements PropertyChangeListener {
 
     }
 
-    public MatrixLvlEditorController(MatrixLvlEditorModel model, MatrixLvLEditorView view, SelectItemSectionController selectItemSectionController) {
-        this.model = model;
+    public MatrixLvlEditorController(GameModel game, MatrixLvLEditorView view, SelectItemSectionController selectItemSectionController) {
+       // this.model = model;
         this.view = view;
+        this.gameModel = game;
+        this.model = gameModel.getCurrentLevel();
 
         //selectItemSectionController.addPropertyChangeListener(this.getPropertyChangeListener());
         this.view.setBackground(model.getUrlBackground());

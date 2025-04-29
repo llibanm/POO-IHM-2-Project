@@ -1,368 +1,188 @@
-[2025-04-29 09:52:58.830] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=3, col=1}}
-[2025-04-29 09:52:58.834] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=3, col=1}} 0 1
-[2025-04-29 09:52:58.987] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=3, col=2}}
-[2025-04-29 09:52:58.988] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=3, col=2}} 0 1
-[2025-04-29 09:52:59.175] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=3, col=3}}
-[2025-04-29 09:52:59.175] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=3, col=3}} 0 1
-[2025-04-29 09:52:59.351] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=3, col=4}}
-[2025-04-29 09:52:59.352] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=3, col=4}} 1 0
-[2025-04-29 09:52:59.535] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=4, col=4}}
-[2025-04-29 09:52:59.535] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=4, col=4}} 1 0
-[2025-04-29 09:52:59.717] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=5, col=4}}
-[2025-04-29 09:52:59.718] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=5, col=4}} 1 0
-[2025-04-29 09:52:59.888] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=6, col=4}}
-[2025-04-29 09:52:59.888] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=6, col=4}} 1 0
-[2025-04-29 09:53:00.059] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=7, col=4}}
-[2025-04-29 09:53:00.059] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=7, col=4}} 0 1
-[2025-04-29 09:53:00.238] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=7, col=5}}
-[2025-04-29 09:53:00.239] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=7, col=5}} 0 1
-[2025-04-29 09:53:00.423] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=7, col=6}}
-[2025-04-29 09:53:00.423] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=7, col=6}} 0 1
-[2025-04-29 09:53:00.647] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=7, col=7}}
-[2025-04-29 09:53:00.648] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=7, col=7}} -1 0
-[2025-04-29 09:53:01.033] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=6, col=7}}
-[2025-04-29 09:53:01.033] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=6, col=7}} -1 0
-[2025-04-29 09:53:01.443] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=5, col=7}}
-[2025-04-29 09:53:01.443] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=5, col=7}} 0 1
-[2025-04-29 09:53:01.726] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=5, col=8}}
-[2025-04-29 09:53:01.727] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=5, col=8}} 0 1
-[2025-04-29 09:53:01.924] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=5, col=9}}
-[2025-04-29 09:53:01.925] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=5, col=9}} 0 1
-[2025-04-29 09:53:02.050] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=5, col=10}}
-[2025-04-29 09:53:02.050] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=5, col=10}} 0 1
-[2025-04-29 09:53:02.329] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=5, col=11}}
-[2025-04-29 09:53:02.329] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=5, col=11}} 1 0
-[2025-04-29 09:53:02.522] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=6, col=11}}
-[2025-04-29 09:53:02.522] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=6, col=11}} 1 0
-[2025-04-29 09:53:02.706] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=7, col=11}}
-[2025-04-29 09:53:02.706] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=7, col=11}} 1 0
-[2025-04-29 09:53:02.906] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=8, col=11}}
-[2025-04-29 09:53:02.906] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=8, col=11}} 1 0
-[2025-04-29 09:53:03.093] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=9, col=11}}
-[2025-04-29 09:53:03.093] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=9, col=11}} 1 0
-[2025-04-29 09:53:03.281] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=10, col=11}}
-[2025-04-29 09:53:03.282] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=10, col=11}} 1 0
-[2025-04-29 09:53:03.468] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=11, col=11}}
-[2025-04-29 09:53:03.468] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=11, col=11}} 1 0
-[2025-04-29 09:53:03.688] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=12, col=11}}
-[2025-04-29 09:53:03.688] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=12, col=11}} 1 0
-[2025-04-29 09:53:03.753] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=13, col=11}}
-[2025-04-29 09:53:03.753] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=13, col=11}} 0 -1
-[2025-04-29 09:53:03.921] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=13, col=10}}
-[2025-04-29 09:53:03.921] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=13, col=10}} 0 -1
-[2025-04-29 09:53:04.127] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=13, col=9}}
-[2025-04-29 09:53:04.127] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=13, col=9}} 0 -1
-[2025-04-29 09:53:04.360] INFO - GameLogic.heroShot - Tir de la flèche
-[2025-04-29 09:53:04.360] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@7f0ca30d 0 -1
-[2025-04-29 09:53:04.646] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@7f0ca30d Direction:Coord{row=0, col=-1}
-[2025-04-29 09:53:04.647] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@7f0ca30d 0 -1
-[2025-04-29 09:53:04.999] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@7f0ca30d Direction:Coord{row=0, col=-1}
-[2025-04-29 09:53:04.999] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@7f0ca30d 0 -1
-[2025-04-29 09:53:05.078] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=13, col=8}}
-[2025-04-29 09:53:05.078] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=13, col=8}} -1 0
-[2025-04-29 09:53:05.304] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=12, col=8}}
-[2025-04-29 09:53:05.304] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=12, col=8}} -1 0
-[2025-04-29 09:53:05.335] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@7f0ca30d Direction:Coord{row=0, col=-1}
-[2025-04-29 09:53:05.335] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@7f0ca30d 0 -1
-[2025-04-29 09:53:05.589] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=11, col=8}}
-[2025-04-29 09:53:05.589] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=11, col=8}} 0 1
-[2025-04-29 09:53:05.681] INFO - GameLogic.heroShot - Tir de la flèche
-[2025-04-29 09:53:05.687] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@7f0ca30d Direction:Coord{row=0, col=-1}
-[2025-04-29 09:53:05.687] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@40c03989 0 1
-[2025-04-29 09:53:05.692] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@7f0ca30d 0 -1
-[2025-04-29 09:53:05.991] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@40c03989 Direction:Coord{row=0, col=1}
-[2025-04-29 09:53:05.991] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@40c03989 0 1
-[2025-04-29 09:53:06.039] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@7f0ca30d Direction:Coord{row=0, col=-1}
-[2025-04-29 09:53:06.039] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@7f0ca30d 0 -1
-[2025-04-29 09:53:06.257] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=11, col=9}}
-[2025-04-29 09:53:06.257] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=11, col=9}} -1 0
-[2025-04-29 09:53:06.342] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@40c03989 Direction:Coord{row=0, col=1}
-[2025-04-29 09:53:06.342] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@40c03989 0 1
-[2025-04-29 09:53:06.391] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@7f0ca30d Direction:Coord{row=0, col=-1}
-[2025-04-29 09:53:06.391] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@7f0ca30d 0 -1
-[2025-04-29 09:53:06.475] INFO - GameLogic.heroShot - Tir de la flèche
-[2025-04-29 09:53:06.488] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@1c56d89e -1 0
-[2025-04-29 09:53:06.695] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@40c03989 Direction:Coord{row=0, col=1}
-[2025-04-29 09:53:06.695] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@40c03989 0 1
-[2025-04-29 09:53:06.743] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@7f0ca30d Direction:Coord{row=0, col=-1}
-[2025-04-29 09:53:06.743] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@7f0ca30d 0 -1
-[2025-04-29 09:53:06.791] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@1c56d89e Direction:Coord{row=-1, col=0}
-[2025-04-29 09:53:06.791] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@1c56d89e -1 0
-[2025-04-29 09:53:07.047] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@40c03989 Direction:Coord{row=0, col=1}
-[2025-04-29 09:53:07.047] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@40c03989 0 1
-[2025-04-29 09:53:07.143] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@1c56d89e Direction:Coord{row=-1, col=0}
-[2025-04-29 09:53:07.143] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@1c56d89e -1 0
-[2025-04-29 09:53:07.399] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@40c03989 Direction:Coord{row=0, col=1}
-[2025-04-29 09:53:07.399] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@40c03989 0 1
-[2025-04-29 09:53:07.495] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@1c56d89e Direction:Coord{row=-1, col=0}
-[2025-04-29 09:53:07.497] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@1c56d89e -1 0
-[2025-04-29 09:53:07.735] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@40c03989 Direction:Coord{row=0, col=1}
-[2025-04-29 09:53:07.736] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@40c03989 0 1
-[2025-04-29 09:53:07.846] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@1c56d89e Direction:Coord{row=-1, col=0}
-[2025-04-29 09:53:07.846] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@1c56d89e -1 0
-[2025-04-29 09:53:08.087] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@40c03989 Direction:Coord{row=0, col=1}
-[2025-04-29 09:53:08.087] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@40c03989 0 1
-[2025-04-29 09:53:08.198] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@1c56d89e Direction:Coord{row=-1, col=0}
-[2025-04-29 09:53:08.199] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@1c56d89e -1 0
-[2025-04-29 09:53:08.439] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@40c03989 Direction:Coord{row=0, col=1}
-[2025-04-29 09:53:08.439] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@40c03989 0 1
-[2025-04-29 09:53:08.535] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@1c56d89e Direction:Coord{row=-1, col=0}
-[2025-04-29 09:53:08.535] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@1c56d89e -1 0
-[2025-04-29 09:53:08.791] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@40c03989 Direction:Coord{row=0, col=1}
-[2025-04-29 09:53:08.791] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@40c03989 0 1
-[2025-04-29 09:53:08.887] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@1c56d89e Direction:Coord{row=-1, col=0}
-[2025-04-29 09:53:08.887] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@1c56d89e -1 0
-[2025-04-29 09:53:09.142] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@40c03989 Direction:Coord{row=0, col=1}
-[2025-04-29 09:53:09.142] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@40c03989 0 1
-[2025-04-29 09:53:09.238] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@1c56d89e Direction:Coord{row=-1, col=0}
-[2025-04-29 09:53:09.238] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@1c56d89e -1 0
-[2025-04-29 09:53:09.388] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=10, col=9}}
-[2025-04-29 09:53:09.388] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=10, col=9}} 1 0
-[2025-04-29 09:53:09.495] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@40c03989 Direction:Coord{row=0, col=1}
-[2025-04-29 09:53:09.495] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@40c03989 0 1
-[2025-04-29 09:53:09.550] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=11, col=9}}
-[2025-04-29 09:53:09.550] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=11, col=9}} 1 0
-[2025-04-29 09:53:09.591] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@1c56d89e Direction:Coord{row=-1, col=0}
-[2025-04-29 09:53:09.591] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@1c56d89e -1 0
-[2025-04-29 09:53:09.641] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=12, col=9}}
-[2025-04-29 09:53:09.641] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=12, col=9}} 1 0
-[2025-04-29 09:53:09.840] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=13, col=9}}
-[2025-04-29 09:53:09.840] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=13, col=9}} 1 0
-[2025-04-29 09:53:09.847] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@40c03989 Direction:Coord{row=0, col=1}
-[2025-04-29 09:53:09.847] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@40c03989 0 1
-[2025-04-29 09:53:10.199] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@40c03989 Direction:Coord{row=0, col=1}
-[2025-04-29 09:53:10.199] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@40c03989 0 1
-[2025-04-29 09:53:10.497] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=14, col=9}}
-[2025-04-29 09:53:10.497] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=14, col=9}} 0 -1
-[2025-04-29 09:53:10.535] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@40c03989 Direction:Coord{row=0, col=1}
-[2025-04-29 09:53:10.535] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@40c03989 0 1
-[2025-04-29 09:53:10.694] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=14, col=8}}
-[2025-04-29 09:53:10.694] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=14, col=8}} 0 -1
-[2025-04-29 09:53:10.886] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@40c03989 Direction:Coord{row=0, col=1}
-[2025-04-29 09:53:10.886] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@40c03989 0 1
-[2025-04-29 09:53:10.897] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=14, col=7}}
-[2025-04-29 09:53:10.897] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=14, col=7}} 0 -1
-[2025-04-29 09:53:11.095] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=14, col=6}}
-[2025-04-29 09:53:11.096] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=14, col=6}} -1 0
-[2025-04-29 09:53:11.239] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@40c03989 Direction:Coord{row=0, col=1}
-[2025-04-29 09:53:11.240] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@40c03989 0 1
-[2025-04-29 09:53:11.325] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=13, col=6}}
-[2025-04-29 09:53:11.325] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=13, col=6}} -1 0
-[2025-04-29 09:53:11.590] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@40c03989 Direction:Coord{row=0, col=1}
-[2025-04-29 09:53:11.597] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@40c03989 0 1
-[2025-04-29 09:53:11.833] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=12, col=6}}
-[2025-04-29 09:53:11.833] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=12, col=6}} -1 0
-[2025-04-29 09:53:11.871] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=11, col=6}}
-[2025-04-29 09:53:11.871] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=11, col=6}} -1 0
-[2025-04-29 09:53:11.904] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=10, col=6}}
-[2025-04-29 09:53:11.904] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=10, col=6}} -1 0
-[2025-04-29 09:53:11.934] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=9, col=6}}
-[2025-04-29 09:53:11.934] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=9, col=6}} -1 0
-[2025-04-29 09:53:11.943] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@40c03989 Direction:Coord{row=0, col=1}
-[2025-04-29 09:53:11.943] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@40c03989 0 1
-[2025-04-29 09:53:11.972] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=8, col=6}}
-[2025-04-29 09:53:11.973] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=8, col=6}} -1 0
-[2025-04-29 09:53:11.998] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=7, col=6}}
-[2025-04-29 09:53:11.999] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=7, col=6}} -1 0
-[2025-04-29 09:53:12.029] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=6, col=6}}
-[2025-04-29 09:53:12.029] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=6, col=6}} -1 0
-[2025-04-29 09:53:12.069] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=5, col=6}}
-[2025-04-29 09:53:12.069] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=5, col=6}} -1 0
-[2025-04-29 09:53:12.095] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=4, col=6}}
-[2025-04-29 09:53:12.095] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=4, col=6}} -1 0
-[2025-04-29 09:53:12.295] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@40c03989 Direction:Coord{row=0, col=1}
-[2025-04-29 09:53:12.295] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@40c03989 0 1
-[2025-04-29 09:53:12.358] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=4, col=6}}
-[2025-04-29 09:53:12.359] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=4, col=6}} 0 1
-[2025-04-29 09:53:12.570] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=4, col=7}}
-[2025-04-29 09:53:12.570] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=4, col=7}} 0 1
-[2025-04-29 09:53:12.647] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@40c03989 Direction:Coord{row=0, col=1}
-[2025-04-29 09:53:12.647] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@40c03989 0 1
-[2025-04-29 09:53:12.756] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=4, col=8}}
-[2025-04-29 09:53:12.756] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=4, col=8}} -1 0
-[2025-04-29 09:53:12.999] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@40c03989 Direction:Coord{row=0, col=1}
-[2025-04-29 09:53:12.999] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@40c03989 0 1
-[2025-04-29 09:53:13.076] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=3, col=8}}
-[2025-04-29 09:53:13.076] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=3, col=8}} -1 0
-[2025-04-29 09:53:13.335] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@40c03989 Direction:Coord{row=0, col=1}
-[2025-04-29 09:53:13.335] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@40c03989 0 1
-[2025-04-29 09:53:13.346] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=3, col=8}}
-[2025-04-29 09:53:13.346] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=3, col=8}} 0 -1
-[2025-04-29 09:53:13.687] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@40c03989 Direction:Coord{row=0, col=1}
-[2025-04-29 09:53:13.687] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@40c03989 0 1
-[2025-04-29 09:53:13.712] INFO - GameLogic.heroShot - Tir de la flèche
-[2025-04-29 09:53:13.751] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@4d4e69bd 0 -1
-[2025-04-29 09:53:14.040] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@40c03989 Direction:Coord{row=0, col=1}
-[2025-04-29 09:53:14.040] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@4d4e69bd Direction:Coord{row=0, col=-1}
-[2025-04-29 09:53:14.041] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@40c03989 0 1
-[2025-04-29 09:53:14.046] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@4d4e69bd 0 -1
-[2025-04-29 09:53:14.390] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@40c03989 Direction:Coord{row=0, col=1}
-[2025-04-29 09:53:14.391] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@4d4e69bd Direction:Coord{row=0, col=-1}
-[2025-04-29 09:53:14.391] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@40c03989 0 1
-[2025-04-29 09:53:14.396] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@4d4e69bd 0 -1
-[2025-04-29 09:53:14.742] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@40c03989 Direction:Coord{row=0, col=1}
-[2025-04-29 09:53:14.743] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@4d4e69bd Direction:Coord{row=0, col=-1}
-[2025-04-29 09:53:14.743] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@40c03989 0 1
-[2025-04-29 09:53:14.748] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@4d4e69bd 0 -1
-[2025-04-29 09:53:14.755] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=3, col=7}}
-[2025-04-29 09:53:14.756] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=3, col=7}} 0 1
-[2025-04-29 09:53:15.080] INFO - GameLogic.heroShot - Tir de la flèche
-[2025-04-29 09:53:15.088] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@40c03989 Direction:Coord{row=0, col=1}
-[2025-04-29 09:53:15.088] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@4d4e69bd Direction:Coord{row=0, col=-1}
-[2025-04-29 09:53:15.088] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@4bc22cbf 0 1
-[2025-04-29 09:53:15.089] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@40c03989 0 1
-[2025-04-29 09:53:15.093] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@4d4e69bd 0 -1
-[2025-04-29 09:53:15.292] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=3, col=8}}
-[2025-04-29 09:53:15.292] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=3, col=8}} 1 0
-[2025-04-29 09:53:15.447] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@40c03989 Direction:Coord{row=0, col=1}
-[2025-04-29 09:53:15.447] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@4d4e69bd Direction:Coord{row=0, col=-1}
-[2025-04-29 09:53:15.448] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@40c03989 0 1
-[2025-04-29 09:53:15.453] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@4d4e69bd 0 -1
-[2025-04-29 09:53:15.496] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=4, col=8}}
-[2025-04-29 09:53:15.496] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=4, col=8}} 1 0
-[2025-04-29 09:53:15.764] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=5, col=8}}
-[2025-04-29 09:53:15.764] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=5, col=8}} 1 0
-[2025-04-29 09:53:15.799] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@40c03989 Direction:Coord{row=0, col=1}
-[2025-04-29 09:53:15.800] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@4d4e69bd Direction:Coord{row=0, col=-1}
-[2025-04-29 09:53:15.800] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@40c03989 0 1
-[2025-04-29 09:53:15.804] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@4d4e69bd 0 -1
-[2025-04-29 09:53:16.017] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=6, col=8}}
-[2025-04-29 09:53:16.017] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=6, col=8}} 1 0
-[2025-04-29 09:53:16.136] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@40c03989 Direction:Coord{row=0, col=1}
-[2025-04-29 09:53:16.136] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@40c03989 0 1
-[2025-04-29 09:53:16.299] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=7, col=8}}
-[2025-04-29 09:53:16.299] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=7, col=8}} 1 0
-[2025-04-29 09:53:16.487] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@40c03989 Direction:Coord{row=0, col=1}
-[2025-04-29 09:53:16.487] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@40c03989 0 1
-[2025-04-29 09:53:16.516] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=8, col=8}}
-[2025-04-29 09:53:16.516] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=8, col=8}} 1 0
-[2025-04-29 09:53:16.802] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=9, col=8}}
-[2025-04-29 09:53:16.802] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=9, col=8}} -1 0
-[2025-04-29 09:53:16.839] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@40c03989 Direction:Coord{row=0, col=1}
-[2025-04-29 09:53:16.839] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@40c03989 0 1
-[2025-04-29 09:53:17.058] INFO - GameLogic.heroShot - Tir de la flèche
-[2025-04-29 09:53:17.095] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@3f538bb4 -1 0
-[2025-04-29 09:53:17.191] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@40c03989 Direction:Coord{row=0, col=1}
-[2025-04-29 09:53:17.191] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@40c03989 0 1
-[2025-04-29 09:53:17.311] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=8, col=8}}
-[2025-04-29 09:53:17.312] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=8, col=8}} 1 0
-[2025-04-29 09:53:17.398] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@3f538bb4 Direction:Coord{row=-1, col=0}
-[2025-04-29 09:53:17.398] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@3f538bb4 -1 0
-[2025-04-29 09:53:17.535] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=9, col=8}}
-[2025-04-29 09:53:17.535] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=9, col=8}} 1 0
-[2025-04-29 09:53:17.543] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@40c03989 Direction:Coord{row=0, col=1}
-[2025-04-29 09:53:17.543] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@40c03989 0 1
-[2025-04-29 09:53:17.735] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@3f538bb4 Direction:Coord{row=-1, col=0}
-[2025-04-29 09:53:17.735] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@3f538bb4 -1 0
-[2025-04-29 09:53:17.748] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=10, col=8}}
-[2025-04-29 09:53:17.748] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=10, col=8}} 1 0
-[2025-04-29 09:53:17.894] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@40c03989 Direction:Coord{row=0, col=1}
-[2025-04-29 09:53:17.894] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@40c03989 0 1
-[2025-04-29 09:53:18.086] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@3f538bb4 Direction:Coord{row=-1, col=0}
-[2025-04-29 09:53:18.086] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@3f538bb4 -1 0
-[2025-04-29 09:53:18.246] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@40c03989 Direction:Coord{row=0, col=1}
-[2025-04-29 09:53:18.246] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@40c03989 0 1
-[2025-04-29 09:53:18.439] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@3f538bb4 Direction:Coord{row=-1, col=0}
-[2025-04-29 09:53:18.439] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@3f538bb4 -1 0
-[2025-04-29 09:53:18.599] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@40c03989 Direction:Coord{row=0, col=1}
-[2025-04-29 09:53:18.599] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@40c03989 0 1
-[2025-04-29 09:53:18.935] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@40c03989 Direction:Coord{row=0, col=1}
-[2025-04-29 09:53:18.935] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@40c03989 0 1
-[2025-04-29 09:53:19.073] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=11, col=8}}
-[2025-04-29 09:53:19.073] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=11, col=8}} -1 0
-[2025-04-29 09:53:19.286] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@40c03989 Direction:Coord{row=0, col=1}
-[2025-04-29 09:53:19.286] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@40c03989 0 1
-[2025-04-29 09:53:19.585] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=10, col=8}}
-[2025-04-29 09:53:19.585] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=10, col=8}} -1 0
-[2025-04-29 09:53:19.617] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=9, col=8}}
-[2025-04-29 09:53:19.618] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=9, col=8}} -1 0
-[2025-04-29 09:53:19.650] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=8, col=8}}
-[2025-04-29 09:53:19.650] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=8, col=8}} -1 0
-[2025-04-29 09:53:19.682] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=7, col=8}}
-[2025-04-29 09:53:19.683] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=7, col=8}} -1 0
-[2025-04-29 09:53:19.715] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=6, col=8}}
-[2025-04-29 09:53:19.715] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=6, col=8}} -1 0
-[2025-04-29 09:53:19.748] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=5, col=8}}
-[2025-04-29 09:53:19.748] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=5, col=8}} -1 0
-[2025-04-29 09:53:19.817] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=4, col=8}}
-[2025-04-29 09:53:19.817] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=4, col=8}} 0 1
-[2025-04-29 09:53:20.569] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=4, col=9}}
-[2025-04-29 09:53:20.569] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=4, col=9}} 0 1
-[2025-04-29 09:53:20.967] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=4, col=10}}
-[2025-04-29 09:53:20.967] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=4, col=10}} -1 0
-[2025-04-29 09:53:21.109] INFO - GameLogic.heroShot - Tir de la flèche
-[2025-04-29 09:53:21.143] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@10aadf6 0 1
-[2025-04-29 09:53:21.339] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=4, col=10}}
-[2025-04-29 09:53:21.339] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=4, col=10}} 1 0
-[2025-04-29 09:53:21.447] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@10aadf6 Direction:Coord{row=0, col=1}
-[2025-04-29 09:53:21.447] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@10aadf6 0 1
-[2025-04-29 09:53:21.508] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=5, col=10}}
-[2025-04-29 09:53:21.508] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=5, col=10}} 1 0
-[2025-04-29 09:53:21.799] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@10aadf6 Direction:Coord{row=0, col=1}
-[2025-04-29 09:53:21.799] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@10aadf6 0 1
-[2025-04-29 09:53:21.887] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=6, col=10}}
-[2025-04-29 09:53:21.888] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=6, col=10}} -1 0
-[2025-04-29 09:53:22.135] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@10aadf6 Direction:Coord{row=0, col=1}
-[2025-04-29 09:53:22.135] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@10aadf6 0 1
-[2025-04-29 09:53:22.173] INFO - GameLogic.heroShot - Tir de la flèche
-[2025-04-29 09:53:22.190] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@4fe3d54e -1 0
-[2025-04-29 09:53:22.429] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=5, col=10}}
-[2025-04-29 09:53:22.429] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=5, col=10}} 1 0
-[2025-04-29 09:53:22.487] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@10aadf6 Direction:Coord{row=0, col=1}
-[2025-04-29 09:53:22.487] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@10aadf6 0 1
-[2025-04-29 09:53:22.602] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=6, col=10}}
-[2025-04-29 09:53:22.604] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=6, col=10}} 1 0
-[2025-04-29 09:53:22.803] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=7, col=10}}
-[2025-04-29 09:53:22.803] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=7, col=10}} 1 0
-[2025-04-29 09:53:22.839] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@10aadf6 Direction:Coord{row=0, col=1}
-[2025-04-29 09:53:22.839] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@10aadf6 0 1
-[2025-04-29 09:53:23.037] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=8, col=10}}
-[2025-04-29 09:53:23.037] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=8, col=10}} -1 0
-[2025-04-29 09:53:23.192] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@10aadf6 Direction:Coord{row=0, col=1}
-[2025-04-29 09:53:23.192] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@10aadf6 0 1
-[2025-04-29 09:53:23.288] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=7, col=10}}
-[2025-04-29 09:53:23.288] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=7, col=10}} -1 0
-[2025-04-29 09:53:23.503] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=6, col=10}}
-[2025-04-29 09:53:23.503] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=6, col=10}} -1 0
-[2025-04-29 09:53:23.543] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@10aadf6 Direction:Coord{row=0, col=1}
-[2025-04-29 09:53:23.543] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@10aadf6 0 1
-[2025-04-29 09:53:23.848] INFO - GameLogic.heroShot - Tir de la flèche
-[2025-04-29 09:53:23.848] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@6b796b39 -1 0
-[2025-04-29 09:53:23.895] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@10aadf6 Direction:Coord{row=0, col=1}
-[2025-04-29 09:53:23.895] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@10aadf6 0 1
-[2025-04-29 09:53:24.247] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@10aadf6 Direction:Coord{row=0, col=1}
-[2025-04-29 09:53:24.248] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@10aadf6 0 1
-[2025-04-29 09:53:24.273] INFO - GameLogic.heroShot - Tir de la flèche
-[2025-04-29 09:53:24.286] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@25d0f202 -1 0
-[2025-04-29 09:53:24.599] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@10aadf6 Direction:Coord{row=0, col=1}
-[2025-04-29 09:53:24.599] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@10aadf6 0 1
-[2025-04-29 09:53:24.681] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=5, col=10}}
-[2025-04-29 09:53:24.681] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=5, col=10}} 1 0
-[2025-04-29 09:53:24.811] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=6, col=10}}
-[2025-04-29 09:53:24.811] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=6, col=10}} 0 -1
-[2025-04-29 09:53:24.934] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@10aadf6 Direction:Coord{row=0, col=1}
-[2025-04-29 09:53:24.935] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@10aadf6 0 1
-[2025-04-29 09:53:25.012] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=6, col=9}}
-[2025-04-29 09:53:25.012] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=6, col=9}} 0 -1
-[2025-04-29 09:53:25.287] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@10aadf6 Direction:Coord{row=0, col=1}
-[2025-04-29 09:53:25.287] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@10aadf6 0 1
-[2025-04-29 09:53:25.639] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@10aadf6 Direction:Coord{row=0, col=1}
-[2025-04-29 09:53:25.639] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@10aadf6 0 1
-[2025-04-29 09:53:25.991] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@10aadf6 Direction:Coord{row=0, col=1}
-[2025-04-29 09:53:25.991] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@10aadf6 0 1
-[2025-04-29 09:53:26.342] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@10aadf6 Direction:Coord{row=0, col=1}
-[2025-04-29 09:53:26.342] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@10aadf6 0 1
-[2025-04-29 09:53:26.694] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@10aadf6 Direction:Coord{row=0, col=1}
-[2025-04-29 09:53:26.694] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@10aadf6 0 1
-[2025-04-29 09:53:27.047] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@10aadf6 Direction:Coord{row=0, col=1}
-[2025-04-29 09:53:27.047] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@10aadf6 0 1
-[2025-04-29 09:53:27.398] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@10aadf6 Direction:Coord{row=0, col=1}
-[2025-04-29 09:53:27.398] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@10aadf6 0 1
-[2025-04-29 09:53:27.735] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@10aadf6 Direction:Coord{row=0, col=1}
-[2025-04-29 09:53:27.735] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@10aadf6 0 1
-[2025-04-29 09:53:28.087] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@10aadf6 Direction:Coord{row=0, col=1}
-[2025-04-29 09:53:28.087] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@10aadf6 0 1
-[2025-04-29 09:53:28.439] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@10aadf6 Direction:Coord{row=0, col=1}
-[2025-04-29 09:53:28.439] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@10aadf6 0 1
-[2025-04-29 09:53:28.790] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@10aadf6 Direction:Coord{row=0, col=1}
-[2025-04-29 09:53:28.790] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@10aadf6 0 1
+[2025-04-29 10:59:19.419] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=7, col=4}}
+[2025-04-29 10:59:19.429] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=7, col=4}} 0 1
+[2025-04-29 10:59:19.584] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=7, col=5}}
+[2025-04-29 10:59:19.585] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=7, col=5}} 0 1
+[2025-04-29 10:59:20.163] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=7, col=6}}
+[2025-04-29 10:59:20.164] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=7, col=6}} -1 0
+[2025-04-29 10:59:20.352] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=6, col=6}}
+[2025-04-29 10:59:20.353] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=6, col=6}} -1 0
+[2025-04-29 10:59:20.541] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=5, col=6}}
+[2025-04-29 10:59:20.542] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=5, col=6}} -1 0
+[2025-04-29 10:59:20.863] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=4, col=6}}
+[2025-04-29 10:59:20.864] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=4, col=6}} 0 -1
+[2025-04-29 10:59:21.106] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=4, col=5}}
+[2025-04-29 10:59:21.108] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=4, col=5}} 0 -1
+[2025-04-29 10:59:21.391] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=4, col=4}}
+[2025-04-29 10:59:21.392] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=4, col=4}} 1 0
+[2025-04-29 10:59:21.619] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=5, col=4}}
+[2025-04-29 10:59:21.621] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=5, col=4}} 1 0
+[2025-04-29 10:59:21.872] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=6, col=4}}
+[2025-04-29 10:59:21.872] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=6, col=4}} 0 1
+[2025-04-29 10:59:22.128] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=6, col=5}}
+[2025-04-29 10:59:22.128] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=6, col=5}} 0 1
+[2025-04-29 10:59:22.635] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=6, col=6}}
+[2025-04-29 10:59:22.635] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=6, col=6}} 0 1
+[2025-04-29 10:59:22.679] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=6, col=7}}
+[2025-04-29 10:59:22.680] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=6, col=7}} 0 1
+[2025-04-29 10:59:22.704] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=6, col=8}}
+[2025-04-29 10:59:22.705] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=6, col=8}} 0 1
+[2025-04-29 10:59:22.735] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=6, col=9}}
+[2025-04-29 10:59:22.736] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=6, col=9}} 0 1
+[2025-04-29 10:59:22.772] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=6, col=10}}
+[2025-04-29 10:59:22.772] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=6, col=10}} 0 1
+[2025-04-29 10:59:22.798] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=6, col=11}}
+[2025-04-29 10:59:22.799] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=6, col=11}} 0 1
+[2025-04-29 10:59:22.982] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=6, col=12}}
+[2025-04-29 10:59:22.982] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=6, col=12}} 1 0
+[2025-04-29 10:59:23.205] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=7, col=12}}
+[2025-04-29 10:59:23.206] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=7, col=12}} 1 0
+[2025-04-29 10:59:23.362] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=8, col=12}}
+[2025-04-29 10:59:23.363] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=8, col=12}} 1 0
+[2025-04-29 10:59:23.533] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=9, col=12}}
+[2025-04-29 10:59:23.534] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=9, col=12}} 1 0
+[2025-04-29 10:59:23.705] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=10, col=12}}
+[2025-04-29 10:59:23.705] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=10, col=12}} 1 0
+[2025-04-29 10:59:23.892] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=11, col=12}}
+[2025-04-29 10:59:23.892] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=11, col=12}} 1 0
+[2025-04-29 10:59:24.082] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=12, col=12}}
+[2025-04-29 10:59:24.082] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=12, col=12}} 0 -1
+[2025-04-29 10:59:24.296] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=12, col=11}}
+[2025-04-29 10:59:24.297] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=12, col=11}} 0 -1
+[2025-04-29 10:59:24.476] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=12, col=10}}
+[2025-04-29 10:59:24.476] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=12, col=10}} 0 -1
+[2025-04-29 10:59:24.677] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=12, col=9}}
+[2025-04-29 10:59:24.678] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=12, col=9}} 0 -1
+[2025-04-29 10:59:24.854] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=12, col=8}}
+[2025-04-29 10:59:24.855] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=12, col=8}} 0 -1
+[2025-04-29 10:59:25.259] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=12, col=7}}
+[2025-04-29 10:59:25.259] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=12, col=7}} 0 -1
+[2025-04-29 10:59:25.350] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=12, col=6}}
+[2025-04-29 10:59:25.351] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=12, col=6}} -1 0
+[2025-04-29 10:59:25.536] INFO - GameLogic.heroShot - Tir de la flèche
+[2025-04-29 10:59:25.557] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@216c53bf -1 0
+[2025-04-29 10:59:25.853] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@216c53bf Direction:Coord{row=-1, col=0}
+[2025-04-29 10:59:25.854] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@216c53bf -1 0
+[2025-04-29 10:59:26.036] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=11, col=6}}
+[2025-04-29 10:59:26.037] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=11, col=6}} 0 1
+[2025-04-29 10:59:26.205] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@216c53bf Direction:Coord{row=-1, col=0}
+[2025-04-29 10:59:26.205] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@216c53bf -1 0
+[2025-04-29 10:59:26.274] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=11, col=7}}
+[2025-04-29 10:59:26.274] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=11, col=7}} 0 1
+[2025-04-29 10:59:26.413] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=11, col=8}}
+[2025-04-29 10:59:26.413] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=11, col=8}} -1 0
+[2025-04-29 10:59:26.557] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@216c53bf Direction:Coord{row=-1, col=0}
+[2025-04-29 10:59:26.558] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@216c53bf -1 0
+[2025-04-29 10:59:26.584] INFO - GameLogic.heroShot - Tir de la flèche
+[2025-04-29 10:59:26.605] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@2e08998 -1 0
+[2025-04-29 10:59:26.750] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=10, col=8}}
+[2025-04-29 10:59:26.750] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=10, col=8}} 0 1
+[2025-04-29 10:59:26.909] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@216c53bf Direction:Coord{row=-1, col=0}
+[2025-04-29 10:59:26.910] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@2e08998 Direction:Coord{row=-1, col=0}
+[2025-04-29 10:59:26.910] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@216c53bf -1 0
+[2025-04-29 10:59:26.918] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@2e08998 -1 0
+[2025-04-29 10:59:26.999] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=10, col=9}}
+[2025-04-29 10:59:26.999] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=10, col=9}} 0 1
+[2025-04-29 10:59:27.120] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=10, col=10}}
+[2025-04-29 10:59:27.120] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=10, col=10}} -1 0
+[2025-04-29 10:59:27.261] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@216c53bf Direction:Coord{row=-1, col=0}
+[2025-04-29 10:59:27.261] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@2e08998 Direction:Coord{row=-1, col=0}
+[2025-04-29 10:59:27.261] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@216c53bf -1 0
+[2025-04-29 10:59:27.269] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@2e08998 -1 0
+[2025-04-29 10:59:27.427] INFO - GameLogic.heroShot - Tir de la flèche
+[2025-04-29 10:59:27.469] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@56b2475f -1 0
+[2025-04-29 10:59:27.613] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@216c53bf Direction:Coord{row=-1, col=0}
+[2025-04-29 10:59:27.613] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@2e08998 Direction:Coord{row=-1, col=0}
+[2025-04-29 10:59:27.613] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@216c53bf -1 0
+[2025-04-29 10:59:27.618] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@2e08998 -1 0
+[2025-04-29 10:59:27.646] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=9, col=10}}
+[2025-04-29 10:59:27.647] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=9, col=10}} -1 0
+[2025-04-29 10:59:27.759] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@56b2475f Direction:Coord{row=-1, col=0}
+[2025-04-29 10:59:27.760] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@56b2475f -1 0
+[2025-04-29 10:59:27.855] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=8, col=10}}
+[2025-04-29 10:59:27.855] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=8, col=10}} -1 0
+[2025-04-29 10:59:27.965] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@216c53bf Direction:Coord{row=-1, col=0}
+[2025-04-29 10:59:27.966] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@2e08998 Direction:Coord{row=-1, col=0}
+[2025-04-29 10:59:27.966] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@216c53bf -1 0
+[2025-04-29 10:59:27.970] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@2e08998 -1 0
+[2025-04-29 10:59:28.049] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=7, col=10}}
+[2025-04-29 10:59:28.049] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=7, col=10}} -1 0
+[2025-04-29 10:59:28.109] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@56b2475f Direction:Coord{row=-1, col=0}
+[2025-04-29 10:59:28.110] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@56b2475f -1 0
+[2025-04-29 10:59:28.280] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=7, col=10}}
+[2025-04-29 10:59:28.280] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=7, col=10}} -1 0
+[2025-04-29 10:59:28.317] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@216c53bf Direction:Coord{row=-1, col=0}
+[2025-04-29 10:59:28.318] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@2e08998 Direction:Coord{row=-1, col=0}
+[2025-04-29 10:59:28.318] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@216c53bf -1 0
+[2025-04-29 10:59:28.329] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@2e08998 -1 0
+[2025-04-29 10:59:28.451] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=6, col=10}}
+[2025-04-29 10:59:28.451] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=6, col=10}} 0 -1
+[2025-04-29 10:59:28.461] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@56b2475f Direction:Coord{row=-1, col=0}
+[2025-04-29 10:59:28.470] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@56b2475f -1 0
+[2025-04-29 10:59:28.653] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@216c53bf Direction:Coord{row=-1, col=0}
+[2025-04-29 10:59:28.654] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@2e08998 Direction:Coord{row=-1, col=0}
+[2025-04-29 10:59:28.654] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@216c53bf -1 0
+[2025-04-29 10:59:28.664] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@2e08998 -1 0
+[2025-04-29 10:59:28.680] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=6, col=9}}
+[2025-04-29 10:59:28.680] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=6, col=9}} 0 -1
+[2025-04-29 10:59:28.813] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@56b2475f Direction:Coord{row=-1, col=0}
+[2025-04-29 10:59:28.813] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@56b2475f -1 0
+[2025-04-29 10:59:28.831] INFO - GameLogic.heroShot - Tir de la flèche
+[2025-04-29 10:59:28.854] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@2920c25c 0 -1
+[2025-04-29 10:59:29.005] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@216c53bf Direction:Coord{row=-1, col=0}
+[2025-04-29 10:59:29.005] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@2e08998 Direction:Coord{row=-1, col=0}
+[2025-04-29 10:59:29.006] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@216c53bf -1 0
+[2025-04-29 10:59:29.011] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@2e08998 -1 0
+[2025-04-29 10:59:29.074] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=6, col=8}}
+[2025-04-29 10:59:29.075] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=6, col=8}} 1 0
+[2025-04-29 10:59:29.165] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@56b2475f Direction:Coord{row=-1, col=0}
+[2025-04-29 10:59:29.165] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@2920c25c Direction:Coord{row=0, col=-1}
+[2025-04-29 10:59:29.166] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@56b2475f -1 0
+[2025-04-29 10:59:29.178] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@2920c25c 0 -1
+[2025-04-29 10:59:29.276] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=7, col=8}}
+[2025-04-29 10:59:29.276] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=7, col=8}} 1 0
+[2025-04-29 10:59:29.357] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@2e08998 Direction:Coord{row=-1, col=0}
+[2025-04-29 10:59:29.358] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@2e08998 -1 0
+[2025-04-29 10:59:29.462] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=8, col=8}}
+[2025-04-29 10:59:29.463] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=8, col=8}} 0 -1
+[2025-04-29 10:59:29.517] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@56b2475f Direction:Coord{row=-1, col=0}
+[2025-04-29 10:59:29.517] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@2920c25c Direction:Coord{row=0, col=-1}
+[2025-04-29 10:59:29.518] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@56b2475f -1 0
+[2025-04-29 10:59:29.528] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@2920c25c 0 -1
+[2025-04-29 10:59:29.685] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=8, col=7}}
+[2025-04-29 10:59:29.686] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=8, col=7}} 0 -1
+[2025-04-29 10:59:29.709] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@2e08998 Direction:Coord{row=-1, col=0}
+[2025-04-29 10:59:29.709] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@2e08998 -1 0
+[2025-04-29 10:59:29.853] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@56b2475f Direction:Coord{row=-1, col=0}
+[2025-04-29 10:59:29.853] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@2920c25c Direction:Coord{row=0, col=-1}
+[2025-04-29 10:59:29.854] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@56b2475f -1 0
+[2025-04-29 10:59:29.862] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@2920c25c 0 -1
+[2025-04-29 10:59:30.192] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=8, col=6}}
+[2025-04-29 10:59:30.192] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=8, col=6}} 0 -1
+[2025-04-29 10:59:30.205] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@56b2475f Direction:Coord{row=-1, col=0}
+[2025-04-29 10:59:30.205] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@2920c25c Direction:Coord{row=0, col=-1}
+[2025-04-29 10:59:30.206] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@56b2475f -1 0
+[2025-04-29 10:59:30.210] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@2920c25c 0 -1
+[2025-04-29 10:59:30.233] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=8, col=5}}
+[2025-04-29 10:59:30.233] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=8, col=5}} 0 -1
+[2025-04-29 10:59:30.261] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=8, col=4}}
+[2025-04-29 10:59:30.261] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=8, col=4}} 0 -1
+[2025-04-29 10:59:30.291] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=8, col=3}}
+[2025-04-29 10:59:30.291] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=8, col=3}} 0 -1
+[2025-04-29 10:59:30.329] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=8, col=2}}
+[2025-04-29 10:59:30.330] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=8, col=2}} 0 -1
+[2025-04-29 10:59:30.557] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@2920c25c Direction:Coord{row=0, col=-1}
+[2025-04-29 10:59:30.557] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@2920c25c 0 -1
+[2025-04-29 10:59:30.584] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=8, col=1}}
+[2025-04-29 10:59:30.584] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=8, col=1}} -1 0
+[2025-04-29 10:59:30.837] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=7, col=1}}
+[2025-04-29 10:59:30.837] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=7, col=1}} -1 0
+[2025-04-29 10:59:30.909] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@2920c25c Direction:Coord{row=0, col=-1}
+[2025-04-29 10:59:30.909] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@2920c25c 0 -1
+[2025-04-29 10:59:31.261] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@2920c25c Direction:Coord{row=0, col=-1}
+[2025-04-29 10:59:31.262] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@2920c25c 0 -1
+[2025-04-29 10:59:31.425] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=7, col=1}}
+[2025-04-29 10:59:31.425] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=7, col=1}} 0 1
+[2025-04-29 10:59:31.691] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=7, col=2}}
+[2025-04-29 10:59:31.691] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=7, col=2}} 0 1
+[2025-04-29 10:59:31.908] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='mMrcel', HP=10, coord=Coord{row=7, col=3}}
+[2025-04-29 10:59:31.909] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='mMrcel', HP=10, coord=Coord{row=7, col=3}} -1 0

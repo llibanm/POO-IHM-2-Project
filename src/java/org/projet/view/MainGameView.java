@@ -10,6 +10,7 @@ import src.java.org.projet.controler.levelEditorController.MatrixLvlEditorContro
 import src.java.org.projet.controler.levelEditorController.SelectItemSectionController;
 import src.java.org.projet.model.modelCharacter.Agressor;
 import src.java.org.projet.model.modelCharacter.Hero;
+import src.java.org.projet.model.modelGame.GameModel;
 import src.java.org.projet.model.modelItems.Item;
 import src.java.org.projet.model.modelLevelEditor.MatrixLvlEditorModel;
 import src.java.org.projet.model.modelLevelEditor.SelectItemSectionModel;
@@ -17,6 +18,9 @@ import src.java.org.projet.model.modelLevelEditor.base.CaseMatrix;
 import src.java.org.projet.model.modelMap.SimpleDoor;
 import src.java.org.projet.view.levelEditorView.MatrixLvLEditorView;
 import src.java.org.projet.view.levelEditorView.SelectItemView;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class MainGameView extends Application {
 
@@ -33,8 +37,12 @@ public class MainGameView extends Application {
         MatrixLvlEditorModel matrixLvlEditorModelMars = new MatrixLvlEditorModel(50,50,"src/java/org/projet/assets/planet/planet00.png");
         MatrixLvlEditorModel matrixLvlEditorModelSaturn = new MatrixLvlEditorModel(50,50,"src/java/org/projet/assets/planet/planet02.png");
         MatrixLvlEditorModel matrixLvlEditorModelJupiter = new MatrixLvlEditorModel(50,50,"src/java/org/projet/assets/planet/planet04.png");
-
-        MatrixLvlEditorController matrixLvlEditorController = new MatrixLvlEditorController(matrixLvlEditorModel,matrixLvLEditorView, selectController);
+        List<MatrixLvlEditorModel> matrixLvlEditorModelList = new ArrayList<>();
+        matrixLvlEditorModelList.add(matrixLvlEditorModel);
+        matrixLvlEditorModelList.add(matrixLvlEditorModelMars);
+        matrixLvlEditorModelList.add(matrixLvlEditorModelSaturn);
+        GameModel gameModel = new GameModel(matrixLvlEditorModelList);
+        MatrixLvlEditorController matrixLvlEditorController = new MatrixLvlEditorController(gameModel,matrixLvLEditorView, selectController);
 
         StackPane stackPane = new StackPane();
         Background imgBackground = createImgBackground("src/java/org/projet/assets/planet/planet01.png",100,100);
