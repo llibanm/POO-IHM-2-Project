@@ -2,6 +2,9 @@ package src.java.org.projet.view;
 
 import javafx.application.Application;
 import javafx.scene.Scene;
+import javafx.scene.control.Menu;
+import javafx.scene.control.MenuBar;
+import javafx.scene.control.MenuItem;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.*;
@@ -15,6 +18,7 @@ import src.java.org.projet.model.modelItems.Item;
 import src.java.org.projet.model.modelLevelEditor.MatrixLvlEditorModel;
 import src.java.org.projet.model.modelLevelEditor.SelectItemSectionModel;
 import src.java.org.projet.model.modelLevelEditor.base.CaseMatrix;
+import src.java.org.projet.model.modelMap.Location;
 import src.java.org.projet.model.modelMap.SimpleDoor;
 import src.java.org.projet.util.InitGame;
 import src.java.org.projet.view.levelEditorView.HeroStateView;
@@ -61,7 +65,8 @@ public class MainGameView extends Application {
                 new Agressor("",0),
                 new Hero("",0),
                 Item.class,
-                SimpleDoor.class,
+                new SimpleDoor(new Location("PorteVersMars","",0),
+                        new Location("Mars","",2), ""),
                 Item.class,
                 Item.class,
         };
@@ -76,7 +81,46 @@ public class MainGameView extends Application {
         selectController.addListenerToIems();
         root.setCenter(stackPane);
         root.setLeft(selectItemView);
+
+        //Section supérieur
+        Pane myPane = new Pane();
+        MenuBar menubar = new MenuBar();
+        final Menu filemenu = new Menu("Jeu par défaut");
+        //Item filemenu
+        final MenuItem itemNew = new MenuItem("Jouer");
+        filemenu.getItems().addAll(itemNew);
+
+        //item affichage
+        final Menu affichageMenu = new Menu("Créer Jeu");
+        final MenuItem itemFscreen = new MenuItem("Editeur de niveau");
+        affichageMenu.getItems().addAll(itemFscreen);
+
+        final Menu importExportMenu = new Menu("Importer/exporter");
+        final MenuItem importMI = new MenuItem("Editeur de niveau");
+        importExportMenu.getItems().addAll(importMI);
+
+        final Menu hallOfFameMenu= new Menu("Rang");
+        final MenuItem rankMI = new MenuItem("Voir le classement");
+        hallOfFameMenu.getItems().addAll(rankMI);
+
+
+        final Menu configurationMenu= new Menu("configuration");
+        final MenuItem configMI = new MenuItem("config");
+        configurationMenu.getItems().addAll(configMI);
+
+        final Menu authorMenu= new Menu("Auteurs");
+        final MenuItem authorMI = new MenuItem("Clara,Marcel,Samy,Liban");
+        authorMenu.getItems().addAll(authorMI);
+
+        menubar.getMenus().addAll(filemenu,affichageMenu, importExportMenu, hallOfFameMenu, configurationMenu,authorMenu);
+        myPane.getChildren().addAll(menubar);
+
+
+        matrixLvlEditorController.setPaneView(myPane);
+        root.setTop(myPane);
+
         root.setRight(heroStateView);
+        //root.setBottom(myPane);
 
         Scene scene = new Scene(root, 1200, 800);
         primaryStage.setScene(scene);

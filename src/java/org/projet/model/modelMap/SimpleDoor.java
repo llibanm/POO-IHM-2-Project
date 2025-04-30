@@ -23,4 +23,9 @@ public class SimpleDoor extends Exit {
 		//TODO make controller interact with model for this
 		//System.out.println("You are crossing a simple door");
 	}
+
+	@Override
+	public Location cross() {
+		return getWayOut();
+	}
 }

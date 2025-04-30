@@ -10,7 +10,8 @@ public class Doctor extends MyCharacter{
     public Doctor(String name, int hp){
         super(name, hp,
                 new MoveRangeOnSprite(new Coord(3,-1), new Coord(2,-1),new Coord(1,-1),new Coord(0,-1)),
-                new SpriteService("src/java/org/projet/assets/Hero.png",32,48,4,4)
+                new SpriteService("src/java/org/projet/assets/Hero.png",32,48,4,4),
+                "src/java/org/projet/assets/Hero.png"
         );
     }
 

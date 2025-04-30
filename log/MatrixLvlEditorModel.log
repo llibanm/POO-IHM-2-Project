@@ -1,0 +1,19 @@
+[2025-04-30 18:23:48.556] INFO - MatrixLvlEditorModel.addItemMatrice - Ajout item addItemMatrice
+[2025-04-30 18:23:48.558] INFO - MatrixLvlEditorModel.fillHeroAndEnnemyList - fillHeroAndEnnemyList MyCharacter{name='', HP=0, coord=null}
+[2025-04-30 18:23:48.577] INFO - MatrixLvlEditorModel.fillHeroAndEnnemyList - Ajout du héro  fillHeroAndEnnemyList
+[2025-04-30 18:23:48.869] WARNING - MatrixLvlEditorModel.moveItem - moveItem MyCharacter{name='Marcel', HP=10, coord=Coord{row=5, col=5}} rowX=0 colY=1
+[2025-04-30 18:23:48.885] INFO - MatrixLvlEditorModel.moveItem - Coordonnées valides? pour le déplacement de l'item MyCharacter{name='Marcel', HP=10, coord=Coord{row=5, col=5}}Coord :Coord{row=5, col=6}etat case suivante:false
+[2025-04-30 18:23:48.887] INFO - MatrixLvlEditorModel.moveItem - Coordonnées valides pour le déplacement de l'item MyCharacter{name='Marcel', HP=10, coord=Coord{row=5, col=5}}Coord :Coord{row=5, col=6}etat case suivante:false
+[2025-04-30 18:23:48.888] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de l'ancienne case CaseMatrix{urlImgToShow='', classNameITem='null', coordRow=5, coordCol=5, width=1, height=1}
+[2025-04-30 18:23:48.889] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert false) false
+[2025-04-30 18:23:48.890] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de la nouvelle case CaseMatrix{urlImgToShow='', classNameITem='MyCharacter{name='Marcel', HP=10, coord=Coord{row=5, col=6}}', coordRow=5, coordCol=6, width=1, height=1}
+[2025-04-30 18:23:48.892] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert true) true
+[2025-04-30 18:23:48.916] INFO - MatrixLvlEditorModel.moveItem - MyCharacter{name='Marcel', HP=10, coord=Coord{row=5, col=6}} Déplacement d'un item, nouvelle coord Coord{row=5, col=6} ancienne coord Coord{row=5, col=5}
+[2025-04-30 18:23:49.021] WARNING - MatrixLvlEditorModel.moveItem - moveItem MyCharacter{name='Marcel', HP=10, coord=Coord{row=5, col=6}} rowX=0 colY=1
+[2025-04-30 18:23:49.022] INFO - MatrixLvlEditorModel.moveItem - Coordonnées valides? pour le déplacement de l'item MyCharacter{name='Marcel', HP=10, coord=Coord{row=5, col=6}}Coord :Coord{row=5, col=7}etat case suivante:false
+[2025-04-30 18:23:49.023] INFO - MatrixLvlEditorModel.moveItem - Coordonnées valides pour le déplacement de l'item MyCharacter{name='Marcel', HP=10, coord=Coord{row=5, col=6}}Coord :Coord{row=5, col=7}etat case suivante:false
+[2025-04-30 18:23:49.024] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de l'ancienne case CaseMatrix{urlImgToShow='', classNameITem='null', coordRow=5, coordCol=6, width=1, height=1}
+[2025-04-30 18:23:49.024] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert false) false
+[2025-04-30 18:23:49.025] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de la nouvelle case CaseMatrix{urlImgToShow='', classNameITem='MyCharacter{name='Marcel', HP=10, coord=Coord{row=5, col=7}}', coordRow=5, coordCol=7, width=1, height=1}
+[2025-04-30 18:23:49.026] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert true) true
+[2025-04-30 18:23:49.040] INFO - MatrixLvlEditorModel.moveItem - MyCharacter{name='Marcel', HP=10, coord=Coord{row=5, col=7}} Déplacement d'un item, nouvelle coord Coord{row=5, col=7} ancienne coord Coord{row=5, col=6}

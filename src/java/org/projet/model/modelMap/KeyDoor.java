@@ -50,6 +50,8 @@ public class KeyDoor extends Exit {
 			//return false;
 		}
 	}
+
+
 	
 	@Override
 	public Boolean canBeCrossed() {
@@ -60,6 +62,14 @@ public class KeyDoor extends Exit {
 	public void isCrossing() {
 		//TODO make controller interact with model for this
 		//System.out.println("You are crossing a key door");
+	}
+
+	@Override
+	public Location cross() {
+		if(isUnlocked){
+			return getWayOut();
+		}
+		else return getEntrance();
 	}
 
 	public Key getkey(){

@@ -13,12 +13,22 @@ public abstract class MyCharacter extends Views4OrientationImgCharacter implemen
     private final String name;
     private int HP;
     Coord coord;
+    String defaultImgPath = "src/java/org/projet/assets/character/hero/d.png";
 
 
-    public MyCharacter(String name, int hp, MoveRangeOnSprite moveRangeOnSprite, SpriteService spriteService) {
+    public MyCharacter(String name, int hp, MoveRangeOnSprite moveRangeOnSprite, SpriteService spriteService, String defaultImgPath) {
         super(spriteService,moveRangeOnSprite);
         this.name = name;
         this.HP = hp;
+        this.defaultImgPath = defaultImgPath;
+    }
+
+    public String getDefaultImgPath() {
+        return defaultImgPath;
+    }
+
+    public void setDefaultImgPath(String defaultImgPath) {
+        this.defaultImgPath = defaultImgPath;
     }
 
     public Coord getCoord() {

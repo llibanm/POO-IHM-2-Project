@@ -41,6 +41,17 @@ public class MatrixLvLEditorView extends GridPane {
         fillMap();
     }
 
+    public void initializeReset() {
+        //setBackground();
+        for (int row = 0; row < nbOfRows; row++) {
+            for (int col = 0; col < nbOfCols; col++) {
+                //removeImgFromGridPane(row, col);
+                removeItemFromGridPane(row, col);
+            }
+        }
+        fillMap();
+    }
+
     public void fillMap() {
         String imgUrl;
         CaseMatrix caseMatrix;

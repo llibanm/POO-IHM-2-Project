@@ -20,7 +20,8 @@ public class Hero extends MyCharacter{
 
         super(name, hp,
                 new MoveRangeOnSprite(new Coord(3,-1), new Coord(2,-1),new Coord(1,-1),new Coord(0,-1)),
-                new SpriteService("src/java/org/projet/assets/Hero.png",32,48,4,4)
+                new SpriteService("src/java/org/projet/assets/Hero.png",32,48,4,4),
+                "src/java/org/projet/assets/Hero.png"
         );
         H_bow = new Bow(new Coord(0,0));
         H_sabre = new Sabre();
@@ -29,10 +30,12 @@ public class Hero extends MyCharacter{
 
     }
 
+
     public Hero(String name, int hp){
         super(name, hp,
                 new MoveRangeOnSprite(new Coord(3,-1), new Coord(2,-1),new Coord(1,-1),new Coord(0,-1)),
-                new SpriteService("src/java/org/projet/assets/Hero.png",32,48,4,4)
+                new SpriteService("src/java/org/projet/assets/Hero.png",32,48,4,4),
+                "src/java/org/projet/assets/defaultHero.png"
         );
         H_bow = new Bow(new Coord(0,0));
         H_sabre = new Sabre();
@@ -93,7 +96,7 @@ public class Hero extends MyCharacter{
     public void loseBurningArrows(){H_bow.remove_burning_arrows();}
 
 
-
+/*
     public void setPosition(String position){
 
         if (H_position.isContainExit(position) && H_position.getExit(position).hero_unlock(this)){
@@ -119,7 +122,7 @@ public class Hero extends MyCharacter{
             // System.out.println("ITEM NOT FOUND");}
         }
     }
-
+*/
     @Override
     public void BeAttacked(String weapon, String arg, Hero hero) {
         decreaseHP(2);
@@ -161,7 +164,7 @@ public class Hero extends MyCharacter{
     public void display_help(){}
 
     public void attack(MyCharacter hero){}
-
+/*
     public void getattacked(){
         ArrayList<MyCharacter> enemies = this.getPosition().getCharacters();
         for(MyCharacter enemy : enemies){
@@ -169,7 +172,7 @@ public class Hero extends MyCharacter{
             enemy.attack(this);
         }
     }
-
+*/
     public void mission(Hero hero){}
 
 }

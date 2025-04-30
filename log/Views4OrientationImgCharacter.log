@@ -1,0 +1,5 @@
+[2025-04-30 18:23:48.897] INFO - Views4OrientationImgCharacter.nextImage - Prochaine image row :0 col 1
+[2025-04-30 18:23:48.900] INFO - Views4OrientationImgCharacter.nextImage - Changement de direction sequence courante  RIGHT
+[2025-04-30 18:23:48.902] INFO - Views4OrientationImgCharacter.nextImage - Current frame index: 0 Current MoveSequence [ImageView@5cc5423f[styleClass=image-view], ImageView@235d002a[styleClass=image-view], ImageView@89b294f[styleClass=image-view], ImageView@7dea5a7f[styleClass=image-view]]
+[2025-04-30 18:23:49.029] INFO - Views4OrientationImgCharacter.nextImage - Prochaine image row :0 col 1
+[2025-04-30 18:23:49.030] INFO - Views4OrientationImgCharacter.nextImage - Current frame index: 1 Current MoveSequence [ImageView@5cc5423f[styleClass=image-view], ImageView@235d002a[styleClass=image-view], ImageView@89b294f[styleClass=image-view], ImageView@7dea5a7f[styleClass=image-view]]

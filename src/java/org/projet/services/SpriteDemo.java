@@ -21,8 +21,8 @@ public class SpriteDemo extends Application {
         Scene scene = new Scene(root, 500, 350);
 
         //SpriteService sheet = new SpriteService("file:src/java/org/projet/assets/sprite.png", 32, 48, 4);
-        String imgPath = "file:src/java/org/projet/assets/ennemy1.png";
-        SpriteService sheet = new SpriteService(imgPath, 64, 64, 9,4);
+        String imgPath = "file:src/java/org/projet/assets/Hero.png";
+        SpriteService sheet = new SpriteService(imgPath, 32, 48, 4,4);
 
         HashMap<String, ImageView> images = SpriteService.loadSprites("src/java/org/projet/assets/sheet.png", "src/java/org/projet/assets/sheet.xml");
         root.getChildren().addAll(images.get("laserGreen15.png"));
@@ -30,9 +30,8 @@ public class SpriteDemo extends Application {
         sheet.AnimedSprite(sheet, root);
 
         SpriteService.saveSprite(new Image(imgPath), 9, 4, 64, 64, "src/java/org/projet/assets/Agresso.png");
-
-            ImageView single = sheet.getSprite(sheet,1,2, root);
-            saveImageViewAsPNG(single, "src/java/org/projet/assets/single.png");
+        ImageView single = sheet.getSprite(sheet,1,2, root);
+        saveImageViewAsPNG(single, "src/java/org/projet/assets/defaultHero.png");
 
 
         sheet.removeBackGroundSprite(sheet, single, root);

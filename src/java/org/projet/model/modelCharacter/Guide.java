@@ -16,7 +16,7 @@ public class Guide extends MyCharacter{
     public Guide(String name, int hp, String message) {
         super(name, hp,
                 new MoveRangeOnSprite(new Coord(3,-1), new Coord(2,-1),new Coord(1,-1),new Coord(0,-1)),
-                new SpriteService("src/java/org/projet/assets/Hero.png",32,48,4,4)
+                new SpriteService("src/java/org/projet/assets/Hero.png",32,48,4,4),"src/java/org/projet/model/modelCharacter/Agressor.java:19"
         );
         this.message = message;
     }
@@ -53,8 +53,8 @@ public class Guide extends MyCharacter{
 
     public void mission(Hero hero){
         if (this.key != null) {
-            hero.getPosition().addItem(key.getName(), key);
-            hero.addItemToBackpack(this.key.getName());
+            //hero.getPosition().addItem(key.getName(), key);
+            //hero.addItemToBackpack(this.key.getName());
             this.setKey(null);
         }
     }

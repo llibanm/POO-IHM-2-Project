@@ -1,0 +1,22 @@
+[2025-04-30 18:23:44.955] INFO - MatrixLvlEditorController.handleGridClick - clicked on grid
+[2025-04-30 18:23:44.959] INFO - MatrixLvlEditorController.handleGridClick - Erreur addGridListenersOnView currentSelectedCaseMatrix == null
+[2025-04-30 18:23:46.098] INFO - MatrixLvlEditorController.handleGridClick - clicked on grid
+[2025-04-30 18:23:46.099] INFO - MatrixLvlEditorController.handleGridClick - Erreur addGridListenersOnView currentSelectedCaseMatrix == null
+[2025-04-30 18:23:46.181] INFO - MatrixLvlEditorController.handleKeyPressed - Appui sur D
+[2025-04-30 18:23:47.910] SEVERE - MatrixLvlEditorController.propertyChange - Changement selectedItem propertyChange
+[2025-04-30 18:23:47.911] INFO - MatrixLvlEditorController.propertyChange - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/character/hero/d.png', classNameITem='MyCharacter{name='', HP=0, coord=null}', coordRow=0, coordCol=0, width=1, height=1}
+[2025-04-30 18:23:48.554] INFO - MatrixLvlEditorController.handleGridClick - clicked on grid
+[2025-04-30 18:23:48.572] SEVERE - MatrixLvlEditorController.propertyChange - Changement UpdateHeroState propertyChange
+[2025-04-30 18:23:48.576] INFO - MatrixLvlEditorController.propertyChange - Maj des stats du héros MyCharacter{name='Marcel', HP=10, coord=Coord{row=5, col=5}}
+[2025-04-30 18:23:48.845] INFO - MatrixLvlEditorController.handleKeyPressed - Appui sur D
+[2025-04-30 18:23:48.892] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-04-30 18:23:48.893] SEVERE - MatrixLvlEditorController.propertyChange - Movement move propertyChange
+[2025-04-30 18:23:48.894] INFO - MatrixLvlEditorController.propertyChange - MyCharacter{name='Marcel', HP=10, coord=Coord{row=5, col=6}} old coord is Coord{row=5, col=5}
+[2025-04-30 18:23:48.896] INFO - MatrixLvlEditorController.propertyChange - Entity coord is MyCharacter{name='Marcel', HP=10, coord=Coord{row=5, col=6}}
+[2025-04-30 18:23:48.913] INFO - MatrixLvlEditorController.propertyChange - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/character/hero/d.png', classNameITem='MyCharacter{name='Marcel', HP=10, coord=Coord{row=5, col=6}}', coordRow=0, coordCol=0, width=1, height=1}
+[2025-04-30 18:23:49.017] INFO - MatrixLvlEditorController.handleKeyPressed - Appui sur D
+[2025-04-30 18:23:49.026] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-04-30 18:23:49.026] SEVERE - MatrixLvlEditorController.propertyChange - Movement move propertyChange
+[2025-04-30 18:23:49.027] INFO - MatrixLvlEditorController.propertyChange - MyCharacter{name='Marcel', HP=10, coord=Coord{row=5, col=7}} old coord is Coord{row=5, col=6}
+[2025-04-30 18:23:49.028] INFO - MatrixLvlEditorController.propertyChange - Entity coord is MyCharacter{name='Marcel', HP=10, coord=Coord{row=5, col=7}}
+[2025-04-30 18:23:49.039] INFO - MatrixLvlEditorController.propertyChange - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/character/hero/d.png', classNameITem='MyCharacter{name='Marcel', HP=10, coord=Coord{row=5, col=7}}', coordRow=0, coordCol=0, width=1, height=1}

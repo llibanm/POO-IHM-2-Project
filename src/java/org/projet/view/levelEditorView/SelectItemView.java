@@ -17,6 +17,8 @@ import src.java.org.projet.model.modelLevelEditor.base.CaseMatrix;
 import java.util.function.Consumer;
 import java.util.logging.Logger;
 import src.java.org.projet.interfaces.MyLogger;
+import src.java.org.projet.model.modelMap.Exit;
+
 public class SelectItemView extends ScrollPane {
     private  final MyLogger logger = new MyLogger(SelectItemView.class);
     VBox vbox;
@@ -61,7 +63,13 @@ public class SelectItemView extends ScrollPane {
         HBox itemContainer = new HBox(10);
         itemContainer.setAlignment(Pos.CENTER_LEFT);
 
-        Label descriptionLabel = new Label(className.getClass().getSimpleName());
+        Label descriptionLabel;
+        if(className instanceof Exit) {
+             descriptionLabel = new Label(((Exit) className).getEntrance().getName());
+        } else {
+            descriptionLabel = new Label(className.getClass().getSimpleName());
+        }
+
         ImageView imageView = new ImageView();
         imageView.setFitWidth(50);
         imageView.setFitHeight(50);

@@ -1,11 +1,13 @@
 package src.java.org.projet.controler.levelEditorController;
 
 import javafx.scene.Node;
+import javafx.scene.control.Menu;
+import javafx.scene.control.MenuBar;
+import javafx.scene.control.MenuItem;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.GridPane;
-import javafx.scene.shape.Rectangle;
-import src.java.org.projet.interfaces.Ennemy;
+import javafx.scene.layout.Pane;
 import src.java.org.projet.interfaces.Movable;
 import src.java.org.projet.interfaces.MyLogger;
 import src.java.org.projet.model.modelCharacter.Hero;
@@ -13,19 +15,20 @@ import src.java.org.projet.model.modelGame.GameModel;
 import src.java.org.projet.model.modelLevelEditor.MatrixLvlEditorModel;
 import src.java.org.projet.model.modelLevelEditor.base.CaseMatrix;
 import src.java.org.projet.model.modelLevelEditor.base.Coord;
+import src.java.org.projet.model.modelMap.Location;
 import src.java.org.projet.view.levelEditorView.HeroStateView;
 import src.java.org.projet.view.levelEditorView.MatrixLvLEditorView;
 
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
-import java.util.logging.Logger;
 
 public class MatrixLvlEditorController implements PropertyChangeListener {
     private final MyLogger logger = new MyLogger(MatrixLvlEditorController.class);
-    private final MatrixLvlEditorModel model;
+    private  MatrixLvlEditorModel model;
     private final MatrixLvLEditorView view;
     HeroStateView heroStateView;
     private CaseMatrix currentSelectedCaseMatrix;
+    private SelectItemSectionController selectItemSectionController;
     private GameLogic gameLogic;
     GameModel gameModel;
 
@@ -44,15 +47,51 @@ public class MatrixLvlEditorController implements PropertyChangeListener {
         this.view = view;
         this.gameModel = game;
         this.model = gameModel.getCurrentLevel();
-
-        //selectItemSectionController.addPropertyChangeListener(this.getPropertyChangeListener());
         this.view.setBackground(model.getUrlBackground());
-        addGridListenersOnView();
+        //selectItemSectionController.addPropertyChangeListener(this.getPropertyChangeListener());
+
+
+        this.selectItemSectionController = selectItemSectionController;
         selectItemSectionController.addPropertyChangeListener(this);
         getFocusOnMatrixView();
-        model.addPropertyChangeListener(this);
-        this.view.setOnKeyPressed(this::handleKeyPressed);
+        subscriptionToModel();
+
+        initView();
         gameLogic = new GameLogic(model, view);
+
+
+    }
+
+    private void initView() {
+        addGridListenersOnView();
+        this.view.setOnKeyPressed(this::handleKeyPressed);
+    }
+
+    private void subscriptionToModel() {
+        model.addPropertyChangeListener(this);
+    }
+    private void unSubscriptionToModel() {
+        //model.addPropertyChangeListener(this);
+        model.removePropertyChangeListener(this);
+    }
+
+    private void updateLocation(Location location) {
+        Hero hero = model.getHero();
+        logger.info("Update location " + location);
+        unSubscriptionToModel();
+        gameModel.setCurrentLevel(location.getIndexOnWorldMap());
+        this.model = gameModel.getCurrentLevel();
+        gameLogic.setModel(model);
+        gameLogic.init();
+        subscriptionToModel();
+
+        hero.setCoord(new Coord(17,10));
+        this.model.setHero(hero);
+        this.view.setBackground(model.getUrlBackground());
+        this.view.initializeReset();
+        initView();
+        model.showItemModel();
+
 
 
     }
@@ -94,6 +133,18 @@ public class MatrixLvlEditorController implements PropertyChangeListener {
             Hero hero = (Hero) evt.getNewValue();
             logger.info("Maj des stats du héros " + hero);
             heroStateView.updateHeroState(hero);
+
+        }
+        else if("location".equals(evt.getPropertyName())) { // TODO
+            Location newLocation = (Location) evt.getNewValue();
+            logger.info("Maj de la location " + newLocation);
+            updateLocation(newLocation);
+
+        }
+        else if("showModelCase".equals(evt.getPropertyName())) { // TODO
+            CaseMatrix newLocation = (CaseMatrix) evt.getNewValue();
+            logger.info("Affichage des cases du model  " + newLocation);
+            view.placeItemImg(newLocation.getUrlImgToShow(), newLocation.getCoordRow(), newLocation.getCoordCol());
 
         }
         else {
@@ -145,6 +196,10 @@ public class MatrixLvlEditorController implements PropertyChangeListener {
                 logger.info("Héro tire!!");
                 gameLogic.heroShot();
             }
+            case "R" -> {
+                logger.info("Héro intéragit avec les objets autours");
+                gameLogic.interactWithObjects();
+            }
         }
     }
 
@@ -184,4 +239,58 @@ public class MatrixLvlEditorController implements PropertyChangeListener {
         }
     }
 
+    public void setupMenuListeners(Pane myPane) {
+        // Récupérer le MenuBar depuis le Pane
+        MenuBar menubar = null;
+
+        // Parcourir les enfants du Pane pour trouver le MenuBar
+        for (Node node : myPane.getChildren()) {
+            if (node instanceof MenuBar) {
+                menubar = (MenuBar) node;
+                break;
+            }
+        }
+
+        // Si aucun MenuBar n'est trouvé, on ne fait rien
+        if (menubar == null) {
+            System.out.println("Aucun MenuBar trouvé dans le Pane");
+            return;
+        }
+
+
+        for (Menu menu : menubar.getMenus()) {
+            for (MenuItem item : menu.getItems()) {
+                item.setOnAction(event -> {
+                    String itemName = item.getText();
+
+                    switch (itemName) {
+                        case "Jouer":
+                            System.out.println("Lancement du jeu par défaut");
+                            break;
+
+                        case "Editeur de niveau":
+                            System.out.println("Ouverture de l'éditeur de niveau");
+                            break;
+
+                        case "Voir le classement":
+                            System.out.println("Affichage du classement");
+                            break;
+
+                        case "config":
+                            System.out.println("Ouverture des configurations");
+
+                            break;
+
+                        default:
+                            System.out.println("Action non définie pour: " + itemName);
+                            break;
+                    }
+                });
+            }
+        }
+    }
+
+    public void setPaneView(Pane myPane) {
+        setupMenuListeners(myPane);
+    }
 }

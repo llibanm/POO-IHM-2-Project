@@ -12,7 +12,9 @@ import src.java.org.projet.model.modelCharacter.Agressor;
 import src.java.org.projet.model.modelCharacter.MyCharacter;
 import src.java.org.projet.model.modelItems.Bow;
 import src.java.org.projet.model.modelLevelEditor.MatrixLvlEditorModel;
+import src.java.org.projet.model.modelLevelEditor.base.CaseMatrix;
 import src.java.org.projet.model.modelLevelEditor.base.Coord;
+import src.java.org.projet.model.modelMap.SimpleDoor;
 import src.java.org.projet.view.levelEditorView.MatrixLvLEditorView;
 
 import java.util.HashMap;
@@ -20,7 +22,7 @@ import java.util.List;
 import java.util.Map;
 
 public class GameLogic {
-    private final MatrixLvlEditorModel model;
+    private  MatrixLvlEditorModel model;
     private final MatrixLvLEditorView view;
     private final MyLogger logger = new MyLogger(GameLogic.class);
     private Timeline enemyMovementLoop;
@@ -30,12 +32,17 @@ public class GameLogic {
     public GameLogic(MatrixLvlEditorModel model, MatrixLvLEditorView view) {
         this.model = model;
         this.view = view;
+        init();
+    }
+
+    public void init() {
         initializeMovementProgress();
         startEnemyMovementLoop();
     }
 
+
     private void initializeMovementProgress() {
-        model.getEnnemies().forEach(enemy -> movementProgress.put(enemy, 0.0));
+        model.getMovable().forEach(enemy -> movementProgress.put(enemy, 0.0));
     }
 
     public void moveHero(int deltaRow, int deltaCol) {
@@ -57,7 +64,7 @@ public class GameLogic {
     private void updateMovables(double deltaTime) {
         isProcessing = true;
         try {
-            for (Movable entity : model.getEnnemies()) {
+            for (Movable entity : model.getMovable()) {
                 if (!movementProgress.containsKey(entity)) {
                     movementProgress.put(entity, 0.0);
                 }
@@ -171,4 +178,28 @@ public class GameLogic {
     }
 
 
+
+
+
+    public void interactWithObjects() {
+        logger.info("Analyse des objets à proximité");
+        Coord heroPos = model.getHero().getCoord();
+        List< CaseMatrix> adjacentCases = model.getNeighbors(heroPos.getRow(), heroPos.getCol());
+        for (CaseMatrix caseMatrix : adjacentCases) {
+
+            if (caseMatrix.getClassOfItems() != null) {
+                logger.info("Objet trouvé: " + caseMatrix.getClassOfItems());
+                if (caseMatrix.getClassOfItems() instanceof SimpleDoor) {
+                    SimpleDoor simpleDoor = (SimpleDoor) caseMatrix.getClassOfItems();
+                    model.changeLocation(simpleDoor.cross());
+                    logger.info("traversé de la porte vers index "+ simpleDoor.cross().getIndexOnWorldMap());
+                }
+            }
+        }
+
+    }
+
+    public void setModel(MatrixLvlEditorModel model) {
+        this.model = model;
+    }
 }
