@@ -16,6 +16,8 @@ import src.java.org.projet.model.modelLevelEditor.MatrixLvlEditorModel;
 import src.java.org.projet.model.modelLevelEditor.SelectItemSectionModel;
 import src.java.org.projet.model.modelLevelEditor.base.CaseMatrix;
 import src.java.org.projet.model.modelMap.SimpleDoor;
+import src.java.org.projet.util.InitGame;
+import src.java.org.projet.view.levelEditorView.HeroStateView;
 import src.java.org.projet.view.levelEditorView.MatrixLvLEditorView;
 import src.java.org.projet.view.levelEditorView.SelectItemView;
 
@@ -32,21 +34,16 @@ public class MainGameView extends Application {
         SelectItemView selectItemView = new SelectItemView();
         SelectItemSectionController selectController = new SelectItemSectionController(model, selectItemView);
 
-        MatrixLvLEditorView matrixLvLEditorView = new MatrixLvLEditorView(50,50);
-        MatrixLvlEditorModel matrixLvlEditorModel = new MatrixLvlEditorModel(50,50,"src/java/org/projet/assets/planet/planet03.png");
-        MatrixLvlEditorModel matrixLvlEditorModelMars = new MatrixLvlEditorModel(50,50,"src/java/org/projet/assets/planet/planet00.png");
-        MatrixLvlEditorModel matrixLvlEditorModelSaturn = new MatrixLvlEditorModel(50,50,"src/java/org/projet/assets/planet/planet02.png");
-        MatrixLvlEditorModel matrixLvlEditorModelJupiter = new MatrixLvlEditorModel(50,50,"src/java/org/projet/assets/planet/planet04.png");
-        List<MatrixLvlEditorModel> matrixLvlEditorModelList = new ArrayList<>();
-        matrixLvlEditorModelList.add(matrixLvlEditorModel);
-        matrixLvlEditorModelList.add(matrixLvlEditorModelMars);
-        matrixLvlEditorModelList.add(matrixLvlEditorModelSaturn);
-        GameModel gameModel = new GameModel(matrixLvlEditorModelList);
-        MatrixLvlEditorController matrixLvlEditorController = new MatrixLvlEditorController(gameModel,matrixLvLEditorView, selectController);
+        MatrixLvLEditorView matrixLvLEditorView = new MatrixLvLEditorView(20,20);
+        HeroStateView heroStateView = new HeroStateView();
+
+        GameModel gameModel = new GameModel(InitGame.generateAllsLevels());
+        MatrixLvlEditorController matrixLvlEditorController = new MatrixLvlEditorController(gameModel,matrixLvLEditorView,heroStateView,
+                selectController);
 
         StackPane stackPane = new StackPane();
-        Background imgBackground = createImgBackground("src/java/org/projet/assets/planet/planet01.png",100,100);
-        stackPane.setBackground(imgBackground);
+       // Background imgBackground = createImgBackground("src/java/org/projet/assets/planet/planet01.png",100,100);
+       // stackPane.setBackground(imgBackground);
         stackPane.getChildren().add(matrixLvLEditorView);
         matrixLvlEditorController.addGridListenersOnView();
         String commonPath = "src/java/org/projet/assets/";
@@ -79,11 +76,13 @@ public class MainGameView extends Application {
         selectController.addListenerToIems();
         root.setCenter(stackPane);
         root.setLeft(selectItemView);
+        root.setRight(heroStateView);
 
-        Scene scene = new Scene(root, 800, 800);
+        Scene scene = new Scene(root, 1200, 800);
         primaryStage.setScene(scene);
         primaryStage.show();
     }
+
 
     private static void addItem(SelectItemView selectItemView, CaseMatrix agressorcaseMatrix) {
         selectItemView.addItem(agressorcaseMatrix.getUrlImgToShow(), agressorcaseMatrix.getClassOfItems());

@@ -97,7 +97,7 @@ public class MatrixLvlEditorModel extends AbstractModel {
         boolean isNextCaseOccuped = true;
         if (isValidCoordinateCoord(newItemPos)) {
              isNextCaseOccuped = this.getCaseMatrixCoord(newItemPos).isOccuped();
-            // Nouveau: Vérifie si la case contient un ennemi
+            //  Vérifie si la case contient un ennemi
             if (isNextCaseOccuped && item instanceof Bow) {
                 CaseMatrix nextCase = getCaseMatrixCoord(newItemPos);
                 if (nextCase.getClassOfItems() instanceof Ennemy) {
@@ -127,7 +127,7 @@ public class MatrixLvlEditorModel extends AbstractModel {
             if (item instanceof Bow) {
                 logger.severe("Suppression de la flèche...");
                 this.getMoveQueue().removeIf(action -> action.getEntity().equals(item)); // Supprime toutes ses actions
-                this.ennemies.remove(item); // <-- Ajoutez cette ligne
+                this.ennemies.remove(item);
                 this.resetItemMatriceCoord(currentItemPos);
                 this.getPropertyChangeSupport().firePropertyChange("removeItem", currentItemPos, item);
                 return false;
@@ -143,9 +143,10 @@ public class MatrixLvlEditorModel extends AbstractModel {
         logger.info("fillHeroAndEnnemyList " + classOfItems);
         // TODO peut faire plus évolutif et moins couplé!!!
         if (classOfItems instanceof Hero) {
-            this.hero = new Hero("mMrcel", 10);
+            this.hero = new Hero("Marcel", 10);
             hero.setCoord(new Coord(row, col));
             this.getCaseMatrix(row, col).setClassOfItems(hero);
+            this.getPropertyChangeSupport().firePropertyChange("UpdateHeroState", null, hero);
             logger.info("Ajout du héro  fillHeroAndEnnemyList");
         } else if (classOfItems instanceof Ennemy) {
             Agressor ennemy = new Agressor("Agressor", 10); // TODO
@@ -230,6 +231,8 @@ public class MatrixLvlEditorModel extends AbstractModel {
         getMoveQueue().add(new MoveAction(bowObj, direction.getRow(), direction.getCol()));
         this.addItemMatrice(BowPos.getRow(), BowPos.getCol(), bow);
         this.getPropertyChangeSupport().firePropertyChange("fireHero", null, bow);
+        this.getPropertyChangeSupport().firePropertyChange("UpdateHeroState", null, hero);
+
         logger.info("Ajout d'un arc à la position du héros");
 
     }

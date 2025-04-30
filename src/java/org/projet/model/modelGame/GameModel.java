@@ -18,6 +18,14 @@ public class GameModel {
         return allLevels;
     }
 
+    public void setCurrentLevel(int index) {
+        if (index >= 0 && index < allLevels.size()) {
+            this.currentLevel = allLevels.get(index);
+        } else {
+            throw new IndexOutOfBoundsException("Invalid level index: " + index);
+        }
+    }
+
     public void setAllLevels(List<MatrixLvlEditorModel> allLevels) {
         this.allLevels = allLevels;
     }

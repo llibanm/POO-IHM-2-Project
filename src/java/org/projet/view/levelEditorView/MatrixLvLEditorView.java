@@ -30,6 +30,8 @@ public class MatrixLvLEditorView extends GridPane {
     public MatrixLvLEditorView(int nbOfRows, int nbOfCols) {
         this.nbOfRows = nbOfRows;
         this.nbOfCols = nbOfCols;
+        //this.setWidth(500);
+        //this.setWidth(500);
 
         initialize();
     }
@@ -64,7 +66,7 @@ public class MatrixLvLEditorView extends GridPane {
 
     public Rectangle getRect() {
         Rectangle cell = new Rectangle(default_case_size, default_case_size, Color.TRANSPARENT);
-        cell.setStroke(Color.TRANSPARENT);
+        cell.setStroke(Color.BLACK);  //TODO
         return cell;
     }
 
@@ -280,7 +282,7 @@ public class MatrixLvLEditorView extends GridPane {
                 BackgroundRepeat.NO_REPEAT,
                 BackgroundRepeat.NO_REPEAT,
                 BackgroundPosition.DEFAULT,
-                new BackgroundSize(1200, 1000, true, true, true, true)
+                new BackgroundSize(50, 50, true, true, true, true)
         );
         this.setBackground(new Background(background));
     }

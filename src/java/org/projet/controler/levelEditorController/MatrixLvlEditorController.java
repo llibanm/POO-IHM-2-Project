@@ -8,10 +8,12 @@ import javafx.scene.shape.Rectangle;
 import src.java.org.projet.interfaces.Ennemy;
 import src.java.org.projet.interfaces.Movable;
 import src.java.org.projet.interfaces.MyLogger;
+import src.java.org.projet.model.modelCharacter.Hero;
 import src.java.org.projet.model.modelGame.GameModel;
 import src.java.org.projet.model.modelLevelEditor.MatrixLvlEditorModel;
 import src.java.org.projet.model.modelLevelEditor.base.CaseMatrix;
 import src.java.org.projet.model.modelLevelEditor.base.Coord;
+import src.java.org.projet.view.levelEditorView.HeroStateView;
 import src.java.org.projet.view.levelEditorView.MatrixLvLEditorView;
 
 import java.beans.PropertyChangeEvent;
@@ -22,20 +24,23 @@ public class MatrixLvlEditorController implements PropertyChangeListener {
     private final MyLogger logger = new MyLogger(MatrixLvlEditorController.class);
     private final MatrixLvlEditorModel model;
     private final MatrixLvLEditorView view;
+    HeroStateView heroStateView;
     private CaseMatrix currentSelectedCaseMatrix;
     private GameLogic gameLogic;
     GameModel gameModel;
 
-    public MatrixLvlEditorController(MatrixLvlEditorModel model, MatrixLvLEditorView view) {
+    public MatrixLvlEditorController(MatrixLvlEditorModel model, MatrixLvLEditorView view, HeroStateView heroStateView) {
         this.model = model;
         this.view = view;
         addGridListenersOnView();
         gameLogic = new GameLogic(model, view);
+        this.heroStateView = heroStateView;
 
     }
 
-    public MatrixLvlEditorController(GameModel game, MatrixLvLEditorView view, SelectItemSectionController selectItemSectionController) {
+    public MatrixLvlEditorController(GameModel game, MatrixLvLEditorView view, HeroStateView heroStateView, SelectItemSectionController selectItemSectionController) {
        // this.model = model;
+        this.heroStateView = heroStateView;
         this.view = view;
         this.gameModel = game;
         this.model = gameModel.getCurrentLevel();
@@ -85,6 +90,12 @@ public class MatrixLvlEditorController implements PropertyChangeListener {
             Coord old = (Coord) evt.getOldValue();
             view.resetCell(old.getRow(), old.getCol());
                 }
+        else if("UpdateHeroState".equals(evt.getPropertyName())) { // TODO
+            Hero hero = (Hero) evt.getNewValue();
+            logger.info("Maj des stats du héros " + hero);
+            heroStateView.updateHeroState(hero);
+
+        }
         else {
             logger.info("Erreur propertyChange");
         }

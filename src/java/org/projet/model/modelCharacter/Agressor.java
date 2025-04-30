@@ -112,6 +112,7 @@ public class Agressor extends MyCharacter implements Ennemy {
         if(isNearOfHero(hero.getCoord()) && sameLine && isFacingHero(hero)) {
             logger.info("Agressor is attacking hero");
                         attack(hero);
+                        logger.info("new hero HP : " + hero.getHP());
                 return true;
             }
         logger.info("Agressor is moving");
