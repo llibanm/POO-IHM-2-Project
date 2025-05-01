@@ -82,14 +82,26 @@
     "occuped" : false,
     "classNameOfItem" : null
   }, {
-    "urlImgToShow" : "",
-    "classOfItems" : null,
+    "urlImgToShow" : "src/java/org/projet/assets/ufoGreen.png",
+    "classOfItems" : {
+      "entrance" : {
+        "name" : "PorteVersMars",
+        "description" : "",
+        "indexOnWorldMap" : 0
+      },
+      "wayOut" : {
+        "name" : "Mars",
+        "description" : "",
+        "indexOnWorldMap" : 2
+      },
+      "name" : ""
+    },
     "coordRow" : 0,
     "coordCol" : 9,
     "width" : 1,
     "height" : 1,
-    "occuped" : false,
-    "classNameOfItem" : null
+    "occuped" : true,
+    "classNameOfItem" : "SimpleDoor"
   }, {
     "urlImgToShow" : "",
     "classOfItems" : null,
@@ -212,33 +224,6 @@
     "classOfItems" : null,
     "coordRow" : 1,
     "coordCol" : 3,
-    "width" : 1,
-    "height" : 1,
-    "occuped" : false,
-    "classNameOfItem" : null
-  }, {
-    "urlImgToShow" : "",
-    "classOfItems" : null,
-    "coordRow" : 1,
-    "coordCol" : 4,
-    "width" : 1,
-    "height" : 1,
-    "occuped" : false,
-    "classNameOfItem" : null
-  }, {
-    "urlImgToShow" : "",
-    "classOfItems" : null,
-    "coordRow" : 1,
-    "coordCol" : 5,
-    "width" : 1,
-    "height" : 1,
-    "occuped" : false,
-    "classNameOfItem" : null
-  }, {
-    "urlImgToShow" : "",
-    "classOfItems" : null,
-    "coordRow" : 1,
-    "coordCol" : 6,
     "width" : 1,
     "height" : 1,
     "occuped" : false,
@@ -250,19 +235,19 @@
       "name" : "Agressor",
       "coord" : {
         "row" : 1,
-        "col" : 7
+        "col" : 4
       },
       "defaultImgPath" : "src/java/org/projet/model/modelCharacter/Agressor.java:19",
       "porteeAtk" : 6,
+      "speed" : 1,
       "moveDirection" : {
         "row" : 1,
         "col" : 0
       },
-      "speed" : 1,
       "hp" : 10
     },
     "coordRow" : 1,
-    "coordCol" : 7,
+    "coordCol" : 4,
     "width" : 1,
     "height" : 1,
     "occuped" : true,
@@ -271,6 +256,33 @@
     "urlImgToShow" : "",
     "classOfItems" : null,
     "coordRow" : 1,
+    "coordCol" : 5,
+    "width" : 1,
+    "height" : 1,
+    "occuped" : false,
+    "classNameOfItem" : null
+  }, {
+    "urlImgToShow" : "",
+    "classOfItems" : null,
+    "coordRow" : 1,
+    "coordCol" : 6,
+    "width" : 1,
+    "height" : 1,
+    "occuped" : false,
+    "classNameOfItem" : null
+  }, {
+    "urlImgToShow" : "",
+    "classOfItems" : null,
+    "coordRow" : 1,
+    "coordCol" : 7,
+    "width" : 1,
+    "height" : 1,
+    "occuped" : false,
+    "classNameOfItem" : null
+  }, {
+    "urlImgToShow" : "",
+    "classOfItems" : null,
+    "coordRow" : 1,
     "coordCol" : 8,
     "width" : 1,
     "height" : 1,
@@ -1123,16 +1135,14 @@
     "occuped" : false,
     "classNameOfItem" : null
   }, {
-    "urlImgToShow" : "src/java/org/projet/assets/brick.png",
-    "classOfItems" : {
-      "name" : "brick"
-    },
+    "urlImgToShow" : "",
+    "classOfItems" : null,
     "coordRow" : 6,
-    "coordCol" : 14,
+    "coordCol" : 3,
     "width" : 1,
     "height" : 1,
-    "occuped" : true,
-    "classNameOfItem" : "Decor"
+    "occuped" : false,
+    "classNameOfItem" : null
   }, {
     "urlImgToShow" : "",
     "classOfItems" : null,
@@ -1224,16 +1234,14 @@
     "occuped" : false,
     "classNameOfItem" : null
   }, {
-    "urlImgToShow" : "src/java/org/projet/assets/brick.png",
-    "classOfItems" : {
-      "name" : "brick"
-    },
+    "urlImgToShow" : "",
+    "classOfItems" : null,
     "coordRow" : 6,
     "coordCol" : 14,
     "width" : 1,
     "height" : 1,
-    "occuped" : true,
-    "classNameOfItem" : "Decor"
+    "occuped" : false,
+    "classNameOfItem" : null
   }, {
     "urlImgToShow" : "",
     "classOfItems" : null,
@@ -1734,330 +1742,6 @@
     "classOfItems" : null,
     "coordRow" : 9,
     "coordCol" : 10,
-    "width" : 1,
-    "height" : 1,
-    "occuped" : false,
-    "classNameOfItem" : null
-  }, {
-    "urlImgToShow" : "",
-    "classOfItems" : null,
-    "coordRow" : 9,
-    "coordCol" : 11,
-    "width" : 1,
-    "height" : 1,
-    "occuped" : false,
-    "classNameOfItem" : null
-  }, {
-    "urlImgToShow" : "",
-    "classOfItems" : null,
-    "coordRow" : 9,
-    "coordCol" : 12,
-    "width" : 1,
-    "height" : 1,
-    "occuped" : false,
-    "classNameOfItem" : null
-  }, {
-    "urlImgToShow" : "",
-    "classOfItems" : null,
-    "coordRow" : 9,
-    "coordCol" : 13,
-    "width" : 1,
-    "height" : 1,
-    "occuped" : false,
-    "classNameOfItem" : null
-  }, {
-    "urlImgToShow" : "",
-    "classOfItems" : null,
-    "coordRow" : 9,
-    "coordCol" : 14,
-    "width" : 1,
-    "height" : 1,
-    "occuped" : false,
-    "classNameOfItem" : null
-  }, {
-    "urlImgToShow" : "",
-    "classOfItems" : null,
-    "coordRow" : 9,
-    "coordCol" : 15,
-    "width" : 1,
-    "height" : 1,
-    "occuped" : false,
-    "classNameOfItem" : null
-  }, {
-    "urlImgToShow" : "",
-    "classOfItems" : null,
-    "coordRow" : 9,
-    "coordCol" : 16,
-    "width" : 1,
-    "height" : 1,
-    "occuped" : false,
-    "classNameOfItem" : null
-  }, {
-    "urlImgToShow" : "",
-    "classOfItems" : null,
-    "coordRow" : 9,
-    "coordCol" : 17,
-    "width" : 1,
-    "height" : 1,
-    "occuped" : false,
-    "classNameOfItem" : null
-  }, {
-    "urlImgToShow" : "",
-    "classOfItems" : null,
-    "coordRow" : 9,
-    "coordCol" : 18,
-    "width" : 1,
-    "height" : 1,
-    "occuped" : false,
-    "classNameOfItem" : null
-  }, {
-    "urlImgToShow" : "",
-    "classOfItems" : null,
-    "coordRow" : 9,
-    "coordCol" : 19,
-    "width" : 1,
-    "height" : 1,
-    "occuped" : false,
-    "classNameOfItem" : null
-  } ], [ {
-    "urlImgToShow" : "",
-    "classOfItems" : null,
-    "coordRow" : 10,
-    "coordCol" : 0,
-    "width" : 1,
-    "height" : 1,
-    "occuped" : false,
-    "classNameOfItem" : null
-  }, {
-    "urlImgToShow" : "",
-    "classOfItems" : null,
-    "coordRow" : 10,
-    "coordCol" : 1,
-    "width" : 1,
-    "height" : 1,
-    "occuped" : false,
-    "classNameOfItem" : null
-  }, {
-    "urlImgToShow" : "",
-    "classOfItems" : null,
-    "coordRow" : 10,
-    "coordCol" : 2,
-    "width" : 1,
-    "height" : 1,
-    "occuped" : false,
-    "classNameOfItem" : null
-  }, {
-    "urlImgToShow" : "",
-    "classOfItems" : null,
-    "coordRow" : 10,
-    "coordCol" : 3,
-    "width" : 1,
-    "height" : 1,
-    "occuped" : false,
-    "classNameOfItem" : null
-  }, {
-    "urlImgToShow" : "",
-    "classOfItems" : null,
-    "coordRow" : 10,
-    "coordCol" : 4,
-    "width" : 1,
-    "height" : 1,
-    "occuped" : false,
-    "classNameOfItem" : null
-  }, {
-    "urlImgToShow" : "",
-    "classOfItems" : null,
-    "coordRow" : 10,
-    "coordCol" : 5,
-    "width" : 1,
-    "height" : 1,
-    "occuped" : false,
-    "classNameOfItem" : null
-  }, {
-    "urlImgToShow" : "",
-    "classOfItems" : null,
-    "coordRow" : 10,
-    "coordCol" : 6,
-    "width" : 1,
-    "height" : 1,
-    "occuped" : false,
-    "classNameOfItem" : null
-  }, {
-    "urlImgToShow" : "",
-    "classOfItems" : null,
-    "coordRow" : 10,
-    "coordCol" : 7,
-    "width" : 1,
-    "height" : 1,
-    "occuped" : false,
-    "classNameOfItem" : null
-  }, {
-    "urlImgToShow" : "",
-    "classOfItems" : null,
-    "coordRow" : 10,
-    "coordCol" : 8,
-    "width" : 1,
-    "height" : 1,
-    "occuped" : false,
-    "classNameOfItem" : null
-  }, {
-    "urlImgToShow" : "",
-    "classOfItems" : null,
-    "coordRow" : 10,
-    "coordCol" : 9,
-    "width" : 1,
-    "height" : 1,
-    "occuped" : false,
-    "classNameOfItem" : null
-  }, {
-    "urlImgToShow" : "",
-    "classOfItems" : null,
-    "coordRow" : 10,
-    "coordCol" : 10,
-    "width" : 1,
-    "height" : 1,
-    "occuped" : false,
-    "classNameOfItem" : null
-  }, {
-    "urlImgToShow" : "",
-    "classOfItems" : null,
-    "coordRow" : 10,
-    "coordCol" : 11,
-    "width" : 1,
-    "height" : 1,
-    "occuped" : false,
-    "classNameOfItem" : null
-  }, {
-    "urlImgToShow" : "",
-    "classOfItems" : null,
-    "coordRow" : 10,
-    "coordCol" : 12,
-    "width" : 1,
-    "height" : 1,
-    "occuped" : false,
-    "classNameOfItem" : null
-  }, {
-    "urlImgToShow" : "",
-    "classOfItems" : null,
-    "coordRow" : 10,
-    "coordCol" : 13,
-    "width" : 1,
-    "height" : 1,
-    "occuped" : false,
-    "classNameOfItem" : null
-  }, {
-    "urlImgToShow" : "",
-    "classOfItems" : null,
-    "coordRow" : 10,
-    "coordCol" : 14,
-    "width" : 1,
-    "height" : 1,
-    "occuped" : false,
-    "classNameOfItem" : null
-  }, {
-    "urlImgToShow" : "",
-    "classOfItems" : null,
-    "coordRow" : 10,
-    "coordCol" : 15,
-    "width" : 1,
-    "height" : 1,
-    "occuped" : false,
-    "classNameOfItem" : null
-  }, {
-    "urlImgToShow" : "",
-    "classOfItems" : null,
-    "coordRow" : 10,
-    "coordCol" : 16,
-    "width" : 1,
-    "height" : 1,
-    "occuped" : false,
-    "classNameOfItem" : null
-  }, {
-    "urlImgToShow" : "",
-    "classOfItems" : null,
-    "coordRow" : 10,
-    "coordCol" : 17,
-    "width" : 1,
-    "height" : 1,
-    "occuped" : false,
-    "classNameOfItem" : null
-  }, {
-    "urlImgToShow" : "",
-    "classOfItems" : null,
-    "coordRow" : 10,
-    "coordCol" : 18,
-    "width" : 1,
-    "height" : 1,
-    "occuped" : false,
-    "classNameOfItem" : null
-  }, {
-    "urlImgToShow" : "",
-    "classOfItems" : null,
-    "coordRow" : 10,
-    "coordCol" : 19,
-    "width" : 1,
-    "height" : 1,
-    "occuped" : false,
-    "classNameOfItem" : null
-  } ], [ {
-    "urlImgToShow" : "",
-    "classOfItems" : null,
-    "coordRow" : 11,
-    "coordCol" : 0,
-    "width" : 1,
-    "height" : 1,
-    "occuped" : false,
-    "classNameOfItem" : null
-  }, {
-    "urlImgToShow" : "",
-    "classOfItems" : null,
-    "coordRow" : 11,
-    "coordCol" : 1,
-    "width" : 1,
-    "height" : 1,
-    "occuped" : false,
-    "classNameOfItem" : null
-  }, {
-    "urlImgToShow" : "",
-    "classOfItems" : null,
-    "coordRow" : 11,
-    "coordCol" : 2,
-    "width" : 1,
-    "height" : 1,
-    "occuped" : false,
-    "classNameOfItem" : null
-  }, {
-    "urlImgToShow" : "",
-    "classOfItems" : null,
-    "coordRow" : 11,
-    "coordCol" : 3,
-    "width" : 1,
-    "height" : 1,
-    "occuped" : false,
-    "classNameOfItem" : null
-  }, {
-    "urlImgToShow" : "",
-    "classOfItems" : null,
-    "coordRow" : 11,
-    "coordCol" : 4,
-    "width" : 1,
-    "height" : 1,
-    "occuped" : false,
-    "classNameOfItem" : null
-  }, {
-    "urlImgToShow" : "",
-    "classOfItems" : null,
-    "coordRow" : 11,
-    "coordCol" : 5,
-    "width" : 1,
-    "height" : 1,
-    "occuped" : false,
-    "classNameOfItem" : null
-  }, {
-    "urlImgToShow" : "",
-    "classOfItems" : null,
-    "coordRow" : 11,
-    "coordCol" : 6,
     "width" : 1,
     "height" : 1,
     "occuped" : false,
@@ -2068,17 +1752,11 @@
       "lastDirection" : "DOWN",
       "name" : "Marcel",
       "coord" : {
-        "row" : 11,
-        "col" : 7
+        "row" : 9,
+        "col" : 11
       },
       "defaultImgPath" : "src/java/org/projet/assets/defaultHero.png",
-      "backpack" : {
-        "name" : "Back_Pack",
-        "item_list" : { },
-        "coords" : null
-      },
       "position" : null,
-      "h_position" : null,
       "h_bow" : {
         "name" : "Bow",
         "coord" : {
@@ -2087,27 +1765,352 @@
         },
         "moveDirection" : null,
         "bowUrlImage" : "src/java/org/projet/assets/bule.png",
-        "nbBurningArrows" : 2,
         "nbArrows" : 10,
+        "nbBurningArrows" : 2,
         "speed" : 3,
         "coords" : {
           "row" : 0,
           "col" : 0
         }
       },
+      "h_position" : null,
+      "speed" : 1,
       "moveDirection" : {
         "row" : 1,
         "col" : 0
       },
-      "speed" : 1,
       "hp" : 10
     },
-    "coordRow" : 11,
-    "coordCol" : 7,
+    "coordRow" : 9,
+    "coordCol" : 11,
     "width" : 1,
     "height" : 1,
     "occuped" : true,
     "classNameOfItem" : "Hero"
+  }, {
+    "urlImgToShow" : "",
+    "classOfItems" : null,
+    "coordRow" : 9,
+    "coordCol" : 12,
+    "width" : 1,
+    "height" : 1,
+    "occuped" : false,
+    "classNameOfItem" : null
+  }, {
+    "urlImgToShow" : "",
+    "classOfItems" : null,
+    "coordRow" : 9,
+    "coordCol" : 13,
+    "width" : 1,
+    "height" : 1,
+    "occuped" : false,
+    "classNameOfItem" : null
+  }, {
+    "urlImgToShow" : "",
+    "classOfItems" : null,
+    "coordRow" : 9,
+    "coordCol" : 14,
+    "width" : 1,
+    "height" : 1,
+    "occuped" : false,
+    "classNameOfItem" : null
+  }, {
+    "urlImgToShow" : "",
+    "classOfItems" : null,
+    "coordRow" : 9,
+    "coordCol" : 15,
+    "width" : 1,
+    "height" : 1,
+    "occuped" : false,
+    "classNameOfItem" : null
+  }, {
+    "urlImgToShow" : "",
+    "classOfItems" : null,
+    "coordRow" : 9,
+    "coordCol" : 16,
+    "width" : 1,
+    "height" : 1,
+    "occuped" : false,
+    "classNameOfItem" : null
+  }, {
+    "urlImgToShow" : "",
+    "classOfItems" : null,
+    "coordRow" : 9,
+    "coordCol" : 17,
+    "width" : 1,
+    "height" : 1,
+    "occuped" : false,
+    "classNameOfItem" : null
+  }, {
+    "urlImgToShow" : "",
+    "classOfItems" : null,
+    "coordRow" : 9,
+    "coordCol" : 18,
+    "width" : 1,
+    "height" : 1,
+    "occuped" : false,
+    "classNameOfItem" : null
+  }, {
+    "urlImgToShow" : "",
+    "classOfItems" : null,
+    "coordRow" : 9,
+    "coordCol" : 19,
+    "width" : 1,
+    "height" : 1,
+    "occuped" : false,
+    "classNameOfItem" : null
+  } ], [ {
+    "urlImgToShow" : "",
+    "classOfItems" : null,
+    "coordRow" : 10,
+    "coordCol" : 0,
+    "width" : 1,
+    "height" : 1,
+    "occuped" : false,
+    "classNameOfItem" : null
+  }, {
+    "urlImgToShow" : "",
+    "classOfItems" : null,
+    "coordRow" : 10,
+    "coordCol" : 1,
+    "width" : 1,
+    "height" : 1,
+    "occuped" : false,
+    "classNameOfItem" : null
+  }, {
+    "urlImgToShow" : "",
+    "classOfItems" : null,
+    "coordRow" : 10,
+    "coordCol" : 2,
+    "width" : 1,
+    "height" : 1,
+    "occuped" : false,
+    "classNameOfItem" : null
+  }, {
+    "urlImgToShow" : "",
+    "classOfItems" : null,
+    "coordRow" : 10,
+    "coordCol" : 3,
+    "width" : 1,
+    "height" : 1,
+    "occuped" : false,
+    "classNameOfItem" : null
+  }, {
+    "urlImgToShow" : "",
+    "classOfItems" : null,
+    "coordRow" : 10,
+    "coordCol" : 4,
+    "width" : 1,
+    "height" : 1,
+    "occuped" : false,
+    "classNameOfItem" : null
+  }, {
+    "urlImgToShow" : "",
+    "classOfItems" : null,
+    "coordRow" : 10,
+    "coordCol" : 5,
+    "width" : 1,
+    "height" : 1,
+    "occuped" : false,
+    "classNameOfItem" : null
+  }, {
+    "urlImgToShow" : "",
+    "classOfItems" : null,
+    "coordRow" : 10,
+    "coordCol" : 6,
+    "width" : 1,
+    "height" : 1,
+    "occuped" : false,
+    "classNameOfItem" : null
+  }, {
+    "urlImgToShow" : "",
+    "classOfItems" : null,
+    "coordRow" : 10,
+    "coordCol" : 7,
+    "width" : 1,
+    "height" : 1,
+    "occuped" : false,
+    "classNameOfItem" : null
+  }, {
+    "urlImgToShow" : "",
+    "classOfItems" : null,
+    "coordRow" : 10,
+    "coordCol" : 8,
+    "width" : 1,
+    "height" : 1,
+    "occuped" : false,
+    "classNameOfItem" : null
+  }, {
+    "urlImgToShow" : "",
+    "classOfItems" : null,
+    "coordRow" : 10,
+    "coordCol" : 9,
+    "width" : 1,
+    "height" : 1,
+    "occuped" : false,
+    "classNameOfItem" : null
+  }, {
+    "urlImgToShow" : "",
+    "classOfItems" : null,
+    "coordRow" : 10,
+    "coordCol" : 10,
+    "width" : 1,
+    "height" : 1,
+    "occuped" : false,
+    "classNameOfItem" : null
+  }, {
+    "urlImgToShow" : "",
+    "classOfItems" : null,
+    "coordRow" : 10,
+    "coordCol" : 11,
+    "width" : 1,
+    "height" : 1,
+    "occuped" : false,
+    "classNameOfItem" : null
+  }, {
+    "urlImgToShow" : "",
+    "classOfItems" : null,
+    "coordRow" : 10,
+    "coordCol" : 12,
+    "width" : 1,
+    "height" : 1,
+    "occuped" : false,
+    "classNameOfItem" : null
+  }, {
+    "urlImgToShow" : "",
+    "classOfItems" : null,
+    "coordRow" : 10,
+    "coordCol" : 13,
+    "width" : 1,
+    "height" : 1,
+    "occuped" : false,
+    "classNameOfItem" : null
+  }, {
+    "urlImgToShow" : "",
+    "classOfItems" : null,
+    "coordRow" : 10,
+    "coordCol" : 14,
+    "width" : 1,
+    "height" : 1,
+    "occuped" : false,
+    "classNameOfItem" : null
+  }, {
+    "urlImgToShow" : "",
+    "classOfItems" : null,
+    "coordRow" : 10,
+    "coordCol" : 15,
+    "width" : 1,
+    "height" : 1,
+    "occuped" : false,
+    "classNameOfItem" : null
+  }, {
+    "urlImgToShow" : "",
+    "classOfItems" : null,
+    "coordRow" : 10,
+    "coordCol" : 16,
+    "width" : 1,
+    "height" : 1,
+    "occuped" : false,
+    "classNameOfItem" : null
+  }, {
+    "urlImgToShow" : "",
+    "classOfItems" : null,
+    "coordRow" : 10,
+    "coordCol" : 17,
+    "width" : 1,
+    "height" : 1,
+    "occuped" : false,
+    "classNameOfItem" : null
+  }, {
+    "urlImgToShow" : "",
+    "classOfItems" : null,
+    "coordRow" : 10,
+    "coordCol" : 18,
+    "width" : 1,
+    "height" : 1,
+    "occuped" : false,
+    "classNameOfItem" : null
+  }, {
+    "urlImgToShow" : "",
+    "classOfItems" : null,
+    "coordRow" : 10,
+    "coordCol" : 19,
+    "width" : 1,
+    "height" : 1,
+    "occuped" : false,
+    "classNameOfItem" : null
+  } ], [ {
+    "urlImgToShow" : "",
+    "classOfItems" : null,
+    "coordRow" : 11,
+    "coordCol" : 0,
+    "width" : 1,
+    "height" : 1,
+    "occuped" : false,
+    "classNameOfItem" : null
+  }, {
+    "urlImgToShow" : "",
+    "classOfItems" : null,
+    "coordRow" : 11,
+    "coordCol" : 1,
+    "width" : 1,
+    "height" : 1,
+    "occuped" : false,
+    "classNameOfItem" : null
+  }, {
+    "urlImgToShow" : "",
+    "classOfItems" : null,
+    "coordRow" : 11,
+    "coordCol" : 2,
+    "width" : 1,
+    "height" : 1,
+    "occuped" : false,
+    "classNameOfItem" : null
+  }, {
+    "urlImgToShow" : "",
+    "classOfItems" : null,
+    "coordRow" : 11,
+    "coordCol" : 3,
+    "width" : 1,
+    "height" : 1,
+    "occuped" : false,
+    "classNameOfItem" : null
+  }, {
+    "urlImgToShow" : "",
+    "classOfItems" : null,
+    "coordRow" : 11,
+    "coordCol" : 4,
+    "width" : 1,
+    "height" : 1,
+    "occuped" : false,
+    "classNameOfItem" : null
+  }, {
+    "urlImgToShow" : "",
+    "classOfItems" : null,
+    "coordRow" : 11,
+    "coordCol" : 5,
+    "width" : 1,
+    "height" : 1,
+    "occuped" : false,
+    "classNameOfItem" : null
+  }, {
+    "urlImgToShow" : "",
+    "classOfItems" : null,
+    "coordRow" : 11,
+    "coordCol" : 6,
+    "width" : 1,
+    "height" : 1,
+    "occuped" : false,
+    "classNameOfItem" : null
+  }, {
+    "urlImgToShow" : "",
+    "classOfItems" : null,
+    "coordRow" : 11,
+    "coordCol" : 7,
+    "width" : 1,
+    "height" : 1,
+    "occuped" : false,
+    "classNameOfItem" : null
   }, {
     "urlImgToShow" : "",
     "classOfItems" : null,
