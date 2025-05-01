@@ -1,11 +1,16 @@
 package src.java.org.projet.interfaces;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import java.beans.PropertyChangeListener;
 import java.beans.PropertyChangeSupport;
 
+/**
+ * Classe concrète pour écouter des messages
+ */
 public abstract  class MyConcreteObservable implements  MyObservable {
 
-
+    @JsonIgnore
     private final PropertyChangeSupport propertyChangeSupport = new PropertyChangeSupport(this);
     public MyConcreteObservable() {}
     @Override

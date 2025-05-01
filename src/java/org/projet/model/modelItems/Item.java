@@ -1,9 +1,10 @@
 package src.java.org.projet.model.modelItems;
 
 
+import src.java.org.projet.interfaces.EffectOnHero;
 import src.java.org.projet.model.modelLevelEditor.base.Coord;
 
-public abstract class Item {
+public abstract class Item implements EffectOnHero {
     private final String name;
     private String description;
     private Coord coord;

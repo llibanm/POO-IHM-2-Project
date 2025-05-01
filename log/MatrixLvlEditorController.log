@@ -1,22 +1,973 @@
-[2025-04-30 18:23:44.955] INFO - MatrixLvlEditorController.handleGridClick - clicked on grid
-[2025-04-30 18:23:44.959] INFO - MatrixLvlEditorController.handleGridClick - Erreur addGridListenersOnView currentSelectedCaseMatrix == null
-[2025-04-30 18:23:46.098] INFO - MatrixLvlEditorController.handleGridClick - clicked on grid
-[2025-04-30 18:23:46.099] INFO - MatrixLvlEditorController.handleGridClick - Erreur addGridListenersOnView currentSelectedCaseMatrix == null
-[2025-04-30 18:23:46.181] INFO - MatrixLvlEditorController.handleKeyPressed - Appui sur D
-[2025-04-30 18:23:47.910] SEVERE - MatrixLvlEditorController.propertyChange - Changement selectedItem propertyChange
-[2025-04-30 18:23:47.911] INFO - MatrixLvlEditorController.propertyChange - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/character/hero/d.png', classNameITem='MyCharacter{name='', HP=0, coord=null}', coordRow=0, coordCol=0, width=1, height=1}
-[2025-04-30 18:23:48.554] INFO - MatrixLvlEditorController.handleGridClick - clicked on grid
-[2025-04-30 18:23:48.572] SEVERE - MatrixLvlEditorController.propertyChange - Changement UpdateHeroState propertyChange
-[2025-04-30 18:23:48.576] INFO - MatrixLvlEditorController.propertyChange - Maj des stats du héros MyCharacter{name='Marcel', HP=10, coord=Coord{row=5, col=5}}
-[2025-04-30 18:23:48.845] INFO - MatrixLvlEditorController.handleKeyPressed - Appui sur D
-[2025-04-30 18:23:48.892] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
-[2025-04-30 18:23:48.893] SEVERE - MatrixLvlEditorController.propertyChange - Movement move propertyChange
-[2025-04-30 18:23:48.894] INFO - MatrixLvlEditorController.propertyChange - MyCharacter{name='Marcel', HP=10, coord=Coord{row=5, col=6}} old coord is Coord{row=5, col=5}
-[2025-04-30 18:23:48.896] INFO - MatrixLvlEditorController.propertyChange - Entity coord is MyCharacter{name='Marcel', HP=10, coord=Coord{row=5, col=6}}
-[2025-04-30 18:23:48.913] INFO - MatrixLvlEditorController.propertyChange - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/character/hero/d.png', classNameITem='MyCharacter{name='Marcel', HP=10, coord=Coord{row=5, col=6}}', coordRow=0, coordCol=0, width=1, height=1}
-[2025-04-30 18:23:49.017] INFO - MatrixLvlEditorController.handleKeyPressed - Appui sur D
-[2025-04-30 18:23:49.026] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
-[2025-04-30 18:23:49.026] SEVERE - MatrixLvlEditorController.propertyChange - Movement move propertyChange
-[2025-04-30 18:23:49.027] INFO - MatrixLvlEditorController.propertyChange - MyCharacter{name='Marcel', HP=10, coord=Coord{row=5, col=7}} old coord is Coord{row=5, col=6}
-[2025-04-30 18:23:49.028] INFO - MatrixLvlEditorController.propertyChange - Entity coord is MyCharacter{name='Marcel', HP=10, coord=Coord{row=5, col=7}}
-[2025-04-30 18:23:49.039] INFO - MatrixLvlEditorController.propertyChange - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/character/hero/d.png', classNameITem='MyCharacter{name='Marcel', HP=10, coord=Coord{row=5, col=7}}', coordRow=0, coordCol=0, width=1, height=1}
+[2025-05-01 19:51:23.900] SEVERE - MatrixLvlEditorController.propertyChange - Changement selectedItem propertyChange
+[2025-05-01 19:51:23.901] INFO - MatrixLvlEditorController.handleSelectedItem - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/defaultHero.png', classNameITem='MyCharacter{name='', HP=0, coord=null}', coordRow=0, coordCol=0, width=1, height=1}
+[2025-05-01 19:51:24.184] INFO - MatrixLvlEditorController.handleGridClick - clicked on grid
+[2025-05-01 19:51:24.190] SEVERE - MatrixLvlEditorController.propertyChange - Changement UpdateHeroState propertyChange
+[2025-05-01 19:51:24.192] INFO - MatrixLvlEditorController.handleUpdateHeroState - Maj des stats du héros MyCharacter{name='Marcel', HP=10, coord=Coord{row=6, col=3}}
+[2025-05-01 19:51:24.456] INFO - MatrixLvlEditorController.handleKeyPressed - Appui sur D
+[2025-05-01 19:51:24.463] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:24.463] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:24.463] INFO - MatrixLvlEditorController.handleItemMovement - MyCharacter{name='Marcel', HP=10, coord=Coord{row=6, col=4}} old coord is Coord{row=6, col=3}
+[2025-05-01 19:51:24.464] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is MyCharacter{name='Marcel', HP=10, coord=Coord{row=6, col=4}}
+[2025-05-01 19:51:24.470] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/defaultHero.png', classNameITem='MyCharacter{name='Marcel', HP=10, coord=Coord{row=6, col=4}}', coordRow=6, coordCol=3, width=1, height=1}
+[2025-05-01 19:51:24.612] INFO - MatrixLvlEditorController.handleKeyPressed - Appui sur D
+[2025-05-01 19:51:24.617] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:24.618] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:24.619] INFO - MatrixLvlEditorController.handleItemMovement - MyCharacter{name='Marcel', HP=10, coord=Coord{row=6, col=5}} old coord is Coord{row=6, col=4}
+[2025-05-01 19:51:24.619] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is MyCharacter{name='Marcel', HP=10, coord=Coord{row=6, col=5}}
+[2025-05-01 19:51:24.627] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/defaultHero.png', classNameITem='MyCharacter{name='Marcel', HP=10, coord=Coord{row=6, col=5}}', coordRow=6, coordCol=3, width=1, height=1}
+[2025-05-01 19:51:24.775] INFO - MatrixLvlEditorController.handleKeyPressed - Appui sur D
+[2025-05-01 19:51:24.778] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:24.778] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:24.778] INFO - MatrixLvlEditorController.handleItemMovement - MyCharacter{name='Marcel', HP=10, coord=Coord{row=6, col=6}} old coord is Coord{row=6, col=5}
+[2025-05-01 19:51:24.779] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is MyCharacter{name='Marcel', HP=10, coord=Coord{row=6, col=6}}
+[2025-05-01 19:51:24.784] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/defaultHero.png', classNameITem='MyCharacter{name='Marcel', HP=10, coord=Coord{row=6, col=6}}', coordRow=6, coordCol=3, width=1, height=1}
+[2025-05-01 19:51:24.846] INFO - MatrixLvlEditorController.handleKeyPressed - Appui sur S
+[2025-05-01 19:51:24.848] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:24.848] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:24.849] INFO - MatrixLvlEditorController.handleItemMovement - MyCharacter{name='Marcel', HP=10, coord=Coord{row=7, col=6}} old coord is Coord{row=6, col=6}
+[2025-05-01 19:51:24.849] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is MyCharacter{name='Marcel', HP=10, coord=Coord{row=7, col=6}}
+[2025-05-01 19:51:24.852] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/defaultHero.png', classNameITem='MyCharacter{name='Marcel', HP=10, coord=Coord{row=7, col=6}}', coordRow=6, coordCol=3, width=1, height=1}
+[2025-05-01 19:51:25.026] INFO - MatrixLvlEditorController.handleKeyPressed - Appui sur S
+[2025-05-01 19:51:25.035] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:25.035] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:25.036] INFO - MatrixLvlEditorController.handleItemMovement - MyCharacter{name='Marcel', HP=10, coord=Coord{row=8, col=6}} old coord is Coord{row=7, col=6}
+[2025-05-01 19:51:25.036] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is MyCharacter{name='Marcel', HP=10, coord=Coord{row=8, col=6}}
+[2025-05-01 19:51:25.040] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/defaultHero.png', classNameITem='MyCharacter{name='Marcel', HP=10, coord=Coord{row=8, col=6}}', coordRow=6, coordCol=3, width=1, height=1}
+[2025-05-01 19:51:25.185] INFO - MatrixLvlEditorController.handleKeyPressed - Appui sur S
+[2025-05-01 19:51:25.187] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:25.187] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:25.187] INFO - MatrixLvlEditorController.handleItemMovement - MyCharacter{name='Marcel', HP=10, coord=Coord{row=9, col=6}} old coord is Coord{row=8, col=6}
+[2025-05-01 19:51:25.188] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is MyCharacter{name='Marcel', HP=10, coord=Coord{row=9, col=6}}
+[2025-05-01 19:51:25.190] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/defaultHero.png', classNameITem='MyCharacter{name='Marcel', HP=10, coord=Coord{row=9, col=6}}', coordRow=6, coordCol=3, width=1, height=1}
+[2025-05-01 19:51:26.065] INFO - MatrixLvlEditorController.handleKeyPressed - Héro tire!!
+[2025-05-01 19:51:26.066] SEVERE - MatrixLvlEditorController.propertyChange - Changement fireHero propertyChange
+[2025-05-01 19:51:26.067] SEVERE - MatrixLvlEditorController.handleHeroShoot - Reception du signal de tir
+[2025-05-01 19:51:26.068] INFO - MatrixLvlEditorController.handleHeroShoot - CaseMatrix  Flèche CaseMatrix{urlImgToShow='src/java/org/projet/assets/bule.png', classNameITem='null', coordRow=10, coordCol=6, width=1, height=1}
+[2025-05-01 19:51:26.069] INFO - MatrixLvlEditorController.propertyChange - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/defaultHero.png', classNameITem='MyCharacter{name='Marcel', HP=10, coord=Coord{row=9, col=6}}', coordRow=6, coordCol=3, width=1, height=1}
+[2025-05-01 19:51:26.070] SEVERE - MatrixLvlEditorController.propertyChange - Changement UpdateHeroState propertyChange
+[2025-05-01 19:51:26.071] INFO - MatrixLvlEditorController.handleUpdateHeroState - Maj des stats du héros MyCharacter{name='Marcel', HP=10, coord=Coord{row=9, col=6}}
+[2025-05-01 19:51:26.900] INFO - MatrixLvlEditorController.handleKeyPressed - Appui sur Z (ou la touche configurée pour 'haut')
+[2025-05-01 19:51:26.904] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:26.905] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:26.905] INFO - MatrixLvlEditorController.handleItemMovement - src.java.org.projet.model.modelItems.Bow@70e15396 old coord is Coord{row=10, col=6}
+[2025-05-01 19:51:26.906] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is src.java.org.projet.model.modelItems.Bow@70e15396
+[2025-05-01 19:51:26.912] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/defaultHero.png', classNameITem='MyCharacter{name='Marcel', HP=10, coord=Coord{row=9, col=6}}', coordRow=6, coordCol=3, width=1, height=1}
+[2025-05-01 19:51:26.915] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:26.916] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:26.916] INFO - MatrixLvlEditorController.handleItemMovement - MyCharacter{name='Marcel', HP=10, coord=Coord{row=8, col=6}} old coord is Coord{row=9, col=6}
+[2025-05-01 19:51:26.917] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is MyCharacter{name='Marcel', HP=10, coord=Coord{row=8, col=6}}
+[2025-05-01 19:51:26.919] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/defaultHero.png', classNameITem='MyCharacter{name='Marcel', HP=10, coord=Coord{row=8, col=6}}', coordRow=6, coordCol=3, width=1, height=1}
+[2025-05-01 19:51:27.511] INFO - MatrixLvlEditorController.handleKeyPressed - Appui sur Z (ou la touche configurée pour 'haut')
+[2025-05-01 19:51:27.513] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:27.513] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:27.513] INFO - MatrixLvlEditorController.handleItemMovement - MyCharacter{name='Marcel', HP=10, coord=Coord{row=7, col=6}} old coord is Coord{row=8, col=6}
+[2025-05-01 19:51:27.513] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is MyCharacter{name='Marcel', HP=10, coord=Coord{row=7, col=6}}
+[2025-05-01 19:51:27.516] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/defaultHero.png', classNameITem='MyCharacter{name='Marcel', HP=10, coord=Coord{row=7, col=6}}', coordRow=6, coordCol=3, width=1, height=1}
+[2025-05-01 19:51:27.793] INFO - MatrixLvlEditorController.handleKeyPressed - Appui sur Z (ou la touche configurée pour 'haut')
+[2025-05-01 19:51:27.795] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:27.795] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:27.795] INFO - MatrixLvlEditorController.handleItemMovement - MyCharacter{name='Marcel', HP=10, coord=Coord{row=6, col=6}} old coord is Coord{row=7, col=6}
+[2025-05-01 19:51:27.796] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is MyCharacter{name='Marcel', HP=10, coord=Coord{row=6, col=6}}
+[2025-05-01 19:51:27.799] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/defaultHero.png', classNameITem='MyCharacter{name='Marcel', HP=10, coord=Coord{row=6, col=6}}', coordRow=6, coordCol=3, width=1, height=1}
+[2025-05-01 19:51:28.209] INFO - MatrixLvlEditorController.handleKeyPressed - Appui sur S
+[2025-05-01 19:51:28.213] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:28.213] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:28.214] INFO - MatrixLvlEditorController.handleItemMovement - MyCharacter{name='Marcel', HP=10, coord=Coord{row=7, col=6}} old coord is Coord{row=6, col=6}
+[2025-05-01 19:51:28.215] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is MyCharacter{name='Marcel', HP=10, coord=Coord{row=7, col=6}}
+[2025-05-01 19:51:28.219] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/defaultHero.png', classNameITem='MyCharacter{name='Marcel', HP=10, coord=Coord{row=7, col=6}}', coordRow=6, coordCol=3, width=1, height=1}
+[2025-05-01 19:51:33.113] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:33.114] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:33.114] INFO - MatrixLvlEditorController.handleItemMovement - src.java.org.projet.model.modelItems.Bow@70e15396 old coord is Coord{row=11, col=6}
+[2025-05-01 19:51:33.115] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is src.java.org.projet.model.modelItems.Bow@70e15396
+[2025-05-01 19:51:33.118] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/defaultHero.png', classNameITem='MyCharacter{name='Marcel', HP=10, coord=Coord{row=7, col=6}}', coordRow=6, coordCol=3, width=1, height=1}
+[2025-05-01 19:51:33.465] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:33.465] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:33.465] INFO - MatrixLvlEditorController.handleItemMovement - src.java.org.projet.model.modelItems.Bow@70e15396 old coord is Coord{row=12, col=6}
+[2025-05-01 19:51:33.465] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is src.java.org.projet.model.modelItems.Bow@70e15396
+[2025-05-01 19:51:33.468] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/defaultHero.png', classNameITem='MyCharacter{name='Marcel', HP=10, coord=Coord{row=7, col=6}}', coordRow=6, coordCol=3, width=1, height=1}
+[2025-05-01 19:51:33.817] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:33.818] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:33.818] INFO - MatrixLvlEditorController.handleItemMovement - src.java.org.projet.model.modelItems.Bow@70e15396 old coord is Coord{row=13, col=6}
+[2025-05-01 19:51:33.818] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is src.java.org.projet.model.modelItems.Bow@70e15396
+[2025-05-01 19:51:33.823] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/defaultHero.png', classNameITem='MyCharacter{name='Marcel', HP=10, coord=Coord{row=7, col=6}}', coordRow=6, coordCol=3, width=1, height=1}
+[2025-05-01 19:51:33.887] INFO - MatrixLvlEditorController.handleKeyPressed - Appui sur D
+[2025-05-01 19:51:33.889] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:33.890] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:33.890] INFO - MatrixLvlEditorController.handleItemMovement - MyCharacter{name='Marcel', HP=10, coord=Coord{row=7, col=7}} old coord is Coord{row=7, col=6}
+[2025-05-01 19:51:33.890] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is MyCharacter{name='Marcel', HP=10, coord=Coord{row=7, col=7}}
+[2025-05-01 19:51:33.892] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/defaultHero.png', classNameITem='MyCharacter{name='Marcel', HP=10, coord=Coord{row=7, col=7}}', coordRow=6, coordCol=3, width=1, height=1}
+[2025-05-01 19:51:34.116] INFO - MatrixLvlEditorController.handleKeyPressed - Appui sur D
+[2025-05-01 19:51:34.118] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:34.118] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:34.118] INFO - MatrixLvlEditorController.handleItemMovement - MyCharacter{name='Marcel', HP=10, coord=Coord{row=7, col=8}} old coord is Coord{row=7, col=7}
+[2025-05-01 19:51:34.119] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is MyCharacter{name='Marcel', HP=10, coord=Coord{row=7, col=8}}
+[2025-05-01 19:51:34.121] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/defaultHero.png', classNameITem='MyCharacter{name='Marcel', HP=10, coord=Coord{row=7, col=8}}', coordRow=6, coordCol=3, width=1, height=1}
+[2025-05-01 19:51:34.167] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:34.167] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:34.167] INFO - MatrixLvlEditorController.handleItemMovement - src.java.org.projet.model.modelItems.Bow@70e15396 old coord is Coord{row=14, col=6}
+[2025-05-01 19:51:34.167] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is src.java.org.projet.model.modelItems.Bow@70e15396
+[2025-05-01 19:51:34.169] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/defaultHero.png', classNameITem='MyCharacter{name='Marcel', HP=10, coord=Coord{row=7, col=8}}', coordRow=6, coordCol=3, width=1, height=1}
+[2025-05-01 19:51:34.519] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:34.519] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:34.519] INFO - MatrixLvlEditorController.handleItemMovement - src.java.org.projet.model.modelItems.Bow@70e15396 old coord is Coord{row=15, col=6}
+[2025-05-01 19:51:34.519] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is src.java.org.projet.model.modelItems.Bow@70e15396
+[2025-05-01 19:51:34.522] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/defaultHero.png', classNameITem='MyCharacter{name='Marcel', HP=10, coord=Coord{row=7, col=8}}', coordRow=6, coordCol=3, width=1, height=1}
+[2025-05-01 19:51:34.871] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:34.872] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:34.872] INFO - MatrixLvlEditorController.handleItemMovement - src.java.org.projet.model.modelItems.Bow@70e15396 old coord is Coord{row=16, col=6}
+[2025-05-01 19:51:34.872] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is src.java.org.projet.model.modelItems.Bow@70e15396
+[2025-05-01 19:51:34.876] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/defaultHero.png', classNameITem='MyCharacter{name='Marcel', HP=10, coord=Coord{row=7, col=8}}', coordRow=6, coordCol=3, width=1, height=1}
+[2025-05-01 19:51:35.034] SEVERE - MatrixLvlEditorController.propertyChange - Changement selectedItem propertyChange
+[2025-05-01 19:51:35.035] INFO - MatrixLvlEditorController.handleSelectedItem - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='', HP=0, coord=null}', coordRow=0, coordCol=0, width=1, height=1}
+[2025-05-01 19:51:35.223] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:35.223] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:35.223] INFO - MatrixLvlEditorController.handleItemMovement - src.java.org.projet.model.modelItems.Bow@70e15396 old coord is Coord{row=17, col=6}
+[2025-05-01 19:51:35.223] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is src.java.org.projet.model.modelItems.Bow@70e15396
+[2025-05-01 19:51:35.225] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='', HP=0, coord=null}', coordRow=0, coordCol=0, width=1, height=1}
+[2025-05-01 19:51:35.308] INFO - MatrixLvlEditorController.handleGridClick - clicked on grid
+[2025-05-01 19:51:35.466] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:35.466] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:35.466] INFO - MatrixLvlEditorController.handleItemMovement - MyCharacter{name='Boss', HP=10, coord=Coord{row=4, col=4}} old coord is Coord{row=3, col=4}
+[2025-05-01 19:51:35.466] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is MyCharacter{name='Boss', HP=10, coord=Coord{row=4, col=4}}
+[2025-05-01 19:51:35.469] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=4, col=4}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:35.558] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:35.559] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:35.559] INFO - MatrixLvlEditorController.handleItemMovement - src.java.org.projet.model.modelItems.Bow@70e15396 old coord is Coord{row=18, col=6}
+[2025-05-01 19:51:35.559] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is src.java.org.projet.model.modelItems.Bow@70e15396
+[2025-05-01 19:51:35.561] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=4, col=4}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:35.671] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:35.672] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:35.672] INFO - MatrixLvlEditorController.handleItemMovement - MyCharacter{name='Boss', HP=10, coord=Coord{row=5, col=4}} old coord is Coord{row=4, col=4}
+[2025-05-01 19:51:35.672] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is MyCharacter{name='Boss', HP=10, coord=Coord{row=5, col=4}}
+[2025-05-01 19:51:35.673] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=5, col=4}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:35.701] INFO - MatrixLvlEditorController.handleKeyPressed - Appui sur D
+[2025-05-01 19:51:35.703] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:35.703] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:35.703] INFO - MatrixLvlEditorController.handleItemMovement - MyCharacter{name='Marcel', HP=10, coord=Coord{row=7, col=9}} old coord is Coord{row=7, col=8}
+[2025-05-01 19:51:35.703] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is MyCharacter{name='Marcel', HP=10, coord=Coord{row=7, col=9}}
+[2025-05-01 19:51:35.706] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=5, col=4}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:35.866] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:35.866] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:35.866] INFO - MatrixLvlEditorController.handleItemMovement - MyCharacter{name='Boss', HP=10, coord=Coord{row=6, col=4}} old coord is Coord{row=5, col=4}
+[2025-05-01 19:51:35.866] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is MyCharacter{name='Boss', HP=10, coord=Coord{row=6, col=4}}
+[2025-05-01 19:51:35.870] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=6, col=4}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:35.913] SEVERE - MatrixLvlEditorController.propertyChange - Changement removeItem propertyChange
+[2025-05-01 19:51:35.914] SEVERE - MatrixLvlEditorController.handleRemoveItem - Reception du signal remove item
+[2025-05-01 19:51:36.073] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:36.074] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:36.074] INFO - MatrixLvlEditorController.handleItemMovement - MyCharacter{name='Boss', HP=10, coord=Coord{row=7, col=4}} old coord is Coord{row=6, col=4}
+[2025-05-01 19:51:36.074] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is MyCharacter{name='Boss', HP=10, coord=Coord{row=7, col=4}}
+[2025-05-01 19:51:36.076] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=7, col=4}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:36.216] INFO - MatrixLvlEditorController.handleKeyPressed - Appui sur D
+[2025-05-01 19:51:36.217] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:36.217] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:36.218] INFO - MatrixLvlEditorController.handleItemMovement - MyCharacter{name='Marcel', HP=10, coord=Coord{row=7, col=10}} old coord is Coord{row=7, col=9}
+[2025-05-01 19:51:36.218] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is MyCharacter{name='Marcel', HP=10, coord=Coord{row=7, col=10}}
+[2025-05-01 19:51:36.223] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=7, col=4}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:36.257] INFO - MatrixLvlEditorController.handleKeyPressed - Appui sur D
+[2025-05-01 19:51:36.259] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:36.260] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:36.260] INFO - MatrixLvlEditorController.handleItemMovement - MyCharacter{name='Marcel', HP=10, coord=Coord{row=7, col=11}} old coord is Coord{row=7, col=10}
+[2025-05-01 19:51:36.260] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is MyCharacter{name='Marcel', HP=10, coord=Coord{row=7, col=11}}
+[2025-05-01 19:51:36.267] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=7, col=4}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:36.273] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:36.273] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:36.273] INFO - MatrixLvlEditorController.handleItemMovement - MyCharacter{name='Boss', HP=10, coord=Coord{row=7, col=5}} old coord is Coord{row=7, col=4}
+[2025-05-01 19:51:36.273] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is MyCharacter{name='Boss', HP=10, coord=Coord{row=7, col=5}}
+[2025-05-01 19:51:36.276] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=7, col=5}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:36.284] INFO - MatrixLvlEditorController.handleKeyPressed - Appui sur D
+[2025-05-01 19:51:36.286] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:36.286] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:36.291] INFO - MatrixLvlEditorController.handleItemMovement - MyCharacter{name='Marcel', HP=10, coord=Coord{row=7, col=12}} old coord is Coord{row=7, col=11}
+[2025-05-01 19:51:36.291] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is MyCharacter{name='Marcel', HP=10, coord=Coord{row=7, col=12}}
+[2025-05-01 19:51:36.295] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=7, col=5}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:36.313] INFO - MatrixLvlEditorController.handleKeyPressed - Appui sur D
+[2025-05-01 19:51:36.314] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:36.314] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:36.315] INFO - MatrixLvlEditorController.handleItemMovement - MyCharacter{name='Marcel', HP=10, coord=Coord{row=7, col=13}} old coord is Coord{row=7, col=12}
+[2025-05-01 19:51:36.315] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is MyCharacter{name='Marcel', HP=10, coord=Coord{row=7, col=13}}
+[2025-05-01 19:51:36.324] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=7, col=5}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:36.346] INFO - MatrixLvlEditorController.handleKeyPressed - Appui sur D
+[2025-05-01 19:51:36.397] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:36.397] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:36.397] INFO - MatrixLvlEditorController.handleItemMovement - MyCharacter{name='Marcel', HP=10, coord=Coord{row=7, col=14}} old coord is Coord{row=7, col=13}
+[2025-05-01 19:51:36.397] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is MyCharacter{name='Marcel', HP=10, coord=Coord{row=7, col=14}}
+[2025-05-01 19:51:36.402] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=7, col=5}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:36.407] INFO - MatrixLvlEditorController.handleKeyPressed - Appui sur D
+[2025-05-01 19:51:36.409] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:36.409] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:36.409] INFO - MatrixLvlEditorController.handleItemMovement - MyCharacter{name='Marcel', HP=10, coord=Coord{row=7, col=15}} old coord is Coord{row=7, col=14}
+[2025-05-01 19:51:36.409] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is MyCharacter{name='Marcel', HP=10, coord=Coord{row=7, col=15}}
+[2025-05-01 19:51:36.414] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=7, col=5}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:36.441] INFO - MatrixLvlEditorController.handleKeyPressed - Appui sur D
+[2025-05-01 19:51:36.457] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:36.458] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:36.458] INFO - MatrixLvlEditorController.handleItemMovement - MyCharacter{name='Marcel', HP=10, coord=Coord{row=7, col=16}} old coord is Coord{row=7, col=15}
+[2025-05-01 19:51:36.458] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is MyCharacter{name='Marcel', HP=10, coord=Coord{row=7, col=16}}
+[2025-05-01 19:51:36.460] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=7, col=5}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:36.464] INFO - MatrixLvlEditorController.handleKeyPressed - Appui sur D
+[2025-05-01 19:51:36.466] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:36.466] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:36.466] INFO - MatrixLvlEditorController.handleItemMovement - MyCharacter{name='Marcel', HP=10, coord=Coord{row=7, col=17}} old coord is Coord{row=7, col=16}
+[2025-05-01 19:51:36.466] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is MyCharacter{name='Marcel', HP=10, coord=Coord{row=7, col=17}}
+[2025-05-01 19:51:36.476] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=7, col=5}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:36.479] SEVERE - MatrixLvlEditorController.propertyChange - Changement fireHero propertyChange
+[2025-05-01 19:51:36.479] SEVERE - MatrixLvlEditorController.handleHeroShoot - Reception du signal de tir
+[2025-05-01 19:51:36.481] INFO - MatrixLvlEditorController.handleHeroShoot - CaseMatrix  Flèche CaseMatrix{urlImgToShow='src/java/org/projet/assets/buleE.png', classNameITem='null', coordRow=7, coordCol=6, width=1, height=1}
+[2025-05-01 19:51:36.482] INFO - MatrixLvlEditorController.propertyChange - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=7, col=5}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:36.482] SEVERE - MatrixLvlEditorController.propertyChange - Changement UpdateHeroState propertyChange
+[2025-05-01 19:51:36.482] INFO - MatrixLvlEditorController.handleUpdateHeroState - Maj des stats du héros MyCharacter{name='Marcel', HP=10, coord=Coord{row=7, col=17}}
+[2025-05-01 19:51:36.523] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:36.523] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:36.524] INFO - MatrixLvlEditorController.handleItemMovement - src.java.org.projet.model.modelItems.Bow@4071bbcf old coord is Coord{row=7, col=6}
+[2025-05-01 19:51:36.524] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is src.java.org.projet.model.modelItems.Bow@4071bbcf
+[2025-05-01 19:51:36.539] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=7, col=5}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:36.543] INFO - MatrixLvlEditorController.handleKeyPressed - Appui sur S
+[2025-05-01 19:51:36.545] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:36.545] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:36.545] INFO - MatrixLvlEditorController.handleItemMovement - MyCharacter{name='Marcel', HP=10, coord=Coord{row=8, col=17}} old coord is Coord{row=7, col=17}
+[2025-05-01 19:51:36.545] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is MyCharacter{name='Marcel', HP=10, coord=Coord{row=8, col=17}}
+[2025-05-01 19:51:36.551] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=7, col=5}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:36.663] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:36.663] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:36.663] INFO - MatrixLvlEditorController.handleItemMovement - MyCharacter{name='Boss', HP=10, coord=Coord{row=8, col=5}} old coord is Coord{row=7, col=5}
+[2025-05-01 19:51:36.663] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is MyCharacter{name='Boss', HP=10, coord=Coord{row=8, col=5}}
+[2025-05-01 19:51:36.665] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=8, col=5}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:36.766] INFO - MatrixLvlEditorController.handleKeyPressed - Appui sur S
+[2025-05-01 19:51:36.767] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:36.767] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:36.767] INFO - MatrixLvlEditorController.handleItemMovement - MyCharacter{name='Marcel', HP=10, coord=Coord{row=9, col=17}} old coord is Coord{row=8, col=17}
+[2025-05-01 19:51:36.767] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is MyCharacter{name='Marcel', HP=10, coord=Coord{row=9, col=17}}
+[2025-05-01 19:51:36.769] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=8, col=5}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:36.807] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:36.807] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:36.807] INFO - MatrixLvlEditorController.handleItemMovement - src.java.org.projet.model.modelItems.Bow@4071bbcf old coord is Coord{row=7, col=7}
+[2025-05-01 19:51:36.807] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is src.java.org.projet.model.modelItems.Bow@4071bbcf
+[2025-05-01 19:51:36.810] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=8, col=5}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:36.872] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:36.872] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:36.872] INFO - MatrixLvlEditorController.handleItemMovement - MyCharacter{name='Boss', HP=10, coord=Coord{row=9, col=5}} old coord is Coord{row=8, col=5}
+[2025-05-01 19:51:36.872] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is MyCharacter{name='Boss', HP=10, coord=Coord{row=9, col=5}}
+[2025-05-01 19:51:36.874] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=9, col=5}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:36.952] INFO - MatrixLvlEditorController.handleKeyPressed - Appui sur Q
+[2025-05-01 19:51:36.954] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:36.954] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:36.954] INFO - MatrixLvlEditorController.handleItemMovement - MyCharacter{name='Marcel', HP=10, coord=Coord{row=9, col=16}} old coord is Coord{row=9, col=17}
+[2025-05-01 19:51:36.954] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is MyCharacter{name='Marcel', HP=10, coord=Coord{row=9, col=16}}
+[2025-05-01 19:51:36.957] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=9, col=5}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:37.064] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:37.064] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:37.065] INFO - MatrixLvlEditorController.handleItemMovement - MyCharacter{name='Boss', HP=10, coord=Coord{row=9, col=6}} old coord is Coord{row=9, col=5}
+[2025-05-01 19:51:37.065] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is MyCharacter{name='Boss', HP=10, coord=Coord{row=9, col=6}}
+[2025-05-01 19:51:37.068] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=9, col=6}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:37.159] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:37.159] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:37.159] INFO - MatrixLvlEditorController.handleItemMovement - src.java.org.projet.model.modelItems.Bow@4071bbcf old coord is Coord{row=7, col=8}
+[2025-05-01 19:51:37.159] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is src.java.org.projet.model.modelItems.Bow@4071bbcf
+[2025-05-01 19:51:37.162] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=9, col=6}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:37.253] INFO - MatrixLvlEditorController.handleKeyPressed - Héro tire!!
+[2025-05-01 19:51:37.253] SEVERE - MatrixLvlEditorController.propertyChange - Changement fireHero propertyChange
+[2025-05-01 19:51:37.254] SEVERE - MatrixLvlEditorController.handleHeroShoot - Reception du signal de tir
+[2025-05-01 19:51:37.255] INFO - MatrixLvlEditorController.handleHeroShoot - CaseMatrix  Flèche CaseMatrix{urlImgToShow='src/java/org/projet/assets/bule.png', classNameITem='null', coordRow=9, coordCol=15, width=1, height=1}
+[2025-05-01 19:51:37.255] INFO - MatrixLvlEditorController.propertyChange - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=9, col=6}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:37.255] SEVERE - MatrixLvlEditorController.propertyChange - Changement UpdateHeroState propertyChange
+[2025-05-01 19:51:37.255] INFO - MatrixLvlEditorController.handleUpdateHeroState - Maj des stats du héros MyCharacter{name='Marcel', HP=10, coord=Coord{row=9, col=16}}
+[2025-05-01 19:51:37.257] SEVERE - MatrixLvlEditorController.propertyChange - Changement fireHero propertyChange
+[2025-05-01 19:51:37.257] SEVERE - MatrixLvlEditorController.handleHeroShoot - Reception du signal de tir
+[2025-05-01 19:51:37.258] INFO - MatrixLvlEditorController.handleHeroShoot - CaseMatrix  Flèche CaseMatrix{urlImgToShow='src/java/org/projet/assets/buleE.png', classNameITem='null', coordRow=9, coordCol=7, width=1, height=1}
+[2025-05-01 19:51:37.259] INFO - MatrixLvlEditorController.propertyChange - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=9, col=6}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:37.259] SEVERE - MatrixLvlEditorController.propertyChange - Changement UpdateHeroState propertyChange
+[2025-05-01 19:51:37.259] INFO - MatrixLvlEditorController.handleUpdateHeroState - Maj des stats du héros MyCharacter{name='Marcel', HP=10, coord=Coord{row=9, col=16}}
+[2025-05-01 19:51:37.319] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:37.319] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:37.319] INFO - MatrixLvlEditorController.handleItemMovement - src.java.org.projet.model.modelItems.Bow@7c23f25 old coord is Coord{row=9, col=15}
+[2025-05-01 19:51:37.319] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is src.java.org.projet.model.modelItems.Bow@7c23f25
+[2025-05-01 19:51:37.322] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=9, col=6}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:37.324] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:37.324] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:37.324] INFO - MatrixLvlEditorController.handleItemMovement - src.java.org.projet.model.modelItems.Bow@388868ac old coord is Coord{row=9, col=7}
+[2025-05-01 19:51:37.324] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is src.java.org.projet.model.modelItems.Bow@388868ac
+[2025-05-01 19:51:37.327] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=9, col=6}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:37.463] SEVERE - MatrixLvlEditorController.propertyChange - Changement fireHero propertyChange
+[2025-05-01 19:51:37.463] SEVERE - MatrixLvlEditorController.handleHeroShoot - Reception du signal de tir
+[2025-05-01 19:51:37.465] INFO - MatrixLvlEditorController.handleHeroShoot - CaseMatrix  Flèche CaseMatrix{urlImgToShow='src/java/org/projet/assets/buleE.png', classNameITem='null', coordRow=9, coordCol=7, width=1, height=1}
+[2025-05-01 19:51:37.465] INFO - MatrixLvlEditorController.propertyChange - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=9, col=6}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:37.465] SEVERE - MatrixLvlEditorController.propertyChange - Changement UpdateHeroState propertyChange
+[2025-05-01 19:51:37.466] INFO - MatrixLvlEditorController.handleUpdateHeroState - Maj des stats du héros MyCharacter{name='Marcel', HP=10, coord=Coord{row=9, col=16}}
+[2025-05-01 19:51:37.474] INFO - MatrixLvlEditorController.handleKeyPressed - Héro tire!!
+[2025-05-01 19:51:37.475] SEVERE - MatrixLvlEditorController.propertyChange - Changement fireHero propertyChange
+[2025-05-01 19:51:37.475] SEVERE - MatrixLvlEditorController.handleHeroShoot - Reception du signal de tir
+[2025-05-01 19:51:37.476] INFO - MatrixLvlEditorController.handleHeroShoot - CaseMatrix  Flèche CaseMatrix{urlImgToShow='src/java/org/projet/assets/bule.png', classNameITem='null', coordRow=9, coordCol=15, width=1, height=1}
+[2025-05-01 19:51:37.477] INFO - MatrixLvlEditorController.propertyChange - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=9, col=6}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:37.477] SEVERE - MatrixLvlEditorController.propertyChange - Changement UpdateHeroState propertyChange
+[2025-05-01 19:51:37.478] INFO - MatrixLvlEditorController.handleUpdateHeroState - Maj des stats du héros MyCharacter{name='Marcel', HP=10, coord=Coord{row=9, col=16}}
+[2025-05-01 19:51:37.512] SEVERE - MatrixLvlEditorController.propertyChange - Changement removeItem propertyChange
+[2025-05-01 19:51:37.512] SEVERE - MatrixLvlEditorController.handleRemoveItem - Reception du signal remove item
+[2025-05-01 19:51:37.520] SEVERE - MatrixLvlEditorController.propertyChange - Changement removeItem propertyChange
+[2025-05-01 19:51:37.521] SEVERE - MatrixLvlEditorController.handleRemoveItem - Reception du signal remove item
+[2025-05-01 19:51:37.623] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:37.623] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:37.623] INFO - MatrixLvlEditorController.handleItemMovement - src.java.org.projet.model.modelItems.Bow@4071bbcf old coord is Coord{row=7, col=9}
+[2025-05-01 19:51:37.623] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is src.java.org.projet.model.modelItems.Bow@4071bbcf
+[2025-05-01 19:51:37.626] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=9, col=6}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:37.672] SEVERE - MatrixLvlEditorController.propertyChange - Changement fireHero propertyChange
+[2025-05-01 19:51:37.672] SEVERE - MatrixLvlEditorController.handleHeroShoot - Reception du signal de tir
+[2025-05-01 19:51:37.673] INFO - MatrixLvlEditorController.handleHeroShoot - CaseMatrix  Flèche CaseMatrix{urlImgToShow='src/java/org/projet/assets/buleE.png', classNameITem='null', coordRow=9, coordCol=7, width=1, height=1}
+[2025-05-01 19:51:37.673] INFO - MatrixLvlEditorController.propertyChange - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=9, col=6}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:37.673] SEVERE - MatrixLvlEditorController.propertyChange - Changement UpdateHeroState propertyChange
+[2025-05-01 19:51:37.673] INFO - MatrixLvlEditorController.handleUpdateHeroState - Maj des stats du héros MyCharacter{name='Marcel', HP=10, coord=Coord{row=9, col=16}}
+[2025-05-01 19:51:37.713] INFO - MatrixLvlEditorController.handleKeyPressed - Appui sur S
+[2025-05-01 19:51:37.717] SEVERE - MatrixLvlEditorController.propertyChange - Changement removeItem propertyChange
+[2025-05-01 19:51:37.718] SEVERE - MatrixLvlEditorController.handleRemoveItem - Reception du signal remove item
+[2025-05-01 19:51:37.719] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:37.719] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:37.719] INFO - MatrixLvlEditorController.handleItemMovement - MyCharacter{name='Marcel', HP=10, coord=Coord{row=10, col=16}} old coord is Coord{row=9, col=16}
+[2025-05-01 19:51:37.719] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is MyCharacter{name='Marcel', HP=10, coord=Coord{row=10, col=16}}
+[2025-05-01 19:51:37.725] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=9, col=6}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:37.735] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:37.735] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:37.735] INFO - MatrixLvlEditorController.handleItemMovement - src.java.org.projet.model.modelItems.Bow@7c23f25 old coord is Coord{row=9, col=14}
+[2025-05-01 19:51:37.735] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is src.java.org.projet.model.modelItems.Bow@7c23f25
+[2025-05-01 19:51:37.738] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=9, col=6}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:37.739] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:37.739] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:37.740] INFO - MatrixLvlEditorController.handleItemMovement - src.java.org.projet.model.modelItems.Bow@388868ac old coord is Coord{row=9, col=8}
+[2025-05-01 19:51:37.740] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is src.java.org.projet.model.modelItems.Bow@388868ac
+[2025-05-01 19:51:37.742] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=9, col=6}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:37.863] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:37.864] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:37.864] INFO - MatrixLvlEditorController.handleItemMovement - MyCharacter{name='Boss', HP=10, coord=Coord{row=10, col=6}} old coord is Coord{row=9, col=6}
+[2025-05-01 19:51:37.864] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is MyCharacter{name='Boss', HP=10, coord=Coord{row=10, col=6}}
+[2025-05-01 19:51:37.866] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=10, col=6}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:37.872] INFO - MatrixLvlEditorController.handleKeyPressed - Appui sur S
+[2025-05-01 19:51:37.874] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:37.874] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:37.875] INFO - MatrixLvlEditorController.handleItemMovement - MyCharacter{name='Marcel', HP=10, coord=Coord{row=11, col=16}} old coord is Coord{row=10, col=16}
+[2025-05-01 19:51:37.875] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is MyCharacter{name='Marcel', HP=10, coord=Coord{row=11, col=16}}
+[2025-05-01 19:51:37.879] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=10, col=6}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:38.009] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:38.009] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:38.009] INFO - MatrixLvlEditorController.handleItemMovement - src.java.org.projet.model.modelItems.Bow@4071bbcf old coord is Coord{row=7, col=10}
+[2025-05-01 19:51:38.009] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is src.java.org.projet.model.modelItems.Bow@4071bbcf
+[2025-05-01 19:51:38.012] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=10, col=6}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:38.057] INFO - MatrixLvlEditorController.handleKeyPressed - Appui sur S
+[2025-05-01 19:51:38.058] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:38.058] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:38.058] INFO - MatrixLvlEditorController.handleItemMovement - MyCharacter{name='Marcel', HP=10, coord=Coord{row=12, col=16}} old coord is Coord{row=11, col=16}
+[2025-05-01 19:51:38.058] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is MyCharacter{name='Marcel', HP=10, coord=Coord{row=12, col=16}}
+[2025-05-01 19:51:38.061] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=10, col=6}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:38.073] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:38.073] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:38.073] INFO - MatrixLvlEditorController.handleItemMovement - MyCharacter{name='Boss', HP=10, coord=Coord{row=11, col=6}} old coord is Coord{row=10, col=6}
+[2025-05-01 19:51:38.073] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is MyCharacter{name='Boss', HP=10, coord=Coord{row=11, col=6}}
+[2025-05-01 19:51:38.075] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=11, col=6}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:38.076] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:38.076] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:38.076] INFO - MatrixLvlEditorController.handleItemMovement - src.java.org.projet.model.modelItems.Bow@7c23f25 old coord is Coord{row=9, col=13}
+[2025-05-01 19:51:38.076] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is src.java.org.projet.model.modelItems.Bow@7c23f25
+[2025-05-01 19:51:38.079] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=11, col=6}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:38.080] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:38.080] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:38.080] INFO - MatrixLvlEditorController.handleItemMovement - src.java.org.projet.model.modelItems.Bow@388868ac old coord is Coord{row=9, col=9}
+[2025-05-01 19:51:38.080] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is src.java.org.projet.model.modelItems.Bow@388868ac
+[2025-05-01 19:51:38.083] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=11, col=6}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:38.257] INFO - MatrixLvlEditorController.handleKeyPressed - Appui sur S
+[2025-05-01 19:51:38.258] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:38.258] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:38.258] INFO - MatrixLvlEditorController.handleItemMovement - MyCharacter{name='Marcel', HP=10, coord=Coord{row=13, col=16}} old coord is Coord{row=12, col=16}
+[2025-05-01 19:51:38.258] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is MyCharacter{name='Marcel', HP=10, coord=Coord{row=13, col=16}}
+[2025-05-01 19:51:38.260] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=11, col=6}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:38.262] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:38.263] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:38.263] INFO - MatrixLvlEditorController.handleItemMovement - MyCharacter{name='Boss', HP=10, coord=Coord{row=12, col=6}} old coord is Coord{row=11, col=6}
+[2025-05-01 19:51:38.263] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is MyCharacter{name='Boss', HP=10, coord=Coord{row=12, col=6}}
+[2025-05-01 19:51:38.266] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=12, col=6}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:38.303] INFO - MatrixLvlEditorController.handleKeyPressed - Appui sur Q
+[2025-05-01 19:51:38.304] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:38.304] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:38.304] INFO - MatrixLvlEditorController.handleItemMovement - MyCharacter{name='Marcel', HP=10, coord=Coord{row=13, col=15}} old coord is Coord{row=13, col=16}
+[2025-05-01 19:51:38.304] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is MyCharacter{name='Marcel', HP=10, coord=Coord{row=13, col=15}}
+[2025-05-01 19:51:38.306] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=12, col=6}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:38.359] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:38.359] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:38.360] INFO - MatrixLvlEditorController.handleItemMovement - src.java.org.projet.model.modelItems.Bow@4071bbcf old coord is Coord{row=7, col=11}
+[2025-05-01 19:51:38.360] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is src.java.org.projet.model.modelItems.Bow@4071bbcf
+[2025-05-01 19:51:38.363] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=12, col=6}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:38.423] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:38.423] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:38.423] INFO - MatrixLvlEditorController.handleItemMovement - src.java.org.projet.model.modelItems.Bow@7c23f25 old coord is Coord{row=9, col=12}
+[2025-05-01 19:51:38.423] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is src.java.org.projet.model.modelItems.Bow@7c23f25
+[2025-05-01 19:51:38.425] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=12, col=6}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:38.425] SEVERE - MatrixLvlEditorController.propertyChange - Changement removeItem propertyChange
+[2025-05-01 19:51:38.425] SEVERE - MatrixLvlEditorController.handleRemoveItem - Reception du signal remove item
+[2025-05-01 19:51:38.471] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:38.471] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:38.471] INFO - MatrixLvlEditorController.handleItemMovement - MyCharacter{name='Boss', HP=10, coord=Coord{row=13, col=6}} old coord is Coord{row=12, col=6}
+[2025-05-01 19:51:38.471] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is MyCharacter{name='Boss', HP=10, coord=Coord{row=13, col=6}}
+[2025-05-01 19:51:38.474] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=13, col=6}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:38.665] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:38.665] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:38.666] INFO - MatrixLvlEditorController.handleItemMovement - MyCharacter{name='Boss', HP=10, coord=Coord{row=13, col=7}} old coord is Coord{row=13, col=6}
+[2025-05-01 19:51:38.666] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is MyCharacter{name='Boss', HP=10, coord=Coord{row=13, col=7}}
+[2025-05-01 19:51:38.669] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=13, col=7}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:38.710] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:38.710] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:38.710] INFO - MatrixLvlEditorController.handleItemMovement - src.java.org.projet.model.modelItems.Bow@4071bbcf old coord is Coord{row=7, col=12}
+[2025-05-01 19:51:38.710] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is src.java.org.projet.model.modelItems.Bow@4071bbcf
+[2025-05-01 19:51:38.712] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=13, col=7}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:38.759] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:38.759] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:38.759] INFO - MatrixLvlEditorController.handleItemMovement - src.java.org.projet.model.modelItems.Bow@7c23f25 old coord is Coord{row=9, col=11}
+[2025-05-01 19:51:38.759] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is src.java.org.projet.model.modelItems.Bow@7c23f25
+[2025-05-01 19:51:38.761] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=13, col=7}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:38.774] INFO - MatrixLvlEditorController.handleKeyPressed - Héro tire!!
+[2025-05-01 19:51:38.774] SEVERE - MatrixLvlEditorController.propertyChange - Changement fireHero propertyChange
+[2025-05-01 19:51:38.774] SEVERE - MatrixLvlEditorController.handleHeroShoot - Reception du signal de tir
+[2025-05-01 19:51:38.777] INFO - MatrixLvlEditorController.handleHeroShoot - CaseMatrix  Flèche CaseMatrix{urlImgToShow='src/java/org/projet/assets/bule.png', classNameITem='null', coordRow=13, coordCol=14, width=1, height=1}
+[2025-05-01 19:51:38.778] INFO - MatrixLvlEditorController.propertyChange - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=13, col=7}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:38.778] SEVERE - MatrixLvlEditorController.propertyChange - Changement UpdateHeroState propertyChange
+[2025-05-01 19:51:38.779] INFO - MatrixLvlEditorController.handleUpdateHeroState - Maj des stats du héros MyCharacter{name='Marcel', HP=10, coord=Coord{row=13, col=15}}
+[2025-05-01 19:51:38.822] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:38.823] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:38.823] INFO - MatrixLvlEditorController.handleItemMovement - src.java.org.projet.model.modelItems.Bow@612a9223 old coord is Coord{row=13, col=14}
+[2025-05-01 19:51:38.823] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is src.java.org.projet.model.modelItems.Bow@612a9223
+[2025-05-01 19:51:38.825] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=13, col=7}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:38.870] SEVERE - MatrixLvlEditorController.propertyChange - Changement fireHero propertyChange
+[2025-05-01 19:51:38.870] SEVERE - MatrixLvlEditorController.handleHeroShoot - Reception du signal de tir
+[2025-05-01 19:51:38.871] INFO - MatrixLvlEditorController.handleHeroShoot - CaseMatrix  Flèche CaseMatrix{urlImgToShow='src/java/org/projet/assets/buleE.png', classNameITem='null', coordRow=13, coordCol=8, width=1, height=1}
+[2025-05-01 19:51:38.871] INFO - MatrixLvlEditorController.propertyChange - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=13, col=7}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:38.872] SEVERE - MatrixLvlEditorController.propertyChange - Changement UpdateHeroState propertyChange
+[2025-05-01 19:51:38.872] INFO - MatrixLvlEditorController.handleUpdateHeroState - Maj des stats du héros MyCharacter{name='Marcel', HP=10, coord=Coord{row=13, col=15}}
+[2025-05-01 19:51:38.919] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:38.919] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:38.919] INFO - MatrixLvlEditorController.handleItemMovement - src.java.org.projet.model.modelItems.Bow@25784f87 old coord is Coord{row=13, col=8}
+[2025-05-01 19:51:38.919] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is src.java.org.projet.model.modelItems.Bow@25784f87
+[2025-05-01 19:51:38.923] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=13, col=7}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:38.954] INFO - MatrixLvlEditorController.handleKeyPressed - Héro tire!!
+[2025-05-01 19:51:38.954] SEVERE - MatrixLvlEditorController.propertyChange - Changement fireHero propertyChange
+[2025-05-01 19:51:38.954] SEVERE - MatrixLvlEditorController.handleHeroShoot - Reception du signal de tir
+[2025-05-01 19:51:38.956] INFO - MatrixLvlEditorController.handleHeroShoot - CaseMatrix  Flèche CaseMatrix{urlImgToShow='src/java/org/projet/assets/bule.png', classNameITem='null', coordRow=13, coordCol=14, width=1, height=1}
+[2025-05-01 19:51:38.956] INFO - MatrixLvlEditorController.propertyChange - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=13, col=7}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:38.956] SEVERE - MatrixLvlEditorController.propertyChange - Changement UpdateHeroState propertyChange
+[2025-05-01 19:51:38.956] INFO - MatrixLvlEditorController.handleUpdateHeroState - Maj des stats du héros MyCharacter{name='Marcel', HP=10, coord=Coord{row=13, col=15}}
+[2025-05-01 19:51:38.966] SEVERE - MatrixLvlEditorController.propertyChange - Changement removeItem propertyChange
+[2025-05-01 19:51:38.966] SEVERE - MatrixLvlEditorController.handleRemoveItem - Reception du signal remove item
+[2025-05-01 19:51:39.063] SEVERE - MatrixLvlEditorController.propertyChange - Changement fireHero propertyChange
+[2025-05-01 19:51:39.063] SEVERE - MatrixLvlEditorController.handleHeroShoot - Reception du signal de tir
+[2025-05-01 19:51:39.064] INFO - MatrixLvlEditorController.handleHeroShoot - CaseMatrix  Flèche CaseMatrix{urlImgToShow='src/java/org/projet/assets/buleE.png', classNameITem='null', coordRow=13, coordCol=8, width=1, height=1}
+[2025-05-01 19:51:39.064] INFO - MatrixLvlEditorController.propertyChange - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=13, col=7}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:39.064] SEVERE - MatrixLvlEditorController.propertyChange - Changement UpdateHeroState propertyChange
+[2025-05-01 19:51:39.064] INFO - MatrixLvlEditorController.handleUpdateHeroState - Maj des stats du héros MyCharacter{name='Marcel', HP=10, coord=Coord{row=13, col=15}}
+[2025-05-01 19:51:39.110] SEVERE - MatrixLvlEditorController.propertyChange - Changement removeItem propertyChange
+[2025-05-01 19:51:39.110] SEVERE - MatrixLvlEditorController.handleRemoveItem - Reception du signal remove item
+[2025-05-01 19:51:39.159] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:39.159] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:39.160] INFO - MatrixLvlEditorController.handleItemMovement - src.java.org.projet.model.modelItems.Bow@4071bbcf old coord is Coord{row=7, col=13}
+[2025-05-01 19:51:39.160] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is src.java.org.projet.model.modelItems.Bow@4071bbcf
+[2025-05-01 19:51:39.163] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=13, col=7}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:39.222] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:39.222] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:39.222] INFO - MatrixLvlEditorController.handleItemMovement - src.java.org.projet.model.modelItems.Bow@7c23f25 old coord is Coord{row=9, col=10}
+[2025-05-01 19:51:39.222] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is src.java.org.projet.model.modelItems.Bow@7c23f25
+[2025-05-01 19:51:39.225] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=13, col=7}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:39.226] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:39.226] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:39.227] INFO - MatrixLvlEditorController.handleItemMovement - src.java.org.projet.model.modelItems.Bow@612a9223 old coord is Coord{row=13, col=13}
+[2025-05-01 19:51:39.227] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is src.java.org.projet.model.modelItems.Bow@612a9223
+[2025-05-01 19:51:39.228] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=13, col=7}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:39.270] SEVERE - MatrixLvlEditorController.propertyChange - Changement fireHero propertyChange
+[2025-05-01 19:51:39.270] SEVERE - MatrixLvlEditorController.handleHeroShoot - Reception du signal de tir
+[2025-05-01 19:51:39.271] INFO - MatrixLvlEditorController.handleHeroShoot - CaseMatrix  Flèche CaseMatrix{urlImgToShow='src/java/org/projet/assets/buleE.png', classNameITem='null', coordRow=13, coordCol=8, width=1, height=1}
+[2025-05-01 19:51:39.271] INFO - MatrixLvlEditorController.propertyChange - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=13, col=7}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:39.271] SEVERE - MatrixLvlEditorController.propertyChange - Changement UpdateHeroState propertyChange
+[2025-05-01 19:51:39.271] INFO - MatrixLvlEditorController.handleUpdateHeroState - Maj des stats du héros MyCharacter{name='Marcel', HP=10, coord=Coord{row=13, col=15}}
+[2025-05-01 19:51:39.318] SEVERE - MatrixLvlEditorController.propertyChange - Changement removeItem propertyChange
+[2025-05-01 19:51:39.318] SEVERE - MatrixLvlEditorController.handleRemoveItem - Reception du signal remove item
+[2025-05-01 19:51:39.319] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:39.319] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:39.319] INFO - MatrixLvlEditorController.handleItemMovement - src.java.org.projet.model.modelItems.Bow@25784f87 old coord is Coord{row=13, col=9}
+[2025-05-01 19:51:39.320] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is src.java.org.projet.model.modelItems.Bow@25784f87
+[2025-05-01 19:51:39.322] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=13, col=7}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:39.462] SEVERE - MatrixLvlEditorController.propertyChange - Changement fireHero propertyChange
+[2025-05-01 19:51:39.462] SEVERE - MatrixLvlEditorController.handleHeroShoot - Reception du signal de tir
+[2025-05-01 19:51:39.463] INFO - MatrixLvlEditorController.handleHeroShoot - CaseMatrix  Flèche CaseMatrix{urlImgToShow='src/java/org/projet/assets/buleE.png', classNameITem='null', coordRow=13, coordCol=8, width=1, height=1}
+[2025-05-01 19:51:39.464] INFO - MatrixLvlEditorController.propertyChange - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=13, col=7}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:39.464] SEVERE - MatrixLvlEditorController.propertyChange - Changement UpdateHeroState propertyChange
+[2025-05-01 19:51:39.464] INFO - MatrixLvlEditorController.handleUpdateHeroState - Maj des stats du héros MyCharacter{name='Marcel', HP=10, coord=Coord{row=13, col=15}}
+[2025-05-01 19:51:39.510] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:39.510] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:39.511] INFO - MatrixLvlEditorController.handleItemMovement - src.java.org.projet.model.modelItems.Bow@21ff33fa old coord is Coord{row=13, col=8}
+[2025-05-01 19:51:39.511] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is src.java.org.projet.model.modelItems.Bow@21ff33fa
+[2025-05-01 19:51:39.512] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=13, col=7}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:39.566] INFO - MatrixLvlEditorController.handleKeyPressed - Appui sur Z (ou la touche configurée pour 'haut')
+[2025-05-01 19:51:39.568] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:39.568] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:39.568] INFO - MatrixLvlEditorController.handleItemMovement - MyCharacter{name='Marcel', HP=10, coord=Coord{row=12, col=15}} old coord is Coord{row=13, col=15}
+[2025-05-01 19:51:39.568] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is MyCharacter{name='Marcel', HP=10, coord=Coord{row=12, col=15}}
+[2025-05-01 19:51:39.571] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=13, col=7}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:39.624] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:39.624] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:39.625] INFO - MatrixLvlEditorController.handleItemMovement - src.java.org.projet.model.modelItems.Bow@4071bbcf old coord is Coord{row=7, col=14}
+[2025-05-01 19:51:39.625] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is src.java.org.projet.model.modelItems.Bow@4071bbcf
+[2025-05-01 19:51:39.630] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=13, col=7}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:39.673] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:39.673] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:39.673] INFO - MatrixLvlEditorController.handleItemMovement - MyCharacter{name='Boss', HP=10, coord=Coord{row=12, col=7}} old coord is Coord{row=13, col=7}
+[2025-05-01 19:51:39.673] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is MyCharacter{name='Boss', HP=10, coord=Coord{row=12, col=7}}
+[2025-05-01 19:51:39.676] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=12, col=7}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:39.677] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:39.677] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:39.677] INFO - MatrixLvlEditorController.handleItemMovement - src.java.org.projet.model.modelItems.Bow@7c23f25 old coord is Coord{row=9, col=9}
+[2025-05-01 19:51:39.677] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is src.java.org.projet.model.modelItems.Bow@7c23f25
+[2025-05-01 19:51:39.680] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=12, col=7}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:39.682] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:39.682] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:39.682] INFO - MatrixLvlEditorController.handleItemMovement - src.java.org.projet.model.modelItems.Bow@612a9223 old coord is Coord{row=13, col=12}
+[2025-05-01 19:51:39.682] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is src.java.org.projet.model.modelItems.Bow@612a9223
+[2025-05-01 19:51:39.687] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=12, col=7}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:39.718] INFO - MatrixLvlEditorController.handleKeyPressed - Appui sur Z (ou la touche configurée pour 'haut')
+[2025-05-01 19:51:39.719] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:39.719] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:39.719] INFO - MatrixLvlEditorController.handleItemMovement - MyCharacter{name='Marcel', HP=10, coord=Coord{row=11, col=15}} old coord is Coord{row=12, col=15}
+[2025-05-01 19:51:39.719] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is MyCharacter{name='Marcel', HP=10, coord=Coord{row=11, col=15}}
+[2025-05-01 19:51:39.721] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=12, col=7}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:39.722] SEVERE - MatrixLvlEditorController.propertyChange - Changement removeItem propertyChange
+[2025-05-01 19:51:39.722] SEVERE - MatrixLvlEditorController.handleRemoveItem - Reception du signal remove item
+[2025-05-01 19:51:39.815] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:39.815] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:39.815] INFO - MatrixLvlEditorController.handleItemMovement - src.java.org.projet.model.modelItems.Bow@21ff33fa old coord is Coord{row=13, col=9}
+[2025-05-01 19:51:39.815] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is src.java.org.projet.model.modelItems.Bow@21ff33fa
+[2025-05-01 19:51:39.818] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=12, col=7}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:39.865] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:39.865] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:39.866] INFO - MatrixLvlEditorController.handleItemMovement - MyCharacter{name='Boss', HP=10, coord=Coord{row=11, col=7}} old coord is Coord{row=12, col=7}
+[2025-05-01 19:51:39.866] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is MyCharacter{name='Boss', HP=10, coord=Coord{row=11, col=7}}
+[2025-05-01 19:51:39.868] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=11, col=7}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:39.958] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:39.958] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:39.959] INFO - MatrixLvlEditorController.handleItemMovement - src.java.org.projet.model.modelItems.Bow@4071bbcf old coord is Coord{row=7, col=15}
+[2025-05-01 19:51:39.959] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is src.java.org.projet.model.modelItems.Bow@4071bbcf
+[2025-05-01 19:51:39.961] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=11, col=7}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:39.976] INFO - MatrixLvlEditorController.handleKeyPressed - Appui sur Z (ou la touche configurée pour 'haut')
+[2025-05-01 19:51:39.977] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:39.977] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:39.977] INFO - MatrixLvlEditorController.handleItemMovement - MyCharacter{name='Marcel', HP=10, coord=Coord{row=10, col=15}} old coord is Coord{row=11, col=15}
+[2025-05-01 19:51:39.977] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is MyCharacter{name='Marcel', HP=10, coord=Coord{row=10, col=15}}
+[2025-05-01 19:51:39.981] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=11, col=7}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:40.008] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:40.008] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:40.008] INFO - MatrixLvlEditorController.handleItemMovement - src.java.org.projet.model.modelItems.Bow@7c23f25 old coord is Coord{row=9, col=8}
+[2025-05-01 19:51:40.008] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is src.java.org.projet.model.modelItems.Bow@7c23f25
+[2025-05-01 19:51:40.010] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=11, col=7}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:40.010] SEVERE - MatrixLvlEditorController.propertyChange - Changement removeItem propertyChange
+[2025-05-01 19:51:40.010] SEVERE - MatrixLvlEditorController.handleRemoveItem - Reception du signal remove item
+[2025-05-01 19:51:40.072] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:40.072] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:40.072] INFO - MatrixLvlEditorController.handleItemMovement - MyCharacter{name='Boss', HP=10, coord=Coord{row=10, col=7}} old coord is Coord{row=11, col=7}
+[2025-05-01 19:51:40.072] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is MyCharacter{name='Boss', HP=10, coord=Coord{row=10, col=7}}
+[2025-05-01 19:51:40.073] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=10, col=7}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:40.167] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:40.167] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:40.167] INFO - MatrixLvlEditorController.handleItemMovement - src.java.org.projet.model.modelItems.Bow@21ff33fa old coord is Coord{row=13, col=10}
+[2025-05-01 19:51:40.168] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is src.java.org.projet.model.modelItems.Bow@21ff33fa
+[2025-05-01 19:51:40.172] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=10, col=7}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:40.265] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:40.266] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:40.266] INFO - MatrixLvlEditorController.handleItemMovement - MyCharacter{name='Boss', HP=10, coord=Coord{row=10, col=8}} old coord is Coord{row=10, col=7}
+[2025-05-01 19:51:40.266] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is MyCharacter{name='Boss', HP=10, coord=Coord{row=10, col=8}}
+[2025-05-01 19:51:40.268] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=10, col=8}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:40.273] INFO - MatrixLvlEditorController.handleKeyPressed - Appui sur Q
+[2025-05-01 19:51:40.275] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:40.275] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:40.276] INFO - MatrixLvlEditorController.handleItemMovement - MyCharacter{name='Marcel', HP=10, coord=Coord{row=10, col=14}} old coord is Coord{row=10, col=15}
+[2025-05-01 19:51:40.276] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is MyCharacter{name='Marcel', HP=10, coord=Coord{row=10, col=14}}
+[2025-05-01 19:51:40.279] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=10, col=8}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:40.311] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:40.312] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:40.312] INFO - MatrixLvlEditorController.handleItemMovement - src.java.org.projet.model.modelItems.Bow@4071bbcf old coord is Coord{row=7, col=16}
+[2025-05-01 19:51:40.319] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is src.java.org.projet.model.modelItems.Bow@4071bbcf
+[2025-05-01 19:51:40.322] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=10, col=8}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:40.359] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:40.359] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:40.359] INFO - MatrixLvlEditorController.handleItemMovement - src.java.org.projet.model.modelItems.Bow@7c23f25 old coord is Coord{row=9, col=7}
+[2025-05-01 19:51:40.359] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is src.java.org.projet.model.modelItems.Bow@7c23f25
+[2025-05-01 19:51:40.363] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=10, col=8}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:40.471] SEVERE - MatrixLvlEditorController.propertyChange - Changement fireHero propertyChange
+[2025-05-01 19:51:40.471] SEVERE - MatrixLvlEditorController.handleHeroShoot - Reception du signal de tir
+[2025-05-01 19:51:40.472] INFO - MatrixLvlEditorController.handleHeroShoot - CaseMatrix  Flèche CaseMatrix{urlImgToShow='src/java/org/projet/assets/buleE.png', classNameITem='null', coordRow=10, coordCol=9, width=1, height=1}
+[2025-05-01 19:51:40.472] INFO - MatrixLvlEditorController.propertyChange - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=10, col=8}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:40.472] SEVERE - MatrixLvlEditorController.propertyChange - Changement UpdateHeroState propertyChange
+[2025-05-01 19:51:40.472] INFO - MatrixLvlEditorController.handleUpdateHeroState - Maj des stats du héros MyCharacter{name='Marcel', HP=10, coord=Coord{row=10, col=14}}
+[2025-05-01 19:51:40.489] INFO - MatrixLvlEditorController.handleKeyPressed - Héro tire!!
+[2025-05-01 19:51:40.490] SEVERE - MatrixLvlEditorController.propertyChange - Changement fireHero propertyChange
+[2025-05-01 19:51:40.490] SEVERE - MatrixLvlEditorController.handleHeroShoot - Reception du signal de tir
+[2025-05-01 19:51:40.491] INFO - MatrixLvlEditorController.handleHeroShoot - CaseMatrix  Flèche CaseMatrix{urlImgToShow='src/java/org/projet/assets/bule.png', classNameITem='null', coordRow=10, coordCol=13, width=1, height=1}
+[2025-05-01 19:51:40.491] INFO - MatrixLvlEditorController.propertyChange - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=10, col=8}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:40.491] SEVERE - MatrixLvlEditorController.propertyChange - Changement UpdateHeroState propertyChange
+[2025-05-01 19:51:40.491] INFO - MatrixLvlEditorController.handleUpdateHeroState - Maj des stats du héros MyCharacter{name='Marcel', HP=10, coord=Coord{row=10, col=14}}
+[2025-05-01 19:51:40.509] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:40.509] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:40.509] INFO - MatrixLvlEditorController.handleItemMovement - src.java.org.projet.model.modelItems.Bow@6ec7ffaa old coord is Coord{row=10, col=9}
+[2025-05-01 19:51:40.509] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is src.java.org.projet.model.modelItems.Bow@6ec7ffaa
+[2025-05-01 19:51:40.511] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=10, col=8}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:40.512] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:40.512] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:40.512] INFO - MatrixLvlEditorController.handleItemMovement - src.java.org.projet.model.modelItems.Bow@3025a1fe old coord is Coord{row=10, col=13}
+[2025-05-01 19:51:40.512] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is src.java.org.projet.model.modelItems.Bow@3025a1fe
+[2025-05-01 19:51:40.517] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=10, col=8}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:40.567] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:40.567] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:40.568] INFO - MatrixLvlEditorController.handleItemMovement - src.java.org.projet.model.modelItems.Bow@21ff33fa old coord is Coord{row=13, col=11}
+[2025-05-01 19:51:40.568] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is src.java.org.projet.model.modelItems.Bow@21ff33fa
+[2025-05-01 19:51:40.571] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=10, col=8}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:40.663] SEVERE - MatrixLvlEditorController.propertyChange - Changement fireHero propertyChange
+[2025-05-01 19:51:40.663] SEVERE - MatrixLvlEditorController.handleHeroShoot - Reception du signal de tir
+[2025-05-01 19:51:40.665] INFO - MatrixLvlEditorController.handleHeroShoot - CaseMatrix  Flèche CaseMatrix{urlImgToShow='src/java/org/projet/assets/buleE.png', classNameITem='null', coordRow=10, coordCol=9, width=1, height=1}
+[2025-05-01 19:51:40.665] INFO - MatrixLvlEditorController.propertyChange - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=10, col=8}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:40.665] SEVERE - MatrixLvlEditorController.propertyChange - Changement UpdateHeroState propertyChange
+[2025-05-01 19:51:40.665] INFO - MatrixLvlEditorController.handleUpdateHeroState - Maj des stats du héros MyCharacter{name='Marcel', HP=10, coord=Coord{row=10, col=14}}
+[2025-05-01 19:51:40.701] INFO - MatrixLvlEditorController.handleKeyPressed - Héro tire!!
+[2025-05-01 19:51:40.702] SEVERE - MatrixLvlEditorController.propertyChange - Changement fireHero propertyChange
+[2025-05-01 19:51:40.702] SEVERE - MatrixLvlEditorController.handleHeroShoot - Reception du signal de tir
+[2025-05-01 19:51:40.704] INFO - MatrixLvlEditorController.handleHeroShoot - CaseMatrix  Flèche CaseMatrix{urlImgToShow='src/java/org/projet/assets/bule.png', classNameITem='null', coordRow=10, coordCol=13, width=1, height=1}
+[2025-05-01 19:51:40.705] INFO - MatrixLvlEditorController.propertyChange - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=10, col=8}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:40.705] SEVERE - MatrixLvlEditorController.propertyChange - Changement UpdateHeroState propertyChange
+[2025-05-01 19:51:40.705] INFO - MatrixLvlEditorController.handleUpdateHeroState - Maj des stats du héros MyCharacter{name='Marcel', HP=10, coord=Coord{row=10, col=14}}
+[2025-05-01 19:51:40.710] SEVERE - MatrixLvlEditorController.propertyChange - Changement removeItem propertyChange
+[2025-05-01 19:51:40.710] SEVERE - MatrixLvlEditorController.handleRemoveItem - Reception du signal remove item
+[2025-05-01 19:51:40.711] SEVERE - MatrixLvlEditorController.propertyChange - Changement removeItem propertyChange
+[2025-05-01 19:51:40.712] SEVERE - MatrixLvlEditorController.handleRemoveItem - Reception du signal remove item
+[2025-05-01 19:51:40.759] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:40.759] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:40.759] INFO - MatrixLvlEditorController.handleItemMovement - src.java.org.projet.model.modelItems.Bow@4071bbcf old coord is Coord{row=7, col=17}
+[2025-05-01 19:51:40.759] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is src.java.org.projet.model.modelItems.Bow@4071bbcf
+[2025-05-01 19:51:40.761] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=10, col=8}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:40.806] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:40.806] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:40.806] INFO - MatrixLvlEditorController.handleItemMovement - src.java.org.projet.model.modelItems.Bow@7c23f25 old coord is Coord{row=9, col=6}
+[2025-05-01 19:51:40.806] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is src.java.org.projet.model.modelItems.Bow@7c23f25
+[2025-05-01 19:51:40.809] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=10, col=8}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:40.858] INFO - MatrixLvlEditorController.handleKeyPressed - Appui sur S
+[2025-05-01 19:51:40.860] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:40.860] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:40.860] INFO - MatrixLvlEditorController.handleItemMovement - MyCharacter{name='Marcel', HP=10, coord=Coord{row=11, col=14}} old coord is Coord{row=10, col=14}
+[2025-05-01 19:51:40.860] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is MyCharacter{name='Marcel', HP=10, coord=Coord{row=11, col=14}}
+[2025-05-01 19:51:40.862] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=10, col=8}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:40.872] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:40.872] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:40.872] INFO - MatrixLvlEditorController.handleItemMovement - MyCharacter{name='Boss', HP=10, coord=Coord{row=11, col=8}} old coord is Coord{row=10, col=8}
+[2025-05-01 19:51:40.872] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is MyCharacter{name='Boss', HP=10, coord=Coord{row=11, col=8}}
+[2025-05-01 19:51:40.874] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=11, col=8}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:40.875] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:40.875] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:40.876] INFO - MatrixLvlEditorController.handleItemMovement - src.java.org.projet.model.modelItems.Bow@6ec7ffaa old coord is Coord{row=10, col=10}
+[2025-05-01 19:51:40.876] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is src.java.org.projet.model.modelItems.Bow@6ec7ffaa
+[2025-05-01 19:51:40.879] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=11, col=8}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:40.880] SEVERE - MatrixLvlEditorController.propertyChange - Changement removeItem propertyChange
+[2025-05-01 19:51:40.880] SEVERE - MatrixLvlEditorController.handleRemoveItem - Reception du signal remove item
+[2025-05-01 19:51:40.967] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:40.967] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:40.967] INFO - MatrixLvlEditorController.handleItemMovement - src.java.org.projet.model.modelItems.Bow@21ff33fa old coord is Coord{row=13, col=12}
+[2025-05-01 19:51:40.967] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is src.java.org.projet.model.modelItems.Bow@21ff33fa
+[2025-05-01 19:51:40.969] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=11, col=8}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:41.064] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:41.064] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:41.064] INFO - MatrixLvlEditorController.handleItemMovement - MyCharacter{name='Boss', HP=10, coord=Coord{row=11, col=9}} old coord is Coord{row=11, col=8}
+[2025-05-01 19:51:41.064] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is MyCharacter{name='Boss', HP=10, coord=Coord{row=11, col=9}}
+[2025-05-01 19:51:41.065] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=11, col=9}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:41.098] INFO - MatrixLvlEditorController.handleKeyPressed - Appui sur S
+[2025-05-01 19:51:41.098] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:41.098] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:41.099] INFO - MatrixLvlEditorController.handleItemMovement - MyCharacter{name='Marcel', HP=10, coord=Coord{row=12, col=14}} old coord is Coord{row=11, col=14}
+[2025-05-01 19:51:41.099] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is MyCharacter{name='Marcel', HP=10, coord=Coord{row=12, col=14}}
+[2025-05-01 19:51:41.100] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=11, col=9}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:41.110] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:41.110] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:41.110] INFO - MatrixLvlEditorController.handleItemMovement - src.java.org.projet.model.modelItems.Bow@4071bbcf old coord is Coord{row=7, col=18}
+[2025-05-01 19:51:41.111] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is src.java.org.projet.model.modelItems.Bow@4071bbcf
+[2025-05-01 19:51:41.112] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=11, col=9}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:41.158] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:41.158] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:41.158] INFO - MatrixLvlEditorController.handleItemMovement - src.java.org.projet.model.modelItems.Bow@7c23f25 old coord is Coord{row=9, col=5}
+[2025-05-01 19:51:41.158] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is src.java.org.projet.model.modelItems.Bow@7c23f25
+[2025-05-01 19:51:41.160] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=11, col=9}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:41.208] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:41.208] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:41.208] INFO - MatrixLvlEditorController.handleItemMovement - src.java.org.projet.model.modelItems.Bow@6ec7ffaa old coord is Coord{row=10, col=11}
+[2025-05-01 19:51:41.208] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is src.java.org.projet.model.modelItems.Bow@6ec7ffaa
+[2025-05-01 19:51:41.210] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=11, col=9}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:41.272] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:41.272] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:41.272] INFO - MatrixLvlEditorController.handleItemMovement - MyCharacter{name='Boss', HP=10, coord=Coord{row=12, col=9}} old coord is Coord{row=11, col=9}
+[2025-05-01 19:51:41.272] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is MyCharacter{name='Boss', HP=10, coord=Coord{row=12, col=9}}
+[2025-05-01 19:51:41.274] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=12, col=9}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:41.318] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:41.319] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:41.319] INFO - MatrixLvlEditorController.handleItemMovement - src.java.org.projet.model.modelItems.Bow@21ff33fa old coord is Coord{row=13, col=13}
+[2025-05-01 19:51:41.319] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is src.java.org.projet.model.modelItems.Bow@21ff33fa
+[2025-05-01 19:51:41.321] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=12, col=9}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:41.398] INFO - MatrixLvlEditorController.handleKeyPressed - Appui sur Q
+[2025-05-01 19:51:41.399] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:41.399] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:41.399] INFO - MatrixLvlEditorController.handleItemMovement - MyCharacter{name='Marcel', HP=10, coord=Coord{row=12, col=13}} old coord is Coord{row=12, col=14}
+[2025-05-01 19:51:41.399] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is MyCharacter{name='Marcel', HP=10, coord=Coord{row=12, col=13}}
+[2025-05-01 19:51:41.401] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=12, col=9}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:41.463] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:41.463] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:41.463] INFO - MatrixLvlEditorController.handleItemMovement - MyCharacter{name='Boss', HP=10, coord=Coord{row=12, col=10}} old coord is Coord{row=12, col=9}
+[2025-05-01 19:51:41.463] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is MyCharacter{name='Boss', HP=10, coord=Coord{row=12, col=10}}
+[2025-05-01 19:51:41.465] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=12, col=10}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:41.465] SEVERE - MatrixLvlEditorController.propertyChange - Changement removeItem propertyChange
+[2025-05-01 19:51:41.465] SEVERE - MatrixLvlEditorController.handleRemoveItem - Reception du signal remove item
+[2025-05-01 19:51:41.510] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:41.510] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:41.510] INFO - MatrixLvlEditorController.handleItemMovement - src.java.org.projet.model.modelItems.Bow@7c23f25 old coord is Coord{row=9, col=4}
+[2025-05-01 19:51:41.510] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is src.java.org.projet.model.modelItems.Bow@7c23f25
+[2025-05-01 19:51:41.512] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=12, col=10}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:41.558] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:41.559] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:41.559] INFO - MatrixLvlEditorController.handleItemMovement - src.java.org.projet.model.modelItems.Bow@6ec7ffaa old coord is Coord{row=10, col=12}
+[2025-05-01 19:51:41.559] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is src.java.org.projet.model.modelItems.Bow@6ec7ffaa
+[2025-05-01 19:51:41.560] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=12, col=10}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:41.670] SEVERE - MatrixLvlEditorController.propertyChange - Changement fireHero propertyChange
+[2025-05-01 19:51:41.671] SEVERE - MatrixLvlEditorController.handleHeroShoot - Reception du signal de tir
+[2025-05-01 19:51:41.672] INFO - MatrixLvlEditorController.handleHeroShoot - CaseMatrix  Flèche CaseMatrix{urlImgToShow='src/java/org/projet/assets/buleE.png', classNameITem='null', coordRow=12, coordCol=11, width=1, height=1}
+[2025-05-01 19:51:41.672] INFO - MatrixLvlEditorController.propertyChange - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=12, col=10}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:41.672] SEVERE - MatrixLvlEditorController.propertyChange - Changement UpdateHeroState propertyChange
+[2025-05-01 19:51:41.672] INFO - MatrixLvlEditorController.handleUpdateHeroState - Maj des stats du héros MyCharacter{name='Marcel', HP=10, coord=Coord{row=12, col=13}}
+[2025-05-01 19:51:41.681] INFO - MatrixLvlEditorController.handleKeyPressed - Héro tire!!
+[2025-05-01 19:51:41.681] SEVERE - MatrixLvlEditorController.propertyChange - Changement fireHero propertyChange
+[2025-05-01 19:51:41.681] SEVERE - MatrixLvlEditorController.handleHeroShoot - Reception du signal de tir
+[2025-05-01 19:51:41.682] INFO - MatrixLvlEditorController.handleHeroShoot - CaseMatrix  Flèche CaseMatrix{urlImgToShow='src/java/org/projet/assets/bule.png', classNameITem='null', coordRow=12, coordCol=12, width=1, height=1}
+[2025-05-01 19:51:41.683] INFO - MatrixLvlEditorController.propertyChange - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=12, col=10}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:41.683] SEVERE - MatrixLvlEditorController.propertyChange - Changement UpdateHeroState propertyChange
+[2025-05-01 19:51:41.683] INFO - MatrixLvlEditorController.handleUpdateHeroState - Maj des stats du héros MyCharacter{name='Marcel', HP=10, coord=Coord{row=12, col=13}}
+[2025-05-01 19:51:41.718] SEVERE - MatrixLvlEditorController.propertyChange - Changement removeItem propertyChange
+[2025-05-01 19:51:41.718] SEVERE - MatrixLvlEditorController.handleRemoveItem - Reception du signal remove item
+[2025-05-01 19:51:41.729] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:41.729] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:41.729] INFO - MatrixLvlEditorController.handleItemMovement - src.java.org.projet.model.modelItems.Bow@21665092 old coord is Coord{row=12, col=12}
+[2025-05-01 19:51:41.729] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is src.java.org.projet.model.modelItems.Bow@21665092
+[2025-05-01 19:51:41.731] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=12, col=10}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:41.732] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:41.732] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:41.732] INFO - MatrixLvlEditorController.handleItemMovement - src.java.org.projet.model.modelItems.Bow@21ff33fa old coord is Coord{row=13, col=14}
+[2025-05-01 19:51:41.732] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is src.java.org.projet.model.modelItems.Bow@21ff33fa
+[2025-05-01 19:51:41.734] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=12, col=10}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:41.863] SEVERE - MatrixLvlEditorController.propertyChange - Changement fireHero propertyChange
+[2025-05-01 19:51:41.863] SEVERE - MatrixLvlEditorController.handleHeroShoot - Reception du signal de tir
+[2025-05-01 19:51:41.864] INFO - MatrixLvlEditorController.handleHeroShoot - CaseMatrix  Flèche CaseMatrix{urlImgToShow='src/java/org/projet/assets/buleE.png', classNameITem='null', coordRow=12, coordCol=11, width=1, height=1}
+[2025-05-01 19:51:41.864] INFO - MatrixLvlEditorController.propertyChange - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=12, col=10}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:41.864] SEVERE - MatrixLvlEditorController.propertyChange - Changement UpdateHeroState propertyChange
+[2025-05-01 19:51:41.864] INFO - MatrixLvlEditorController.handleUpdateHeroState - Maj des stats du héros MyCharacter{name='Marcel', HP=10, coord=Coord{row=12, col=13}}
+[2025-05-01 19:51:41.911] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:41.911] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:41.911] INFO - MatrixLvlEditorController.handleItemMovement - src.java.org.projet.model.modelItems.Bow@44a496f9 old coord is Coord{row=12, col=11}
+[2025-05-01 19:51:41.911] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is src.java.org.projet.model.modelItems.Bow@44a496f9
+[2025-05-01 19:51:41.914] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=12, col=10}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:41.959] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:41.959] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:41.959] INFO - MatrixLvlEditorController.handleItemMovement - src.java.org.projet.model.modelItems.Bow@7c23f25 old coord is Coord{row=9, col=3}
+[2025-05-01 19:51:41.959] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is src.java.org.projet.model.modelItems.Bow@7c23f25
+[2025-05-01 19:51:41.963] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=12, col=10}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:42.006] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:42.007] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:42.007] INFO - MatrixLvlEditorController.handleItemMovement - src.java.org.projet.model.modelItems.Bow@6ec7ffaa old coord is Coord{row=10, col=13}
+[2025-05-01 19:51:42.007] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is src.java.org.projet.model.modelItems.Bow@6ec7ffaa
+[2025-05-01 19:51:42.008] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=12, col=10}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:42.021] INFO - MatrixLvlEditorController.handleKeyPressed - Héro tire!!
+[2025-05-01 19:51:42.021] SEVERE - MatrixLvlEditorController.propertyChange - Changement fireHero propertyChange
+[2025-05-01 19:51:42.021] SEVERE - MatrixLvlEditorController.handleHeroShoot - Reception du signal de tir
+[2025-05-01 19:51:42.023] INFO - MatrixLvlEditorController.handleHeroShoot - CaseMatrix  Flèche CaseMatrix{urlImgToShow='src/java/org/projet/assets/bule.png', classNameITem='null', coordRow=12, coordCol=12, width=1, height=1}
+[2025-05-01 19:51:42.023] INFO - MatrixLvlEditorController.propertyChange - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=12, col=10}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:42.023] SEVERE - MatrixLvlEditorController.propertyChange - Changement UpdateHeroState propertyChange
+[2025-05-01 19:51:42.023] INFO - MatrixLvlEditorController.handleUpdateHeroState - Maj des stats du héros MyCharacter{name='Marcel', HP=10, coord=Coord{row=12, col=13}}
+[2025-05-01 19:51:42.071] SEVERE - MatrixLvlEditorController.propertyChange - Changement fireHero propertyChange
+[2025-05-01 19:51:42.071] SEVERE - MatrixLvlEditorController.handleHeroShoot - Reception du signal de tir
+[2025-05-01 19:51:42.071] INFO - MatrixLvlEditorController.handleHeroShoot - CaseMatrix  Flèche CaseMatrix{urlImgToShow='src/java/org/projet/assets/buleE.png', classNameITem='null', coordRow=12, coordCol=11, width=1, height=1}
+[2025-05-01 19:51:42.072] INFO - MatrixLvlEditorController.propertyChange - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=12, col=10}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:42.072] SEVERE - MatrixLvlEditorController.propertyChange - Changement UpdateHeroState propertyChange
+[2025-05-01 19:51:42.072] INFO - MatrixLvlEditorController.handleUpdateHeroState - Maj des stats du héros MyCharacter{name='Marcel', HP=10, coord=Coord{row=12, col=13}}
+[2025-05-01 19:51:42.118] SEVERE - MatrixLvlEditorController.propertyChange - Changement removeItem propertyChange
+[2025-05-01 19:51:42.118] SEVERE - MatrixLvlEditorController.handleRemoveItem - Reception du signal remove item
+[2025-05-01 19:51:42.120] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:42.120] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:42.120] INFO - MatrixLvlEditorController.handleItemMovement - src.java.org.projet.model.modelItems.Bow@17846f00 old coord is Coord{row=12, col=11}
+[2025-05-01 19:51:42.120] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is src.java.org.projet.model.modelItems.Bow@17846f00
+[2025-05-01 19:51:42.122] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=12, col=10}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:42.123] SEVERE - MatrixLvlEditorController.propertyChange - Changement removeItem propertyChange
+[2025-05-01 19:51:42.123] SEVERE - MatrixLvlEditorController.handleRemoveItem - Reception du signal remove item
+[2025-05-01 19:51:42.141] INFO - MatrixLvlEditorController.handleKeyPressed - Appui sur Z (ou la touche configurée pour 'haut')
+[2025-05-01 19:51:42.142] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:42.142] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:42.142] INFO - MatrixLvlEditorController.handleItemMovement - MyCharacter{name='Marcel', HP=10, coord=Coord{row=11, col=13}} old coord is Coord{row=12, col=13}
+[2025-05-01 19:51:42.142] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is MyCharacter{name='Marcel', HP=10, coord=Coord{row=11, col=13}}
+[2025-05-01 19:51:42.143] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=12, col=10}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:42.159] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:42.159] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:42.159] INFO - MatrixLvlEditorController.handleItemMovement - src.java.org.projet.model.modelItems.Bow@21ff33fa old coord is Coord{row=13, col=15}
+[2025-05-01 19:51:42.159] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is src.java.org.projet.model.modelItems.Bow@21ff33fa
+[2025-05-01 19:51:42.163] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=12, col=10}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:42.263] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:42.263] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:42.263] INFO - MatrixLvlEditorController.handleItemMovement - src.java.org.projet.model.modelItems.Bow@44a496f9 old coord is Coord{row=12, col=12}
+[2025-05-01 19:51:42.264] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is src.java.org.projet.model.modelItems.Bow@44a496f9
+[2025-05-01 19:51:42.267] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=12, col=10}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:42.358] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:42.358] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:42.358] INFO - MatrixLvlEditorController.handleItemMovement - src.java.org.projet.model.modelItems.Bow@7c23f25 old coord is Coord{row=9, col=2}
+[2025-05-01 19:51:42.358] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is src.java.org.projet.model.modelItems.Bow@7c23f25
+[2025-05-01 19:51:42.360] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=12, col=10}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:42.422] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:42.422] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:42.422] INFO - MatrixLvlEditorController.handleItemMovement - src.java.org.projet.model.modelItems.Bow@6ec7ffaa old coord is Coord{row=10, col=14}
+[2025-05-01 19:51:42.422] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is src.java.org.projet.model.modelItems.Bow@6ec7ffaa
+[2025-05-01 19:51:42.424] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=12, col=10}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:42.425] SEVERE - MatrixLvlEditorController.propertyChange - Changement removeItem propertyChange
+[2025-05-01 19:51:42.425] SEVERE - MatrixLvlEditorController.handleRemoveItem - Reception du signal remove item
+[2025-05-01 19:51:42.470] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:42.470] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:42.470] INFO - MatrixLvlEditorController.handleItemMovement - src.java.org.projet.model.modelItems.Bow@21665092 old coord is Coord{row=12, col=11}
+[2025-05-01 19:51:42.471] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is src.java.org.projet.model.modelItems.Bow@21665092
+[2025-05-01 19:51:42.472] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=12, col=10}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:42.519] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:42.519] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:42.519] INFO - MatrixLvlEditorController.handleItemMovement - src.java.org.projet.model.modelItems.Bow@21ff33fa old coord is Coord{row=13, col=16}
+[2025-05-01 19:51:42.519] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is src.java.org.projet.model.modelItems.Bow@21ff33fa
+[2025-05-01 19:51:42.522] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=12, col=10}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:42.615] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:42.615] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:42.615] INFO - MatrixLvlEditorController.handleItemMovement - src.java.org.projet.model.modelItems.Bow@44a496f9 old coord is Coord{row=12, col=13}
+[2025-05-01 19:51:42.615] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is src.java.org.projet.model.modelItems.Bow@44a496f9
+[2025-05-01 19:51:42.618] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=12, col=10}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:42.652] INFO - MatrixLvlEditorController.handleKeyPressed - Appui sur Z (ou la touche configurée pour 'haut')
+[2025-05-01 19:51:42.653] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:42.653] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:42.653] INFO - MatrixLvlEditorController.handleItemMovement - MyCharacter{name='Marcel', HP=10, coord=Coord{row=10, col=13}} old coord is Coord{row=11, col=13}
+[2025-05-01 19:51:42.654] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is MyCharacter{name='Marcel', HP=10, coord=Coord{row=10, col=13}}
+[2025-05-01 19:51:42.655] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=12, col=10}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:42.711] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:42.711] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:42.712] INFO - MatrixLvlEditorController.handleItemMovement - src.java.org.projet.model.modelItems.Bow@7c23f25 old coord is Coord{row=9, col=1}
+[2025-05-01 19:51:42.712] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is src.java.org.projet.model.modelItems.Bow@7c23f25
+[2025-05-01 19:51:42.715] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=12, col=10}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:42.759] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:42.759] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:42.759] INFO - MatrixLvlEditorController.handleItemMovement - src.java.org.projet.model.modelItems.Bow@6ec7ffaa old coord is Coord{row=10, col=15}
+[2025-05-01 19:51:42.760] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is src.java.org.projet.model.modelItems.Bow@6ec7ffaa
+[2025-05-01 19:51:42.762] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=12, col=10}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:42.824] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:42.824] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:42.825] INFO - MatrixLvlEditorController.handleItemMovement - src.java.org.projet.model.modelItems.Bow@21665092 old coord is Coord{row=12, col=10}
+[2025-05-01 19:51:42.825] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is src.java.org.projet.model.modelItems.Bow@21665092
+[2025-05-01 19:51:42.828] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=12, col=10}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:42.870] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:42.870] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:42.870] INFO - MatrixLvlEditorController.handleItemMovement - src.java.org.projet.model.modelItems.Bow@21ff33fa old coord is Coord{row=13, col=17}
+[2025-05-01 19:51:42.870] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is src.java.org.projet.model.modelItems.Bow@21ff33fa
+[2025-05-01 19:51:42.872] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=12, col=10}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:42.923] INFO - MatrixLvlEditorController.handleKeyPressed - Appui sur S
+[2025-05-01 19:51:42.924] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:42.924] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:42.924] INFO - MatrixLvlEditorController.handleItemMovement - MyCharacter{name='Marcel', HP=10, coord=Coord{row=11, col=13}} old coord is Coord{row=10, col=13}
+[2025-05-01 19:51:42.924] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is MyCharacter{name='Marcel', HP=10, coord=Coord{row=11, col=13}}
+[2025-05-01 19:51:42.925] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=12, col=10}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:42.966] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:42.967] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:42.967] INFO - MatrixLvlEditorController.handleItemMovement - src.java.org.projet.model.modelItems.Bow@44a496f9 old coord is Coord{row=12, col=14}
+[2025-05-01 19:51:42.967] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is src.java.org.projet.model.modelItems.Bow@44a496f9
+[2025-05-01 19:51:42.969] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=12, col=10}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:43.063] SEVERE - MatrixLvlEditorController.propertyChange - Changement removeItem propertyChange
+[2025-05-01 19:51:43.063] SEVERE - MatrixLvlEditorController.handleRemoveItem - Reception du signal remove item
+[2025-05-01 19:51:43.110] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:43.110] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:43.110] INFO - MatrixLvlEditorController.handleItemMovement - src.java.org.projet.model.modelItems.Bow@6ec7ffaa old coord is Coord{row=10, col=16}
+[2025-05-01 19:51:43.110] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is src.java.org.projet.model.modelItems.Bow@6ec7ffaa
+[2025-05-01 19:51:43.112] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=12, col=10}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:43.126] INFO - MatrixLvlEditorController.handleKeyPressed - Appui sur S
+[2025-05-01 19:51:43.126] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:43.126] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:43.126] INFO - MatrixLvlEditorController.handleItemMovement - MyCharacter{name='Marcel', HP=10, coord=Coord{row=12, col=13}} old coord is Coord{row=11, col=13}
+[2025-05-01 19:51:43.126] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is MyCharacter{name='Marcel', HP=10, coord=Coord{row=12, col=13}}
+[2025-05-01 19:51:43.127] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=12, col=10}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:43.158] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:43.158] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:43.158] INFO - MatrixLvlEditorController.handleItemMovement - src.java.org.projet.model.modelItems.Bow@21665092 old coord is Coord{row=12, col=9}
+[2025-05-01 19:51:43.158] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is src.java.org.projet.model.modelItems.Bow@21665092
+[2025-05-01 19:51:43.160] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=12, col=10}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:43.224] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:43.224] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:43.224] INFO - MatrixLvlEditorController.handleItemMovement - src.java.org.projet.model.modelItems.Bow@21ff33fa old coord is Coord{row=13, col=18}
+[2025-05-01 19:51:43.224] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is src.java.org.projet.model.modelItems.Bow@21ff33fa
+[2025-05-01 19:51:43.227] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=12, col=10}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:43.319] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:43.319] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:43.319] INFO - MatrixLvlEditorController.handleItemMovement - src.java.org.projet.model.modelItems.Bow@44a496f9 old coord is Coord{row=12, col=15}
+[2025-05-01 19:51:43.319] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is src.java.org.projet.model.modelItems.Bow@44a496f9
+[2025-05-01 19:51:43.321] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=12, col=10}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:43.463] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:43.464] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:43.464] INFO - MatrixLvlEditorController.handleItemMovement - src.java.org.projet.model.modelItems.Bow@6ec7ffaa old coord is Coord{row=10, col=17}
+[2025-05-01 19:51:43.464] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is src.java.org.projet.model.modelItems.Bow@6ec7ffaa
+[2025-05-01 19:51:43.467] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=12, col=10}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:43.511] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:43.511] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:43.511] INFO - MatrixLvlEditorController.handleItemMovement - src.java.org.projet.model.modelItems.Bow@21665092 old coord is Coord{row=12, col=8}
+[2025-05-01 19:51:43.511] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is src.java.org.projet.model.modelItems.Bow@21665092
+[2025-05-01 19:51:43.513] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=12, col=10}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:43.558] SEVERE - MatrixLvlEditorController.propertyChange - Changement removeItem propertyChange
+[2025-05-01 19:51:43.558] SEVERE - MatrixLvlEditorController.handleRemoveItem - Reception du signal remove item
+[2025-05-01 19:51:43.671] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:43.671] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:43.671] INFO - MatrixLvlEditorController.handleItemMovement - src.java.org.projet.model.modelItems.Bow@44a496f9 old coord is Coord{row=12, col=16}
+[2025-05-01 19:51:43.671] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is src.java.org.projet.model.modelItems.Bow@44a496f9
+[2025-05-01 19:51:43.674] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=12, col=10}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:43.815] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:43.815] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:43.815] INFO - MatrixLvlEditorController.handleItemMovement - src.java.org.projet.model.modelItems.Bow@6ec7ffaa old coord is Coord{row=10, col=18}
+[2025-05-01 19:51:43.815] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is src.java.org.projet.model.modelItems.Bow@6ec7ffaa
+[2025-05-01 19:51:43.818] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=12, col=10}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:43.864] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:43.864] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:43.864] INFO - MatrixLvlEditorController.handleItemMovement - src.java.org.projet.model.modelItems.Bow@21665092 old coord is Coord{row=12, col=7}
+[2025-05-01 19:51:43.865] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is src.java.org.projet.model.modelItems.Bow@21665092
+[2025-05-01 19:51:43.867] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=12, col=10}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:44.008] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:44.008] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:44.008] INFO - MatrixLvlEditorController.handleItemMovement - src.java.org.projet.model.modelItems.Bow@44a496f9 old coord is Coord{row=12, col=17}
+[2025-05-01 19:51:44.008] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is src.java.org.projet.model.modelItems.Bow@44a496f9
+[2025-05-01 19:51:44.011] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=12, col=10}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:44.166] SEVERE - MatrixLvlEditorController.propertyChange - Changement removeItem propertyChange
+[2025-05-01 19:51:44.167] SEVERE - MatrixLvlEditorController.handleRemoveItem - Reception du signal remove item
+[2025-05-01 19:51:44.216] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:44.216] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:44.216] INFO - MatrixLvlEditorController.handleItemMovement - src.java.org.projet.model.modelItems.Bow@21665092 old coord is Coord{row=12, col=6}
+[2025-05-01 19:51:44.216] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is src.java.org.projet.model.modelItems.Bow@21665092
+[2025-05-01 19:51:44.218] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=12, col=10}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:44.360] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:44.360] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:44.360] INFO - MatrixLvlEditorController.handleItemMovement - src.java.org.projet.model.modelItems.Bow@44a496f9 old coord is Coord{row=12, col=18}
+[2025-05-01 19:51:44.360] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is src.java.org.projet.model.modelItems.Bow@44a496f9
+[2025-05-01 19:51:44.362] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=12, col=10}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:44.567] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:44.567] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:44.567] INFO - MatrixLvlEditorController.handleItemMovement - src.java.org.projet.model.modelItems.Bow@21665092 old coord is Coord{row=12, col=5}
+[2025-05-01 19:51:44.567] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is src.java.org.projet.model.modelItems.Bow@21665092
+[2025-05-01 19:51:44.571] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=12, col=10}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:44.711] SEVERE - MatrixLvlEditorController.propertyChange - Changement removeItem propertyChange
+[2025-05-01 19:51:44.711] SEVERE - MatrixLvlEditorController.handleRemoveItem - Reception du signal remove item
+[2025-05-01 19:51:44.918] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:44.918] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:44.918] INFO - MatrixLvlEditorController.handleItemMovement - src.java.org.projet.model.modelItems.Bow@21665092 old coord is Coord{row=12, col=4}
+[2025-05-01 19:51:44.918] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is src.java.org.projet.model.modelItems.Bow@21665092
+[2025-05-01 19:51:44.920] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=12, col=10}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:45.271] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:45.271] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:45.271] INFO - MatrixLvlEditorController.handleItemMovement - src.java.org.projet.model.modelItems.Bow@21665092 old coord is Coord{row=12, col=3}
+[2025-05-01 19:51:45.271] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is src.java.org.projet.model.modelItems.Bow@21665092
+[2025-05-01 19:51:45.273] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=12, col=10}}', coordRow=3, coordCol=4, width=1, height=1}
+[2025-05-01 19:51:45.607] SEVERE - MatrixLvlEditorController.propertyChange - Changement move propertyChange
+[2025-05-01 19:51:45.607] SEVERE - MatrixLvlEditorController.handleItemMovement - Movement move propertyChange
+[2025-05-01 19:51:45.607] INFO - MatrixLvlEditorController.handleItemMovement - src.java.org.projet.model.modelItems.Bow@21665092 old coord is Coord{row=12, col=2}
+[2025-05-01 19:51:45.607] INFO - MatrixLvlEditorController.handleItemMovement - Entity coord is src.java.org.projet.model.modelItems.Bow@21665092
+[2025-05-01 19:51:45.610] INFO - MatrixLvlEditorController.handleItemMovement - Current selectedCaseMatrix is CaseMatrix{urlImgToShow='src/java/org/projet/assets/boss.png', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=12, col=10}}', coordRow=3, coordCol=4, width=1, height=1}

@@ -4,6 +4,7 @@ package src.java.org.projet.model.modelLevelEditor.base;
 public class Coord {
     private int row,col;
 
+    public Coord() {}
     public Coord(int row, int col) {
         this.row = row;
         this.col = col;

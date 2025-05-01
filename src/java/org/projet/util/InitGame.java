@@ -5,6 +5,9 @@ import src.java.org.projet.model.modelLevelEditor.MatrixLvlEditorModel;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Initialisation des model, ... du Jeu
+ */
 public class InitGame {
 
     public static  List<MatrixLvlEditorModel> generateAllsLevels(){
@@ -12,7 +15,7 @@ public class InitGame {
         MatrixLvlEditorModel matrixLvlEditorModel = new MatrixLvlEditorModel(size,size,"src/java/org/projet/assets/planet/planet03.png");
         MatrixLvlEditorModel matrixLvlEditorModelMars = new MatrixLvlEditorModel(size,size,"src/java/org/projet/assets/planet/planet00.png");
         MatrixLvlEditorModel matrixLvlEditorModelSaturn = new MatrixLvlEditorModel(size,size,"src/java/org/projet/assets/planet/planet02.png");
-        MatrixLvlEditorModel matrixLvlEditorModelJupiter = new MatrixLvlEditorModel(size,size,"src/java/org/projet/assets/planet/planet04.png");
+        MatrixLvlEditorModel matrixLvlEditorModelJupiter = new MatrixLvlEditorModel(size,size,"src/java/org/projet/assets/planet/planet09.png");
         List<MatrixLvlEditorModel> matrixLvlEditorModelList = new ArrayList<>();
 
         matrixLvlEditorModelList.add(matrixLvlEditorModel);

@@ -3,6 +3,7 @@ package src.java.org.projet.controler.levelEditorController;
 import javafx.scene.Node;
 import javafx.scene.layout.VBox;
 import src.java.org.projet.interfaces.MyConcreteObservable;
+import src.java.org.projet.model.Dataset;
 import src.java.org.projet.model.modelLevelEditor.SelectItemSectionModel;
 import src.java.org.projet.model.modelLevelEditor.base.CaseMatrix;
 import src.java.org.projet.view.levelEditorView.SelectItemView;
@@ -13,14 +14,11 @@ public class SelectItemSectionController extends MyConcreteObservable {
     private  final Logger logger = Logger.getLogger(SelectItemSectionController.class.getName());
         SelectItemSectionModel model;
         SelectItemView view;
-
+        Dataset dataset = Dataset.getInstance();
 
     public SelectItemSectionController(SelectItemSectionModel model, SelectItemView view) {
         this.model = model;
         this.view = view;
-        //model.addPropertyChangeListener(this.getPropertyChangeListener());
-        //var listItem = this.view.getVbox().getChildren();
-        //addListenerToIems();
 
     }
 
@@ -39,7 +37,7 @@ public class SelectItemSectionController extends MyConcreteObservable {
                     logger.info("Item click from menu : " + item);
                     model.setCurrentSelectedItem(itemsList.get(finalI));
                     logger.info("Item selected from menu "+model.getCurrentSelectedItem());
-                    this.getPropertyChangeSupport().firePropertyChange("selectedItem", null, model.getCurrentSelectedItem());
+                    this.getPropertyChangeSupport().firePropertyChange(dataset.getString("selectedItem"), null, model.getCurrentSelectedItem());
 
                 });
             }

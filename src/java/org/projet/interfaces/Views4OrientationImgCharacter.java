@@ -7,20 +7,18 @@ import src.java.org.projet.model.modelLevelEditor.base.Coord;
 import java.util.List;
 
 
+/**
+ * Classe representant les caractéristique d'une entité pouvant se déplacer
+ * dans les 4 directions
+ */
 public abstract class Views4OrientationImgCharacter  {
 
+    /**
+     * dernière orientation de l'entité(sens du mouvement)
+     */
     private Direction lastDirection;
 
-    public void setLastDirection(Direction lastDirection) {
-        this.lastDirection = lastDirection;
-    }
-    public void setLastDirection(Coord lastDirection) {
-        this.lastDirection = coordToDirection(lastDirection.getRow(), lastDirection.getCol());
-    }
 
-    public Direction getLastDirection() {
-        return lastDirection;
-    }
 
     private int currentFrameIndex = 0;
     private List<ImageView> moveRightSequences;
@@ -33,6 +31,12 @@ public abstract class Views4OrientationImgCharacter  {
 
     private final MyLogger logger = new MyLogger(Views4OrientationImgCharacter.class);
 
+    /**
+     * Constructeur
+     * @param spriteService service de manipulation des sprites
+     * @param moveRangeOnSprite Coordonnées des images pour les séquences de mouvement
+     *                          pour les 4 directions
+     */
     public Views4OrientationImgCharacter(
             SpriteService spriteService,
         MoveRangeOnSprite moveRangeOnSprite
@@ -47,7 +51,41 @@ public abstract class Views4OrientationImgCharacter  {
         this.currentMoveSequence = moveDownSequences;
     }
 
+    public Views4OrientationImgCharacter(){
 
+    }
+
+    /**
+     * Fixer la dernière orientation connue
+     * @param lastDirection orientation
+     */
+    public void setLastDirection(Direction lastDirection) {
+        this.lastDirection = lastDirection;
+    }
+
+    /**
+     * Fixer la dernière orientation connue vie des Coord
+     * @param lastDirection
+     */
+    public void setLastDirectionCoord(Coord lastDirection) {
+        this.lastDirection = coordToDirection(lastDirection.getRow(), lastDirection.getCol());
+    }
+
+    /**
+     *
+     * @return Direction Obtenir la dernère orientation (up, down...)
+     */
+    public Direction getLastDirection() {
+        return lastDirection;
+    }
+
+    /**
+     * Convertir un déplacement en coordonnées en direction
+     *
+     * @param row décalage en Row
+     * @param col décalage en Colonne
+     * @return sens du déplacement haut, bas, gauche, droite
+     */
     public Direction coordToDirection(int row, int col) {
         if (row == -1 && col == 0) return Direction.UP;
         if (row == 1 && col == 0) return Direction.DOWN;
@@ -57,6 +95,11 @@ public abstract class Views4OrientationImgCharacter  {
         return lastDirection;
     }
 
+    /**
+     * Convertir une direction en décalage de coordonnées
+     * @param direction Haut, bas, gauche, droite
+     * @return  le décalage de coordonnées fournissant cette direction
+     */
     public Coord directionToCoord(Direction direction) {
         return switch (direction) {
             case UP -> new Coord(-1, 0);
@@ -67,6 +110,11 @@ public abstract class Views4OrientationImgCharacter  {
     }
 
 
+    /**
+     * Fixer la bonne séquence de mouvements en fonction de l'orientation
+     * de L'entité
+     * @param direction
+     */
     public void updateCurrentSequence(Direction direction) {
         switch (direction) {
             case RIGHT -> currentMoveSequence = moveRightSequences;
@@ -76,11 +124,16 @@ public abstract class Views4OrientationImgCharacter  {
         }
     }
 
+    /**
+     * Calculer la prochaine image à afficher
+     * @param row déplacement en Row
+     * @param col déplacement en Colonne
+     * @return Image
+     */
     public ImageView nextImage(int row, int col) {
         logger.info("Prochaine image row :"+ row+" col "+col);
         Direction direction = coordToDirection(row, col);
-
-        // Si direction change → reset frame
+        //Si la direction change on reset la frame
         if (direction != lastDirection) {
             updateCurrentSequence(direction);
             logger.info("Changement de direction sequence courante  "+ direction);

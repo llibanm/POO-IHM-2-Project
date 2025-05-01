@@ -6,6 +6,7 @@
       <excludeFolder url="file://$MODULE_DIR$/src/java/org/projet/model/modelCharacter/puit" />
       <excludeFolder url="file://$MODULE_DIR$/src/java/org/projet/util/puit" />
       <excludeFolder url="file://$MODULE_DIR$/src/java/org/projet/model/modelMap/puit" />
+      <excludeFolder url="file://$MODULE_DIR$/src/java/org/projet/model/modelItems/puit" />
     </content>
   </component>
 </module>

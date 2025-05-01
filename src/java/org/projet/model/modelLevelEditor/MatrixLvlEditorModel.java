@@ -1,18 +1,22 @@
 package src.java.org.projet.model.modelLevelEditor;
 
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import src.java.org.projet.interfaces.Ennemy;
 import src.java.org.projet.interfaces.Movable;
 import src.java.org.projet.interfaces.MoveAction;
 import src.java.org.projet.interfaces.MyLogger;
 import src.java.org.projet.model.AbstractModel;
+import src.java.org.projet.model.Dataset;
 import src.java.org.projet.model.modelCharacter.Agressor;
+import src.java.org.projet.model.modelCharacter.Boss;
 import src.java.org.projet.model.modelCharacter.Hero;
 import src.java.org.projet.model.modelCharacter.MyCharacter;
 import src.java.org.projet.model.modelItems.Bow;
 import src.java.org.projet.model.modelLevelEditor.base.CaseMatrix;
 import src.java.org.projet.model.modelLevelEditor.base.Coord;
 import src.java.org.projet.model.modelMap.Location;
+import src.java.org.projet.model.modelMap.SimpleDoor;
 
 import java.util.*;
 import java.util.concurrent.ConcurrentLinkedQueue;
@@ -23,16 +27,23 @@ import java.util.concurrent.ConcurrentLinkedQueue;
  * elle stockera une liste de case ainsi que la l'état lié aux héros, ennemies et leurs position
  */
 public class MatrixLvlEditorModel extends AbstractModel {
+    @JsonIgnore
     private final MyLogger logger = new MyLogger(MatrixLvlEditorModel.class);
     //Matrice de l'éditeur de niveau qui contiendra les items selectionnés dans le menu de choix des items
     private CaseMatrix[][] matrixEditorLvl;
+    @JsonIgnore
     Hero hero;
+    @JsonIgnore
     List<Movable> movable = new ArrayList<Movable>();
+    @JsonIgnore
     Ennemy ActiveEnnemy;
+    @JsonIgnore
     Queue<MoveAction> moveQueue = new ConcurrentLinkedQueue<>();
     int nbOfRows;
     int nbOfCols;
     String urlBackground;
+    @JsonIgnore
+    Dataset dataset = Dataset.getInstance();
 
     public MatrixLvlEditorModel() {
         super("Matrix Lvl Editor");
@@ -63,8 +74,11 @@ public class MatrixLvlEditorModel extends AbstractModel {
     public void addItemMatrice(int row, int col, CaseMatrix items) {
         logger.info("Ajout item addItemMatrice");
         if (isValidCoordinate(row, col)) {
+            items.setCoordCol(col);
+            items.setCoordRow(row);
             matrixEditorLvl[row][col] = items;
             matrixEditorLvl[row][col].setOccuped(true);
+
             fillHeroAndEnnemyList(row, col, items);
         } else {
             System.err.println("Erreur: Coordonnées invalides pour ajouter l'item (" + row + ", " + col + ").");
@@ -73,12 +87,22 @@ public class MatrixLvlEditorModel extends AbstractModel {
         }
     }
 
+    public void initEntityWithMatrix(){
+        CaseMatrix currentEntity;
+        for (int i = 0; i < nbOfRows; i++) {
+            for (int j = 0; j < nbOfCols; j++) {
+                currentEntity = getCaseMatrix(i, j);
+                fillHeroAndEnnemyList(i,j,currentEntity);
+            }
+        }
+
+    }
 
     public void showItemModel() {
         for (int i = 0; i < nbOfRows; i++) {
             for (int j = 0; j < nbOfCols; j++) {
                 //System.out.print(matrixEditorLvl[i][j] + " ");
-                CaseMatrix nextCase = getCaseMatrix(i,j);
+                CaseMatrix nextCase = getCaseMatrix(i, j);
                 this.getPropertyChangeSupport().firePropertyChange("showModelCase", null, nextCase);
             }
             System.out.println();
@@ -101,83 +125,131 @@ public class MatrixLvlEditorModel extends AbstractModel {
     }
 
     public boolean moveItem(Movable item, int rowX, int colY) {
-        logger.warning("moveItem "+ item+ " rowX=" + rowX + " colY=" + colY);
+        logger.warning("moveItem " + item + " rowX=" + rowX + " colY=" + colY);
         Coord currentItemPos = item.getCoord();
-        Coord newItemPos = Coord.addCoord(currentItemPos, new Coord(rowX,colY));
-        boolean isNextCaseOccuped = true;
-        if (isValidCoordinateCoord(newItemPos)) { //Déplacement de la flèche
-             isNextCaseOccuped = this.getCaseMatrixCoord(newItemPos).isOccuped();
-            //  Vérifie si la case contient un ennemi
-            if (isNextCaseOccuped && item instanceof Bow) {
-                CaseMatrix nextCase = getCaseMatrixCoord(newItemPos);
-                if (nextCase.getClassOfItems() instanceof Ennemy) {
-                    // Supprime l'ennemi
-                    Ennemy enemy = (Ennemy) nextCase.getClassOfItems();
-                    resetItemMatriceCoord(newItemPos); // Efface l'ennemi de la grille
-                    movable.remove(enemy); // Retire de la liste
-                    this.getPropertyChangeSupport().firePropertyChange("move", currentItemPos, item);
-                    this.getPropertyChangeSupport().firePropertyChange("removeItem", currentItemPos, item);
-                    this.getPropertyChangeSupport().firePropertyChange("removeItem", nextCase, item);
-                    logger.severe("Ennemi touché et supprimé !");
-                }
-            }
-        }
+        Coord newItemPos = Coord.addCoord(currentItemPos, new Coord(rowX, colY));
 
-        logger.info("Coordonnées valides? pour le déplacement de l'item " + item+"Coord :" + newItemPos+"etat case suivante:" + isNextCaseOccuped);
-        if (isValidCoordinateCoord(newItemPos) && !isNextCaseOccuped) {
-            logger.info("Coordonnées valides pour le déplacement de l'item " + item+"Coord :" + newItemPos+"etat case suivante:" + isNextCaseOccuped);
-            resetItemMatriceCoord(currentItemPos);
-            item.setCoord(newItemPos);
-            freeLastCastOccupedNewCase(item,currentItemPos, newItemPos);
-            this.getPropertyChangeSupport().firePropertyChange("move", currentItemPos, item);
-
-            logger.info(item+ " Déplacement d'un item, nouvelle coord " + newItemPos+" ancienne coord " + currentItemPos);
-            return true;
-        } else { //Coordonnées invalides ou case occupé
-
-            if (item instanceof Bow) {
-                logger.severe("Suppression de la flèche...");
-                this.getMoveQueue().removeIf(action -> action.getEntity().equals(item)); // Supprime toutes ses actions
-                this.movable.remove(item);
-                this.resetItemMatriceCoord(currentItemPos);
-                this.getPropertyChangeSupport().firePropertyChange("removeItem", currentItemPos, item);
-                return false;
-            }
-            else if (item instanceof Hero) {
-                if(isValidCoordinateCoord(newItemPos)) {
-                    logger.info("Interaction avec l'item proche du héros");
-
-                }
-            }
-            logger.info(item+" L'item ne peut pas se déplacer Coordonnées invalident "+item);
+        boolean validCoord = isValidCoordinateCoord(newItemPos);
+        if (!validCoord) {
+            logger.info(item + " déplacement hors limites, suppression.");
+            removeItem(item, currentItemPos);
             return false;
         }
+
+        CaseMatrix nextCase = getCaseMatrixCoord(newItemPos);
+        boolean isOccupied = nextCase.isOccuped();
+
+        if (item instanceof Bow) {
+            if (isOccupied) {
+                handleArrowTouchSomeBody(item, nextCase, newItemPos, currentItemPos);
+                return false;
+            } else { // case libre, on déplace
+                moveMovable(item, currentItemPos, newItemPos);
+                return true;
+            }
+        }
+
+        // Si case libre pour les autres objets
+        if (!isOccupied) {
+            moveMovable(item, currentItemPos, newItemPos);
+            return true;
+        }
+
+        logger.info(item + " ne peut pas se déplacer, case occupée.");
+        return false;
     }
+
+    private void handleArrowTouchSomeBody(Movable item, CaseMatrix nextCase, Coord newItemPos, Coord currentItemPos) {
+        Object target = nextCase.getClassOfItems();
+        if (target instanceof Ennemy enemy) {
+            handleEnnemyAttacked(item, enemy, newItemPos, nextCase);
+        } else if (target instanceof Hero) {
+            handleHeroAttacked();
+        }
+        removeItem(item, currentItemPos);
+    }
+
+
+    private void handleEnnemyAttacked(Movable item, Ennemy enemy, Coord newItemPos, CaseMatrix nextCase) {
+        logger.severe("Ennemi touché et supprimé !");
+        resetItemMatriceCoord(newItemPos);
+        movable.remove(enemy);
+        this.getPropertyChangeSupport().firePropertyChange(dataset.getString("removeItem"), nextCase, item);
+        if (item instanceof Boss){
+            this.getPropertyChangeSupport().firePropertyChange("endOfTheGame", nextCase, item);
+        }
+    }
+
+    private void handleHeroAttacked() {
+        hero.decreaseHP(2);
+        logger.info("Héros touché par une flèche");
+        if (hero.getHP() <= 0) {
+            logger.info("Héros mort");
+            this.getPropertyChangeSupport().firePropertyChange("endOfTheGame", null, hero);
+        } else {
+            this.getPropertyChangeSupport().firePropertyChange("UpdateHeroState", null, hero);
+        }
+    }
+
+
+    private void moveMovable(Movable item, Coord from, Coord to) {
+        resetItemMatriceCoord(from);
+        item.setCoord(to);
+        freeLastCastOccupedNewCase(item, from, to);
+        this.getPropertyChangeSupport().firePropertyChange(dataset.getString("move"), from, item);
+        logger.info(item + " déplacé vers " + to);
+    }
+
+    private void removeItem(Movable item, Coord from) {
+        getMoveQueue().removeIf(action -> action.getEntity().equals(item));
+        movable.remove(item);
+        resetItemMatriceCoord(from);
+        this.getPropertyChangeSupport().firePropertyChange(dataset.getString("removeItem"), from, item);
+    }
+
+
 
 
     public void fillHeroAndEnnemyList(int row, int col, CaseMatrix items) {
-        Object classOfItems = items.getClassOfItems();
-        logger.info("fillHeroAndEnnemyList " + classOfItems);
-        // TODO peut faire plus évolutif et moins couplé!!!
-        if (classOfItems instanceof Hero) {
-            this.hero = new Hero("Marcel", 10);
-            hero.setCoord(new Coord(row, col));
-            this.getCaseMatrix(row, col).setClassOfItems(hero);
-            this.getPropertyChangeSupport().firePropertyChange("UpdateHeroState", null, hero);
-            logger.info("Ajout du héro  fillHeroAndEnnemyList");
-        } else if (classOfItems instanceof Ennemy) {
-            Agressor ennemy = new Agressor("Agressor", 10); // TODO
-            ennemy.setCoord(new Coord(row, col));
-            this.movable.add(ennemy);
-            this.getCaseMatrix(row, col).setClassOfItems(ennemy);
-            logger.info("Ajout d'un ennemie  fillHeroAndEnnemyList+ " + movable);
-        } else {
-            logger.info("L'item n'est ni un heros, ni un ennemi");
-        }
 
+
+        // TODO peut faire plus évolutif et moins couplé!!!
+
+            Object classOfItems = items.getClassOfItems();
+            String className = items.getClassNameOfItem();
+        if(classOfItems != null) {
+            if (classOfItems instanceof Hero || className.equals("Hero")) {
+                this.hero = new Hero("Marcel", 10);
+                hero.setCoord(new Coord(row, col));
+                this.getCaseMatrix(row, col).setClassOfItems(hero);
+                this.getPropertyChangeSupport().firePropertyChange("UpdateHeroState", null, hero);
+                logger.info("Ajout du héro  fillHeroAndEnnemyList");
+            } else if (classOfItems instanceof Ennemy || className.equals("Agressor")) {
+                if(className.equals("Agressor")) {
+                    Agressor ennemy = new Agressor("Agressor", 10); // TODO
+                    ennemy.setCoord(new Coord(row, col));
+                    this.movable.add(ennemy);
+                    this.getCaseMatrix(row, col).setClassOfItems(ennemy);
+                    logger.info("Ajout d'un ennemie  fillHeroAndEnnemyList+ " + movable);
+                }
+                else if( className.equals("Boss")){
+                    Boss ennemy = new Boss("Boss", 10); // TODO
+                    ennemy.setCoord(new Coord(row, col));
+                    this.movable.add(ennemy);
+                    this.getCaseMatrix(row, col).setClassOfItems(ennemy);
+                    logger.info("Ajout d'un ennemie  fillHeroAndEnnemyList+ " + movable);
+                }
+            }
+
+            else {
+                logger.info("L'item n'est ni un heros, ni un ennemi");
+            }
+        }
     }
 
-    /** Retourne les cases adjacentes à une case donnée
+    /**
+     * Retourne les cases adjacentes à une case donnée
+     *
      * @param row
      * @param col
      * @return
@@ -186,8 +258,8 @@ public class MatrixLvlEditorModel extends AbstractModel {
         List<CaseMatrix> neighbors = new ArrayList<>();
         int[][] directions = {
                 {-1, -1}, {-1, 0}, {-1, 1},
-                { 0, -1},          { 0, 1},
-                { 1, -1}, { 1, 0}, { 1, 1}
+                {0, -1}, {0, 1},
+                {1, -1}, {1, 0}, {1, 1}
         };
 
         for (int[] d : directions) {
@@ -202,14 +274,14 @@ public class MatrixLvlEditorModel extends AbstractModel {
 
 
     public void freeLastCastOccupedNewCase(Movable item, Coord oldPos, Coord newPos) {
-        this.addCaseMatrix(oldPos.getRow(),oldPos.getCol(),new CaseMatrix("", null, oldPos.getRow(), oldPos.getCol(),1,1));
-        logger.info("maj de l'ancienne case " + getCaseMatrix(oldPos.getRow(),oldPos.getCol()));
+        this.addCaseMatrix(oldPos.getRow(), oldPos.getCol(), new CaseMatrix("", null, oldPos.getRow(), oldPos.getCol(), 1, 1));
+        logger.info("maj de l'ancienne case " + getCaseMatrix(oldPos.getRow(), oldPos.getCol()));
         this.setOccuped(oldPos, false);
         logger.info("Etat ancienne case  (assert false) " + isOccupedCaseCoord(oldPos));
 
-        this.addCaseMatrix(newPos.getRow(),newPos.getCol(),new CaseMatrix("", item, newPos.getRow(), newPos.getCol(),1,1));
+        this.addCaseMatrix(newPos.getRow(), newPos.getCol(), new CaseMatrix("", item, newPos.getRow(), newPos.getCol(), 1, 1));
         this.setOccuped(newPos, true);
-        logger.info("maj de la nouvelle case " + getCaseMatrix(newPos.getRow(),newPos.getCol()));
+        logger.info("maj de la nouvelle case " + getCaseMatrix(newPos.getRow(), newPos.getCol()));
         logger.info("Etat ancienne case  (assert true) " + isOccupedCaseCoord(newPos));
 
 
@@ -258,12 +330,11 @@ public class MatrixLvlEditorModel extends AbstractModel {
         CaseMatrix bow;
         Bow bowObj = new Bow(BowPos);
 
-        if(character instanceof Hero) {
+        if (character instanceof Hero) {
 
             bowObj.setBowUrlImage("src/java/org/projet/assets/bule.png");
             bow = new CaseMatrix(bowObj.getBowUrlImage(), BowPos);
-        }
-        else {
+        } else {
             bowObj.setBowUrlImage("src/java/org/projet/assets/buleE.png");
             bow = new CaseMatrix(bowObj.getBowUrlImage(), BowPos);
         }
@@ -271,7 +342,7 @@ public class MatrixLvlEditorModel extends AbstractModel {
         movable.add(bowObj);
         getMoveQueue().add(new MoveAction(bowObj, direction.getRow(), direction.getCol()));
         this.addItemMatrice(BowPos.getRow(), BowPos.getCol(), bow);
-        this.getPropertyChangeSupport().firePropertyChange("fireHero", null, bow);
+        this.getPropertyChangeSupport().firePropertyChange(dataset.getString("fireHero"), null, bow);
         this.getPropertyChangeSupport().firePropertyChange("UpdateHeroState", null, hero);
 
         logger.info("Ajout d'un arc à la position du héros");
@@ -350,6 +421,7 @@ public class MatrixLvlEditorModel extends AbstractModel {
     public boolean isValidCoordinate(int row, int col) {
         return row >= 0 && row < nbOfRows && col >= 0 && col < nbOfCols;
     }
+
     public boolean isValidCoordinateCoord(Coord c) {
         int row = c.getRow();
         int col = c.getCol();
@@ -372,14 +444,14 @@ public class MatrixLvlEditorModel extends AbstractModel {
     public CaseMatrix getCaseMatrix(int row, int col) {
         if (row < nbOfRows && col < nbOfCols) {
             return matrixEditorLvl[row][col];
-        }
-        else {
-            throw new RuntimeException("Case incorrect") ;
+        } else {
+            throw new RuntimeException("Case incorrect");
         }
     }
+
     public void setCaseMatrix(int row, int col, CaseMatrix caseM) {
         if (row < nbOfRows && col < nbOfCols) {
-             matrixEditorLvl[row][col] = caseM;
+            matrixEditorLvl[row][col] = caseM;
         }
 
     }
@@ -389,9 +461,8 @@ public class MatrixLvlEditorModel extends AbstractModel {
         int col = coord.getCol();
         if (isValidCoordinate(row, col)) {
             return matrixEditorLvl[row][col];
-        }
-        else {
-            throw new RuntimeException("Case incorrect") ;
+        } else {
+            throw new RuntimeException("Case incorrect");
         }
     }
 

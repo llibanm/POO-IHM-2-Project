@@ -1,11 +1,17 @@
 package src.java.org.projet.model.modelMap;
 
 
+import com.fasterxml.jackson.annotation.JsonCreator;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import src.java.org.projet.interfaces.EffectOnHero;
 import src.java.org.projet.model.modelCharacter.Hero;
+import src.java.org.projet.model.modelGame.GameModel;
 
-public class SimpleDoor extends Exit {
-	
-	public SimpleDoor(Location entrance, Location wayOut, String name) {
+public class SimpleDoor extends Exit implements EffectOnHero {
+
+	//public SimpleDoor() {}
+	@JsonCreator
+	public SimpleDoor(@JsonProperty("entrance") Location entrance,@JsonProperty("wayOut") Location wayOut, @JsonProperty("name")String name) {
 
 		super(entrance, wayOut, name);
 	}
@@ -27,5 +33,10 @@ public class SimpleDoor extends Exit {
 	@Override
 	public Location cross() {
 		return getWayOut();
+	}
+
+	@Override
+	public void use(GameModel model) {
+		model.getCurrentLevel().changeLocation(this.cross());
 	}
 }

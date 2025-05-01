@@ -4,6 +4,7 @@ package src.java.org.projet.model.modelItems;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import src.java.org.projet.interfaces.Movable;
+import src.java.org.projet.model.modelGame.GameModel;
 import src.java.org.projet.model.modelLevelEditor.base.Coord;
 
 public class Bow extends Item implements Movable {
@@ -104,4 +105,9 @@ public class Bow extends Item implements Movable {
     }
 
     public void taken() {}
+
+    @Override
+    public void use(GameModel model) {
+
+    }
 }

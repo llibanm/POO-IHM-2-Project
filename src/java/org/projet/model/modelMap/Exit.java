@@ -8,6 +8,9 @@ public abstract class Exit {
 	protected Boolean isOpened;
 	private Location entrance;
 	private Location wayOut;
+	public Exit(){
+
+	}
 	
 	public Exit(Location entrance, Location wayOut, String name) {
 		this.entrance = entrance;
@@ -35,9 +38,9 @@ public abstract class Exit {
 	
 	public abstract void isCrossing();
 	public abstract Location cross();
-	public Location getneighbor() {
-		return wayOut;
-	}
+//	public Location getneighbor() {
+//		return wayOut;
+//	}
 
 	public abstract boolean hero_unlock(Hero hero);
 }

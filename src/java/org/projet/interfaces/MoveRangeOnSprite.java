@@ -2,10 +2,23 @@ package src.java.org.projet.interfaces;
 
 import src.java.org.projet.model.modelLevelEditor.base.Coord;
 
+/**
+ * Classe representant les coordonnées des
+ * images des séquences de mouvements pour chaque direction (haut, bas, gauche,
+ * droite) de l'entité sur la map.
+ *
+ */
 public class MoveRangeOnSprite {
 
     Coord spriteMoveUpRange, spriteMoveRightRange,spriteMoveLeftRange,spriteMoveDownRange;
 
+    /**
+     * Constructeur séquences de mouvement sur la sprite d'une image
+     * @param spriteMoveUpRange    Coordonnées de la séquence de mouvement vers le haut
+     * @param spriteMoveRightRange Coordonnées de la séquence de mouvement vers la droite
+     * @param spriteMoveLeftRange  Coordonnées de la séquence de mouvement vers la gauche
+     * @param spriteMoveDownRange Coordonnées de la séquence de mouvement vers le bas
+     */
     public MoveRangeOnSprite(Coord spriteMoveUpRange, Coord spriteMoveRightRange, Coord spriteMoveLeftRange, Coord spriteMoveDownRange) {
         this.spriteMoveUpRange = spriteMoveUpRange;
         this.spriteMoveRightRange = spriteMoveRightRange;
@@ -13,6 +26,10 @@ public class MoveRangeOnSprite {
         this.spriteMoveDownRange = spriteMoveDownRange;
     }
 
+    /**
+     *
+     * @return Coordonnées de la séquence de mouvement vers le haut
+     */
     public Coord getSpriteMoveUpRange() {
         return spriteMoveUpRange;
     }
@@ -21,6 +38,10 @@ public class MoveRangeOnSprite {
         this.spriteMoveUpRange = spriteMoveUpRange;
     }
 
+    /**
+     *
+     * @return Coordonnées de la séquence de mouvement vers la  droite
+     */
     public Coord getSpriteMoveRightRange() {
         return spriteMoveRightRange;
     }
@@ -29,6 +50,10 @@ public class MoveRangeOnSprite {
         this.spriteMoveRightRange = spriteMoveRightRange;
     }
 
+    /**
+     *
+     * @return Coordonnées de la séquence de mouvement vers la gauche
+     */
     public Coord getSpriteMoveLeftRange() {
         return spriteMoveLeftRange;
     }
@@ -37,6 +62,10 @@ public class MoveRangeOnSprite {
         this.spriteMoveLeftRange = spriteMoveLeftRange;
     }
 
+    /**
+     *
+     * @return Coordonnées de la séquence de mouvement vers le bas
+     */
     public Coord getSpriteMoveDownRange() {
         return spriteMoveDownRange;
     }

@@ -30,7 +30,7 @@ public class SpriteDemo extends Application {
         sheet.AnimedSprite(sheet, root);
 
         SpriteService.saveSprite(new Image(imgPath), 9, 4, 64, 64, "src/java/org/projet/assets/Agresso.png");
-        ImageView single = sheet.getSprite(sheet,1,2, root);
+        ImageView single = sheet.getSprite(sheet,0,0, root);
         saveImageViewAsPNG(single, "src/java/org/projet/assets/defaultHero.png");
 
 

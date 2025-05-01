@@ -1,19 +1,26 @@
 package src.java.org.projet.model.modelCharacter;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import src.java.org.projet.services.SpriteService;
 import src.java.org.projet.interfaces.MoveRangeOnSprite;
-import src.java.org.projet.model.modelItems.Back_pack;
+//import src.java.org.projet.model.modelItems.puit.Back_pack;
 import src.java.org.projet.model.modelItems.Bow;
-import src.java.org.projet.model.modelItems.Sabre;
 import src.java.org.projet.model.modelLevelEditor.base.Coord;
 import src.java.org.projet.model.modelMap.Location;
-
-import java.util.ArrayList;
 
 public class Hero extends MyCharacter{
 
     private Bow H_bow;
-    private Sabre H_sabre;
-    private Back_pack backpack;
+//    private Back_pack backpack;
+    @JsonProperty("position")
+    private Location H_position;
+
+    public Hero() {
+        super("Hero", 0,
+                new MoveRangeOnSprite(new Coord(3,-1), new Coord(2,-1),new Coord(1,-1),new Coord(0,-1)),
+                new SpriteService("src/java/org/projet/assets/Hero.png",32,48,4,4),
+                "src/java/org/projet/assets/defaultHero.png"
+        );
+    }
 
     public Hero(String name, int hp, Location loc){
 
@@ -24,8 +31,7 @@ public class Hero extends MyCharacter{
                 "src/java/org/projet/assets/Hero.png"
         );
         H_bow = new Bow(new Coord(0,0));
-        H_sabre = new Sabre();
-        backpack = new Back_pack();
+        //backpack = new Back_pack();
         H_position = loc;
 
     }
@@ -38,8 +44,7 @@ public class Hero extends MyCharacter{
                 "src/java/org/projet/assets/defaultHero.png"
         );
         H_bow = new Bow(new Coord(0,0));
-        H_sabre = new Sabre();
-        backpack = new Back_pack();
+       // backpack = new Back_pack();
 
     }
 
@@ -49,13 +54,9 @@ public class Hero extends MyCharacter{
         H_bow = h_bow;
     }
 
-    public void setH_sabre(Sabre h_sabre) {
-        H_sabre = h_sabre;
-    }
-
-    public void setBackpack(Back_pack backpack) {
-        this.backpack = backpack;
-    }
+//    public void setBackpack(Back_pack backpack) {
+//        this.backpack = backpack;
+//    }
 
     public Location getH_position() {
         return H_position;
@@ -65,7 +66,7 @@ public class Hero extends MyCharacter{
         H_position = h_position;
     }
 
-    private Location H_position;
+
 
     //TODO make controller interact with model for this
    /* @Override
@@ -130,7 +131,7 @@ public class Hero extends MyCharacter{
 
     @Override
     public int getSpeed() {
-        return 0;
+        return 1;
     }
 
     @Override
@@ -147,19 +148,13 @@ public class Hero extends MyCharacter{
         return H_position;
     }
 
-
-
-
-    public Back_pack getBackpack() {
-        return backpack;
-    }
+//    public Back_pack getBackpack() {
+//        return backpack;
+//    }
     public Bow getH_bow(){
         return H_bow;
     }
 
-    public Sabre getH_sabre(){
-        return H_sabre;
-    }
 
     public void display_help(){}
 

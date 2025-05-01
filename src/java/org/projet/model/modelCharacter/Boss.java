@@ -1,22 +1,22 @@
 
 package src.java.org.projet.model.modelCharacter;
 
-import src.java.org.projet.services.SpriteService;
 import src.java.org.projet.interfaces.Ennemy;
 import src.java.org.projet.interfaces.MoveRangeOnSprite;
 import src.java.org.projet.interfaces.MyLogger;
 import src.java.org.projet.model.modelLevelEditor.base.Coord;
+import src.java.org.projet.services.SpriteService;
 
-public class Agressor extends MyCharacter implements Ennemy {
+public class Boss extends MyCharacter implements Ennemy {
 
-    private final MyLogger logger = new MyLogger(Agressor.class);
+    private final MyLogger logger = new MyLogger(Boss.class);
 
 
-    public Agressor(String name, int hp) {
+    public Boss(String name, int hp) {
         super(name, hp,
-                new MoveRangeOnSprite(new Coord(0,-1), new Coord(3,-1),new Coord(1,-1),new Coord(2,-1)),
-                new SpriteService("src/java/org/projet/assets/ennemy1.png",64,64,9,4),
-                "src/java/org/projet/model/modelCharacter/Agressor.java:19"
+                new MoveRangeOnSprite(new Coord(0,-1), new Coord(2,-1),new Coord(1,-1),new Coord(2,-1)),
+                new SpriteService("src/java/org/projet/assets/boss.png",57,88,8,3),
+                "src/java/org/projet/model/modelCharacter/boss.png"
         );
 
     }
@@ -83,7 +83,7 @@ public class Agressor extends MyCharacter implements Ennemy {
 
     @Override
     public int getSpeed() {
-        return 1;
+        return 5;
     }
 
     @Override
@@ -136,6 +136,6 @@ public class Agressor extends MyCharacter implements Ennemy {
 
     @Override
     public int getPorteeAtk(){
-        return 6;
+        return 12;
     }
 }

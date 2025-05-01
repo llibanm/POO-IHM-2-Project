@@ -5,6 +5,9 @@ import src.java.org.projet.services.SpriteService;
 
 import java.util.List;
 
+/**
+ * Liste concrète des images des sprites pour chaque direction
+ */
 public class MoveSequences {
     private List<ImageView> moveRightSequences;
     private List<ImageView> moveLeftSequences;
@@ -13,6 +16,14 @@ public class MoveSequences {
     private List<ImageView> currentMoveSequence;
     private  SpriteService spriteService;
 
+    /**
+     *
+     * @param spriteService Service permettant de manipuler les sprites
+     * @param moveRight liste des images des sprites des mouvements vers la droite
+     * @param moveLeft
+     * @param moveUp
+     * @param moveDown
+     */
     public MoveSequences(SpriteService spriteService,
             List<ImageView> moveRight,
             List<ImageView> moveLeft,
@@ -30,6 +41,10 @@ public class MoveSequences {
 
 
 
+
+    /**
+     * Liste concrète des images des sprites pour les déplacements à droite
+     */
     public List<ImageView> getMoveRightSequences() {
         return moveRightSequences;
     }
@@ -38,6 +53,9 @@ public class MoveSequences {
         this.moveRightSequences = moveRightSequences;
     }
 
+    /**
+     * Liste concrète des images des sprites pour les déplacements à gauche
+     */
     public List<ImageView> getMoveLeftSequences() {
         return moveLeftSequences;
     }
@@ -46,6 +64,9 @@ public class MoveSequences {
         this.moveLeftSequences = moveLeftSequences;
     }
 
+    /**
+     * Liste concrète des images des sprites pour les déplacements vers le haut
+     */
     public List<ImageView> getMoveUpSequences() {
         return moveUpSequences;
     }
@@ -53,6 +74,10 @@ public class MoveSequences {
     public void setMoveUpSequences(List<ImageView> moveUpSequences) {
         this.moveUpSequences = moveUpSequences;
     }
+
+    /**
+     * Liste concrète des images des sprites pour les déplacements vers le bas
+     */
 
     public List<ImageView> getMoveDownSequences() {
         return moveDownSequences;

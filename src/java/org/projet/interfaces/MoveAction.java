@@ -1,4 +1,9 @@
 package src.java.org.projet.interfaces;
+
+/**
+ * Classe representant une entité mouvable et
+ * l'orientation de son déplacement dans la map.
+ */
 public  class MoveAction {
     Movable entity;
     int rowX, colY;

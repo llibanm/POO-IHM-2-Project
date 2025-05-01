@@ -11,6 +11,7 @@ public class CaseMatrix {
     //Image de l'item
     String urlImgToShow;
     Object classOfItems;
+    String ClassNameOfItem;
     boolean isOccuped;
     int coordRow;
     int coordCol;
@@ -28,6 +29,10 @@ public class CaseMatrix {
         this.width = width;
         this.height = height;
         this.classOfItems = classOfItems;
+        if(classOfItems != null)
+        this.ClassNameOfItem = classOfItems.getClass().getSimpleName();
+        else
+            this.ClassNameOfItem = "null";
     }
     //Constructeur secondaire pour le cas ou l'objet occupe une seule case de la matrice
     public CaseMatrix(String urlImgToShow, int coordrow, int coordcol) {
@@ -43,6 +48,14 @@ public class CaseMatrix {
         this.coordCol = position.getCol();
         this.width = 1;
         this.height = 1;
+    }
+
+    public String getClassNameOfItem() {
+        return ClassNameOfItem;
+    }
+
+    public void setClassNameOfItem(String classNameOfItem) {
+        ClassNameOfItem = classNameOfItem;
     }
 
     public boolean isOccuped() {

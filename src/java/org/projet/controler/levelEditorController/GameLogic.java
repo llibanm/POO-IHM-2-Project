@@ -4,57 +4,76 @@ import javafx.animation.Animation;
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
 import javafx.util.Duration;
-import src.java.org.projet.interfaces.Ennemy;
-import src.java.org.projet.interfaces.Movable;
-import src.java.org.projet.interfaces.MoveAction;
-import src.java.org.projet.interfaces.MyLogger;
+import src.java.org.projet.interfaces.*;
+import src.java.org.projet.model.Dataset;
 import src.java.org.projet.model.modelCharacter.Agressor;
+import src.java.org.projet.model.modelCharacter.Boss;
 import src.java.org.projet.model.modelCharacter.MyCharacter;
+import src.java.org.projet.model.modelGame.GameModel;
 import src.java.org.projet.model.modelItems.Bow;
 import src.java.org.projet.model.modelLevelEditor.MatrixLvlEditorModel;
 import src.java.org.projet.model.modelLevelEditor.base.CaseMatrix;
 import src.java.org.projet.model.modelLevelEditor.base.Coord;
-import src.java.org.projet.model.modelMap.SimpleDoor;
-import src.java.org.projet.view.levelEditorView.MatrixLvLEditorView;
 
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * Classe gérant la logique des déplacements des items non statiques (héros, balles...)
+ * */
 public class GameLogic {
-    private  MatrixLvlEditorModel model;
-    private final MatrixLvLEditorView view;
+    private MatrixLvlEditorModel model;
+    //private final MatrixLvLEditorView view;
     private final MyLogger logger = new MyLogger(GameLogic.class);
     private Timeline enemyMovementLoop;
     private volatile boolean isProcessing = false;
     private final Map<Movable, Double> movementProgress = new HashMap<>();
+    private GameModel gameModel;
+    public Dataset dataset = Dataset.getInstance();
 
-    public GameLogic(MatrixLvlEditorModel model, MatrixLvLEditorView view) {
+    public GameLogic(MatrixLvlEditorModel model) {
         this.model = model;
-        this.view = view;
-        init();
+       // this.view = view;
     }
 
+    /**
+     * Initialisations des déplacements
+     */
     public void init() {
         initializeMovementProgress();
-        startEnemyMovementLoop();
+        startMovableMovementLoop();
+    }
+
+    public void stopMovementLoop() {
+        if(enemyMovementLoop != null) {
+            isProcessing = false;
+            enemyMovementLoop.stop();
+        }
+
     }
 
 
     private void initializeMovementProgress() {
-        model.getMovable().forEach(enemy -> movementProgress.put(enemy, 0.0));
+        model.getMovable().forEach(movable -> movementProgress.put(movable, 0.0));
     }
 
+    /**
+     * Déplacement du héro
+     * @param deltaRow coordonnées à ajouter à l'actuelle pour la nouvelle row
+     * @param deltaCol coordonnées à ajouter à l'actuelle pour la nouvelle row
+     */
     public void moveHero(int deltaRow, int deltaCol) {
         model.getMoveQueue().add(new MoveAction(model.getHero(), deltaRow, deltaCol));
         logger.info("Ajout du déplacement du Hero dans la queue " + model.getHero());
         processMoveQueue();
     }
 
-    public void startEnemyMovementLoop() {
-        enemyMovementLoop = new Timeline(new KeyFrame(Duration.seconds(0.05), e -> {
+    /**Lancer le cycle de déplacement des items non statiques */
+    public void startMovableMovementLoop() {
+        enemyMovementLoop = new Timeline(new KeyFrame(Duration.seconds(dataset.getMesured("deltaTimeGL")), e -> {
             if (!isProcessing) {
-                updateMovables(0.05);
+                updateMovables(dataset.getMesured("deltaTimeGL"));
             }
         }));
         enemyMovementLoop.setCycleCount(Animation.INDEFINITE);
@@ -88,6 +107,10 @@ public class GameLogic {
         }
     }
 
+    /**
+     * Ajout des actions de déplacement du laser
+     * @param bow laser
+     */
     private void moveBow(Bow bow) {
         logger.severe("Ajout du mvt de la flèche " + bow + " Direction:" + bow.getMoveDirection());
         model.getMoveQueue().add(new MoveAction(
@@ -98,7 +121,11 @@ public class GameLogic {
     }
 
 
-
+    /**
+     * Gestion du mouvement des ennemis par accumulation des déplacement
+     * dans une file.
+     * @param enemy
+     */
     private void moveEnemy(Ennemy enemy) {
         logger.severe("Ajout du mvt de l'ennemi " + enemy);
         boolean enemyIsAttacking = enemy.attackHero(model.getHero());
@@ -112,13 +139,16 @@ public class GameLogic {
             model.getMoveQueue().add(new MoveAction(enemy, rowX, colY));
         } else {
             logger.info("L'ennemi est en train d'attaquer le héros");
-            if (enemy instanceof Agressor) {
+            if (enemy instanceof Agressor || enemy instanceof Boss) {
                 model.addDynamicBow((MyCharacter) enemy);
                 movementProgress.put(enemy, 0.0); // Reset le compteur après attaque
             }
         }
     }
 
+    /**
+     * Exécutions effective du mouvement de l'entité
+     */
     public void processMoveQueue() {
         var moveQueue = model.getMoveQueue();
         while (!moveQueue.isEmpty()) {
@@ -128,6 +158,11 @@ public class GameLogic {
         }
     }
 
+    /**
+     * Logique de déplacement spécifique des ennemis
+     * @param ennemy
+     * @return Coord la nouvelle position de(x,y) l'ennemi
+     */
     public Coord aiComputeNextMove(Movable ennemy) {
         if (ennemy instanceof Bow) {
             return ((Bow) ennemy).getMoveDirection();
@@ -155,6 +190,9 @@ public class GameLogic {
         }
     }
 
+    /**
+     * Gestion du tir du héro
+     */
     public void heroShot() {
         if (model.getHero().getH_bow() != null) {
             if (model.getHero().getH_bow().getNbArrows() > 0) {
@@ -178,25 +216,30 @@ public class GameLogic {
     }
 
 
-
-
-
+    /**
+     * Gestion des intéractions avec avec les objets autour du héro
+     */
     public void interactWithObjects() {
         logger.info("Analyse des objets à proximité");
         Coord heroPos = model.getHero().getCoord();
-        List< CaseMatrix> adjacentCases = model.getNeighbors(heroPos.getRow(), heroPos.getCol());
+        List<CaseMatrix> adjacentCases = model.getNeighbors(heroPos.getRow(), heroPos.getCol());
         for (CaseMatrix caseMatrix : adjacentCases) {
+            Object classItem = caseMatrix.getClassOfItems();
+            if (classItem instanceof EffectOnHero ) {
+                ((EffectOnHero)classItem).use(getGameModel());
 
-            if (caseMatrix.getClassOfItems() != null) {
-                logger.info("Objet trouvé: " + caseMatrix.getClassOfItems());
-                if (caseMatrix.getClassOfItems() instanceof SimpleDoor) {
-                    SimpleDoor simpleDoor = (SimpleDoor) caseMatrix.getClassOfItems();
-                    model.changeLocation(simpleDoor.cross());
-                    logger.info("traversé de la porte vers index "+ simpleDoor.cross().getIndexOnWorldMap());
-                }
             }
         }
 
+    }
+
+
+    public GameModel getGameModel() {
+        return this.gameModel;
+    }
+
+    public void setGameModel(final GameModel gameModel) {
+        this.gameModel = gameModel;
     }
 
     public void setModel(MatrixLvlEditorModel model) {

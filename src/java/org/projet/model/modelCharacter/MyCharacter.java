@@ -10,11 +10,14 @@ import src.java.org.projet.model.modelLevelEditor.base.Coord;
 public abstract class MyCharacter extends Views4OrientationImgCharacter implements Movable {
 
 
-    private final String name;
+    private  String name;
     private int HP;
     Coord coord;
     String defaultImgPath = "src/java/org/projet/assets/character/hero/d.png";
 
+    public MyCharacter(){
+        super();
+    }
 
     public MyCharacter(String name, int hp, MoveRangeOnSprite moveRangeOnSprite, SpriteService spriteService, String defaultImgPath) {
         super(spriteService,moveRangeOnSprite);
