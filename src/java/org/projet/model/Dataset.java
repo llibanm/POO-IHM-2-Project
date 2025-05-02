@@ -27,7 +27,7 @@ public class Dataset {
 
     List<Pair<String, String>> listeMsg = List.of(
             makePair("AUTHOR","Clara Schobert\nMarcel Dzengue Bony\nAbbes Samy\nMohamed Ali Liban" ),
-            makePair("mission_hero", "But:"+"\nArriver au dernier niveau et battre le boss avec le plus de munitions et santé\n"+
+            makePair("mission_hero", "But:"+"\nArriver au dernier niveau et battre le boss avec le plus de munitions et santé, Progrès\n"+
                     "Hints: Déplacements(z,q,s,d)\nInteraction avec les objets(r)\nTir(f)"),
             makePair("JOUERMU", "Joueur"),
             makePair("TESTLVL","Tester/animer niveau actuel" ),
