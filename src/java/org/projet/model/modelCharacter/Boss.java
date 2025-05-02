@@ -21,50 +21,7 @@ public class Boss extends MyCharacter implements Ennemy {
 
     }
 
-    /*@Override
-    public void describe() {
-        System.out.println("He is your enemy, he decreases your health points by attacking you.\nNB HP : " + getHP());
-    }
 
-    public void printCharacter(){
-        System.out.println(getName());
-    }*/
-
-    public void attaqueAgressorWithAr(Hero hero) {
-        if (hero.CanAttaqueWithAr()){
-            decreaseHP(3);
-            hero.loseArrow();
-        }
-        else {//System.out.println("No ARROWS for the bow")
-        ;}
-    }
-    public void attaqueAgressorWithBAr(Hero hero) {
-        if (hero.CanAttaqueWithBAr()){
-            decreaseHP(6);
-            hero.loseBurningArrows();
-        }
-        else{//System.out.println("No BURNING ARROWS for the bow")
-        ;}
-    }
-
-    @Override
-    public void BeAttacked(String weapon, String arg, Hero hero) {
-        if ((this.getHP() > 0) && weapon.equals("BOW")) {
-            if (arg.equals("ARROW")) {
-                attaqueAgressorWithAr(hero);
-            }
-            if (arg.equals("BURNINGARROW")) {
-                attaqueAgressorWithBAr(hero);
-            }
-        }else{
-            if ((weapon.equals("SABRE")) && (this.getHP() > 0)){
-                this.decreaseHP(3);
-            }
-            else {
-                //System.out.println("the agressor has no more health points.");
-            }
-        }
-    }
 
 
     public void display_help(){}
@@ -97,15 +54,8 @@ public class Boss extends MyCharacter implements Ennemy {
 
     }
 
-    @Override
-    public  boolean isNearOfHero(Coord c){
-        int row = c.getRow();
-        int col = c.getCol();
-        boolean isNear = Math.sqrt(Math.pow(this.getCoord().getRow() - row, 2) + Math.pow(this.getCoord().getCol() - col, 2)) <= getPorteeAtk();
-        logger.info("isNearOfHero : " + isNear);
-        if(isNear) return true;
-        return false;
-    }
+
+
     @Override
     public boolean attackHero(Hero hero) {
         boolean sameLine = (getCoord().getRow() == hero.getCoord().getRow()) || (getCoord().getCol() == hero.getCoord().getCol());
@@ -120,19 +70,15 @@ public class Boss extends MyCharacter implements Ennemy {
         return false;
     }
 
-        public boolean isFacingHero(Hero hero) {
-            Coord enemyPos =getCoord();
-            Coord heroPos = hero.getCoord();
-            Coord direction = getMoveDirection();
-
-            // Vérifie si l'ennemi regarde dans la direction du héros
-            if (direction.getRow() > 0 && heroPos.getRow() > enemyPos.getRow()) return true;
-            if (direction.getRow() < 0 && heroPos.getRow() < enemyPos.getRow()) return true;
-            if (direction.getCol() > 0 && heroPos.getCol() > enemyPos.getCol()) return true;
-            if (direction.getCol() < 0 && heroPos.getCol() < enemyPos.getCol()) return true;
-
-            return false;
-        }
+    @Override
+    public  boolean isNearOfHero(Coord c){
+        int row = c.getRow();
+        int col = c.getCol();
+        boolean isNear = Math.sqrt(Math.pow(this.getCoord().getRow() - row, 2) + Math.pow(this.getCoord().getCol() - col, 2)) <= getPorteeAtk();
+        logger.info("isNearOfHero : " + isNear);
+        if(isNear) return true;
+        return false;
+    }
 
     @Override
     public int getPorteeAtk(){

@@ -1,0 +1,626 @@
+[2025-05-02 10:27:04.109] INFO - MatrixLvlEditorModel.addItemMatrice - Ajout item addItemMatrice
+[2025-05-02 10:27:04.126] INFO - MatrixLvlEditorModel.fillHeroAndEnnemyList - Ajout d'un ennemie  fillHeroAndEnnemyList+ [MyCharacter{name='Boss', HP=10, coord=Coord{row=6, col=4}}]
+[2025-05-02 10:27:07.831] INFO - MatrixLvlEditorModel.addItemMatrice - Ajout item addItemMatrice
+[2025-05-02 10:27:07.836] INFO - MatrixLvlEditorModel.fillHeroAndEnnemyList - Ajout du héro  fillHeroAndEnnemyList
+[2025-05-02 10:27:12.152] WARNING - MatrixLvlEditorModel.moveItem - moveItem MyCharacter{name='Boss', HP=10, coord=Coord{row=6, col=4}} rowX=1 colY=0
+[2025-05-02 10:27:12.152] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de l'ancienne case CaseMatrix{urlImgToShow='', classNameITem='null', coordRow=6, coordCol=4, width=1, height=1}
+[2025-05-02 10:27:12.152] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert false) false
+[2025-05-02 10:27:12.153] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de la nouvelle case CaseMatrix{urlImgToShow='', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=7, col=4}}', coordRow=7, coordCol=4, width=1, height=1}
+[2025-05-02 10:27:12.153] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert true) true
+[2025-05-02 10:27:12.157] INFO - MatrixLvlEditorModel.moveMovable - MyCharacter{name='Boss', HP=10, coord=Coord{row=7, col=4}} déplacé vers Coord{row=7, col=4}
+[2025-05-02 10:27:12.352] WARNING - MatrixLvlEditorModel.moveItem - moveItem MyCharacter{name='Boss', HP=10, coord=Coord{row=7, col=4}} rowX=0 colY=1
+[2025-05-02 10:27:12.352] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de l'ancienne case CaseMatrix{urlImgToShow='', classNameITem='null', coordRow=7, coordCol=4, width=1, height=1}
+[2025-05-02 10:27:12.352] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert false) false
+[2025-05-02 10:27:12.352] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de la nouvelle case CaseMatrix{urlImgToShow='', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=7, col=5}}', coordRow=7, coordCol=5, width=1, height=1}
+[2025-05-02 10:27:12.352] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert true) true
+[2025-05-02 10:27:12.358] INFO - MatrixLvlEditorModel.moveMovable - MyCharacter{name='Boss', HP=10, coord=Coord{row=7, col=5}} déplacé vers Coord{row=7, col=5}
+[2025-05-02 10:27:12.543] INFO - MatrixLvlEditorModel.addDynamicBow - Tire de la flèche model
+[2025-05-02 10:27:12.543] INFO - MatrixLvlEditorModel.addItemMatrice - Ajout item addItemMatrice
+[2025-05-02 10:27:12.546] INFO - MatrixLvlEditorModel.addDynamicBow - Ajout d'un arc à la position du héros
+[2025-05-02 10:27:12.591] WARNING - MatrixLvlEditorModel.moveItem - moveItem src.java.org.projet.model.modelItems.Bow@5108c0b5 rowX=0 colY=1
+[2025-05-02 10:27:12.591] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de l'ancienne case CaseMatrix{urlImgToShow='', classNameITem='null', coordRow=7, coordCol=6, width=1, height=1}
+[2025-05-02 10:27:12.591] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert false) false
+[2025-05-02 10:27:12.591] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de la nouvelle case CaseMatrix{urlImgToShow='', classNameITem='src.java.org.projet.model.modelItems.Bow@5108c0b5', coordRow=7, coordCol=7, width=1, height=1}
+[2025-05-02 10:27:12.592] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert true) true
+[2025-05-02 10:27:12.596] INFO - MatrixLvlEditorModel.moveMovable - src.java.org.projet.model.modelItems.Bow@5108c0b5 déplacé vers Coord{row=7, col=7}
+[2025-05-02 10:27:12.749] INFO - MatrixLvlEditorModel.addDynamicBow - Tire de la flèche model
+[2025-05-02 10:27:12.750] INFO - MatrixLvlEditorModel.addItemMatrice - Ajout item addItemMatrice
+[2025-05-02 10:27:12.751] INFO - MatrixLvlEditorModel.addDynamicBow - Ajout d'un arc à la position du héros
+[2025-05-02 10:27:12.797] WARNING - MatrixLvlEditorModel.moveItem - moveItem src.java.org.projet.model.modelItems.Bow@7e443c96 rowX=0 colY=1
+[2025-05-02 10:27:12.928] WARNING - MatrixLvlEditorModel.moveItem - moveItem MyCharacter{name='Marcel', HP=10, coord=Coord{row=7, col=16}} rowX=0 colY=-1
+[2025-05-02 10:27:12.928] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de l'ancienne case CaseMatrix{urlImgToShow='', classNameITem='null', coordRow=7, coordCol=16, width=1, height=1}
+[2025-05-02 10:27:12.928] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert false) false
+[2025-05-02 10:27:12.928] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de la nouvelle case CaseMatrix{urlImgToShow='', classNameITem='MyCharacter{name='Marcel', HP=10, coord=Coord{row=7, col=15}}', coordRow=7, coordCol=15, width=1, height=1}
+[2025-05-02 10:27:12.928] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert true) true
+[2025-05-02 10:27:12.931] INFO - MatrixLvlEditorModel.moveMovable - MyCharacter{name='Marcel', HP=10, coord=Coord{row=7, col=15}} déplacé vers Coord{row=7, col=15}
+[2025-05-02 10:27:12.941] INFO - MatrixLvlEditorModel.addDynamicBow - Tire de la flèche model
+[2025-05-02 10:27:12.941] INFO - MatrixLvlEditorModel.addItemMatrice - Ajout item addItemMatrice
+[2025-05-02 10:27:12.945] INFO - MatrixLvlEditorModel.addDynamicBow - Ajout d'un arc à la position du héros
+[2025-05-02 10:27:12.989] WARNING - MatrixLvlEditorModel.moveItem - moveItem src.java.org.projet.model.modelItems.Bow@233cdf01 rowX=0 colY=1
+[2025-05-02 10:27:12.990] WARNING - MatrixLvlEditorModel.moveItem - moveItem src.java.org.projet.model.modelItems.Bow@5108c0b5 rowX=0 colY=1
+[2025-05-02 10:27:12.990] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de l'ancienne case CaseMatrix{urlImgToShow='', classNameITem='null', coordRow=7, coordCol=7, width=1, height=1}
+[2025-05-02 10:27:12.991] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert false) false
+[2025-05-02 10:27:12.991] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de la nouvelle case CaseMatrix{urlImgToShow='', classNameITem='src.java.org.projet.model.modelItems.Bow@5108c0b5', coordRow=7, coordCol=8, width=1, height=1}
+[2025-05-02 10:27:12.991] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert true) true
+[2025-05-02 10:27:12.994] INFO - MatrixLvlEditorModel.moveMovable - src.java.org.projet.model.modelItems.Bow@5108c0b5 déplacé vers Coord{row=7, col=8}
+[2025-05-02 10:27:13.150] INFO - MatrixLvlEditorModel.addDynamicBow - Tire de la flèche model
+[2025-05-02 10:27:13.150] INFO - MatrixLvlEditorModel.addItemMatrice - Ajout item addItemMatrice
+[2025-05-02 10:27:13.152] INFO - MatrixLvlEditorModel.addDynamicBow - Ajout d'un arc à la position du héros
+[2025-05-02 10:27:13.199] WARNING - MatrixLvlEditorModel.moveItem - moveItem src.java.org.projet.model.modelItems.Bow@4d49fb9c rowX=0 colY=1
+[2025-05-02 10:27:13.199] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de l'ancienne case CaseMatrix{urlImgToShow='', classNameITem='null', coordRow=7, coordCol=6, width=1, height=1}
+[2025-05-02 10:27:13.199] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert false) false
+[2025-05-02 10:27:13.199] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de la nouvelle case CaseMatrix{urlImgToShow='', classNameITem='src.java.org.projet.model.modelItems.Bow@4d49fb9c', coordRow=7, coordCol=7, width=1, height=1}
+[2025-05-02 10:27:13.200] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert true) true
+[2025-05-02 10:27:13.202] INFO - MatrixLvlEditorModel.moveMovable - src.java.org.projet.model.modelItems.Bow@4d49fb9c déplacé vers Coord{row=7, col=7}
+[2025-05-02 10:27:13.211] WARNING - MatrixLvlEditorModel.moveItem - moveItem MyCharacter{name='Marcel', HP=10, coord=Coord{row=7, col=15}} rowX=1 colY=0
+[2025-05-02 10:27:13.211] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de l'ancienne case CaseMatrix{urlImgToShow='', classNameITem='null', coordRow=7, coordCol=15, width=1, height=1}
+[2025-05-02 10:27:13.211] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert false) false
+[2025-05-02 10:27:13.212] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de la nouvelle case CaseMatrix{urlImgToShow='', classNameITem='MyCharacter{name='Marcel', HP=10, coord=Coord{row=8, col=15}}', coordRow=8, coordCol=15, width=1, height=1}
+[2025-05-02 10:27:13.212] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert true) true
+[2025-05-02 10:27:13.224] INFO - MatrixLvlEditorModel.moveMovable - MyCharacter{name='Marcel', HP=10, coord=Coord{row=8, col=15}} déplacé vers Coord{row=8, col=15}
+[2025-05-02 10:27:13.342] WARNING - MatrixLvlEditorModel.moveItem - moveItem MyCharacter{name='Boss', HP=10, coord=Coord{row=7, col=5}} rowX=1 colY=0
+[2025-05-02 10:27:13.342] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de l'ancienne case CaseMatrix{urlImgToShow='', classNameITem='null', coordRow=7, coordCol=5, width=1, height=1}
+[2025-05-02 10:27:13.342] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert false) false
+[2025-05-02 10:27:13.342] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de la nouvelle case CaseMatrix{urlImgToShow='', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=8, col=5}}', coordRow=8, coordCol=5, width=1, height=1}
+[2025-05-02 10:27:13.343] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert true) true
+[2025-05-02 10:27:13.347] INFO - MatrixLvlEditorModel.moveMovable - MyCharacter{name='Boss', HP=10, coord=Coord{row=8, col=5}} déplacé vers Coord{row=8, col=5}
+[2025-05-02 10:27:13.399] WARNING - MatrixLvlEditorModel.moveItem - moveItem src.java.org.projet.model.modelItems.Bow@5108c0b5 rowX=0 colY=1
+[2025-05-02 10:27:13.399] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de l'ancienne case CaseMatrix{urlImgToShow='', classNameITem='null', coordRow=7, coordCol=8, width=1, height=1}
+[2025-05-02 10:27:13.400] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert false) false
+[2025-05-02 10:27:13.400] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de la nouvelle case CaseMatrix{urlImgToShow='', classNameITem='src.java.org.projet.model.modelItems.Bow@5108c0b5', coordRow=7, coordCol=9, width=1, height=1}
+[2025-05-02 10:27:13.400] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert true) true
+[2025-05-02 10:27:13.403] INFO - MatrixLvlEditorModel.moveMovable - src.java.org.projet.model.modelItems.Bow@5108c0b5 déplacé vers Coord{row=7, col=9}
+[2025-05-02 10:27:13.418] WARNING - MatrixLvlEditorModel.moveItem - moveItem MyCharacter{name='Marcel', HP=10, coord=Coord{row=8, col=15}} rowX=1 colY=0
+[2025-05-02 10:27:13.418] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de l'ancienne case CaseMatrix{urlImgToShow='', classNameITem='null', coordRow=8, coordCol=15, width=1, height=1}
+[2025-05-02 10:27:13.418] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert false) false
+[2025-05-02 10:27:13.418] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de la nouvelle case CaseMatrix{urlImgToShow='', classNameITem='MyCharacter{name='Marcel', HP=10, coord=Coord{row=9, col=15}}', coordRow=9, coordCol=15, width=1, height=1}
+[2025-05-02 10:27:13.419] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert true) true
+[2025-05-02 10:27:13.427] INFO - MatrixLvlEditorModel.moveMovable - MyCharacter{name='Marcel', HP=10, coord=Coord{row=9, col=15}} déplacé vers Coord{row=9, col=15}
+[2025-05-02 10:27:13.491] WARNING - MatrixLvlEditorModel.moveItem - moveItem src.java.org.projet.model.modelItems.Bow@4d49fb9c rowX=0 colY=1
+[2025-05-02 10:27:13.491] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de l'ancienne case CaseMatrix{urlImgToShow='', classNameITem='null', coordRow=7, coordCol=7, width=1, height=1}
+[2025-05-02 10:27:13.491] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert false) false
+[2025-05-02 10:27:13.492] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de la nouvelle case CaseMatrix{urlImgToShow='', classNameITem='src.java.org.projet.model.modelItems.Bow@4d49fb9c', coordRow=7, coordCol=8, width=1, height=1}
+[2025-05-02 10:27:13.492] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert true) true
+[2025-05-02 10:27:13.498] INFO - MatrixLvlEditorModel.moveMovable - src.java.org.projet.model.modelItems.Bow@4d49fb9c déplacé vers Coord{row=7, col=8}
+[2025-05-02 10:27:13.550] WARNING - MatrixLvlEditorModel.moveItem - moveItem MyCharacter{name='Boss', HP=10, coord=Coord{row=8, col=5}} rowX=1 colY=0
+[2025-05-02 10:27:13.550] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de l'ancienne case CaseMatrix{urlImgToShow='', classNameITem='null', coordRow=8, coordCol=5, width=1, height=1}
+[2025-05-02 10:27:13.550] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert false) false
+[2025-05-02 10:27:13.550] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de la nouvelle case CaseMatrix{urlImgToShow='', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=9, col=5}}', coordRow=9, coordCol=5, width=1, height=1}
+[2025-05-02 10:27:13.550] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert true) true
+[2025-05-02 10:27:13.552] INFO - MatrixLvlEditorModel.moveMovable - MyCharacter{name='Boss', HP=10, coord=Coord{row=9, col=5}} déplacé vers Coord{row=9, col=5}
+[2025-05-02 10:27:13.632] WARNING - MatrixLvlEditorModel.moveItem - moveItem MyCharacter{name='Marcel', HP=10, coord=Coord{row=9, col=15}} rowX=0 colY=-1
+[2025-05-02 10:27:13.632] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de l'ancienne case CaseMatrix{urlImgToShow='', classNameITem='null', coordRow=9, coordCol=15, width=1, height=1}
+[2025-05-02 10:27:13.632] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert false) false
+[2025-05-02 10:27:13.632] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de la nouvelle case CaseMatrix{urlImgToShow='', classNameITem='MyCharacter{name='Marcel', HP=10, coord=Coord{row=9, col=14}}', coordRow=9, coordCol=14, width=1, height=1}
+[2025-05-02 10:27:13.633] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert true) true
+[2025-05-02 10:27:13.635] INFO - MatrixLvlEditorModel.moveMovable - MyCharacter{name='Marcel', HP=10, coord=Coord{row=9, col=14}} déplacé vers Coord{row=9, col=14}
+[2025-05-02 10:27:13.747] WARNING - MatrixLvlEditorModel.moveItem - moveItem MyCharacter{name='Boss', HP=10, coord=Coord{row=9, col=5}} rowX=0 colY=1
+[2025-05-02 10:27:13.748] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de l'ancienne case CaseMatrix{urlImgToShow='', classNameITem='null', coordRow=9, coordCol=5, width=1, height=1}
+[2025-05-02 10:27:13.748] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert false) false
+[2025-05-02 10:27:13.748] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de la nouvelle case CaseMatrix{urlImgToShow='', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=9, col=6}}', coordRow=9, coordCol=6, width=1, height=1}
+[2025-05-02 10:27:13.748] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert true) true
+[2025-05-02 10:27:13.752] INFO - MatrixLvlEditorModel.moveMovable - MyCharacter{name='Boss', HP=10, coord=Coord{row=9, col=6}} déplacé vers Coord{row=9, col=6}
+[2025-05-02 10:27:13.752] WARNING - MatrixLvlEditorModel.moveItem - moveItem src.java.org.projet.model.modelItems.Bow@5108c0b5 rowX=0 colY=1
+[2025-05-02 10:27:13.752] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de l'ancienne case CaseMatrix{urlImgToShow='', classNameITem='null', coordRow=7, coordCol=9, width=1, height=1}
+[2025-05-02 10:27:13.753] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert false) false
+[2025-05-02 10:27:13.753] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de la nouvelle case CaseMatrix{urlImgToShow='', classNameITem='src.java.org.projet.model.modelItems.Bow@5108c0b5', coordRow=7, coordCol=10, width=1, height=1}
+[2025-05-02 10:27:13.753] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert true) true
+[2025-05-02 10:27:13.757] INFO - MatrixLvlEditorModel.moveMovable - src.java.org.projet.model.modelItems.Bow@5108c0b5 déplacé vers Coord{row=7, col=10}
+[2025-05-02 10:27:13.826] WARNING - MatrixLvlEditorModel.moveItem - moveItem MyCharacter{name='Marcel', HP=10, coord=Coord{row=9, col=14}} rowX=0 colY=-1
+[2025-05-02 10:27:13.826] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de l'ancienne case CaseMatrix{urlImgToShow='', classNameITem='null', coordRow=9, coordCol=14, width=1, height=1}
+[2025-05-02 10:27:13.826] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert false) false
+[2025-05-02 10:27:13.826] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de la nouvelle case CaseMatrix{urlImgToShow='', classNameITem='MyCharacter{name='Marcel', HP=10, coord=Coord{row=9, col=13}}', coordRow=9, coordCol=13, width=1, height=1}
+[2025-05-02 10:27:13.826] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert true) true
+[2025-05-02 10:27:13.829] INFO - MatrixLvlEditorModel.moveMovable - MyCharacter{name='Marcel', HP=10, coord=Coord{row=9, col=13}} déplacé vers Coord{row=9, col=13}
+[2025-05-02 10:27:13.846] WARNING - MatrixLvlEditorModel.moveItem - moveItem src.java.org.projet.model.modelItems.Bow@4d49fb9c rowX=0 colY=1
+[2025-05-02 10:27:13.847] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de l'ancienne case CaseMatrix{urlImgToShow='', classNameITem='null', coordRow=7, coordCol=8, width=1, height=1}
+[2025-05-02 10:27:13.847] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert false) false
+[2025-05-02 10:27:13.847] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de la nouvelle case CaseMatrix{urlImgToShow='', classNameITem='src.java.org.projet.model.modelItems.Bow@4d49fb9c', coordRow=7, coordCol=9, width=1, height=1}
+[2025-05-02 10:27:13.847] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert true) true
+[2025-05-02 10:27:13.852] INFO - MatrixLvlEditorModel.moveMovable - src.java.org.projet.model.modelItems.Bow@4d49fb9c déplacé vers Coord{row=7, col=9}
+[2025-05-02 10:27:13.950] INFO - MatrixLvlEditorModel.addDynamicBow - Tire de la flèche model
+[2025-05-02 10:27:13.950] INFO - MatrixLvlEditorModel.addItemMatrice - Ajout item addItemMatrice
+[2025-05-02 10:27:13.952] INFO - MatrixLvlEditorModel.addDynamicBow - Ajout d'un arc à la position du héros
+[2025-05-02 10:27:13.998] WARNING - MatrixLvlEditorModel.moveItem - moveItem src.java.org.projet.model.modelItems.Bow@774cb75 rowX=0 colY=1
+[2025-05-02 10:27:13.998] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de l'ancienne case CaseMatrix{urlImgToShow='', classNameITem='null', coordRow=9, coordCol=7, width=1, height=1}
+[2025-05-02 10:27:13.999] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert false) false
+[2025-05-02 10:27:13.999] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de la nouvelle case CaseMatrix{urlImgToShow='', classNameITem='src.java.org.projet.model.modelItems.Bow@774cb75', coordRow=9, coordCol=8, width=1, height=1}
+[2025-05-02 10:27:13.999] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert true) true
+[2025-05-02 10:27:14.003] INFO - MatrixLvlEditorModel.moveMovable - src.java.org.projet.model.modelItems.Bow@774cb75 déplacé vers Coord{row=9, col=8}
+[2025-05-02 10:27:14.087] WARNING - MatrixLvlEditorModel.moveItem - moveItem MyCharacter{name='Marcel', HP=10, coord=Coord{row=9, col=13}} rowX=1 colY=0
+[2025-05-02 10:27:14.087] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de l'ancienne case CaseMatrix{urlImgToShow='', classNameITem='null', coordRow=9, coordCol=13, width=1, height=1}
+[2025-05-02 10:27:14.087] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert false) false
+[2025-05-02 10:27:14.087] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de la nouvelle case CaseMatrix{urlImgToShow='', classNameITem='MyCharacter{name='Marcel', HP=10, coord=Coord{row=10, col=13}}', coordRow=10, coordCol=13, width=1, height=1}
+[2025-05-02 10:27:14.087] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert true) true
+[2025-05-02 10:27:14.091] INFO - MatrixLvlEditorModel.moveMovable - MyCharacter{name='Marcel', HP=10, coord=Coord{row=10, col=13}} déplacé vers Coord{row=10, col=13}
+[2025-05-02 10:27:14.147] WARNING - MatrixLvlEditorModel.moveItem - moveItem MyCharacter{name='Boss', HP=10, coord=Coord{row=9, col=6}} rowX=1 colY=0
+[2025-05-02 10:27:14.148] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de l'ancienne case CaseMatrix{urlImgToShow='', classNameITem='null', coordRow=9, coordCol=6, width=1, height=1}
+[2025-05-02 10:27:14.148] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert false) false
+[2025-05-02 10:27:14.148] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de la nouvelle case CaseMatrix{urlImgToShow='', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=10, col=6}}', coordRow=10, coordCol=6, width=1, height=1}
+[2025-05-02 10:27:14.148] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert true) true
+[2025-05-02 10:27:14.150] INFO - MatrixLvlEditorModel.moveMovable - MyCharacter{name='Boss', HP=10, coord=Coord{row=10, col=6}} déplacé vers Coord{row=10, col=6}
+[2025-05-02 10:27:14.150] WARNING - MatrixLvlEditorModel.moveItem - moveItem src.java.org.projet.model.modelItems.Bow@5108c0b5 rowX=0 colY=1
+[2025-05-02 10:27:14.150] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de l'ancienne case CaseMatrix{urlImgToShow='', classNameITem='null', coordRow=7, coordCol=10, width=1, height=1}
+[2025-05-02 10:27:14.152] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert false) false
+[2025-05-02 10:27:14.152] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de la nouvelle case CaseMatrix{urlImgToShow='', classNameITem='src.java.org.projet.model.modelItems.Bow@5108c0b5', coordRow=7, coordCol=11, width=1, height=1}
+[2025-05-02 10:27:14.152] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert true) true
+[2025-05-02 10:27:14.160] INFO - MatrixLvlEditorModel.moveMovable - src.java.org.projet.model.modelItems.Bow@5108c0b5 déplacé vers Coord{row=7, col=11}
+[2025-05-02 10:27:14.261] WARNING - MatrixLvlEditorModel.moveItem - moveItem src.java.org.projet.model.modelItems.Bow@4d49fb9c rowX=0 colY=1
+[2025-05-02 10:27:14.261] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de l'ancienne case CaseMatrix{urlImgToShow='', classNameITem='null', coordRow=7, coordCol=9, width=1, height=1}
+[2025-05-02 10:27:14.261] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert false) false
+[2025-05-02 10:27:14.261] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de la nouvelle case CaseMatrix{urlImgToShow='', classNameITem='src.java.org.projet.model.modelItems.Bow@4d49fb9c', coordRow=7, coordCol=10, width=1, height=1}
+[2025-05-02 10:27:14.261] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert true) true
+[2025-05-02 10:27:14.269] INFO - MatrixLvlEditorModel.moveMovable - src.java.org.projet.model.modelItems.Bow@4d49fb9c déplacé vers Coord{row=7, col=10}
+[2025-05-02 10:27:14.294] WARNING - MatrixLvlEditorModel.moveItem - moveItem MyCharacter{name='Marcel', HP=10, coord=Coord{row=10, col=13}} rowX=1 colY=0
+[2025-05-02 10:27:14.294] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de l'ancienne case CaseMatrix{urlImgToShow='', classNameITem='null', coordRow=10, coordCol=13, width=1, height=1}
+[2025-05-02 10:27:14.300] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert false) false
+[2025-05-02 10:27:14.301] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de la nouvelle case CaseMatrix{urlImgToShow='', classNameITem='MyCharacter{name='Marcel', HP=10, coord=Coord{row=11, col=13}}', coordRow=11, coordCol=13, width=1, height=1}
+[2025-05-02 10:27:14.303] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert true) true
+[2025-05-02 10:27:14.308] INFO - MatrixLvlEditorModel.moveMovable - MyCharacter{name='Marcel', HP=10, coord=Coord{row=11, col=13}} déplacé vers Coord{row=11, col=13}
+[2025-05-02 10:27:14.309] WARNING - MatrixLvlEditorModel.moveItem - moveItem src.java.org.projet.model.modelItems.Bow@774cb75 rowX=0 colY=1
+[2025-05-02 10:27:14.309] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de l'ancienne case CaseMatrix{urlImgToShow='', classNameITem='null', coordRow=9, coordCol=8, width=1, height=1}
+[2025-05-02 10:27:14.309] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert false) false
+[2025-05-02 10:27:14.309] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de la nouvelle case CaseMatrix{urlImgToShow='', classNameITem='src.java.org.projet.model.modelItems.Bow@774cb75', coordRow=9, coordCol=9, width=1, height=1}
+[2025-05-02 10:27:14.310] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert true) true
+[2025-05-02 10:27:14.314] INFO - MatrixLvlEditorModel.moveMovable - src.java.org.projet.model.modelItems.Bow@774cb75 déplacé vers Coord{row=9, col=9}
+[2025-05-02 10:27:14.350] WARNING - MatrixLvlEditorModel.moveItem - moveItem MyCharacter{name='Boss', HP=10, coord=Coord{row=10, col=6}} rowX=1 colY=0
+[2025-05-02 10:27:14.350] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de l'ancienne case CaseMatrix{urlImgToShow='', classNameITem='null', coordRow=10, coordCol=6, width=1, height=1}
+[2025-05-02 10:27:14.350] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert false) false
+[2025-05-02 10:27:14.350] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de la nouvelle case CaseMatrix{urlImgToShow='', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=11, col=6}}', coordRow=11, coordCol=6, width=1, height=1}
+[2025-05-02 10:27:14.350] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert true) true
+[2025-05-02 10:27:14.352] INFO - MatrixLvlEditorModel.moveMovable - MyCharacter{name='Boss', HP=10, coord=Coord{row=11, col=6}} déplacé vers Coord{row=11, col=6}
+[2025-05-02 10:27:14.485] WARNING - MatrixLvlEditorModel.moveItem - moveItem MyCharacter{name='Marcel', HP=10, coord=Coord{row=11, col=13}} rowX=1 colY=0
+[2025-05-02 10:27:14.485] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de l'ancienne case CaseMatrix{urlImgToShow='', classNameITem='null', coordRow=11, coordCol=13, width=1, height=1}
+[2025-05-02 10:27:14.485] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert false) false
+[2025-05-02 10:27:14.485] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de la nouvelle case CaseMatrix{urlImgToShow='', classNameITem='MyCharacter{name='Marcel', HP=10, coord=Coord{row=12, col=13}}', coordRow=12, coordCol=13, width=1, height=1}
+[2025-05-02 10:27:14.485] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert true) true
+[2025-05-02 10:27:14.492] INFO - MatrixLvlEditorModel.moveMovable - MyCharacter{name='Marcel', HP=10, coord=Coord{row=12, col=13}} déplacé vers Coord{row=12, col=13}
+[2025-05-02 10:27:14.493] WARNING - MatrixLvlEditorModel.moveItem - moveItem MyCharacter{name='Marcel', HP=10, coord=Coord{row=12, col=13}} rowX=0 colY=-1
+[2025-05-02 10:27:14.493] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de l'ancienne case CaseMatrix{urlImgToShow='', classNameITem='null', coordRow=12, coordCol=13, width=1, height=1}
+[2025-05-02 10:27:14.494] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert false) false
+[2025-05-02 10:27:14.494] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de la nouvelle case CaseMatrix{urlImgToShow='', classNameITem='MyCharacter{name='Marcel', HP=10, coord=Coord{row=12, col=12}}', coordRow=12, coordCol=12, width=1, height=1}
+[2025-05-02 10:27:14.494] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert true) true
+[2025-05-02 10:27:14.504] INFO - MatrixLvlEditorModel.moveMovable - MyCharacter{name='Marcel', HP=10, coord=Coord{row=12, col=12}} déplacé vers Coord{row=12, col=12}
+[2025-05-02 10:27:14.505] WARNING - MatrixLvlEditorModel.moveItem - moveItem src.java.org.projet.model.modelItems.Bow@5108c0b5 rowX=0 colY=1
+[2025-05-02 10:27:14.505] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de l'ancienne case CaseMatrix{urlImgToShow='', classNameITem='null', coordRow=7, coordCol=11, width=1, height=1}
+[2025-05-02 10:27:14.505] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert false) false
+[2025-05-02 10:27:14.505] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de la nouvelle case CaseMatrix{urlImgToShow='', classNameITem='src.java.org.projet.model.modelItems.Bow@5108c0b5', coordRow=7, coordCol=12, width=1, height=1}
+[2025-05-02 10:27:14.505] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert true) true
+[2025-05-02 10:27:14.508] INFO - MatrixLvlEditorModel.moveMovable - src.java.org.projet.model.modelItems.Bow@5108c0b5 déplacé vers Coord{row=7, col=12}
+[2025-05-02 10:27:14.547] WARNING - MatrixLvlEditorModel.moveItem - moveItem MyCharacter{name='Boss', HP=10, coord=Coord{row=11, col=6}} rowX=1 colY=0
+[2025-05-02 10:27:14.547] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de l'ancienne case CaseMatrix{urlImgToShow='', classNameITem='null', coordRow=11, coordCol=6, width=1, height=1}
+[2025-05-02 10:27:14.547] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert false) false
+[2025-05-02 10:27:14.547] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de la nouvelle case CaseMatrix{urlImgToShow='', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=12, col=6}}', coordRow=12, coordCol=6, width=1, height=1}
+[2025-05-02 10:27:14.547] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert true) true
+[2025-05-02 10:27:14.548] INFO - MatrixLvlEditorModel.moveMovable - MyCharacter{name='Boss', HP=10, coord=Coord{row=12, col=6}} déplacé vers Coord{row=12, col=6}
+[2025-05-02 10:27:14.590] WARNING - MatrixLvlEditorModel.moveItem - moveItem src.java.org.projet.model.modelItems.Bow@4d49fb9c rowX=0 colY=1
+[2025-05-02 10:27:14.591] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de l'ancienne case CaseMatrix{urlImgToShow='', classNameITem='null', coordRow=7, coordCol=10, width=1, height=1}
+[2025-05-02 10:27:14.591] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert false) false
+[2025-05-02 10:27:14.591] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de la nouvelle case CaseMatrix{urlImgToShow='', classNameITem='src.java.org.projet.model.modelItems.Bow@4d49fb9c', coordRow=7, coordCol=11, width=1, height=1}
+[2025-05-02 10:27:14.591] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert true) true
+[2025-05-02 10:27:14.605] INFO - MatrixLvlEditorModel.moveMovable - src.java.org.projet.model.modelItems.Bow@4d49fb9c déplacé vers Coord{row=7, col=11}
+[2025-05-02 10:27:14.641] WARNING - MatrixLvlEditorModel.moveItem - moveItem src.java.org.projet.model.modelItems.Bow@774cb75 rowX=0 colY=1
+[2025-05-02 10:27:14.641] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de l'ancienne case CaseMatrix{urlImgToShow='', classNameITem='null', coordRow=9, coordCol=9, width=1, height=1}
+[2025-05-02 10:27:14.642] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert false) false
+[2025-05-02 10:27:14.642] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de la nouvelle case CaseMatrix{urlImgToShow='', classNameITem='src.java.org.projet.model.modelItems.Bow@774cb75', coordRow=9, coordCol=10, width=1, height=1}
+[2025-05-02 10:27:14.643] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert true) true
+[2025-05-02 10:27:14.725] INFO - MatrixLvlEditorModel.moveMovable - src.java.org.projet.model.modelItems.Bow@774cb75 déplacé vers Coord{row=9, col=10}
+[2025-05-02 10:27:14.730] WARNING - MatrixLvlEditorModel.moveItem - moveItem MyCharacter{name='Marcel', HP=10, coord=Coord{row=12, col=12}} rowX=0 colY=-1
+[2025-05-02 10:27:14.731] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de l'ancienne case CaseMatrix{urlImgToShow='', classNameITem='null', coordRow=12, coordCol=12, width=1, height=1}
+[2025-05-02 10:27:14.731] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert false) false
+[2025-05-02 10:27:14.731] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de la nouvelle case CaseMatrix{urlImgToShow='', classNameITem='MyCharacter{name='Marcel', HP=10, coord=Coord{row=12, col=11}}', coordRow=12, coordCol=11, width=1, height=1}
+[2025-05-02 10:27:14.731] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert true) true
+[2025-05-02 10:27:14.733] INFO - MatrixLvlEditorModel.moveMovable - MyCharacter{name='Marcel', HP=10, coord=Coord{row=12, col=11}} déplacé vers Coord{row=12, col=11}
+[2025-05-02 10:27:14.748] WARNING - MatrixLvlEditorModel.moveItem - moveItem MyCharacter{name='Boss', HP=10, coord=Coord{row=12, col=6}} rowX=0 colY=1
+[2025-05-02 10:27:14.748] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de l'ancienne case CaseMatrix{urlImgToShow='', classNameITem='null', coordRow=12, coordCol=6, width=1, height=1}
+[2025-05-02 10:27:14.748] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert false) false
+[2025-05-02 10:27:14.748] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de la nouvelle case CaseMatrix{urlImgToShow='', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=12, col=7}}', coordRow=12, coordCol=7, width=1, height=1}
+[2025-05-02 10:27:14.748] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert true) true
+[2025-05-02 10:27:14.751] INFO - MatrixLvlEditorModel.moveMovable - MyCharacter{name='Boss', HP=10, coord=Coord{row=12, col=7}} déplacé vers Coord{row=12, col=7}
+[2025-05-02 10:27:14.828] INFO - MatrixLvlEditorModel.addDynamicBow - Tire de la flèche model
+[2025-05-02 10:27:14.828] INFO - MatrixLvlEditorModel.addItemMatrice - Ajout item addItemMatrice
+[2025-05-02 10:27:14.832] INFO - MatrixLvlEditorModel.addDynamicBow - Ajout d'un arc à la position du héros
+[2025-05-02 10:27:14.840] WARNING - MatrixLvlEditorModel.moveItem - moveItem src.java.org.projet.model.modelItems.Bow@3f5d3f7e rowX=0 colY=-1
+[2025-05-02 10:27:14.841] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de l'ancienne case CaseMatrix{urlImgToShow='', classNameITem='null', coordRow=12, coordCol=10, width=1, height=1}
+[2025-05-02 10:27:14.841] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert false) false
+[2025-05-02 10:27:14.841] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de la nouvelle case CaseMatrix{urlImgToShow='', classNameITem='src.java.org.projet.model.modelItems.Bow@3f5d3f7e', coordRow=12, coordCol=9, width=1, height=1}
+[2025-05-02 10:27:14.841] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert true) true
+[2025-05-02 10:27:14.849] INFO - MatrixLvlEditorModel.moveMovable - src.java.org.projet.model.modelItems.Bow@3f5d3f7e déplacé vers Coord{row=12, col=9}
+[2025-05-02 10:27:14.849] WARNING - MatrixLvlEditorModel.moveItem - moveItem src.java.org.projet.model.modelItems.Bow@5108c0b5 rowX=0 colY=1
+[2025-05-02 10:27:14.854] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de l'ancienne case CaseMatrix{urlImgToShow='', classNameITem='null', coordRow=7, coordCol=12, width=1, height=1}
+[2025-05-02 10:27:14.854] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert false) false
+[2025-05-02 10:27:14.854] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de la nouvelle case CaseMatrix{urlImgToShow='', classNameITem='src.java.org.projet.model.modelItems.Bow@5108c0b5', coordRow=7, coordCol=13, width=1, height=1}
+[2025-05-02 10:27:14.854] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert true) true
+[2025-05-02 10:27:14.857] INFO - MatrixLvlEditorModel.moveMovable - src.java.org.projet.model.modelItems.Bow@5108c0b5 déplacé vers Coord{row=7, col=13}
+[2025-05-02 10:27:14.942] INFO - MatrixLvlEditorModel.addDynamicBow - Tire de la flèche model
+[2025-05-02 10:27:14.942] INFO - MatrixLvlEditorModel.addItemMatrice - Ajout item addItemMatrice
+[2025-05-02 10:27:14.944] INFO - MatrixLvlEditorModel.addDynamicBow - Ajout d'un arc à la position du héros
+[2025-05-02 10:27:14.989] WARNING - MatrixLvlEditorModel.moveItem - moveItem src.java.org.projet.model.modelItems.Bow@1aa544d7 rowX=0 colY=1
+[2025-05-02 10:27:14.990] WARNING - MatrixLvlEditorModel.moveItem - moveItem src.java.org.projet.model.modelItems.Bow@4d49fb9c rowX=0 colY=1
+[2025-05-02 10:27:14.991] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de l'ancienne case CaseMatrix{urlImgToShow='', classNameITem='null', coordRow=7, coordCol=11, width=1, height=1}
+[2025-05-02 10:27:14.991] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert false) false
+[2025-05-02 10:27:14.991] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de la nouvelle case CaseMatrix{urlImgToShow='', classNameITem='src.java.org.projet.model.modelItems.Bow@4d49fb9c', coordRow=7, coordCol=12, width=1, height=1}
+[2025-05-02 10:27:14.991] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert true) true
+[2025-05-02 10:27:14.994] INFO - MatrixLvlEditorModel.moveMovable - src.java.org.projet.model.modelItems.Bow@4d49fb9c déplacé vers Coord{row=7, col=12}
+[2025-05-02 10:27:15.019] INFO - MatrixLvlEditorModel.addDynamicBow - Tire de la flèche model
+[2025-05-02 10:27:15.020] INFO - MatrixLvlEditorModel.addItemMatrice - Ajout item addItemMatrice
+[2025-05-02 10:27:15.022] INFO - MatrixLvlEditorModel.addDynamicBow - Ajout d'un arc à la position du héros
+[2025-05-02 10:27:15.054] WARNING - MatrixLvlEditorModel.moveItem - moveItem src.java.org.projet.model.modelItems.Bow@2cdacca0 rowX=0 colY=-1
+[2025-05-02 10:27:15.056] WARNING - MatrixLvlEditorModel.moveItem - moveItem src.java.org.projet.model.modelItems.Bow@774cb75 rowX=0 colY=1
+[2025-05-02 10:27:15.056] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de l'ancienne case CaseMatrix{urlImgToShow='', classNameITem='null', coordRow=9, coordCol=10, width=1, height=1}
+[2025-05-02 10:27:15.056] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert false) false
+[2025-05-02 10:27:15.056] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de la nouvelle case CaseMatrix{urlImgToShow='', classNameITem='src.java.org.projet.model.modelItems.Bow@774cb75', coordRow=9, coordCol=11, width=1, height=1}
+[2025-05-02 10:27:15.056] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert true) true
+[2025-05-02 10:27:15.060] INFO - MatrixLvlEditorModel.moveMovable - src.java.org.projet.model.modelItems.Bow@774cb75 déplacé vers Coord{row=9, col=11}
+[2025-05-02 10:27:15.150] INFO - MatrixLvlEditorModel.addDynamicBow - Tire de la flèche model
+[2025-05-02 10:27:15.151] INFO - MatrixLvlEditorModel.addItemMatrice - Ajout item addItemMatrice
+[2025-05-02 10:27:15.159] INFO - MatrixLvlEditorModel.addDynamicBow - Ajout d'un arc à la position du héros
+[2025-05-02 10:27:15.204] WARNING - MatrixLvlEditorModel.moveItem - moveItem src.java.org.projet.model.modelItems.Bow@7f39fa5d rowX=0 colY=1
+[2025-05-02 10:27:15.209] INFO - MatrixLvlEditorModel.addDynamicBow - Tire de la flèche model
+[2025-05-02 10:27:15.210] INFO - MatrixLvlEditorModel.addItemMatrice - Ajout item addItemMatrice
+[2025-05-02 10:27:15.235] INFO - MatrixLvlEditorModel.addDynamicBow - Ajout d'un arc à la position du héros
+[2025-05-02 10:27:15.241] WARNING - MatrixLvlEditorModel.moveItem - moveItem src.java.org.projet.model.modelItems.Bow@803d55a rowX=0 colY=-1
+[2025-05-02 10:27:15.244] WARNING - MatrixLvlEditorModel.moveItem - moveItem src.java.org.projet.model.modelItems.Bow@3f5d3f7e rowX=0 colY=-1
+[2025-05-02 10:27:15.244] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de l'ancienne case CaseMatrix{urlImgToShow='', classNameITem='null', coordRow=12, coordCol=9, width=1, height=1}
+[2025-05-02 10:27:15.252] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert false) false
+[2025-05-02 10:27:15.252] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de la nouvelle case CaseMatrix{urlImgToShow='', classNameITem='src.java.org.projet.model.modelItems.Bow@3f5d3f7e', coordRow=12, coordCol=8, width=1, height=1}
+[2025-05-02 10:27:15.253] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert true) true
+[2025-05-02 10:27:15.289] INFO - MatrixLvlEditorModel.moveMovable - src.java.org.projet.model.modelItems.Bow@3f5d3f7e déplacé vers Coord{row=12, col=8}
+[2025-05-02 10:27:15.300] WARNING - MatrixLvlEditorModel.moveItem - moveItem src.java.org.projet.model.modelItems.Bow@5108c0b5 rowX=0 colY=1
+[2025-05-02 10:27:15.300] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de l'ancienne case CaseMatrix{urlImgToShow='', classNameITem='null', coordRow=7, coordCol=13, width=1, height=1}
+[2025-05-02 10:27:15.300] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert false) false
+[2025-05-02 10:27:15.300] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de la nouvelle case CaseMatrix{urlImgToShow='', classNameITem='src.java.org.projet.model.modelItems.Bow@5108c0b5', coordRow=7, coordCol=14, width=1, height=1}
+[2025-05-02 10:27:15.301] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert true) true
+[2025-05-02 10:27:15.305] INFO - MatrixLvlEditorModel.moveMovable - src.java.org.projet.model.modelItems.Bow@5108c0b5 déplacé vers Coord{row=7, col=14}
+[2025-05-02 10:27:15.342] INFO - MatrixLvlEditorModel.addDynamicBow - Tire de la flèche model
+[2025-05-02 10:27:15.342] INFO - MatrixLvlEditorModel.addItemMatrice - Ajout item addItemMatrice
+[2025-05-02 10:27:15.345] INFO - MatrixLvlEditorModel.addDynamicBow - Ajout d'un arc à la position du héros
+[2025-05-02 10:27:15.389] WARNING - MatrixLvlEditorModel.moveItem - moveItem src.java.org.projet.model.modelItems.Bow@1b789de4 rowX=0 colY=1
+[2025-05-02 10:27:15.389] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de l'ancienne case CaseMatrix{urlImgToShow='', classNameITem='null', coordRow=12, coordCol=8, width=1, height=1}
+[2025-05-02 10:27:15.389] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert false) false
+[2025-05-02 10:27:15.389] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de la nouvelle case CaseMatrix{urlImgToShow='', classNameITem='src.java.org.projet.model.modelItems.Bow@1b789de4', coordRow=12, coordCol=9, width=1, height=1}
+[2025-05-02 10:27:15.389] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert true) true
+[2025-05-02 10:27:15.392] INFO - MatrixLvlEditorModel.moveMovable - src.java.org.projet.model.modelItems.Bow@1b789de4 déplacé vers Coord{row=12, col=9}
+[2025-05-02 10:27:15.405] WARNING - MatrixLvlEditorModel.moveItem - moveItem MyCharacter{name='Marcel', HP=10, coord=Coord{row=12, col=11}} rowX=-1 colY=0
+[2025-05-02 10:27:15.405] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de l'ancienne case CaseMatrix{urlImgToShow='', classNameITem='null', coordRow=12, coordCol=11, width=1, height=1}
+[2025-05-02 10:27:15.405] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert false) false
+[2025-05-02 10:27:15.405] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de la nouvelle case CaseMatrix{urlImgToShow='', classNameITem='MyCharacter{name='Marcel', HP=10, coord=Coord{row=11, col=11}}', coordRow=11, coordCol=11, width=1, height=1}
+[2025-05-02 10:27:15.405] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert true) true
+[2025-05-02 10:27:15.409] INFO - MatrixLvlEditorModel.moveMovable - MyCharacter{name='Marcel', HP=10, coord=Coord{row=11, col=11}} déplacé vers Coord{row=11, col=11}
+[2025-05-02 10:27:15.425] INFO - MatrixLvlEditorModel.addDynamicBow - Tire de la flèche model
+[2025-05-02 10:27:15.425] INFO - MatrixLvlEditorModel.addItemMatrice - Ajout item addItemMatrice
+[2025-05-02 10:27:15.428] INFO - MatrixLvlEditorModel.addDynamicBow - Ajout d'un arc à la position du héros
+[2025-05-02 10:27:15.453] WARNING - MatrixLvlEditorModel.moveItem - moveItem src.java.org.projet.model.modelItems.Bow@7422c53a rowX=-1 colY=0
+[2025-05-02 10:27:15.456] WARNING - MatrixLvlEditorModel.moveItem - moveItem src.java.org.projet.model.modelItems.Bow@4d49fb9c rowX=0 colY=1
+[2025-05-02 10:27:15.456] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de l'ancienne case CaseMatrix{urlImgToShow='', classNameITem='null', coordRow=7, coordCol=12, width=1, height=1}
+[2025-05-02 10:27:15.456] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert false) false
+[2025-05-02 10:27:15.457] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de la nouvelle case CaseMatrix{urlImgToShow='', classNameITem='src.java.org.projet.model.modelItems.Bow@4d49fb9c', coordRow=7, coordCol=13, width=1, height=1}
+[2025-05-02 10:27:15.457] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert true) true
+[2025-05-02 10:27:15.462] INFO - MatrixLvlEditorModel.moveMovable - src.java.org.projet.model.modelItems.Bow@4d49fb9c déplacé vers Coord{row=7, col=13}
+[2025-05-02 10:27:15.508] WARNING - MatrixLvlEditorModel.moveItem - moveItem src.java.org.projet.model.modelItems.Bow@774cb75 rowX=0 colY=1
+[2025-05-02 10:27:15.508] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de l'ancienne case CaseMatrix{urlImgToShow='', classNameITem='null', coordRow=9, coordCol=11, width=1, height=1}
+[2025-05-02 10:27:15.508] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert false) false
+[2025-05-02 10:27:15.508] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de la nouvelle case CaseMatrix{urlImgToShow='', classNameITem='src.java.org.projet.model.modelItems.Bow@774cb75', coordRow=9, coordCol=12, width=1, height=1}
+[2025-05-02 10:27:15.656] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert true) true
+[2025-05-02 10:27:15.659] INFO - MatrixLvlEditorModel.moveMovable - src.java.org.projet.model.modelItems.Bow@774cb75 déplacé vers Coord{row=9, col=12}
+[2025-05-02 10:27:15.675] WARNING - MatrixLvlEditorModel.moveItem - moveItem MyCharacter{name='Marcel', HP=10, coord=Coord{row=11, col=11}} rowX=-1 colY=0
+[2025-05-02 10:27:15.676] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de l'ancienne case CaseMatrix{urlImgToShow='', classNameITem='null', coordRow=11, coordCol=11, width=1, height=1}
+[2025-05-02 10:27:15.676] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert false) false
+[2025-05-02 10:27:15.687] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de la nouvelle case CaseMatrix{urlImgToShow='', classNameITem='MyCharacter{name='Marcel', HP=10, coord=Coord{row=10, col=11}}', coordRow=10, coordCol=11, width=1, height=1}
+[2025-05-02 10:27:15.688] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert true) true
+[2025-05-02 10:27:15.732] INFO - MatrixLvlEditorModel.moveMovable - MyCharacter{name='Marcel', HP=10, coord=Coord{row=10, col=11}} déplacé vers Coord{row=10, col=11}
+[2025-05-02 10:27:15.734] WARNING - MatrixLvlEditorModel.moveItem - moveItem MyCharacter{name='Boss', HP=10, coord=Coord{row=12, col=7}} rowX=-1 colY=0
+[2025-05-02 10:27:15.734] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de l'ancienne case CaseMatrix{urlImgToShow='', classNameITem='null', coordRow=12, coordCol=7, width=1, height=1}
+[2025-05-02 10:27:15.734] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert false) false
+[2025-05-02 10:27:15.734] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de la nouvelle case CaseMatrix{urlImgToShow='', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=11, col=7}}', coordRow=11, coordCol=7, width=1, height=1}
+[2025-05-02 10:27:15.734] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert true) true
+[2025-05-02 10:27:15.737] INFO - MatrixLvlEditorModel.moveMovable - MyCharacter{name='Boss', HP=10, coord=Coord{row=11, col=7}} déplacé vers Coord{row=11, col=7}
+[2025-05-02 10:27:15.783] WARNING - MatrixLvlEditorModel.moveItem - moveItem src.java.org.projet.model.modelItems.Bow@3f5d3f7e rowX=0 colY=-1
+[2025-05-02 10:27:15.783] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de l'ancienne case CaseMatrix{urlImgToShow='', classNameITem='null', coordRow=12, coordCol=8, width=1, height=1}
+[2025-05-02 10:27:15.783] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert false) false
+[2025-05-02 10:27:15.783] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de la nouvelle case CaseMatrix{urlImgToShow='', classNameITem='src.java.org.projet.model.modelItems.Bow@3f5d3f7e', coordRow=12, coordCol=7, width=1, height=1}
+[2025-05-02 10:27:15.783] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert true) true
+[2025-05-02 10:27:15.786] INFO - MatrixLvlEditorModel.moveMovable - src.java.org.projet.model.modelItems.Bow@3f5d3f7e déplacé vers Coord{row=12, col=7}
+[2025-05-02 10:27:15.786] WARNING - MatrixLvlEditorModel.moveItem - moveItem src.java.org.projet.model.modelItems.Bow@5108c0b5 rowX=0 colY=1
+[2025-05-02 10:27:15.786] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de l'ancienne case CaseMatrix{urlImgToShow='', classNameITem='null', coordRow=7, coordCol=14, width=1, height=1}
+[2025-05-02 10:27:15.786] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert false) false
+[2025-05-02 10:27:15.786] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de la nouvelle case CaseMatrix{urlImgToShow='', classNameITem='src.java.org.projet.model.modelItems.Bow@5108c0b5', coordRow=7, coordCol=15, width=1, height=1}
+[2025-05-02 10:27:15.786] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert true) true
+[2025-05-02 10:27:15.789] INFO - MatrixLvlEditorModel.moveMovable - src.java.org.projet.model.modelItems.Bow@5108c0b5 déplacé vers Coord{row=7, col=15}
+[2025-05-02 10:27:15.789] WARNING - MatrixLvlEditorModel.moveItem - moveItem src.java.org.projet.model.modelItems.Bow@1b789de4 rowX=0 colY=1
+[2025-05-02 10:27:15.789] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de l'ancienne case CaseMatrix{urlImgToShow='', classNameITem='null', coordRow=12, coordCol=9, width=1, height=1}
+[2025-05-02 10:27:15.789] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert false) false
+[2025-05-02 10:27:15.789] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de la nouvelle case CaseMatrix{urlImgToShow='', classNameITem='src.java.org.projet.model.modelItems.Bow@1b789de4', coordRow=12, coordCol=10, width=1, height=1}
+[2025-05-02 10:27:15.790] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert true) true
+[2025-05-02 10:27:15.796] INFO - MatrixLvlEditorModel.moveMovable - src.java.org.projet.model.modelItems.Bow@1b789de4 déplacé vers Coord{row=12, col=10}
+[2025-05-02 10:27:15.830] WARNING - MatrixLvlEditorModel.moveItem - moveItem MyCharacter{name='Boss', HP=10, coord=Coord{row=11, col=7}} rowX=-1 colY=0
+[2025-05-02 10:27:15.830] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de l'ancienne case CaseMatrix{urlImgToShow='', classNameITem='null', coordRow=11, coordCol=7, width=1, height=1}
+[2025-05-02 10:27:15.830] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert false) false
+[2025-05-02 10:27:15.831] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de la nouvelle case CaseMatrix{urlImgToShow='', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=10, col=7}}', coordRow=10, coordCol=7, width=1, height=1}
+[2025-05-02 10:27:15.831] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert true) true
+[2025-05-02 10:27:15.834] INFO - MatrixLvlEditorModel.moveMovable - MyCharacter{name='Boss', HP=10, coord=Coord{row=10, col=7}} déplacé vers Coord{row=10, col=7}
+[2025-05-02 10:27:15.834] WARNING - MatrixLvlEditorModel.moveItem - moveItem src.java.org.projet.model.modelItems.Bow@4d49fb9c rowX=0 colY=1
+[2025-05-02 10:27:15.834] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de l'ancienne case CaseMatrix{urlImgToShow='', classNameITem='null', coordRow=7, coordCol=13, width=1, height=1}
+[2025-05-02 10:27:15.835] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert false) false
+[2025-05-02 10:27:15.835] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de la nouvelle case CaseMatrix{urlImgToShow='', classNameITem='src.java.org.projet.model.modelItems.Bow@4d49fb9c', coordRow=7, coordCol=14, width=1, height=1}
+[2025-05-02 10:27:15.835] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert true) true
+[2025-05-02 10:27:15.839] INFO - MatrixLvlEditorModel.moveMovable - src.java.org.projet.model.modelItems.Bow@4d49fb9c déplacé vers Coord{row=7, col=14}
+[2025-05-02 10:27:15.844] WARNING - MatrixLvlEditorModel.moveItem - moveItem MyCharacter{name='Marcel', HP=10, coord=Coord{row=10, col=11}} rowX=-1 colY=0
+[2025-05-02 10:27:15.844] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de l'ancienne case CaseMatrix{urlImgToShow='', classNameITem='null', coordRow=10, coordCol=11, width=1, height=1}
+[2025-05-02 10:27:15.844] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert false) false
+[2025-05-02 10:27:15.845] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de la nouvelle case CaseMatrix{urlImgToShow='', classNameITem='MyCharacter{name='Marcel', HP=10, coord=Coord{row=9, col=11}}', coordRow=9, coordCol=11, width=1, height=1}
+[2025-05-02 10:27:15.845] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert true) true
+[2025-05-02 10:27:15.848] INFO - MatrixLvlEditorModel.moveMovable - MyCharacter{name='Marcel', HP=10, coord=Coord{row=9, col=11}} déplacé vers Coord{row=9, col=11}
+[2025-05-02 10:27:15.850] WARNING - MatrixLvlEditorModel.moveItem - moveItem src.java.org.projet.model.modelItems.Bow@774cb75 rowX=0 colY=1
+[2025-05-02 10:27:15.850] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de l'ancienne case CaseMatrix{urlImgToShow='', classNameITem='null', coordRow=9, coordCol=12, width=1, height=1}
+[2025-05-02 10:27:15.850] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert false) false
+[2025-05-02 10:27:15.850] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de la nouvelle case CaseMatrix{urlImgToShow='', classNameITem='src.java.org.projet.model.modelItems.Bow@774cb75', coordRow=9, coordCol=13, width=1, height=1}
+[2025-05-02 10:27:15.850] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert true) true
+[2025-05-02 10:27:15.855] INFO - MatrixLvlEditorModel.moveMovable - src.java.org.projet.model.modelItems.Bow@774cb75 déplacé vers Coord{row=9, col=13}
+[2025-05-02 10:27:15.949] WARNING - MatrixLvlEditorModel.moveItem - moveItem MyCharacter{name='Boss', HP=10, coord=Coord{row=10, col=7}} rowX=-1 colY=0
+[2025-05-02 10:27:15.950] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de l'ancienne case CaseMatrix{urlImgToShow='', classNameITem='null', coordRow=10, coordCol=7, width=1, height=1}
+[2025-05-02 10:27:15.950] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert false) false
+[2025-05-02 10:27:15.950] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de la nouvelle case CaseMatrix{urlImgToShow='', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=9, col=7}}', coordRow=9, coordCol=7, width=1, height=1}
+[2025-05-02 10:27:15.950] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert true) true
+[2025-05-02 10:27:15.952] INFO - MatrixLvlEditorModel.moveMovable - MyCharacter{name='Boss', HP=10, coord=Coord{row=9, col=7}} déplacé vers Coord{row=9, col=7}
+[2025-05-02 10:27:15.999] WARNING - MatrixLvlEditorModel.moveItem - moveItem src.java.org.projet.model.modelItems.Bow@3f5d3f7e rowX=0 colY=-1
+[2025-05-02 10:27:15.999] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de l'ancienne case CaseMatrix{urlImgToShow='', classNameITem='null', coordRow=12, coordCol=7, width=1, height=1}
+[2025-05-02 10:27:15.999] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert false) false
+[2025-05-02 10:27:15.999] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de la nouvelle case CaseMatrix{urlImgToShow='', classNameITem='src.java.org.projet.model.modelItems.Bow@3f5d3f7e', coordRow=12, coordCol=6, width=1, height=1}
+[2025-05-02 10:27:15.999] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert true) true
+[2025-05-02 10:27:16.001] INFO - MatrixLvlEditorModel.moveMovable - src.java.org.projet.model.modelItems.Bow@3f5d3f7e déplacé vers Coord{row=12, col=6}
+[2025-05-02 10:27:16.046] WARNING - MatrixLvlEditorModel.moveItem - moveItem src.java.org.projet.model.modelItems.Bow@5108c0b5 rowX=0 colY=1
+[2025-05-02 10:27:16.047] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de l'ancienne case CaseMatrix{urlImgToShow='', classNameITem='null', coordRow=7, coordCol=15, width=1, height=1}
+[2025-05-02 10:27:16.047] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert false) false
+[2025-05-02 10:27:16.047] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de la nouvelle case CaseMatrix{urlImgToShow='', classNameITem='src.java.org.projet.model.modelItems.Bow@5108c0b5', coordRow=7, coordCol=16, width=1, height=1}
+[2025-05-02 10:27:16.047] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert true) true
+[2025-05-02 10:27:16.050] INFO - MatrixLvlEditorModel.moveMovable - src.java.org.projet.model.modelItems.Bow@5108c0b5 déplacé vers Coord{row=7, col=16}
+[2025-05-02 10:27:16.050] WARNING - MatrixLvlEditorModel.moveItem - moveItem src.java.org.projet.model.modelItems.Bow@1b789de4 rowX=0 colY=1
+[2025-05-02 10:27:16.050] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de l'ancienne case CaseMatrix{urlImgToShow='', classNameITem='null', coordRow=12, coordCol=10, width=1, height=1}
+[2025-05-02 10:27:16.050] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert false) false
+[2025-05-02 10:27:16.050] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de la nouvelle case CaseMatrix{urlImgToShow='', classNameITem='src.java.org.projet.model.modelItems.Bow@1b789de4', coordRow=12, coordCol=11, width=1, height=1}
+[2025-05-02 10:27:16.050] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert true) true
+[2025-05-02 10:27:16.053] INFO - MatrixLvlEditorModel.moveMovable - src.java.org.projet.model.modelItems.Bow@1b789de4 déplacé vers Coord{row=12, col=11}
+[2025-05-02 10:27:16.134] WARNING - MatrixLvlEditorModel.moveItem - moveItem MyCharacter{name='Marcel', HP=10, coord=Coord{row=9, col=11}} rowX=0 colY=-1
+[2025-05-02 10:27:16.134] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de l'ancienne case CaseMatrix{urlImgToShow='', classNameITem='null', coordRow=9, coordCol=11, width=1, height=1}
+[2025-05-02 10:27:16.135] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert false) false
+[2025-05-02 10:27:16.135] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de la nouvelle case CaseMatrix{urlImgToShow='', classNameITem='MyCharacter{name='Marcel', HP=10, coord=Coord{row=9, col=10}}', coordRow=9, coordCol=10, width=1, height=1}
+[2025-05-02 10:27:16.135] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert true) true
+[2025-05-02 10:27:16.153] INFO - MatrixLvlEditorModel.moveMovable - MyCharacter{name='Marcel', HP=10, coord=Coord{row=9, col=10}} déplacé vers Coord{row=9, col=10}
+[2025-05-02 10:27:16.154] WARNING - MatrixLvlEditorModel.moveItem - moveItem MyCharacter{name='Boss', HP=10, coord=Coord{row=9, col=7}} rowX=0 colY=1
+[2025-05-02 10:27:16.434] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de l'ancienne case CaseMatrix{urlImgToShow='', classNameITem='null', coordRow=9, coordCol=7, width=1, height=1}
+[2025-05-02 10:27:16.435] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert false) false
+[2025-05-02 10:27:16.435] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de la nouvelle case CaseMatrix{urlImgToShow='', classNameITem='MyCharacter{name='Boss', HP=10, coord=Coord{row=9, col=8}}', coordRow=9, coordCol=8, width=1, height=1}
+[2025-05-02 10:27:16.435] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert true) true
+[2025-05-02 10:27:16.438] INFO - MatrixLvlEditorModel.moveMovable - MyCharacter{name='Boss', HP=10, coord=Coord{row=9, col=8}} déplacé vers Coord{row=9, col=8}
+[2025-05-02 10:27:16.438] WARNING - MatrixLvlEditorModel.moveItem - moveItem src.java.org.projet.model.modelItems.Bow@4d49fb9c rowX=0 colY=1
+[2025-05-02 10:27:16.438] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de l'ancienne case CaseMatrix{urlImgToShow='', classNameITem='null', coordRow=7, coordCol=14, width=1, height=1}
+[2025-05-02 10:27:16.448] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert false) false
+[2025-05-02 10:27:16.448] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de la nouvelle case CaseMatrix{urlImgToShow='', classNameITem='src.java.org.projet.model.modelItems.Bow@4d49fb9c', coordRow=7, coordCol=15, width=1, height=1}
+[2025-05-02 10:27:16.448] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert true) true
+[2025-05-02 10:27:16.451] INFO - MatrixLvlEditorModel.moveMovable - src.java.org.projet.model.modelItems.Bow@4d49fb9c déplacé vers Coord{row=7, col=15}
+[2025-05-02 10:27:16.488] INFO - MatrixLvlEditorModel.addDynamicBow - Tire de la flèche model
+[2025-05-02 10:27:16.488] INFO - MatrixLvlEditorModel.addItemMatrice - Ajout item addItemMatrice
+[2025-05-02 10:27:16.491] INFO - MatrixLvlEditorModel.addDynamicBow - Ajout d'un arc à la position du héros
+[2025-05-02 10:27:16.506] WARNING - MatrixLvlEditorModel.moveItem - moveItem src.java.org.projet.model.modelItems.Bow@49d06feb rowX=0 colY=-1
+[2025-05-02 10:27:16.506] SEVERE - MatrixLvlEditorModel.handleEnnemyAttacked - Ennemi touché et supprimé !
+[2025-05-02 10:27:16.507] WARNING - MatrixLvlEditorModel.moveItem - moveItem src.java.org.projet.model.modelItems.Bow@774cb75 rowX=0 colY=1
+[2025-05-02 10:27:16.507] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de l'ancienne case CaseMatrix{urlImgToShow='', classNameITem='null', coordRow=9, coordCol=13, width=1, height=1}
+[2025-05-02 10:27:16.507] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert false) false
+[2025-05-02 10:27:16.507] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de la nouvelle case CaseMatrix{urlImgToShow='', classNameITem='src.java.org.projet.model.modelItems.Bow@774cb75', coordRow=9, coordCol=14, width=1, height=1}
+[2025-05-02 10:27:16.507] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert true) true
+[2025-05-02 10:27:16.510] INFO - MatrixLvlEditorModel.moveMovable - src.java.org.projet.model.modelItems.Bow@774cb75 déplacé vers Coord{row=9, col=14}
+[2025-05-02 10:27:16.510] WARNING - MatrixLvlEditorModel.moveItem - moveItem src.java.org.projet.model.modelItems.Bow@3f5d3f7e rowX=0 colY=-1
+[2025-05-02 10:27:16.510] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de l'ancienne case CaseMatrix{urlImgToShow='', classNameITem='null', coordRow=12, coordCol=6, width=1, height=1}
+[2025-05-02 10:27:16.511] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert false) false
+[2025-05-02 10:27:16.511] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de la nouvelle case CaseMatrix{urlImgToShow='', classNameITem='src.java.org.projet.model.modelItems.Bow@3f5d3f7e', coordRow=12, coordCol=5, width=1, height=1}
+[2025-05-02 10:27:16.511] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert true) true
+[2025-05-02 10:27:16.526] INFO - MatrixLvlEditorModel.moveMovable - src.java.org.projet.model.modelItems.Bow@3f5d3f7e déplacé vers Coord{row=12, col=5}
+[2025-05-02 10:27:16.550] WARNING - MatrixLvlEditorModel.moveItem - moveItem src.java.org.projet.model.modelItems.Bow@5108c0b5 rowX=0 colY=1
+[2025-05-02 10:27:16.550] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de l'ancienne case CaseMatrix{urlImgToShow='', classNameITem='null', coordRow=7, coordCol=16, width=1, height=1}
+[2025-05-02 10:27:16.550] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert false) false
+[2025-05-02 10:27:16.550] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de la nouvelle case CaseMatrix{urlImgToShow='', classNameITem='src.java.org.projet.model.modelItems.Bow@5108c0b5', coordRow=7, coordCol=17, width=1, height=1}
+[2025-05-02 10:27:16.550] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert true) true
+[2025-05-02 10:27:16.575] INFO - MatrixLvlEditorModel.moveMovable - src.java.org.projet.model.modelItems.Bow@5108c0b5 déplacé vers Coord{row=7, col=17}
+[2025-05-02 10:27:16.576] WARNING - MatrixLvlEditorModel.moveItem - moveItem src.java.org.projet.model.modelItems.Bow@1b789de4 rowX=0 colY=1
+[2025-05-02 10:27:16.576] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de l'ancienne case CaseMatrix{urlImgToShow='', classNameITem='null', coordRow=12, coordCol=11, width=1, height=1}
+[2025-05-02 10:27:16.576] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert false) false
+[2025-05-02 10:27:16.576] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de la nouvelle case CaseMatrix{urlImgToShow='', classNameITem='src.java.org.projet.model.modelItems.Bow@1b789de4', coordRow=12, coordCol=12, width=1, height=1}
+[2025-05-02 10:27:16.576] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert true) true
+[2025-05-02 10:27:16.578] INFO - MatrixLvlEditorModel.moveMovable - src.java.org.projet.model.modelItems.Bow@1b789de4 déplacé vers Coord{row=12, col=12}
+[2025-05-02 10:27:16.579] WARNING - MatrixLvlEditorModel.moveItem - moveItem src.java.org.projet.model.modelItems.Bow@4d49fb9c rowX=0 colY=1
+[2025-05-02 10:27:16.579] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de l'ancienne case CaseMatrix{urlImgToShow='', classNameITem='null', coordRow=7, coordCol=15, width=1, height=1}
+[2025-05-02 10:27:16.579] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert false) false
+[2025-05-02 10:27:16.579] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de la nouvelle case CaseMatrix{urlImgToShow='', classNameITem='src.java.org.projet.model.modelItems.Bow@4d49fb9c', coordRow=7, coordCol=16, width=1, height=1}
+[2025-05-02 10:27:16.579] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert true) true
+[2025-05-02 10:27:16.592] INFO - MatrixLvlEditorModel.moveMovable - src.java.org.projet.model.modelItems.Bow@4d49fb9c déplacé vers Coord{row=7, col=16}
+[2025-05-02 10:27:16.611] WARNING - MatrixLvlEditorModel.moveItem - moveItem src.java.org.projet.model.modelItems.Bow@49d06feb rowX=0 colY=-1
+[2025-05-02 10:27:16.611] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de l'ancienne case CaseMatrix{urlImgToShow='', classNameITem='null', coordRow=9, coordCol=9, width=1, height=1}
+[2025-05-02 10:27:16.612] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert false) false
+[2025-05-02 10:27:16.612] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de la nouvelle case CaseMatrix{urlImgToShow='', classNameITem='src.java.org.projet.model.modelItems.Bow@49d06feb', coordRow=9, coordCol=8, width=1, height=1}
+[2025-05-02 10:27:16.612] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert true) true
+[2025-05-02 10:27:16.615] INFO - MatrixLvlEditorModel.moveMovable - src.java.org.projet.model.modelItems.Bow@49d06feb déplacé vers Coord{row=9, col=8}
+[2025-05-02 10:27:16.620] WARNING - MatrixLvlEditorModel.moveItem - moveItem MyCharacter{name='Marcel', HP=10, coord=Coord{row=9, col=10}} rowX=0 colY=-1
+[2025-05-02 10:27:16.620] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de l'ancienne case CaseMatrix{urlImgToShow='', classNameITem='null', coordRow=9, coordCol=10, width=1, height=1}
+[2025-05-02 10:27:16.620] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert false) false
+[2025-05-02 10:27:16.620] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de la nouvelle case CaseMatrix{urlImgToShow='', classNameITem='MyCharacter{name='Marcel', HP=10, coord=Coord{row=9, col=9}}', coordRow=9, coordCol=9, width=1, height=1}
+[2025-05-02 10:27:16.620] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert true) true
+[2025-05-02 10:27:16.680] INFO - MatrixLvlEditorModel.moveMovable - MyCharacter{name='Marcel', HP=10, coord=Coord{row=9, col=9}} déplacé vers Coord{row=9, col=9}
+[2025-05-02 10:27:16.734] WARNING - MatrixLvlEditorModel.moveItem - moveItem src.java.org.projet.model.modelItems.Bow@774cb75 rowX=0 colY=1
+[2025-05-02 10:27:16.734] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de l'ancienne case CaseMatrix{urlImgToShow='', classNameITem='null', coordRow=9, coordCol=14, width=1, height=1}
+[2025-05-02 10:27:16.734] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert false) false
+[2025-05-02 10:27:16.734] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de la nouvelle case CaseMatrix{urlImgToShow='', classNameITem='src.java.org.projet.model.modelItems.Bow@774cb75', coordRow=9, coordCol=15, width=1, height=1}
+[2025-05-02 10:27:16.735] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert true) true
+[2025-05-02 10:27:16.739] INFO - MatrixLvlEditorModel.moveMovable - src.java.org.projet.model.modelItems.Bow@774cb75 déplacé vers Coord{row=9, col=15}
+[2025-05-02 10:27:16.740] WARNING - MatrixLvlEditorModel.moveItem - moveItem src.java.org.projet.model.modelItems.Bow@3f5d3f7e rowX=0 colY=-1
+[2025-05-02 10:27:16.744] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de l'ancienne case CaseMatrix{urlImgToShow='', classNameITem='null', coordRow=12, coordCol=5, width=1, height=1}
+[2025-05-02 10:27:16.744] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert false) false
+[2025-05-02 10:27:16.745] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de la nouvelle case CaseMatrix{urlImgToShow='', classNameITem='src.java.org.projet.model.modelItems.Bow@3f5d3f7e', coordRow=12, coordCol=4, width=1, height=1}
+[2025-05-02 10:27:16.745] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert true) true
+[2025-05-02 10:27:16.750] INFO - MatrixLvlEditorModel.moveMovable - src.java.org.projet.model.modelItems.Bow@3f5d3f7e déplacé vers Coord{row=12, col=4}
+[2025-05-02 10:27:16.791] WARNING - MatrixLvlEditorModel.moveItem - moveItem src.java.org.projet.model.modelItems.Bow@5108c0b5 rowX=0 colY=1
+[2025-05-02 10:27:16.791] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de l'ancienne case CaseMatrix{urlImgToShow='', classNameITem='null', coordRow=7, coordCol=17, width=1, height=1}
+[2025-05-02 10:27:16.791] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert false) false
+[2025-05-02 10:27:16.792] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de la nouvelle case CaseMatrix{urlImgToShow='', classNameITem='src.java.org.projet.model.modelItems.Bow@5108c0b5', coordRow=7, coordCol=18, width=1, height=1}
+[2025-05-02 10:27:16.792] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert true) true
+[2025-05-02 10:27:16.839] INFO - MatrixLvlEditorModel.moveMovable - src.java.org.projet.model.modelItems.Bow@5108c0b5 déplacé vers Coord{row=7, col=18}
+[2025-05-02 10:27:16.840] WARNING - MatrixLvlEditorModel.moveItem - moveItem src.java.org.projet.model.modelItems.Bow@1b789de4 rowX=0 colY=1
+[2025-05-02 10:27:16.840] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de l'ancienne case CaseMatrix{urlImgToShow='', classNameITem='null', coordRow=12, coordCol=12, width=1, height=1}
+[2025-05-02 10:27:16.840] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert false) false
+[2025-05-02 10:27:16.840] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de la nouvelle case CaseMatrix{urlImgToShow='', classNameITem='src.java.org.projet.model.modelItems.Bow@1b789de4', coordRow=12, coordCol=13, width=1, height=1}
+[2025-05-02 10:27:16.840] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert true) true
+[2025-05-02 10:27:16.843] INFO - MatrixLvlEditorModel.moveMovable - src.java.org.projet.model.modelItems.Bow@1b789de4 déplacé vers Coord{row=12, col=13}
+[2025-05-02 10:27:16.847] INFO - MatrixLvlEditorModel.addDynamicBow - Tire de la flèche model
+[2025-05-02 10:27:16.847] INFO - MatrixLvlEditorModel.addItemMatrice - Ajout item addItemMatrice
+[2025-05-02 10:27:16.849] INFO - MatrixLvlEditorModel.addDynamicBow - Ajout d'un arc à la position du héros
+[2025-05-02 10:27:16.873] WARNING - MatrixLvlEditorModel.moveItem - moveItem src.java.org.projet.model.modelItems.Bow@70e06e80 rowX=0 colY=-1
+[2025-05-02 10:27:16.874] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de l'ancienne case CaseMatrix{urlImgToShow='', classNameITem='null', coordRow=9, coordCol=8, width=1, height=1}
+[2025-05-02 10:27:16.874] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert false) false
+[2025-05-02 10:27:16.874] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de la nouvelle case CaseMatrix{urlImgToShow='', classNameITem='src.java.org.projet.model.modelItems.Bow@70e06e80', coordRow=9, coordCol=7, width=1, height=1}
+[2025-05-02 10:27:16.874] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert true) true
+[2025-05-02 10:27:16.877] INFO - MatrixLvlEditorModel.moveMovable - src.java.org.projet.model.modelItems.Bow@70e06e80 déplacé vers Coord{row=9, col=7}
+[2025-05-02 10:27:16.878] WARNING - MatrixLvlEditorModel.moveItem - moveItem src.java.org.projet.model.modelItems.Bow@4d49fb9c rowX=0 colY=1
+[2025-05-02 10:27:16.878] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de l'ancienne case CaseMatrix{urlImgToShow='', classNameITem='null', coordRow=7, coordCol=16, width=1, height=1}
+[2025-05-02 10:27:16.878] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert false) false
+[2025-05-02 10:27:16.878] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de la nouvelle case CaseMatrix{urlImgToShow='', classNameITem='src.java.org.projet.model.modelItems.Bow@4d49fb9c', coordRow=7, coordCol=17, width=1, height=1}
+[2025-05-02 10:27:16.878] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert true) true
+[2025-05-02 10:27:16.907] INFO - MatrixLvlEditorModel.moveMovable - src.java.org.projet.model.modelItems.Bow@4d49fb9c déplacé vers Coord{row=7, col=17}
+[2025-05-02 10:27:16.908] WARNING - MatrixLvlEditorModel.moveItem - moveItem src.java.org.projet.model.modelItems.Bow@49d06feb rowX=0 colY=-1
+[2025-05-02 10:27:16.941] WARNING - MatrixLvlEditorModel.moveItem - moveItem src.java.org.projet.model.modelItems.Bow@774cb75 rowX=0 colY=1
+[2025-05-02 10:27:16.941] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de l'ancienne case CaseMatrix{urlImgToShow='', classNameITem='null', coordRow=9, coordCol=15, width=1, height=1}
+[2025-05-02 10:27:16.941] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert false) false
+[2025-05-02 10:27:16.941] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de la nouvelle case CaseMatrix{urlImgToShow='', classNameITem='src.java.org.projet.model.modelItems.Bow@774cb75', coordRow=9, coordCol=16, width=1, height=1}
+[2025-05-02 10:27:16.942] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert true) true
+[2025-05-02 10:27:16.945] INFO - MatrixLvlEditorModel.moveMovable - src.java.org.projet.model.modelItems.Bow@774cb75 déplacé vers Coord{row=9, col=16}
+[2025-05-02 10:27:17.023] INFO - MatrixLvlEditorModel.addDynamicBow - Tire de la flèche model
+[2025-05-02 10:27:17.023] INFO - MatrixLvlEditorModel.addItemMatrice - Ajout item addItemMatrice
+[2025-05-02 10:27:17.025] INFO - MatrixLvlEditorModel.addDynamicBow - Ajout d'un arc à la position du héros
+[2025-05-02 10:27:17.066] WARNING - MatrixLvlEditorModel.moveItem - moveItem src.java.org.projet.model.modelItems.Bow@6989011a rowX=0 colY=-1
+[2025-05-02 10:27:17.068] WARNING - MatrixLvlEditorModel.moveItem - moveItem src.java.org.projet.model.modelItems.Bow@3f5d3f7e rowX=0 colY=-1
+[2025-05-02 10:27:17.068] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de l'ancienne case CaseMatrix{urlImgToShow='', classNameITem='null', coordRow=12, coordCol=4, width=1, height=1}
+[2025-05-02 10:27:17.068] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert false) false
+[2025-05-02 10:27:17.068] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de la nouvelle case CaseMatrix{urlImgToShow='', classNameITem='src.java.org.projet.model.modelItems.Bow@3f5d3f7e', coordRow=12, coordCol=3, width=1, height=1}
+[2025-05-02 10:27:17.068] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert true) true
+[2025-05-02 10:27:17.078] INFO - MatrixLvlEditorModel.moveMovable - src.java.org.projet.model.modelItems.Bow@3f5d3f7e déplacé vers Coord{row=12, col=3}
+[2025-05-02 10:27:17.106] WARNING - MatrixLvlEditorModel.moveItem - moveItem src.java.org.projet.model.modelItems.Bow@5108c0b5 rowX=0 colY=1
+[2025-05-02 10:27:17.106] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de l'ancienne case CaseMatrix{urlImgToShow='', classNameITem='null', coordRow=7, coordCol=18, width=1, height=1}
+[2025-05-02 10:27:17.106] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert false) false
+[2025-05-02 10:27:17.106] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de la nouvelle case CaseMatrix{urlImgToShow='', classNameITem='src.java.org.projet.model.modelItems.Bow@5108c0b5', coordRow=7, coordCol=19, width=1, height=1}
+[2025-05-02 10:27:17.107] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert true) true
+[2025-05-02 10:27:17.109] INFO - MatrixLvlEditorModel.moveMovable - src.java.org.projet.model.modelItems.Bow@5108c0b5 déplacé vers Coord{row=7, col=19}
+[2025-05-02 10:27:17.109] WARNING - MatrixLvlEditorModel.moveItem - moveItem src.java.org.projet.model.modelItems.Bow@1b789de4 rowX=0 colY=1
+[2025-05-02 10:27:17.109] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de l'ancienne case CaseMatrix{urlImgToShow='', classNameITem='null', coordRow=12, coordCol=13, width=1, height=1}
+[2025-05-02 10:27:17.109] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert false) false
+[2025-05-02 10:27:17.109] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de la nouvelle case CaseMatrix{urlImgToShow='', classNameITem='src.java.org.projet.model.modelItems.Bow@1b789de4', coordRow=12, coordCol=14, width=1, height=1}
+[2025-05-02 10:27:17.109] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert true) true
+[2025-05-02 10:27:17.112] INFO - MatrixLvlEditorModel.moveMovable - src.java.org.projet.model.modelItems.Bow@1b789de4 déplacé vers Coord{row=12, col=14}
+[2025-05-02 10:27:17.181] WARNING - MatrixLvlEditorModel.moveItem - moveItem src.java.org.projet.model.modelItems.Bow@70e06e80 rowX=0 colY=-1
+[2025-05-02 10:27:17.182] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de l'ancienne case CaseMatrix{urlImgToShow='', classNameITem='null', coordRow=9, coordCol=7, width=1, height=1}
+[2025-05-02 10:27:17.182] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert false) false
+[2025-05-02 10:27:17.182] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de la nouvelle case CaseMatrix{urlImgToShow='', classNameITem='src.java.org.projet.model.modelItems.Bow@70e06e80', coordRow=9, coordCol=6, width=1, height=1}
+[2025-05-02 10:27:17.182] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert true) true
+[2025-05-02 10:27:17.194] INFO - MatrixLvlEditorModel.moveMovable - src.java.org.projet.model.modelItems.Bow@70e06e80 déplacé vers Coord{row=9, col=6}
+[2025-05-02 10:27:17.256] WARNING - MatrixLvlEditorModel.moveItem - moveItem src.java.org.projet.model.modelItems.Bow@4d49fb9c rowX=0 colY=1
+[2025-05-02 10:27:17.274] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de l'ancienne case CaseMatrix{urlImgToShow='', classNameITem='null', coordRow=7, coordCol=17, width=1, height=1}
+[2025-05-02 10:27:17.280] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert false) false
+[2025-05-02 10:27:17.281] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de la nouvelle case CaseMatrix{urlImgToShow='', classNameITem='src.java.org.projet.model.modelItems.Bow@4d49fb9c', coordRow=7, coordCol=18, width=1, height=1}
+[2025-05-02 10:27:17.281] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert true) true
+[2025-05-02 10:27:17.285] INFO - MatrixLvlEditorModel.moveMovable - src.java.org.projet.model.modelItems.Bow@4d49fb9c déplacé vers Coord{row=7, col=18}
+[2025-05-02 10:27:17.286] WARNING - MatrixLvlEditorModel.moveItem - moveItem src.java.org.projet.model.modelItems.Bow@774cb75 rowX=0 colY=1
+[2025-05-02 10:27:17.286] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de l'ancienne case CaseMatrix{urlImgToShow='', classNameITem='null', coordRow=9, coordCol=16, width=1, height=1}
+[2025-05-02 10:27:17.286] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert false) false
+[2025-05-02 10:27:17.286] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de la nouvelle case CaseMatrix{urlImgToShow='', classNameITem='src.java.org.projet.model.modelItems.Bow@774cb75', coordRow=9, coordCol=17, width=1, height=1}
+[2025-05-02 10:27:17.286] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert true) true
+[2025-05-02 10:27:17.303] INFO - MatrixLvlEditorModel.moveMovable - src.java.org.projet.model.modelItems.Bow@774cb75 déplacé vers Coord{row=9, col=17}
+[2025-05-02 10:27:17.389] WARNING - MatrixLvlEditorModel.moveItem - moveItem src.java.org.projet.model.modelItems.Bow@3f5d3f7e rowX=0 colY=-1
+[2025-05-02 10:27:17.389] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de l'ancienne case CaseMatrix{urlImgToShow='', classNameITem='null', coordRow=12, coordCol=3, width=1, height=1}
+[2025-05-02 10:27:17.389] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert false) false
+[2025-05-02 10:27:17.389] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de la nouvelle case CaseMatrix{urlImgToShow='', classNameITem='src.java.org.projet.model.modelItems.Bow@3f5d3f7e', coordRow=12, coordCol=2, width=1, height=1}
+[2025-05-02 10:27:17.389] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert true) true
+[2025-05-02 10:27:17.393] INFO - MatrixLvlEditorModel.moveMovable - src.java.org.projet.model.modelItems.Bow@3f5d3f7e déplacé vers Coord{row=12, col=2}
+[2025-05-02 10:27:17.454] WARNING - MatrixLvlEditorModel.moveItem - moveItem src.java.org.projet.model.modelItems.Bow@5108c0b5 rowX=0 colY=1
+[2025-05-02 10:27:17.454] INFO - MatrixLvlEditorModel.moveItem - src.java.org.projet.model.modelItems.Bow@5108c0b5 déplacement hors limites, suppression.
+[2025-05-02 10:27:17.457] WARNING - MatrixLvlEditorModel.moveItem - moveItem src.java.org.projet.model.modelItems.Bow@1b789de4 rowX=0 colY=1
+[2025-05-02 10:27:17.457] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de l'ancienne case CaseMatrix{urlImgToShow='', classNameITem='null', coordRow=12, coordCol=14, width=1, height=1}
+[2025-05-02 10:27:17.457] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert false) false
+[2025-05-02 10:27:17.457] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de la nouvelle case CaseMatrix{urlImgToShow='', classNameITem='src.java.org.projet.model.modelItems.Bow@1b789de4', coordRow=12, coordCol=15, width=1, height=1}
+[2025-05-02 10:27:17.457] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert true) true
+[2025-05-02 10:27:17.460] INFO - MatrixLvlEditorModel.moveMovable - src.java.org.projet.model.modelItems.Bow@1b789de4 déplacé vers Coord{row=12, col=15}
+[2025-05-02 10:27:17.502] WARNING - MatrixLvlEditorModel.moveItem - moveItem src.java.org.projet.model.modelItems.Bow@70e06e80 rowX=0 colY=-1
+[2025-05-02 10:27:17.502] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de l'ancienne case CaseMatrix{urlImgToShow='', classNameITem='null', coordRow=9, coordCol=6, width=1, height=1}
+[2025-05-02 10:27:17.502] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert false) false
+[2025-05-02 10:27:17.502] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de la nouvelle case CaseMatrix{urlImgToShow='', classNameITem='src.java.org.projet.model.modelItems.Bow@70e06e80', coordRow=9, coordCol=5, width=1, height=1}
+[2025-05-02 10:27:17.503] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert true) true
+[2025-05-02 10:27:17.507] INFO - MatrixLvlEditorModel.moveMovable - src.java.org.projet.model.modelItems.Bow@70e06e80 déplacé vers Coord{row=9, col=5}
+[2025-05-02 10:27:17.549] WARNING - MatrixLvlEditorModel.moveItem - moveItem src.java.org.projet.model.modelItems.Bow@4d49fb9c rowX=0 colY=1
+[2025-05-02 10:27:17.550] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de l'ancienne case CaseMatrix{urlImgToShow='', classNameITem='null', coordRow=7, coordCol=18, width=1, height=1}
+[2025-05-02 10:27:17.550] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert false) false
+[2025-05-02 10:27:17.550] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de la nouvelle case CaseMatrix{urlImgToShow='', classNameITem='src.java.org.projet.model.modelItems.Bow@4d49fb9c', coordRow=7, coordCol=19, width=1, height=1}
+[2025-05-02 10:27:17.550] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert true) true
+[2025-05-02 10:27:17.552] INFO - MatrixLvlEditorModel.moveMovable - src.java.org.projet.model.modelItems.Bow@4d49fb9c déplacé vers Coord{row=7, col=19}
+[2025-05-02 10:27:17.598] WARNING - MatrixLvlEditorModel.moveItem - moveItem src.java.org.projet.model.modelItems.Bow@774cb75 rowX=0 colY=1
+[2025-05-02 10:27:17.598] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de l'ancienne case CaseMatrix{urlImgToShow='', classNameITem='null', coordRow=9, coordCol=17, width=1, height=1}
+[2025-05-02 10:27:17.598] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert false) false
+[2025-05-02 10:27:17.599] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de la nouvelle case CaseMatrix{urlImgToShow='', classNameITem='src.java.org.projet.model.modelItems.Bow@774cb75', coordRow=9, coordCol=18, width=1, height=1}
+[2025-05-02 10:27:17.599] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert true) true
+[2025-05-02 10:27:17.602] INFO - MatrixLvlEditorModel.moveMovable - src.java.org.projet.model.modelItems.Bow@774cb75 déplacé vers Coord{row=9, col=18}
+[2025-05-02 10:27:17.742] WARNING - MatrixLvlEditorModel.moveItem - moveItem src.java.org.projet.model.modelItems.Bow@3f5d3f7e rowX=0 colY=-1
+[2025-05-02 10:27:17.742] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de l'ancienne case CaseMatrix{urlImgToShow='', classNameITem='null', coordRow=12, coordCol=2, width=1, height=1}
+[2025-05-02 10:27:17.742] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert false) false
+[2025-05-02 10:27:17.743] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de la nouvelle case CaseMatrix{urlImgToShow='', classNameITem='src.java.org.projet.model.modelItems.Bow@3f5d3f7e', coordRow=12, coordCol=1, width=1, height=1}
+[2025-05-02 10:27:17.743] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert true) true
+[2025-05-02 10:27:17.746] INFO - MatrixLvlEditorModel.moveMovable - src.java.org.projet.model.modelItems.Bow@3f5d3f7e déplacé vers Coord{row=12, col=1}
+[2025-05-02 10:27:17.790] WARNING - MatrixLvlEditorModel.moveItem - moveItem src.java.org.projet.model.modelItems.Bow@1b789de4 rowX=0 colY=1
+[2025-05-02 10:27:17.790] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de l'ancienne case CaseMatrix{urlImgToShow='', classNameITem='null', coordRow=12, coordCol=15, width=1, height=1}
+[2025-05-02 10:27:17.790] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert false) false
+[2025-05-02 10:27:17.790] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de la nouvelle case CaseMatrix{urlImgToShow='', classNameITem='src.java.org.projet.model.modelItems.Bow@1b789de4', coordRow=12, coordCol=16, width=1, height=1}
+[2025-05-02 10:27:17.791] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert true) true
+[2025-05-02 10:27:17.793] INFO - MatrixLvlEditorModel.moveMovable - src.java.org.projet.model.modelItems.Bow@1b789de4 déplacé vers Coord{row=12, col=16}
+[2025-05-02 10:27:17.854] WARNING - MatrixLvlEditorModel.moveItem - moveItem src.java.org.projet.model.modelItems.Bow@70e06e80 rowX=0 colY=-1
+[2025-05-02 10:27:17.855] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de l'ancienne case CaseMatrix{urlImgToShow='', classNameITem='null', coordRow=9, coordCol=5, width=1, height=1}
+[2025-05-02 10:27:17.855] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert false) false
+[2025-05-02 10:27:17.855] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de la nouvelle case CaseMatrix{urlImgToShow='', classNameITem='src.java.org.projet.model.modelItems.Bow@70e06e80', coordRow=9, coordCol=4, width=1, height=1}
+[2025-05-02 10:27:17.855] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert true) true
+[2025-05-02 10:27:17.858] INFO - MatrixLvlEditorModel.moveMovable - src.java.org.projet.model.modelItems.Bow@70e06e80 déplacé vers Coord{row=9, col=4}
+[2025-05-02 10:27:17.902] WARNING - MatrixLvlEditorModel.moveItem - moveItem src.java.org.projet.model.modelItems.Bow@4d49fb9c rowX=0 colY=1
+[2025-05-02 10:27:17.902] INFO - MatrixLvlEditorModel.moveItem - src.java.org.projet.model.modelItems.Bow@4d49fb9c déplacement hors limites, suppression.
+[2025-05-02 10:27:17.949] WARNING - MatrixLvlEditorModel.moveItem - moveItem src.java.org.projet.model.modelItems.Bow@774cb75 rowX=0 colY=1
+[2025-05-02 10:27:17.951] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de l'ancienne case CaseMatrix{urlImgToShow='', classNameITem='null', coordRow=9, coordCol=18, width=1, height=1}
+[2025-05-02 10:27:17.951] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert false) false
+[2025-05-02 10:27:17.951] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de la nouvelle case CaseMatrix{urlImgToShow='', classNameITem='src.java.org.projet.model.modelItems.Bow@774cb75', coordRow=9, coordCol=19, width=1, height=1}
+[2025-05-02 10:27:17.951] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert true) true
+[2025-05-02 10:27:17.955] INFO - MatrixLvlEditorModel.moveMovable - src.java.org.projet.model.modelItems.Bow@774cb75 déplacé vers Coord{row=9, col=19}
+[2025-05-02 10:27:18.093] WARNING - MatrixLvlEditorModel.moveItem - moveItem src.java.org.projet.model.modelItems.Bow@3f5d3f7e rowX=0 colY=-1
+[2025-05-02 10:27:18.093] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de l'ancienne case CaseMatrix{urlImgToShow='', classNameITem='null', coordRow=12, coordCol=1, width=1, height=1}
+[2025-05-02 10:27:18.093] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert false) false
+[2025-05-02 10:27:18.093] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de la nouvelle case CaseMatrix{urlImgToShow='', classNameITem='src.java.org.projet.model.modelItems.Bow@3f5d3f7e', coordRow=12, coordCol=0, width=1, height=1}
+[2025-05-02 10:27:18.093] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert true) true
+[2025-05-02 10:27:18.100] INFO - MatrixLvlEditorModel.moveMovable - src.java.org.projet.model.modelItems.Bow@3f5d3f7e déplacé vers Coord{row=12, col=0}
+[2025-05-02 10:27:18.142] WARNING - MatrixLvlEditorModel.moveItem - moveItem src.java.org.projet.model.modelItems.Bow@1b789de4 rowX=0 colY=1
+[2025-05-02 10:27:18.142] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de l'ancienne case CaseMatrix{urlImgToShow='', classNameITem='null', coordRow=12, coordCol=16, width=1, height=1}
+[2025-05-02 10:27:18.142] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert false) false
+[2025-05-02 10:27:18.142] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de la nouvelle case CaseMatrix{urlImgToShow='', classNameITem='src.java.org.projet.model.modelItems.Bow@1b789de4', coordRow=12, coordCol=17, width=1, height=1}
+[2025-05-02 10:27:18.142] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert true) true
+[2025-05-02 10:27:18.149] INFO - MatrixLvlEditorModel.moveMovable - src.java.org.projet.model.modelItems.Bow@1b789de4 déplacé vers Coord{row=12, col=17}
+[2025-05-02 10:27:18.189] WARNING - MatrixLvlEditorModel.moveItem - moveItem src.java.org.projet.model.modelItems.Bow@70e06e80 rowX=0 colY=-1
+[2025-05-02 10:27:18.189] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de l'ancienne case CaseMatrix{urlImgToShow='', classNameITem='null', coordRow=9, coordCol=4, width=1, height=1}
+[2025-05-02 10:27:18.190] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert false) false
+[2025-05-02 10:27:18.190] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de la nouvelle case CaseMatrix{urlImgToShow='', classNameITem='src.java.org.projet.model.modelItems.Bow@70e06e80', coordRow=9, coordCol=3, width=1, height=1}
+[2025-05-02 10:27:18.190] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert true) true
+[2025-05-02 10:27:18.192] INFO - MatrixLvlEditorModel.moveMovable - src.java.org.projet.model.modelItems.Bow@70e06e80 déplacé vers Coord{row=9, col=3}
+[2025-05-02 10:27:18.302] WARNING - MatrixLvlEditorModel.moveItem - moveItem src.java.org.projet.model.modelItems.Bow@774cb75 rowX=0 colY=1
+[2025-05-02 10:27:18.302] INFO - MatrixLvlEditorModel.moveItem - src.java.org.projet.model.modelItems.Bow@774cb75 déplacement hors limites, suppression.
+[2025-05-02 10:27:18.446] WARNING - MatrixLvlEditorModel.moveItem - moveItem src.java.org.projet.model.modelItems.Bow@3f5d3f7e rowX=0 colY=-1
+[2025-05-02 10:27:18.446] INFO - MatrixLvlEditorModel.moveItem - src.java.org.projet.model.modelItems.Bow@3f5d3f7e déplacement hors limites, suppression.
+[2025-05-02 10:27:18.493] WARNING - MatrixLvlEditorModel.moveItem - moveItem src.java.org.projet.model.modelItems.Bow@1b789de4 rowX=0 colY=1
+[2025-05-02 10:27:18.493] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de l'ancienne case CaseMatrix{urlImgToShow='', classNameITem='null', coordRow=12, coordCol=17, width=1, height=1}
+[2025-05-02 10:27:18.493] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert false) false
+[2025-05-02 10:27:18.493] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de la nouvelle case CaseMatrix{urlImgToShow='', classNameITem='src.java.org.projet.model.modelItems.Bow@1b789de4', coordRow=12, coordCol=18, width=1, height=1}
+[2025-05-02 10:27:18.493] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert true) true
+[2025-05-02 10:27:18.496] INFO - MatrixLvlEditorModel.moveMovable - src.java.org.projet.model.modelItems.Bow@1b789de4 déplacé vers Coord{row=12, col=18}
+[2025-05-02 10:27:18.542] WARNING - MatrixLvlEditorModel.moveItem - moveItem src.java.org.projet.model.modelItems.Bow@70e06e80 rowX=0 colY=-1
+[2025-05-02 10:27:18.542] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de l'ancienne case CaseMatrix{urlImgToShow='', classNameITem='null', coordRow=9, coordCol=3, width=1, height=1}
+[2025-05-02 10:27:18.542] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert false) false
+[2025-05-02 10:27:18.543] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de la nouvelle case CaseMatrix{urlImgToShow='', classNameITem='src.java.org.projet.model.modelItems.Bow@70e06e80', coordRow=9, coordCol=2, width=1, height=1}
+[2025-05-02 10:27:18.543] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert true) true
+[2025-05-02 10:27:18.550] INFO - MatrixLvlEditorModel.moveMovable - src.java.org.projet.model.modelItems.Bow@70e06e80 déplacé vers Coord{row=9, col=2}

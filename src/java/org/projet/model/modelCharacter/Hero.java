@@ -1,5 +1,6 @@
 package src.java.org.projet.model.modelCharacter;
 import com.fasterxml.jackson.annotation.JsonProperty;
+import src.java.org.projet.interfaces.MyLogger;
 import src.java.org.projet.model.Dataset;
 import src.java.org.projet.services.SpriteService;
 import src.java.org.projet.interfaces.MoveRangeOnSprite;
@@ -9,7 +10,7 @@ import src.java.org.projet.model.modelLevelEditor.base.Coord;
 import src.java.org.projet.model.modelMap.Location;
 
 public class Hero extends MyCharacter{
-
+    private final MyLogger logger = new MyLogger(Hero.class);
     Dataset dataset = Dataset.getInstance();
     private Bow H_bow;
 
@@ -62,23 +63,9 @@ public class Hero extends MyCharacter{
     public void setH_position(Location h_position) {
         H_position = h_position;
     }
-    public boolean CanAttaqueWithAr(){
-        return (H_bow.getNbArrows() > 0);
-    }
-    public boolean CanAttaqueWithBAr(){
-        return (H_bow.getNbBurningArrows() > 0);
-    }
-    public void loseArrow(){
-        H_bow.remove_arrows();
-    }
-    public void loseBurningArrows(){H_bow.remove_burning_arrows();}
 
 
 
-    @Override
-    public void BeAttacked(String weapon, String arg, Hero hero) {
-        decreaseHP(2);
-    }
 
     @Override
     public int getSpeed() {
@@ -104,7 +91,6 @@ public class Hero extends MyCharacter{
     }
 
 
-    public void display_help(){}
     public void attack(MyCharacter hero){}
     public void mission(Hero hero){}
 

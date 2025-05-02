@@ -56,9 +56,6 @@ public abstract class MyCharacter extends Views4OrientationImgCharacter implemen
         this.HP += nbp;
     }
 
-//    public abstract void printCharacter();
-    public abstract void BeAttacked(String weapon, String arg, Hero hero);
-
     public int getHP() {
         return HP;
     }
@@ -67,11 +64,23 @@ public abstract class MyCharacter extends Views4OrientationImgCharacter implemen
         return name;
     }
 
-    public abstract void display_help();
 
     public abstract void mission(Hero hero);
     public abstract void attack(MyCharacter hero);
 
+    public boolean isFacingHero(Hero hero) {
+        Coord enemyPos =getCoord();
+        Coord heroPos = hero.getCoord();
+        Coord direction = getMoveDirection();
+
+        // Vérifie si l'ennemi regarde dans la direction du héros
+        if (direction.getRow() > 0 && heroPos.getRow() > enemyPos.getRow()) return true;
+        if (direction.getRow() < 0 && heroPos.getRow() < enemyPos.getRow()) return true;
+        if (direction.getCol() > 0 && heroPos.getCol() > enemyPos.getCol()) return true;
+        if (direction.getCol() < 0 && heroPos.getCol() < enemyPos.getCol()) return true;
+
+        return false;
+    }
     @Override
     public String toString() {
         return "MyCharacter{" +
