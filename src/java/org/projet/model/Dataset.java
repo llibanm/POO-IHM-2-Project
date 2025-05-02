@@ -41,7 +41,8 @@ public class Dataset {
             makePair("fireHero", "fireHero"),
             makePair("removeItem", "removeItem"),
             makePair("DEFAULTSCOREPATH", "json/score.json" ),
-            makePair("DEFAULT_IMPORT_JSON_PATH", "json/defaultLevels.json"),
+            makePair("DEFAULT_GAME_IMPORT_JSON_PATH", "json/defaultLevels.json"),
+            makePair("DEFAULT_IMPORT_JSON_PATH", "json/levels.json"),
             makePair("HEROPNG", "src/java/org/projet/assets/Hero.png"),
             makePair("DEFAULTHEROPNG", "src/java/org/projet/assets/defaultHero.png"),
             makePair("DEFAULT_HERO_BULLET_PATH","src/java/org/projet/assets/bule.png"),
@@ -51,7 +52,7 @@ public class Dataset {
             makePair("PLANET_1_PATH", "src/java/org/projet/assets/planet/planet00.png"),
             makePair("PLANET_2_PATH", "src/java/org/projet/assets/planet/planet02.png"),
             makePair("PLANET_3_PATH", "src/java/org/projet/assets/planet/planet09.png"),
-            makePair("DEFAULT_RECT_COLOR", "BLACK"), //Couleur du rectangle entourant chaque case //TRANSPARENT
+            makePair("DEFAULT_RECT_COLOR", "TRANSPARENT"), //Couleur du rectangle entourant chaque case //TRANSPARENT
             makePair("", ""),
             makePair("", ""),
             makePair("", "")

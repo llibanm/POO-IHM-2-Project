@@ -580,6 +580,7 @@ public class MatrixLvlEditorModel extends AbstractModel {
     }
 
 
+
     /**
      * Changer de  map
      * @param cross nouvelle location

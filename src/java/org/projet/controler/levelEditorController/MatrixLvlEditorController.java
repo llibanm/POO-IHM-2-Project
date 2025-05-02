@@ -41,6 +41,7 @@ public class MatrixLvlEditorController implements PropertyChangeListener {
     private MatrixLvlEditorModel model;
     private final MatrixLvLEditorView view;
     HeroStateView heroStateView;
+    private boolean restartTimerAfterLocationChange = false;
 
     private CaseMatrix currentSelectedCaseMatrix;
     private SelectItemSectionController selectItemSectionController;
@@ -150,6 +151,9 @@ public class MatrixLvlEditorController implements PropertyChangeListener {
         //gameLogic.init();
         model.setHero(hero);
         initView();
+        if(restartTimerAfterLocationChange){
+            gameLogic.init();
+        }
     }
 
     private void updateLocationBis() {
@@ -168,6 +172,9 @@ public class MatrixLvlEditorController implements PropertyChangeListener {
         this.model.setHero(hero);
         initView();
         model.showItemModel();
+        if(restartTimerAfterLocationChange){
+            gameLogic.init();
+        }
 
 
     }
@@ -439,6 +446,11 @@ public class MatrixLvlEditorController implements PropertyChangeListener {
                     String itemName = item.getText();
                     if (itemName.equals(dataset.getString("JOUERMU"))) {
                         System.out.println("Lancement du jeu par défaut");
+                        try {
+                            handlePlayLvl();
+                        } catch (IOException e) {
+                            throw new RuntimeException(e);
+                        }
                     } else if (itemName.equals(dataset.getString("TESTLVL"))) {
                         System.out.println("Teste le niveau");
                         gameLogic.init();
@@ -458,7 +470,7 @@ public class MatrixLvlEditorController implements PropertyChangeListener {
                     } else if (itemName.equals(dataset.getString("EXPORT"))) {
                         logger.info("Exportation du jeu");
                         try {
-                            gameModel.exporterNiveaux("json/defaultLevels.json");
+                            gameModel.exporterNiveaux(dataset.getString("DEFAULT_IMPORT_JSON_PATH"));
                         } catch (IOException e) {
                             throw new RuntimeException(e);
                         }
@@ -482,6 +494,15 @@ public class MatrixLvlEditorController implements PropertyChangeListener {
         gameModel.importerNiveaux(dataset.getString("DEFAULT_IMPORT_JSON_PATH"));
         initController();
        // model.initEntityWithMatrix();
+        updateLocationBis();
+    }
+    //TODO faire factoriser
+    private void handlePlayLvl() throws IOException {
+        gameLogic.stopMovementLoop();
+        gameModel.importerNiveaux(dataset.getString("DEFAULT_GAME_IMPORT_JSON_PATH"));
+        initController();
+        // model.initEntityWithMatrix();
+        restartTimerAfterLocationChange = true;
         updateLocationBis();
     }
 
