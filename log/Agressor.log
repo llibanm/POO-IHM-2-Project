@@ -1,21 +1,20 @@
-[2025-05-02 19:51:27.414] INFO - Agressor.isNearOfHero - isNearOfHero : true
-[2025-05-02 19:51:27.414] INFO - Agressor.attackHero - Agressor is moving
-[2025-05-02 19:51:28.403] INFO - Agressor.isNearOfHero - isNearOfHero : true
-[2025-05-02 19:51:28.403] INFO - Agressor.attackHero - Agressor is moving
-[2025-05-02 19:51:29.410] INFO - Agressor.isNearOfHero - isNearOfHero : false
-[2025-05-02 19:51:29.410] INFO - Agressor.attackHero - Agressor is moving
-[2025-05-02 19:51:30.402] INFO - Agressor.isNearOfHero - isNearOfHero : true
-[2025-05-02 19:51:30.402] INFO - Agressor.attackHero - Agressor is moving
-
-
-2025-05-02 19:51:20.767] INFO - Agressor.isNearOfHero - isNearOfHero : false
-[2025-05-02 19:51:20.767] INFO - Agressor.attackHero - Agressor is moving
-[2025-05-02 19:51:21.765] INFO - Agressor.isNearOfHero - isNearOfHero : false
-[2025-05-02 19:51:21.766] INFO - Agressor.attackHero - Agressor is moving
-[2025-05-02 19:51:22.884] INFO - Agressor.isNearOfHero - isNearOfHero : false
-[2025-05-02 19:51:22.885] INFO - Agressor.attackHero - Agressor is moving[[2025-05-02 19:51:23.759] INFO - Agressor.isNearOfHero - isNearOfHero : false
-[2025-05-02 19:51:23.759] INFO - Agressor.attackHero - Agressor is moving[[[2025-05-02 19:51:24.767] INFO - Agressor.isNearOfHero - isNearOfHero : false
-[2025-05-02 19:51:24.767] INFO - Agressor.attackHero - Agressor is moving[[[2025-05-02 19:51:25.759] INFO - Agressor.isNearOfHero - isNearOfHero : false
-[2025-05-02 19:51:25.759] INFO - Agressor.attackHero - Agressor is moving
-
-[2025-05-02 19:51:25.714] INFO - Agressor.attackHero - Agressor is moving
+[2025-05-02 19:52:24.761] INFO - Agressor.isNearOfHero - isNearOfHero : true
+[2025-05-02 19:52:24.761] INFO - Agressor.attackHero - Agressor is moving
+[2025-05-02 19:52:25.754] INFO - Agressor.isNearOfHero - isNearOfHero : true
+[2025-05-02 19:52:25.754] INFO - Agressor.attackHero - Agressor is moving
+[2025-05-02 19:52:26.762] INFO - Agressor.isNearOfHero - isNearOfHero : true
+[2025-05-02 19:52:26.762] INFO - Agressor.attackHero - Agressor is moving
+[2025-05-02 19:52:27.756] INFO - Agressor.isNearOfHero - isNearOfHero : true
+[2025-05-02 19:52:27.756] INFO - Agressor.attackHero - Agressor is moving
+[2025-05-02 19:52:28.761] INFO - Agressor.isNearOfHero - isNearOfHero : false
+[2025-05-02 19:52:28.761] INFO - Agressor.attackHero - Agressor is moving
+[2025-05-02 19:52:29.754] INFO - Agressor.isNearOfHero - isNearOfHero : true
+[2025-05-02 19:52:29.754] INFO - Agressor.attackHero - Agressor is attacking hero
+[2025-05-02 19:52:29.755] INFO - Agressor.attackHero - new hero HP : 8
+e
+[2025-05-02 19:52:20.023] INFO - Agressor.attackHero - Agressor is moving[[2025-05-02 19:52:21.032] INFO - Agressor.isNearOfHero - isNearOfHero : false
+[2025-05-02 19:52:21.032] INFO - Agressor.attackHero - Agressor is moving[[2025-05-02 19:52:22.057] INFO - Agressor.isNearOfHero - isNearOfHero : false
+[2025-05-02 19:52:22.057] INFO - Agressor.attackHero - Agressor is moving[[2025-05-02 19:52:23.079] INFO - Agressor.isNearOfHero - isNearOfHero : false
+[2025-05-02 19:52:23.079] INFO - Agressor.attackHero - Agressor is moving
+g h[2025-05-02 19:52:22.983] INFO - Agressor.isNearOfHero - isNearOfHero : false
+[2025-05-02 19:52:22.984] INFO - Agressor.attackHero - Agressor is moving
