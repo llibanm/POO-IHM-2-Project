@@ -1,5 +1,5 @@
-[2025-05-02 15:27:30.072] SEVERE - MatrixLvlEditorController.propertyChange - Changement showModelCase propertyChange
-[2025-05-02 15:27:30.108] INFO - MatrixLvlEditorController.handleShowModelCase - Affichage des cases du model  LevelEditorModel{
+[2025-05-02 16:04:51.222] SEVERE - MatrixLvlEditorController.propertyChange - Changement showModelCase propertyChange
+[2025-05-02 16:04:51.269] INFO - MatrixLvlEditorController.handleShowModelCase - Affichage des cases du model  LevelEditorModel{
 
 , nbOfColsMatrix=20
 , nbOfRowsMatrix=20

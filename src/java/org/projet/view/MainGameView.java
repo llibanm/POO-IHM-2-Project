@@ -27,6 +27,7 @@ import src.java.org.projet.view.levelEditorView.HeroStateView;
 import src.java.org.projet.view.levelEditorView.MatrixLvLEditorView;
 import src.java.org.projet.view.levelEditorView.SelectItemView;
 
+import static src.java.org.projet.util.InitGame.getTopPaneView;
 import static src.java.org.projet.view.util.PopupMsg.demanderInfosConfig;
 
 /**
@@ -37,6 +38,8 @@ public class MainGameView extends Application {
     private Dataset dataset = Dataset.getInstance();
     public void start(Stage primaryStage) {
         dataset.setConfigMap(demanderInfosConfig());
+
+        /**Vue Principal*/
         BorderPane root = new BorderPane();
 
         SelectItemSectionModel model = new SelectItemSectionModel();
@@ -48,6 +51,7 @@ public class MainGameView extends Application {
         HeroStateView heroStateView = new HeroStateView();
 
         GameModel gameModel = new GameModel(InitGame.generateAllsLevels());
+
         MatrixLvlEditorController matrixLvlEditorController = new MatrixLvlEditorController(gameModel,matrixLvLEditorView,heroStateView,
                 selectController);
 
@@ -56,7 +60,7 @@ public class MainGameView extends Application {
        // stackPane.setBackground(imgBackground);
         stackPane.getChildren().add(matrixLvLEditorView);
         matrixLvlEditorController.addGridListenersOnView();
-        String commonPath = "src/java/org/projet/assets/";
+        String commonPath = dataset.getString("DEFAULT_ASSET_PATH");
         String[] paths = {
                 "Agressor.png",
                 "boss.png",
@@ -94,40 +98,7 @@ public class MainGameView extends Application {
         root.setCenter(stackPane);
         root.setLeft(selectItemView);
 
-        //Section supérieur
-        Pane myPane = new Pane();
-        MenuBar menubar = new MenuBar();
-        final Menu filemenu = new Menu("Jeu par défaut");
-        //Item filemenu
-        final MenuItem itemNew = new MenuItem(dataset.getString("JOUERMU"));
-        filemenu.getItems().addAll(itemNew);
-
-        //item affichage
-        final Menu affichageMenu = new Menu("Créer Jeu");
-        final MenuItem itemFscreen = new MenuItem(dataset.getString("TESTLVL"));
-        final MenuItem exportMI = new MenuItem(dataset.getString("EXPORT"));
-        affichageMenu.getItems().addAll(itemFscreen, exportMI);
-
-        final Menu importExportMenu = new Menu("Importer");
-        final MenuItem importMI = new MenuItem(dataset.getString("IMPORTER"));
-
-        importExportMenu.getItems().addAll(importMI);
-
-        final Menu hallOfFameMenu= new Menu("Rang");
-        final MenuItem rankMI = new MenuItem(dataset.getString("LOOKRANK"));
-        hallOfFameMenu.getItems().addAll(rankMI);
-
-
-        final Menu configurationMenu= new Menu("Configuration");
-        final MenuItem configMI = new MenuItem(dataset.getString("CONFIG"));
-        configurationMenu.getItems().addAll(configMI);
-
-        final Menu authorMenu= new Menu("Auteurs");
-        final MenuItem authorMI = new MenuItem(dataset.getString("AUTHOR"));
-        authorMenu.getItems().addAll(authorMI);
-
-        menubar.getMenus().addAll(filemenu,affichageMenu, importExportMenu, hallOfFameMenu, configurationMenu,authorMenu);
-        myPane.getChildren().addAll(menubar);
+        Pane myPane = getTopPaneView();
 
 
         matrixLvlEditorController.setPaneView(myPane);
@@ -140,6 +111,7 @@ public class MainGameView extends Application {
         primaryStage.setScene(scene);
         primaryStage.show();
     }
+
 
 
     private static void addItem(SelectItemView selectItemView, CaseMatrix agressorcaseMatrix) {

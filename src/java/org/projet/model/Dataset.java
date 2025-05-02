@@ -18,27 +18,35 @@ public class Dataset {
     private Map<String, Double> mesured = new HashMap<>();
     private Map<String, String> configMap = new HashMap<>();
 
+    private Dataset() {
+        initMesured(listeMesured);
+        initStrings(listeMsg);
+        initMesures(listeMesure);
+        initConfiguration();
+    }
+
     List<Pair<String, String>> listeMsg = List.of(
+            makePair("AUTHOR","Clara Schobert\nMarcel Dzengue Bony\nAbbes Samy\nMohamed Ali Liban" ),
             makePair("mission_hero", "But:"+"\nArriver au dernier niveau et battre le bosse avec le plus de munitions et santé\n"+
                     "Hints: Déplacements(z,q,s,d)\nInteraction avec les objets(r)\nTir(f)"),
-            makePair("theme", "dark"),
-            makePair("selectedItem", "selectedItem"),
-            makePair("move", "move"),
-            makePair("fireHero", "fireHero"),
-            makePair("removeItem", "removeItem"),
             makePair("JOUERMU", "Joueur"),
             makePair("TESTLVL","Tester/animer niveau actuel" ),
             makePair("LOOKRANK", "Voir le classement"),
             makePair("IMPORTER", "Importer"),
             makePair("CONFIG", "Configuration"),
             makePair("EXPORT","Exporter niveau"),
-            makePair("AUTHOR","Clara Schobert\nMarcel Dzengue Bony\nAbbes Samy\nMohamed Ali Liban" ),
+            makePair("theme", "dark"),
+            makePair("selectedItem", "selectedItem"),
+            makePair("move", "move"),
+            makePair("fireHero", "fireHero"),
+            makePair("removeItem", "removeItem"),
             makePair("DEFAULTSCOREPATH", "json/score.json" ),
             makePair("DEFAULT_IMPORT_JSON_PATH", "json/defaultLevels.json"),
             makePair("HEROPNG", "src/java/org/projet/assets/Hero.png"),
             makePair("DEFAULTHEROPNG", "src/java/org/projet/assets/defaultHero.png"),
             makePair("DEFAULT_HERO_BULLET_PATH","src/java/org/projet/assets/bule.png"),
             makePair("DEFAULT_ENNEMY_BULLET_PATH","src/java/org/projet/assets/buleE.png"),
+            makePair("DEFAULT_ASSET_PATH","src/java/org/projet/assets/"),
             makePair("PLANET_0_PATH", "src/java/org/projet/assets/planet/planet03.png"),
             makePair("PLANET_1_PATH", "src/java/org/projet/assets/planet/planet00.png"),
             makePair("PLANET_2_PATH", "src/java/org/projet/assets/planet/planet02.png"),
@@ -80,12 +88,7 @@ public class Dataset {
 
     );
 
-    private Dataset() {
-        initMesured(listeMesured);
-        initStrings(listeMsg);
-        initMesures(listeMesure);
-        initConfiguration();
-    }
+
 
     public static Dataset getInstance() {
         return instance;
@@ -98,6 +101,20 @@ public class Dataset {
     public void setConfigMap(final Map<String, String> configMap) {
         this.configMap = configMap;
         configScreenSize();
+        configLang();
+    }
+
+    private void configLang() {
+        if(configMap.get("langue").equals("ang")){
+            addString("mission_hero", "Goal:\nReach the final level and defeat the boss with the most ammo and health\nHints: Move (z,q,s,d)\nInteract with objects (r)\nShoot (f)");
+            addString("JOUERMU", "Player");
+            addString("TESTLVL", "Test/Play current level");
+            addString("LOOKRANK", "View leaderboard");
+            addString("IMPORTER", "Import");
+            addString("CONFIG", "Settings");
+            addString("EXPORT", "Export level");
+
+        }
     }
 
     public  int toInt(String string) {
