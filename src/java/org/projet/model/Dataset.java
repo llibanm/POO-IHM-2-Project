@@ -7,6 +7,9 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * Classe contenant les données de configuration du jeu
+ */
 public class Dataset {
 
     private static final Dataset instance = new Dataset();
@@ -18,6 +21,9 @@ public class Dataset {
     private Map<String, Double> mesured = new HashMap<>();
     private Map<String, String> configMap = new HashMap<>();
 
+    /**
+     * Classe contenant les données de configuration du jeu
+     */
     private Dataset() {
         initMesured(listeMesured);
         initStrings(listeMsg);

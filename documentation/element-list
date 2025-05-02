@@ -1,0 +1,15 @@
+src.java.org.projet.controler.levelEditorController
+src.java.org.projet.interfaces
+src.java.org.projet.model
+src.java.org.projet.model.modelCharacter
+src.java.org.projet.model.modelGame
+src.java.org.projet.model.modelItems
+src.java.org.projet.model.modelLevelEditor
+src.java.org.projet.model.modelLevelEditor.base
+src.java.org.projet.model.modelMap
+src.java.org.projet.services
+src.java.org.projet.util
+src.java.org.projet.view
+src.java.org.projet.view.levelEditorView
+src.java.org.projet.view.quickUnitTestView
+src.java.org.projet.view.util

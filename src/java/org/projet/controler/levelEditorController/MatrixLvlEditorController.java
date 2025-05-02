@@ -52,15 +52,6 @@ public class MatrixLvlEditorController implements PropertyChangeListener {
     private Map<String, String> configMap = dataset.getConfigMap();
 
 
-    public MatrixLvlEditorController(MatrixLvlEditorModel model, MatrixLvLEditorView view, HeroStateView heroStateView) {
-        this.model = model;
-        this.view = view;
-        addGridListenersOnView();
-        gameLogic = new GameLogic(model);
-        this.heroStateView = heroStateView;
-
-    }
-
     /**
      * Constructeur
      * @param game ensemble des maps du jeu
@@ -79,6 +70,16 @@ public class MatrixLvlEditorController implements PropertyChangeListener {
         initController();
 
     }
+    public MatrixLvlEditorController(MatrixLvlEditorModel model, MatrixLvLEditorView view, HeroStateView heroStateView) {
+        this.model = model;
+        this.view = view;
+        addGridListenersOnView();
+        gameLogic = new GameLogic(model);
+        this.heroStateView = heroStateView;
+
+    }
+
+
 
     /**
      *  initialisation
