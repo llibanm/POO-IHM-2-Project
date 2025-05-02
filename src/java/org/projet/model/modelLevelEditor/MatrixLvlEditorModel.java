@@ -416,7 +416,9 @@ public class MatrixLvlEditorModel extends AbstractModel {
         this.moveQueue = moveQueue;
     }
 
-
+    /**
+     * @return Héro
+     */
     public Hero getHero() {
         return hero;
     }

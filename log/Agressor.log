@@ -1,13 +1,0 @@
-[2025-05-02 10:41:37.806] INFO - Agressor.isNearOfHero - isNearOfHero : false
-[2025-05-02 10:41:37.806] INFO - Agressor.attackHero - Agressor is moving
-[2025-05-02 10:41:38.807] INFO - Agressor.isNearOfHero - isNearOfHero : false
-[2025-05-02 10:41:38.807] INFO - Agressor.attackHero - Agressor is moving
-[2025-05-02 10:41:39.804] INFO - Agressor.isNearOfHero - isNearOfHero : false
-[2025-05-02 10:41:39.804] INFO - Agressor.attackHero - Agressor is moving
-[2025-05-02 10:41:40.808] INFO - Agressor.isNearOfHero - isNearOfHero : false
-[2025-05-02 10:41:40.808] INFO - Agressor.attackHero - Agressor is moving[[2025-05-02 10:41:41.799] INFO - Agressor.isNearOfHero - isNearOfHero : false
-[2025-05-02 10:41:41.799] INFO - Agressor.attackHero - Agressor is moving[2[2025-05-02 10:41:42.810] INFO - Agressor.isNearOfHero - isNearOfHero : false
-[2025-05-02 10:41:42.810] INFO - Agressor.attackHero - Agressor is movin[20[2025-05-02 10:41:43.804] INFO - Agressor.isNearOfHero - isNearOfHero : false
-[2025-05-02 10:41:43.805] INFO - Agressor.attackHero - Agressor is movi[202[2025-05-02 10:41:44.861] INFO - Agressor.isNearOfHero - isNearOfHero : true
-[2025-05-02 10:41:44.861] INFO - Agressor.attackHero - Agressor is attacking hero
-[2025-05-02 10:41:44.862] INFO - Agressor.attackHero - new hero HP : 10

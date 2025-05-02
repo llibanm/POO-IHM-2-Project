@@ -58,7 +58,7 @@ public class Dataset {
             new Pair<>("DEFAULT_AGRESSOR_PORTEE_ATK",6),
             new Pair<>("DEFAULT_BOSS_PORTEE_ATK",12),
             new Pair<>("DEFAULT_BOSS_REMOVE_HP_HERO",2),
-            new Pair<>("DEFAULT_BOSS_SPEED",1),
+            new Pair<>("DEFAULT_BOSS_SPEED",6),
             new Pair<>("DEFAULT_HERO_SPEED",1),
             new Pair<>("DEFAULT_ARROW_SPEED",3),
             new Pair<>("DEFAULT_INCREASEMENT_LASER",3),
