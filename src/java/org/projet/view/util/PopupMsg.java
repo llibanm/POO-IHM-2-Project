@@ -68,8 +68,8 @@ public class PopupMsg {
         TextField gauche = new TextField("q");
         TextField haut = new TextField("z");
         TextField bas = new TextField("s");
-        TextField largeur = new TextField("800");
-        TextField hauteur = new TextField("600");
+        TextField largeur = new TextField("1366");
+        TextField hauteur = new TextField("768");
         TextField langue = new TextField("fr");
         TextField interact = new TextField("r");
         TextField shoot = new TextField("f");
@@ -78,8 +78,8 @@ public class PopupMsg {
         grid.add(new Label("Gauche :"), 0, 1); grid.add(gauche, 1, 1);
         grid.add(new Label("Haut :"),   0, 2); grid.add(haut,   1, 2);
         grid.add(new Label("Bas :"),    0, 3); grid.add(bas,    1, 3);
-        grid.add(new Label("Largeur :"),0, 4); grid.add(largeur,1, 4);
-        grid.add(new Label("Hauteur :"),0, 5); grid.add(hauteur,1, 5);
+        grid.add(new Label("Largeur(recommandé) :"),0, 4); grid.add(largeur,1, 4);
+        grid.add(new Label("Hauteur(recommandé):"),0, 5); grid.add(hauteur,1, 5);
         grid.add(new Label("Langue(fr|ang) :"), 0, 6); grid.add(langue, 1, 6);
         grid.add(new Label("Interagir :"),0, 7); grid.add(interact, 1, 7);
         grid.add(new Label("Tir :"),      0, 8); grid.add(shoot,    1, 8);

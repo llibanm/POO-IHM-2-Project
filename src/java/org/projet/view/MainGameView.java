@@ -66,6 +66,7 @@ public class MainGameView extends Application {
        // stackPane.setBackground(imgBackground);
         centerMapView.getChildren().add(matrixLvLEditorView);
 
+
         matrixLvlEditorController.addGridListenersOnView();
         String commonPath = dataset.getString("DEFAULT_ASSET_PATH");
         initSelectItemView(commonPath, model, selectItemView);

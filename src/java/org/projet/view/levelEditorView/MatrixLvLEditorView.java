@@ -30,6 +30,8 @@ public class MatrixLvLEditorView extends GridPane {
     int default_case_size = dataset.getMesure("DEFAULT_CASE_SIZE_VIEW");
 
 
+
+
     /**
      * Constructeur de la vue
      * @param nbOfRows
@@ -77,6 +79,8 @@ public class MatrixLvLEditorView extends GridPane {
         *
          */
     }
+
+
 
     /**
      * Ajoute un rectangle autour d'une case
@@ -291,25 +295,25 @@ public class MatrixLvLEditorView extends GridPane {
      * Placer le fond d'écran de la grille de l'éditeur de niveau
      */
     public void setBackground(String url) {
-        //model.getUrlBackground()
         var backgroundImage = new Image(url);
 
-        int defaultCaseSizeView = dataset.getMesure("DEFAULT_CASE_SIZE_VIEW") * nbOfCols;
+        int width = nbOfCols * dataset.getMesure("DEFAULT_CASE_SIZE_VIEW");
+        int height = nbOfRows * dataset.getMesure("DEFAULT_CASE_SIZE_VIEW");
+
         BackgroundImage background = new BackgroundImage(
                 backgroundImage,
                 BackgroundRepeat.NO_REPEAT,
                 BackgroundRepeat.NO_REPEAT,
                 BackgroundPosition.DEFAULT,
                 new BackgroundSize(
-                        //BackgroundSize.AUTO, BackgroundSize.AUTO,
-                        defaultCaseSizeView, defaultCaseSizeView,
-                        false, false, true, true
+                        width, height,
+                        false, false,
+                        false, false
                 )
-                //new BackgroundSize(dataset.getMesure("BACKGROUND_SIZE_V1"), dataset.getMesure("BACKGROUND_SIZE_V2"), true, true, true, true)
         );
         this.setBackground(new Background(background));
-
     }
+
 
 
 }

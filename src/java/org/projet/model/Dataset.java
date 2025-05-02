@@ -67,8 +67,8 @@ public class Dataset {
     List<Pair<String, Integer>> listeMesure = List.of(
             new Pair<>("ROW_HERO_APPARITION", 17),
             new Pair<>("COL_HERO_APPARITION", 10),
-            new Pair<>("SCENE_V",600),
-            new Pair<>("SCENE_V1",600),
+            new Pair<>("SCENE_V",1366),
+            new Pair<>("SCENE_V1",768),
             new Pair<>("DEFAULT_AGRESSOR_REMOVE_HP_HERO",2),
             new Pair<>("DEFAULT_ARROW_REMOVE_HP_HERO",2),
             new Pair<>("DEFAULT_AGRESSOR_SPEED",1),
