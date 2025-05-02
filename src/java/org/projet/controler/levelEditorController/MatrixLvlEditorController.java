@@ -231,7 +231,8 @@ public class MatrixLvlEditorController implements PropertyChangeListener {
             Optional<Map<String, String>> result = demanderInfos(champs);
             result.ifPresent(map -> {
                 String nom = map.get("Nom");
-                gameModel.addScore(new Score(nom, 10));
+                int score = model.getHero().getHP() * model.getHero().getH_bow().getNbArrows();
+                gameModel.addScore(new Score(nom, score ));
                 showScores(gameModel.getHallOfFame());
                 try {
                     gameModel.exporterScores(gameModel.getDefaultScorePath());
