@@ -88,6 +88,7 @@ public class MatrixLvlEditorController implements PropertyChangeListener {
         initModels();
         initView();
         showMessage(dataset.getString("mission_hero"));
+        demanderInfosConfig();
 
     }
 
@@ -363,7 +364,7 @@ public class MatrixLvlEditorController implements PropertyChangeListener {
      * Obtenir les infos de configuration
      * @return
      */
-    public Optional<Map<String, String>> demanderInfos() {
+    public Optional<Map<String, String>> demanderInfosConfig() {
         Dialog<Map<String, String>> dialog = new Dialog<>();
         dialog.setTitle("Configuration");
 
@@ -508,7 +509,7 @@ public class MatrixLvlEditorController implements PropertyChangeListener {
                         }
                     } else if (itemName.equals(dataset.getString("CONFIG"))) {
                         logger.info("Ouverture des configurations");
-                        demanderInfos();
+                        demanderInfosConfig();
                     } else if (itemName.equals(dataset.getString("EXPORT"))) {
                         logger.info("Exportation du jeu");
                         try {
