@@ -36,7 +36,9 @@ public class Dataset {
             makePair("DEFAULTSCOREPATH", "json/score.json" ),
             makePair("DEFAULT_IMPORT_JSON_PATH", "json/defaultLevels.json"),
             makePair("HEROPNG", "src/java/org/projet/assets/Hero.png"),
-            makePair("DEFAULTHEROPNG", "src/java/org/projet/assets/defaultHero.png")
+            makePair("DEFAULTHEROPNG", "src/java/org/projet/assets/defaultHero.png"),
+            makePair("DEFAULT_HERO_BULLET_PATH","src/java/org/projet/assets/bule.png"),
+            makePair("DEFAULT_ENNEMY_BULLET_PATH","src/java/org/projet/assets/buleE.png")
 
 
     );

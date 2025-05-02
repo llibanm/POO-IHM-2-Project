@@ -390,10 +390,10 @@ public class MatrixLvlEditorModel extends AbstractModel {
 
         if (character instanceof Hero) {
 
-            bowObj.setBowUrlImage("src/java/org/projet/assets/bule.png");
+            bowObj.setBowUrlImage(dataset.getString("DEFAULT_HERO_BULLET_PATH"));
             bow = new CaseMatrix(bowObj.getBowUrlImage(), BowPos);
         } else {
-            bowObj.setBowUrlImage("src/java/org/projet/assets/buleE.png");
+            bowObj.setBowUrlImage(dataset.getString("DEFAULT_ENNEMY_BULLET_PATH"));
             bow = new CaseMatrix(bowObj.getBowUrlImage(), BowPos);
         }
         bowObj.setMoveDirection(direction.getRow(), direction.getCol());
