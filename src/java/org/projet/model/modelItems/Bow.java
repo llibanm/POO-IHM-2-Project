@@ -4,12 +4,13 @@ package src.java.org.projet.model.modelItems;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import src.java.org.projet.interfaces.Movable;
+import src.java.org.projet.model.Dataset;
 import src.java.org.projet.model.modelGame.GameModel;
 import src.java.org.projet.model.modelLevelEditor.base.Coord;
 
 public class Bow extends Item implements Movable {
+    Dataset dataset = Dataset.getInstance();
     private int Arrows = 10;
-    private int BurningArrows = 2;
     Coord moveDirection;
     String bowUrlImage= "src/java/org/projet/assets/bule.png";
 
@@ -17,53 +18,56 @@ public class Bow extends Item implements Movable {
     public Bow(Coord coord) {
         super("Bow", "It is the bow of your hero, you can use it with the normal arrows or the burning ones " +
                 "to fight terrestrial and aerial ennemies.\n", coord);
-       /* setDescription("It is the bow of your hero, you can use it with the normal arrows or the burning ones " +
-                "to fight terrestrial and aerial ennemies.\n" + "NB arrows : " + Arrows + "\nNB burning arrows : "
-                        + BurningArrows);*/
-        //TODO find a way to bring the Arrow / burning arrow in a another way
+
     }
+
+    /**
+     *
+     * @return path de l'image du projectile
+     */
     public String getBowUrlImage() {
         return bowUrlImage;
     }
 
+    /**
+     * Fixer path vers l'image du projectile
+     * @param bowUrlImage
+     */
     public void setBowUrlImage(String bowUrlImage) {
         this.bowUrlImage = bowUrlImage;
     }
 
 
-
+    /**
+     * Ajouter des projectiles
+     * @param a nombre de projectiles
+     */
     public void add_arrows(int a) {
         Arrows += a;
     }
 
+    /**
+     * Retirer des projectiles
+     */
     public void remove_arrows() {
         Arrows -= 1;
     }
 
-    public void add_burning_arrows(int b) {
-        BurningArrows += b;
-    }
-
-    public void remove_burning_arrows() {
-        BurningArrows -= 1;
-    }
+    /**
+     * @return Obtenir le nombre de projectiles
+     */
 
     public int getNbArrows() {
         return Arrows;
     }
 
-    public int getNbBurningArrows() {
-        return BurningArrows;
-    }
 
-    //TODO make controller interact with model for this
-    /*public void describe() {
-        System.out.println("It is the bow of your hero, you can use it with the normal arrows or the burning ones " +
-                            "to fight terrestrial and aerial ennemies.\n" + "NB arrows : " + Arrows + "\nNB burning arrows : "
-                            + BurningArrows);
-
-    }*/
-
+    /**
+     * Image actuelle du projectile
+     * @param rowX déplacement en Row
+     * @param rowY déplacement en Col
+     * @return
+     */
     @Override
     public ImageView nextImage(int rowX, int rowY) {
         Image image = new Image(getBowUrlImage());
@@ -74,9 +78,13 @@ public class Bow extends Item implements Movable {
 
     }
 
+    /**
+     * Vitesse du projectile
+     * @return
+     */
     @Override
     public int getSpeed() {
-        return 3;
+        return dataset.getMesure("DEFAULT_ARROW_SPEED");
     }
 
 
