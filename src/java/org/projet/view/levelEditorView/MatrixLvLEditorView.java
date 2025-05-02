@@ -8,6 +8,7 @@ import javafx.scene.paint.Color;
 import javafx.scene.shape.Rectangle;
 import src.java.org.projet.controler.levelEditorController.MatrixLvlEditorController;
 import src.java.org.projet.interfaces.MyLogger;
+import src.java.org.projet.model.Dataset;
 import src.java.org.projet.model.modelLevelEditor.MatrixLvlEditorModel;
 import src.java.org.projet.model.modelLevelEditor.base.CaseMatrix;
 
@@ -23,11 +24,17 @@ import java.util.logging.Logger;
  */
 public class MatrixLvLEditorView extends GridPane {
     private final MyLogger logger = new MyLogger(MatrixLvLEditorView.class);
+    Dataset dataset = Dataset.getInstance();
     int nbOfRows;
     int nbOfCols;
-    int default_case_size = 40;
+    int default_case_size = dataset.getMesure("DEFAULT_CASE_SIZE_VIEW");
 
 
+    /**
+     * Constructeur de la vue
+     * @param nbOfRows
+     * @param nbOfCols
+     */
     public MatrixLvLEditorView(int nbOfRows, int nbOfCols) {
         this.nbOfRows = nbOfRows;
         this.nbOfCols = nbOfCols;
@@ -42,6 +49,9 @@ public class MatrixLvLEditorView extends GridPane {
         fillMap();
     }
 
+    /**
+     * Efface les cases de la vue de la grille puis rempli
+     */
     public void initializeReset() {
         //setBackground();
         for (int row = 0; row < nbOfRows; row++) {
@@ -68,18 +78,52 @@ public class MatrixLvLEditorView extends GridPane {
          */
     }
 
+    /**
+     * Ajoute un rectangle autour d'une case
+     * @param row
+     * @param col
+     */
     public void addRectOnGrid(int row, int col) {
         this.add(getRect(), row, col);
     }
 
+    /**
+     * Teste la validité des coordonnées dans la vue
+     * @param row
+     * @param col
+     * @return
+     */
     private boolean isValidCoordinate(int row, int col) {
         return row >= 0 && row < nbOfRows && col >= 0 && col < nbOfCols;
     }
 
+    /**
+     * Obtenir un Rectangle pour remplir une case de la grille
+     * @return
+     */
     public Rectangle getRect() {
         Rectangle cell = new Rectangle(default_case_size, default_case_size, Color.TRANSPARENT);
-        cell.setStroke(Color.BLACK);  //TODO
+        cell.setStroke(getColorFromString(dataset.getString("DEFAULT_RECT_COLOR")));  //TODO
         return cell;
+    }
+
+    /**
+     * Convertir un texte en couleur
+     * @param color
+     * @return
+     */
+    public  Color getColorFromString(String color) {
+        switch (color) {
+            case "TRANSPARENT":
+                return Color.TRANSPARENT;
+                case "GREEN":
+                    return Color.GREEN;
+                    case "BLUE":
+                        return Color.BLUE;
+                        default:
+                            return Color.BLACK;
+
+        }
     }
 
     public void resetCell(int row, int col) {
@@ -88,49 +132,13 @@ public class MatrixLvLEditorView extends GridPane {
         addRectOnGrid(row, col);
     }
 
-    public void replaceNodeAt(int row, int col, Node newNode) {
-        List<Node> nodes = new ArrayList<>(this.getChildren());
 
-        for (Node node : nodes) {
-            Integer rowIndex = GridPane.getRowIndex(node);
-            Integer colIndex = GridPane.getColumnIndex(node);
-
-            if (rowIndex != null && rowIndex == row && colIndex != null
-                    && colIndex == col) {
-                this.getChildren().remove(node);
-            }
-        }
-        // S'il est déjà parent de ce GridPane, le retirer
-        if (newNode.getParent() != null) {
-            ((Pane) newNode.getParent()).getChildren().remove(newNode);
-        }
-        this.add(newNode, col, row);
-    }
-
-    public void moveItemFromGridPane(int oldRow, int oldCol, int newRow, int newCol) {
-        boolean itemMoved = false;
-
-        // Copie temporaire pour éviter ConcurrentModificationException
-        List<Node> nodes = new ArrayList<>(this.getChildren());
-
-        for (Node node : nodes) {
-            Integer rowIndex = GridPane.getRowIndex(node);
-            Integer columnIndex = GridPane.getColumnIndex(node);
-
-            if (rowIndex != null && rowIndex == oldRow && columnIndex != null
-                    && columnIndex == oldCol && node instanceof ImageView) {
-                logger.info("Element trouvé à déplacer : " + node);
-                this.replaceNodeAt(newRow, newCol, node);
-                logger.info("Element déplacé de la grille moveItemFromGridPane");
-                itemMoved = true;
-            }
-        }
-
-        if (!itemMoved) {
-            logger.info("Element non déplacé de la grille moveItemFromGridPane");
-        }
-    }
-
+    /**
+     * Efface la case dans la map de la vue
+     * @param row
+     * @param column
+     * @return
+     */
     public boolean removeItemFromGridPane(int row, int column) {
         List<Node> nodesToRemove = new ArrayList<>();
 
@@ -153,36 +161,13 @@ public class MatrixLvLEditorView extends GridPane {
         return false;
     }
 
-    public boolean removeImgFromGridPane(int row, int column) {
-        boolean removed = false;
 
-        // Utilisation d'un iterator pour éviter ConcurrentModificationException
-        Iterator<Node> iterator = this.getChildren().iterator();
-
-        while (iterator.hasNext()) {
-            Node node = iterator.next();
-            Integer rowIndex = GridPane.getRowIndex(node);
-            Integer columnIndex = GridPane.getColumnIndex(node);
-
-            if (rowIndex != null && rowIndex == row &&
-                    columnIndex != null && columnIndex == column &&
-                    node instanceof ImageView) {
-
-                iterator.remove();  // Suppression sûre pendant l'itération
-                removed = true;
-                // Ne pas retourner tout de suite pour supprimer TOUTES les images
-            }
-        }
-
-        if (removed) {
-            logger.info("Image(s) supprimée(s) de la grille");
-        } else {
-            logger.info("Aucune image trouvée à cette position");
-        }
-
-        return removed;
-    }
-
+    /**
+     *
+     * @param row
+     * @param column
+     * @return
+     */
     public Node getNodeAt(int row, int column) {
         for (Node node : this.getChildren()) {
             Integer rowIndex = GridPane.getRowIndex(node);
@@ -199,6 +184,12 @@ public class MatrixLvLEditorView extends GridPane {
         return null;
     }
 
+    /**
+     * Placer une image dans une case de la map
+     * @param url
+     * @param row
+     * @param col
+     */
 
     public void placeItemImgBis(String url, int row, int col) {
         if (url != null && !url.isEmpty() && isValidCoordinate(row, col)) {
@@ -236,6 +227,10 @@ public class MatrixLvLEditorView extends GridPane {
         return rec;
     }
 
+    /**
+     * Afficher chaque case issue du modèle
+     * @param model
+     */
     public  void showModelView(MatrixLvlEditorModel model) {
         for (int i = 0; i < model.getNbOfRows(); i++) {
             for (int j = 0; j < model.getNbOfCols(); j++) {
@@ -304,7 +299,7 @@ public class MatrixLvLEditorView extends GridPane {
                 BackgroundRepeat.NO_REPEAT,
                 BackgroundRepeat.NO_REPEAT,
                 BackgroundPosition.DEFAULT,
-                new BackgroundSize(50, 50, true, true, true, true)
+                new BackgroundSize(dataset.getMesure("BACKGROUND_SIZE_V1"), dataset.getMesure("BACKGROUND_SIZE_V2"), true, true, true, true)
         );
         this.setBackground(new Background(background));
     }

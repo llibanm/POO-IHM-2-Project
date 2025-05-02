@@ -40,7 +40,8 @@ public class MainGameView extends Application {
         SelectItemView selectItemView = new SelectItemView();
         SelectItemSectionController selectController = new SelectItemSectionController(model, selectItemView);
 
-        MatrixLvLEditorView matrixLvLEditorView = new MatrixLvLEditorView(20,20);
+        MatrixLvLEditorView matrixLvLEditorView = new MatrixLvLEditorView(dataset.getMesure("DEFAULT_NB_ROW_COL")
+                ,dataset.getMesure("DEFAULT_NB_ROW_COL"));
         HeroStateView heroStateView = new HeroStateView();
 
         GameModel gameModel = new GameModel(InitGame.generateAllsLevels());

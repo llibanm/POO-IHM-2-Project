@@ -38,7 +38,16 @@ public class Dataset {
             makePair("HEROPNG", "src/java/org/projet/assets/Hero.png"),
             makePair("DEFAULTHEROPNG", "src/java/org/projet/assets/defaultHero.png"),
             makePair("DEFAULT_HERO_BULLET_PATH","src/java/org/projet/assets/bule.png"),
-            makePair("DEFAULT_ENNEMY_BULLET_PATH","src/java/org/projet/assets/buleE.png")
+            makePair("DEFAULT_ENNEMY_BULLET_PATH","src/java/org/projet/assets/buleE.png"),
+            makePair("PLANET_0_PATH", "src/java/org/projet/assets/planet/planet03.png"),
+            makePair("PLANET_1_PATH", "src/java/org/projet/assets/planet/planet00.png"),
+            makePair("PLANET_2_PATH", "src/java/org/projet/assets/planet/planet02.png"),
+            makePair("PLANET_3_PATH", "src/java/org/projet/assets/planet/planet09.png"),
+            makePair("DEFAULT_RECT_COLOR", "BLACK"), //Couleur du rectangle entourant chaque case //TRANSPARENT
+            makePair("", ""),
+            makePair("", ""),
+            makePair("", "")
+
 
 
     );
@@ -50,8 +59,8 @@ public class Dataset {
     List<Pair<String, Integer>> listeMesure = List.of(
             new Pair<>("ROW_HERO_APPARITION", 17),
             new Pair<>("COL_HERO_APPARITION", 10),
-            new Pair<>("SCENE_V",1200),
-            new Pair<>("SCENE_V1",800),
+            new Pair<>("SCENE_V",600),
+            new Pair<>("SCENE_V1",600),
             new Pair<>("DEFAULT_AGRESSOR_REMOVE_HP_HERO",2),
             new Pair<>("DEFAULT_ARROW_REMOVE_HP_HERO",2),
             new Pair<>("DEFAULT_AGRESSOR_SPEED",1),
@@ -63,9 +72,10 @@ public class Dataset {
             new Pair<>("DEFAULT_ARROW_SPEED",3),
             new Pair<>("DEFAULT_INCREASEMENT_LASER",3),
             new Pair<>("DEFAULT_INCREASEMENT_ARROW",5),
-            new Pair<>("",0),
-            new Pair<>("",0),
-            new Pair<>("",0),
+            new Pair<>("DEFAULT_NB_ROW_COL",20),  //nombre de lignes et colonne de chaque map vue et  map
+            new Pair<>("DEFAULT_CASE_SIZE_VIEW",40), // Taille d'une case dans la vue : 40
+            new Pair<>("BACKGROUND_SIZE_V1",50),
+            new Pair<>("BACKGROUND_SIZE_V2",50),
             new Pair<>("",0)
 
     );
