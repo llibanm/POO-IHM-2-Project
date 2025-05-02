@@ -55,12 +55,34 @@ public class MainGameView extends Application {
         MatrixLvlEditorController matrixLvlEditorController = new MatrixLvlEditorController(gameModel,matrixLvLEditorView,heroStateView,
                 selectController);
 
-        StackPane stackPane = new StackPane();
+        StackPane centerMapView = new StackPane();
        // Background imgBackground = createImgBackground("src/java/org/projet/assets/planet/planet01.png",100,100);
        // stackPane.setBackground(imgBackground);
-        stackPane.getChildren().add(matrixLvLEditorView);
+        centerMapView.getChildren().add(matrixLvLEditorView);
         matrixLvlEditorController.addGridListenersOnView();
         String commonPath = dataset.getString("DEFAULT_ASSET_PATH");
+        initSelectItemView(commonPath, model, selectItemView);
+        selectController.addListenerToIems();
+
+        /**
+         * Barre supérieur des options
+         */
+        Pane myPane = getTopPaneView();
+
+        matrixLvlEditorController.setPaneView(myPane);
+
+        root.setCenter(centerMapView);
+        root.setLeft(selectItemView);
+        root.setTop(myPane);
+        root.setRight(heroStateView);
+        //root.setBottom(myPane);
+
+        Scene scene = new Scene(root, dataset.getMesure("SCENE_V"), dataset.getMesure("SCENE_V1"));
+        primaryStage.setScene(scene);
+        primaryStage.show();
+    }
+
+    private static void initSelectItemView(String commonPath, SelectItemSectionModel model, SelectItemView selectItemView) {
         String[] paths = {
                 "Agressor.png",
                 "boss.png",
@@ -88,30 +110,11 @@ public class MainGameView extends Application {
         };
 
         for (int i = 0; i < paths.length; i++) {
-            CaseMatrix cm = getCaseMatrix(commonPath+paths[i], objects[i]);
+            CaseMatrix cm = getCaseMatrix(commonPath +paths[i], objects[i]);
             model.addItem(cm);
             addItem(selectItemView, cm);
         }
-
-
-        selectController.addListenerToIems();
-        root.setCenter(stackPane);
-        root.setLeft(selectItemView);
-
-        Pane myPane = getTopPaneView();
-
-
-        matrixLvlEditorController.setPaneView(myPane);
-        root.setTop(myPane);
-
-        root.setRight(heroStateView);
-        //root.setBottom(myPane);
-
-        Scene scene = new Scene(root, dataset.getMesure("SCENE_V"), dataset.getMesure("SCENE_V1"));
-        primaryStage.setScene(scene);
-        primaryStage.show();
     }
-
 
 
     private static void addItem(SelectItemView selectItemView, CaseMatrix agressorcaseMatrix) {
