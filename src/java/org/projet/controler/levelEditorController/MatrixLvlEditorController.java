@@ -1,16 +1,12 @@
 package src.java.org.projet.controler.levelEditorController;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
 import javafx.application.Platform;
-import javafx.geometry.Insets;
 import javafx.scene.Node;
 import javafx.scene.control.*;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.Pane;
-import javafx.scene.layout.VBox;
-import javafx.util.Pair;
 import src.java.org.projet.interfaces.Movable;
 import src.java.org.projet.interfaces.MyLogger;
 import src.java.org.projet.model.Dataset;
@@ -245,9 +241,10 @@ public class MatrixLvlEditorController implements PropertyChangeListener {
      * @param evt
      */
     private void handleShowModelCase(PropertyChangeEvent evt) {
-        CaseMatrix newLocation = (CaseMatrix) evt.getNewValue();
+        MatrixLvlEditorModel newLocation = (MatrixLvlEditorModel) evt.getNewValue();
         logger.info("Affichage des cases du model  " + newLocation);
-        view.placeItemImg(newLocation.getUrlImgToShow(), newLocation.getCoordRow(), newLocation.getCoordCol());
+        //view.placeItemImg(newLocation.getUrlImgToShow(), newLocation.getCoordRow(), newLocation.getCoordCol());
+        view.showModelView(newLocation);
     }
 
     /**
@@ -503,19 +500,19 @@ public class MatrixLvlEditorController implements PropertyChangeListener {
                         System.out.println("Affichage du classement");
                         menuActionLookRank();
                     } else if (itemName.equals(dataset.getString("IMPORTER"))) {
-                        System.out.println("Chargement du jeu depuis la dernière sauvegarde");
+                        logger.info("Chargement du jeu depuis la dernière sauvegarde");
                         try {
                             handleImportLvl();
                         } catch (IOException e) {
                             throw new RuntimeException(e);
                         }
-                    } else if (itemName.equals(dataset.getString("Configuration"))) {
-                        System.out.println("Ouverture des configurations");
+                    } else if (itemName.equals(dataset.getString("CONFIG"))) {
+                        logger.info("Ouverture des configurations");
                         demanderInfos();
                     } else if (itemName.equals(dataset.getString("EXPORT"))) {
-                        System.out.println("Exportation du jeu");
+                        logger.info("Exportation du jeu");
                         try {
-                            gameModel.exporterNiveaux("json/levels.json");
+                            gameModel.exporterNiveaux("json/defaultLevels.json");
                         } catch (IOException e) {
                             throw new RuntimeException(e);
                         }
@@ -529,6 +526,11 @@ public class MatrixLvlEditorController implements PropertyChangeListener {
         }
     }
 
+    /**
+     * Gestion de l'action d'import du json de l'utilisateur
+     * sur la barre de menu
+     * @throws IOException
+     */
     private void handleImportLvl() throws IOException {
         gameLogic.stopMovementLoop();
         gameModel.importerNiveaux(dataset.getString("DEFAULT_IMPORT_JSON_PATH"));
@@ -538,7 +540,7 @@ public class MatrixLvlEditorController implements PropertyChangeListener {
     }
 
     /**
-     * Afficher la liste des core
+     * Afficher la liste des scores
      */
     private void menuActionLookRank() {
         showScores(gameModel.getHallOfFame());

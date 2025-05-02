@@ -8,6 +8,7 @@ import javafx.scene.paint.Color;
 import javafx.scene.shape.Rectangle;
 import src.java.org.projet.controler.levelEditorController.MatrixLvlEditorController;
 import src.java.org.projet.interfaces.MyLogger;
+import src.java.org.projet.model.modelLevelEditor.MatrixLvlEditorModel;
 import src.java.org.projet.model.modelLevelEditor.base.CaseMatrix;
 
 import javax.swing.*;
@@ -235,6 +236,16 @@ public class MatrixLvLEditorView extends GridPane {
         return rec;
     }
 
+    public  void showModelView(MatrixLvlEditorModel model) {
+        for (int i = 0; i < model.getNbOfRows(); i++) {
+            for (int j = 0; j < model.getNbOfCols(); j++) {
+                CaseMatrix case_ = model.getCaseMatrix(i,j);
+                placeItemImgBis(case_.getUrlImgToShow(), i,j);
+            }
+        }
+    }
+
+
     public void placeItemImgBis(ImageView img, int row, int col) {
         if (img != null && isValidCoordinate(row, col)) {
             StackPane pane = new StackPane();
@@ -247,7 +258,7 @@ public class MatrixLvLEditorView extends GridPane {
         if (url != null && !url.isEmpty() && isValidCoordinate(row, col)) {
             StackPane pane = new StackPane();
             ImageView img = createImg(url);
-            pane.getChildren().addAll(/*getRect(),*/img);
+            pane.getChildren().addAll(getRect(),img);
             this.add(pane, col, row);
         }
     }

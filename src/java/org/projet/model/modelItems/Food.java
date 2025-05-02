@@ -1,11 +1,14 @@
 package src.java.org.projet.model.modelItems;
 
 
+import com.fasterxml.jackson.annotation.JsonCreator;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import src.java.org.projet.model.modelCharacter.Hero;
 import src.java.org.projet.model.modelGame.GameModel;
 
 public class Food extends Item {
-    public Food(String name){
+    @JsonCreator
+    public Food(@JsonProperty("name") String name){
         super(name,"-It is food that you can use to increase your health points");
 
     }

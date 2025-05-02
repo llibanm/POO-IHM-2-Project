@@ -100,15 +100,8 @@ public class MatrixLvlEditorModel extends AbstractModel {
 
     public void showItemModel() {
         MatrixLvlEditorModel mod = this;
-        for (int i = 0; i < nbOfRows; i++) {
-            for (int j = 0; j < nbOfCols; j++) {
-                //System.out.print(matrixEditorLvl[i][j] + " ");
-                //CaseMatrix nextCase = getCaseMatrix(i, j);
-
-                this.getPropertyChangeSupport().firePropertyChange("showModelCase", null, getMatrixEditorLvl());
-            }
-            System.out.println();
-        }
+        this.getPropertyChangeSupport().firePropertyChange("showModelCase", null, this);
+            //System.out.println();
     }
 
     public void addItemMatriceCoord(Coord c, CaseMatrix items) {

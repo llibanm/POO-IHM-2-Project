@@ -34,7 +34,7 @@ public class Dataset {
             makePair("EXPORT","Exporter niveau"),
             makePair("AUTHOR","Clara Schobert\nMarcel Dzengue Bony\nAbbes Samy\nMohamed Ali Liban" ),
             makePair("DEFAULTSCOREPATH", "json/score.json" ),
-            makePair("DEFAULT_IMPORT_JSON_PATH", "json/levels.json"),
+            makePair("DEFAULT_IMPORT_JSON_PATH", "json/defaultLevels.json"),
             makePair("HEROPNG", "src/java/org/projet/assets/Hero.png"),
             makePair("DEFAULTHEROPNG", "src/java/org/projet/assets/defaultHero.png")
 

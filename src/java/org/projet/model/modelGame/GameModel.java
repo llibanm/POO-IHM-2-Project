@@ -10,6 +10,7 @@ import src.java.org.projet.interfaces.MyLogger;
 import src.java.org.projet.model.Dataset;
 import src.java.org.projet.model.modelCharacter.Boss;
 import src.java.org.projet.model.modelCharacter.Hero;
+import src.java.org.projet.model.modelItems.Food;
 import src.java.org.projet.model.modelLevelEditor.MatrixLvlEditorModel;
 import src.java.org.projet.model.modelLevelEditor.base.CaseMatrix;
 import src.java.org.projet.model.modelLevelEditor.base.Coord;
@@ -206,6 +207,7 @@ public class GameModel {
     public void instantiateAllCasesToJson() throws JsonProcessingException {
         Map<String, Class<?>> typeMap = new HashMap<>();
         typeMap.put("SimpleDoor", SimpleDoor.class);
+        typeMap.put("Food", Food.class);
         ObjectMapper mapper = new ObjectMapper();
         JsonNode node;
         for (MatrixLvlEditorModel level : allLevels) {
