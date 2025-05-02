@@ -20,7 +20,7 @@
                 <artifactId>exec-maven-plugin</artifactId>
                 <version>3.1.0</version>
                 <configuration>
-                    <mainClass>src.org.projet.view.MainGameView</mainClass>
+                    <mainClass>org.projet.view.MainGameView</mainClass>
                 </configuration>
             </plugin>
 

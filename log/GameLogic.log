@@ -1,0 +1,191 @@
+[2025-05-02 23:33:29.161] SEVERE - GameLogic.moveEnemy - Ajout du mvt de l'ennemi MyCharacter{name='Boss', HP=10, coord=Coord{row=1, col=2}}
+[2025-05-02 23:33:29.163] INFO - GameLogic.moveEnemy - enemyIsAttacking: false
+[2025-05-02 23:33:29.164] INFO - GameLogic.aiComputeNextMove - heroPos: Coord{row=8, col=5}ennemy MyCharacter{name='Boss', HP=10, coord=Coord{row=1, col=2}}
+[2025-05-02 23:33:29.164] INFO - GameLogic.aiComputeNextMove - for ennemy newRow: 2 newCol: 2
+[2025-05-02 23:33:29.176] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='Boss', HP=10, coord=Coord{row=1, col=2}} 1 0
+[2025-05-02 23:33:29.377] SEVERE - GameLogic.moveEnemy - Ajout du mvt de l'ennemi MyCharacter{name='Boss', HP=10, coord=Coord{row=2, col=2}}
+[2025-05-02 23:33:29.378] INFO - GameLogic.moveEnemy - enemyIsAttacking: false
+[2025-05-02 23:33:29.378] INFO - GameLogic.aiComputeNextMove - heroPos: Coord{row=8, col=5}ennemy MyCharacter{name='Boss', HP=10, coord=Coord{row=2, col=2}}
+[2025-05-02 23:33:29.378] INFO - GameLogic.aiComputeNextMove - for ennemy newRow: 3 newCol: 2
+[2025-05-02 23:33:29.390] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='Boss', HP=10, coord=Coord{row=2, col=2}} 1 0
+[2025-05-02 23:33:29.561] SEVERE - GameLogic.moveEnemy - Ajout du mvt de l'ennemi MyCharacter{name='Boss', HP=10, coord=Coord{row=3, col=2}}
+[2025-05-02 23:33:29.561] INFO - GameLogic.moveEnemy - enemyIsAttacking: false
+[2025-05-02 23:33:29.561] INFO - GameLogic.aiComputeNextMove - heroPos: Coord{row=8, col=5}ennemy MyCharacter{name='Boss', HP=10, coord=Coord{row=3, col=2}}
+[2025-05-02 23:33:29.561] INFO - GameLogic.aiComputeNextMove - for ennemy newRow: 4 newCol: 2
+[2025-05-02 23:33:29.561] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='Boss', HP=10, coord=Coord{row=3, col=2}} 1 0
+[2025-05-02 23:33:29.768] SEVERE - GameLogic.moveEnemy - Ajout du mvt de l'ennemi MyCharacter{name='Boss', HP=10, coord=Coord{row=4, col=2}}
+[2025-05-02 23:33:29.768] INFO - GameLogic.moveEnemy - enemyIsAttacking: false
+[2025-05-02 23:33:29.768] INFO - GameLogic.aiComputeNextMove - heroPos: Coord{row=8, col=5}ennemy MyCharacter{name='Boss', HP=10, coord=Coord{row=4, col=2}}
+[2025-05-02 23:33:29.769] INFO - GameLogic.aiComputeNextMove - for ennemy newRow: 5 newCol: 2
+[2025-05-02 23:33:29.769] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='Boss', HP=10, coord=Coord{row=4, col=2}} 1 0
+[2025-05-02 23:33:29.960] SEVERE - GameLogic.moveEnemy - Ajout du mvt de l'ennemi MyCharacter{name='Boss', HP=10, coord=Coord{row=5, col=2}}
+[2025-05-02 23:33:29.974] INFO - GameLogic.moveEnemy - enemyIsAttacking: false
+[2025-05-02 23:33:29.975] INFO - GameLogic.aiComputeNextMove - heroPos: Coord{row=8, col=5}ennemy MyCharacter{name='Boss', HP=10, coord=Coord{row=5, col=2}}
+[2025-05-02 23:33:29.975] INFO - GameLogic.aiComputeNextMove - for ennemy newRow: 6 newCol: 2
+[2025-05-02 23:33:29.975] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='Boss', HP=10, coord=Coord{row=5, col=2}} 1 0
+[2025-05-02 23:33:30.168] SEVERE - GameLogic.moveEnemy - Ajout du mvt de l'ennemi MyCharacter{name='Boss', HP=10, coord=Coord{row=6, col=2}}
+[2025-05-02 23:33:30.169] INFO - GameLogic.moveEnemy - enemyIsAttacking: false
+[2025-05-02 23:33:30.169] INFO - GameLogic.aiComputeNextMove - heroPos: Coord{row=8, col=5}ennemy MyCharacter{name='Boss', HP=10, coord=Coord{row=6, col=2}}
+[2025-05-02 23:33:30.169] INFO - GameLogic.aiComputeNextMove - for ennemy newRow: 7 newCol: 2
+[2025-05-02 23:33:30.169] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='Boss', HP=10, coord=Coord{row=6, col=2}} 1 0
+[2025-05-02 23:33:30.258] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='Marcel', HP=10, coord=Coord{row=8, col=5}}
+[2025-05-02 23:33:30.258] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='Marcel', HP=10, coord=Coord{row=8, col=5}} 0 1
+[2025-05-02 23:33:30.361] SEVERE - GameLogic.moveEnemy - Ajout du mvt de l'ennemi MyCharacter{name='Boss', HP=10, coord=Coord{row=7, col=2}}
+[2025-05-02 23:33:30.361] INFO - GameLogic.moveEnemy - enemyIsAttacking: false
+[2025-05-02 23:33:30.362] INFO - GameLogic.aiComputeNextMove - heroPos: Coord{row=8, col=6}ennemy MyCharacter{name='Boss', HP=10, coord=Coord{row=7, col=2}}
+[2025-05-02 23:33:30.362] INFO - GameLogic.aiComputeNextMove - for ennemy newRow: 8 newCol: 2
+[2025-05-02 23:33:30.363] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='Boss', HP=10, coord=Coord{row=7, col=2}} 1 0
+[2025-05-02 23:33:30.486] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='Marcel', HP=10, coord=Coord{row=8, col=6}}
+[2025-05-02 23:33:30.487] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='Marcel', HP=10, coord=Coord{row=8, col=6}} 0 1
+[2025-05-02 23:33:30.568] SEVERE - GameLogic.moveEnemy - Ajout du mvt de l'ennemi MyCharacter{name='Boss', HP=10, coord=Coord{row=8, col=2}}
+[2025-05-02 23:33:30.578] INFO - GameLogic.moveEnemy - enemyIsAttacking: false
+[2025-05-02 23:33:30.578] INFO - GameLogic.aiComputeNextMove - heroPos: Coord{row=8, col=7}ennemy MyCharacter{name='Boss', HP=10, coord=Coord{row=8, col=2}}
+[2025-05-02 23:33:30.578] INFO - GameLogic.aiComputeNextMove - for ennemy newRow: 8 newCol: 3
+[2025-05-02 23:33:30.578] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='Boss', HP=10, coord=Coord{row=8, col=2}} 0 1
+[2025-05-02 23:33:30.708] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='Marcel', HP=10, coord=Coord{row=8, col=7}}
+[2025-05-02 23:33:30.709] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='Marcel', HP=10, coord=Coord{row=8, col=7}} 0 1
+[2025-05-02 23:33:30.761] SEVERE - GameLogic.moveEnemy - Ajout du mvt de l'ennemi MyCharacter{name='Boss', HP=10, coord=Coord{row=8, col=3}}
+[2025-05-02 23:33:30.763] INFO - GameLogic.moveEnemy - enemyIsAttacking: true
+[2025-05-02 23:33:30.763] INFO - GameLogic.moveEnemy - L'ennemi est en train d'attaquer le héros
+[2025-05-02 23:33:30.811] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@77f3c029 0 1
+[2025-05-02 23:33:30.875] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='Marcel', HP=10, coord=Coord{row=8, col=8}}
+[2025-05-02 23:33:30.875] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='Marcel', HP=10, coord=Coord{row=8, col=8}} -1 0
+[2025-05-02 23:33:30.979] SEVERE - GameLogic.moveEnemy - Ajout du mvt de l'ennemi MyCharacter{name='Boss', HP=10, coord=Coord{row=8, col=3}}
+[2025-05-02 23:33:30.981] INFO - GameLogic.moveEnemy - enemyIsAttacking: false
+[2025-05-02 23:33:30.983] INFO - GameLogic.aiComputeNextMove - heroPos: Coord{row=7, col=8}ennemy MyCharacter{name='Boss', HP=10, coord=Coord{row=8, col=3}}
+[2025-05-02 23:33:30.985] INFO - GameLogic.aiComputeNextMove - for ennemy newRow: 7 newCol: 3
+[2025-05-02 23:33:30.985] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='Boss', HP=10, coord=Coord{row=8, col=3}} -1 0
+[2025-05-02 23:33:31.056] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='Marcel', HP=10, coord=Coord{row=7, col=8}}
+[2025-05-02 23:33:31.056] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='Marcel', HP=10, coord=Coord{row=7, col=8}} -1 0
+[2025-05-02 23:33:31.113] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@77f3c029 Direction:Coord{row=0, col=1}
+[2025-05-02 23:33:31.113] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@77f3c029 0 1
+[2025-05-02 23:33:31.161] SEVERE - GameLogic.moveEnemy - Ajout du mvt de l'ennemi MyCharacter{name='Boss', HP=10, coord=Coord{row=7, col=3}}
+[2025-05-02 23:33:31.161] INFO - GameLogic.moveEnemy - enemyIsAttacking: false
+[2025-05-02 23:33:31.161] INFO - GameLogic.aiComputeNextMove - heroPos: Coord{row=6, col=8}ennemy MyCharacter{name='Boss', HP=10, coord=Coord{row=7, col=3}}
+[2025-05-02 23:33:31.161] INFO - GameLogic.aiComputeNextMove - for ennemy newRow: 6 newCol: 3
+[2025-05-02 23:33:31.161] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='Boss', HP=10, coord=Coord{row=7, col=3}} -1 0
+[2025-05-02 23:33:31.366] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='Marcel', HP=10, coord=Coord{row=6, col=8}}
+[2025-05-02 23:33:31.366] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='Marcel', HP=10, coord=Coord{row=6, col=8}} -1 0
+[2025-05-02 23:33:31.372] SEVERE - GameLogic.moveEnemy - Ajout du mvt de l'ennemi MyCharacter{name='Boss', HP=10, coord=Coord{row=6, col=3}}
+[2025-05-02 23:33:31.373] INFO - GameLogic.moveEnemy - enemyIsAttacking: false
+[2025-05-02 23:33:31.374] INFO - GameLogic.aiComputeNextMove - heroPos: Coord{row=5, col=8}ennemy MyCharacter{name='Boss', HP=10, coord=Coord{row=6, col=3}}
+[2025-05-02 23:33:31.374] INFO - GameLogic.aiComputeNextMove - for ennemy newRow: 5 newCol: 3
+[2025-05-02 23:33:31.374] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='Boss', HP=10, coord=Coord{row=6, col=3}} -1 0
+[2025-05-02 23:33:31.466] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@77f3c029 Direction:Coord{row=0, col=1}
+[2025-05-02 23:33:31.466] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@77f3c029 0 1
+[2025-05-02 23:33:31.558] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='Marcel', HP=10, coord=Coord{row=5, col=8}}
+[2025-05-02 23:33:31.558] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='Marcel', HP=10, coord=Coord{row=5, col=8}} 1 0
+[2025-05-02 23:33:31.565] SEVERE - GameLogic.moveEnemy - Ajout du mvt de l'ennemi MyCharacter{name='Boss', HP=10, coord=Coord{row=5, col=3}}
+[2025-05-02 23:33:31.566] INFO - GameLogic.moveEnemy - enemyIsAttacking: false
+[2025-05-02 23:33:31.566] INFO - GameLogic.aiComputeNextMove - heroPos: Coord{row=6, col=8}ennemy MyCharacter{name='Boss', HP=10, coord=Coord{row=5, col=3}}
+[2025-05-02 23:33:31.570] INFO - GameLogic.aiComputeNextMove - for ennemy newRow: 6 newCol: 3
+[2025-05-02 23:33:31.571] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='Boss', HP=10, coord=Coord{row=5, col=3}} 1 0
+[2025-05-02 23:33:31.776] SEVERE - GameLogic.moveEnemy - Ajout du mvt de l'ennemi MyCharacter{name='Boss', HP=10, coord=Coord{row=6, col=3}}
+[2025-05-02 23:33:31.777] INFO - GameLogic.moveEnemy - enemyIsAttacking: false
+[2025-05-02 23:33:31.777] INFO - GameLogic.aiComputeNextMove - heroPos: Coord{row=6, col=8}ennemy MyCharacter{name='Boss', HP=10, coord=Coord{row=6, col=3}}
+[2025-05-02 23:33:31.777] INFO - GameLogic.aiComputeNextMove - for ennemy newRow: 6 newCol: 4
+[2025-05-02 23:33:31.777] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='Boss', HP=10, coord=Coord{row=6, col=3}} 0 1
+[2025-05-02 23:33:31.824] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@77f3c029 Direction:Coord{row=0, col=1}
+[2025-05-02 23:33:31.827] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@77f3c029 0 1
+[2025-05-02 23:33:31.960] SEVERE - GameLogic.moveEnemy - Ajout du mvt de l'ennemi MyCharacter{name='Boss', HP=10, coord=Coord{row=6, col=4}}
+[2025-05-02 23:33:31.961] INFO - GameLogic.moveEnemy - enemyIsAttacking: true
+[2025-05-02 23:33:31.961] INFO - GameLogic.moveEnemy - L'ennemi est en train d'attaquer le héros
+[2025-05-02 23:33:32.057] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@92cad41 0 1
+[2025-05-02 23:33:32.171] SEVERE - GameLogic.moveEnemy - Ajout du mvt de l'ennemi MyCharacter{name='Boss', HP=10, coord=Coord{row=6, col=4}}
+[2025-05-02 23:33:32.171] INFO - GameLogic.moveEnemy - enemyIsAttacking: true
+[2025-05-02 23:33:32.171] INFO - GameLogic.moveEnemy - L'ennemi est en train d'attaquer le héros
+[2025-05-02 23:33:32.229] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@836ac25 0 1
+[2025-05-02 23:33:32.264] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@77f3c029 Direction:Coord{row=0, col=1}
+[2025-05-02 23:33:32.264] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@77f3c029 0 1
+[2025-05-02 23:33:32.361] SEVERE - GameLogic.moveEnemy - Ajout du mvt de l'ennemi MyCharacter{name='Boss', HP=10, coord=Coord{row=6, col=4}}
+[2025-05-02 23:33:32.361] INFO - GameLogic.moveEnemy - enemyIsAttacking: true
+[2025-05-02 23:33:32.361] INFO - GameLogic.moveEnemy - L'ennemi est en train d'attaquer le héros
+[2025-05-02 23:33:32.425] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@92cad41 Direction:Coord{row=0, col=1}
+[2025-05-02 23:33:32.425] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@1faba08f 0 1
+[2025-05-02 23:33:32.427] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@92cad41 0 1
+[2025-05-02 23:33:32.572] SEVERE - GameLogic.moveEnemy - Ajout du mvt de l'ennemi MyCharacter{name='Boss', HP=10, coord=Coord{row=6, col=4}}
+[2025-05-02 23:33:32.572] INFO - GameLogic.moveEnemy - enemyIsAttacking: true
+[2025-05-02 23:33:32.573] INFO - GameLogic.moveEnemy - L'ennemi est en train d'attaquer le héros
+[2025-05-02 23:33:32.627] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@5a1aab45 0 1
+[2025-05-02 23:33:32.712] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@77f3c029 Direction:Coord{row=0, col=1}
+[2025-05-02 23:33:32.712] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@77f3c029 0 1
+[2025-05-02 23:33:32.895] SEVERE - GameLogic.moveEnemy - Ajout du mvt de l'ennemi MyCharacter{name='Boss', HP=10, coord=Coord{row=6, col=4}}
+[2025-05-02 23:33:32.896] INFO - GameLogic.moveEnemy - enemyIsAttacking: true
+[2025-05-02 23:33:32.896] INFO - GameLogic.moveEnemy - L'ennemi est en train d'attaquer le héros
+[2025-05-02 23:33:32.899] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@21416aac 0 1
+[2025-05-02 23:33:32.903] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@92cad41 Direction:Coord{row=0, col=1}
+[2025-05-02 23:33:32.904] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@92cad41 0 1
+[2025-05-02 23:33:32.973] SEVERE - GameLogic.moveEnemy - Ajout du mvt de l'ennemi MyCharacter{name='Boss', HP=10, coord=Coord{row=6, col=4}}
+[2025-05-02 23:33:32.975] INFO - GameLogic.moveEnemy - enemyIsAttacking: true
+[2025-05-02 23:33:32.975] INFO - GameLogic.moveEnemy - L'ennemi est en train d'attaquer le héros
+[2025-05-02 23:33:33.016] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@5a1aab45 Direction:Coord{row=0, col=1}
+[2025-05-02 23:33:33.017] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@42b17595 0 1
+[2025-05-02 23:33:33.019] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@5a1aab45 0 1
+[2025-05-02 23:33:33.161] SEVERE - GameLogic.moveEnemy - Ajout du mvt de l'ennemi MyCharacter{name='Boss', HP=10, coord=Coord{row=6, col=4}}
+[2025-05-02 23:33:33.161] INFO - GameLogic.moveEnemy - enemyIsAttacking: true
+[2025-05-02 23:33:33.161] INFO - GameLogic.moveEnemy - L'ennemi est en train d'attaquer le héros
+[2025-05-02 23:33:33.224] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@77f3c029 Direction:Coord{row=0, col=1}
+[2025-05-02 23:33:33.225] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@71a1547f 0 1
+[2025-05-02 23:33:33.229] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@77f3c029 0 1
+[2025-05-02 23:33:33.369] SEVERE - GameLogic.moveEnemy - Ajout du mvt de l'ennemi MyCharacter{name='Boss', HP=10, coord=Coord{row=6, col=4}}
+[2025-05-02 23:33:33.369] INFO - GameLogic.moveEnemy - enemyIsAttacking: true
+[2025-05-02 23:33:33.369] INFO - GameLogic.moveEnemy - L'ennemi est en train d'attaquer le héros
+[2025-05-02 23:33:33.417] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@23067876 0 1
+[2025-05-02 23:33:33.464] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@5a1aab45 Direction:Coord{row=0, col=1}
+[2025-05-02 23:33:33.465] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@5a1aab45 0 1
+[2025-05-02 23:33:33.560] SEVERE - GameLogic.moveEnemy - Ajout du mvt de l'ennemi MyCharacter{name='Boss', HP=10, coord=Coord{row=6, col=4}}
+[2025-05-02 23:33:33.560] INFO - GameLogic.moveEnemy - enemyIsAttacking: true
+[2025-05-02 23:33:33.560] INFO - GameLogic.moveEnemy - L'ennemi est en train d'attaquer le héros
+[2025-05-02 23:33:33.625] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@71a1547f Direction:Coord{row=0, col=1}
+[2025-05-02 23:33:33.625] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@72a3086c 0 1
+[2025-05-02 23:33:33.627] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@71a1547f 0 1
+[2025-05-02 23:33:33.672] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@77f3c029 Direction:Coord{row=0, col=1}
+[2025-05-02 23:33:33.673] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@77f3c029 0 1
+[2025-05-02 23:33:33.763] SEVERE - GameLogic.moveEnemy - Ajout du mvt de l'ennemi MyCharacter{name='Boss', HP=10, coord=Coord{row=6, col=4}}
+[2025-05-02 23:33:33.765] INFO - GameLogic.moveEnemy - enemyIsAttacking: true
+[2025-05-02 23:33:33.765] INFO - GameLogic.moveEnemy - L'ennemi est en train d'attaquer le héros
+[2025-05-02 23:33:33.811] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@4ee76edd 0 1
+[2025-05-02 23:33:33.962] SEVERE - GameLogic.moveEnemy - Ajout du mvt de l'ennemi MyCharacter{name='Boss', HP=10, coord=Coord{row=6, col=4}}
+[2025-05-02 23:33:33.963] INFO - GameLogic.moveEnemy - enemyIsAttacking: true
+[2025-05-02 23:33:33.963] INFO - GameLogic.moveEnemy - L'ennemi est en train d'attaquer le héros
+[2025-05-02 23:33:34.011] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@7cf45c4a 0 1
+[2025-05-02 23:33:34.063] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@71a1547f Direction:Coord{row=0, col=1}
+[2025-05-02 23:33:34.063] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@71a1547f 0 1
+[2025-05-02 23:33:34.128] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@77f3c029 Direction:Coord{row=0, col=1}
+[2025-05-02 23:33:34.129] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@77f3c029 0 1
+[2025-05-02 23:33:34.163] SEVERE - GameLogic.moveEnemy - Ajout du mvt de l'ennemi MyCharacter{name='Boss', HP=10, coord=Coord{row=6, col=4}}
+[2025-05-02 23:33:34.163] INFO - GameLogic.moveEnemy - enemyIsAttacking: true
+[2025-05-02 23:33:34.163] INFO - GameLogic.moveEnemy - L'ennemi est en train d'attaquer le héros
+[2025-05-02 23:33:34.259] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@4ee76edd Direction:Coord{row=0, col=1}
+[2025-05-02 23:33:34.259] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@32dbf65c 0 1
+[2025-05-02 23:33:34.259] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@4ee76edd 0 1
+[2025-05-02 23:33:34.360] SEVERE - GameLogic.moveEnemy - Ajout du mvt de l'ennemi MyCharacter{name='Boss', HP=10, coord=Coord{row=6, col=4}}
+[2025-05-02 23:33:34.361] INFO - GameLogic.moveEnemy - enemyIsAttacking: true
+[2025-05-02 23:33:34.362] INFO - GameLogic.moveEnemy - L'ennemi est en train d'attaquer le héros
+[2025-05-02 23:33:34.414] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@440b599f 0 1
+[2025-05-02 23:33:34.594] SEVERE - GameLogic.moveEnemy - Ajout du mvt de l'ennemi MyCharacter{name='Boss', HP=10, coord=Coord{row=6, col=4}}
+[2025-05-02 23:33:34.596] INFO - GameLogic.moveEnemy - enemyIsAttacking: true
+[2025-05-02 23:33:34.596] INFO - GameLogic.moveEnemy - L'ennemi est en train d'attaquer le héros
+[2025-05-02 23:33:34.624] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@77f3c029 Direction:Coord{row=0, col=1}
+[2025-05-02 23:33:34.625] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@35ee45cc 0 1
+[2025-05-02 23:33:34.628] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@77f3c029 0 1
+[2025-05-02 23:33:34.692] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@4ee76edd Direction:Coord{row=0, col=1}
+[2025-05-02 23:33:34.692] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@4ee76edd 0 1
+[2025-05-02 23:33:34.765] SEVERE - GameLogic.moveEnemy - Ajout du mvt de l'ennemi MyCharacter{name='Boss', HP=10, coord=Coord{row=6, col=4}}
+[2025-05-02 23:33:34.766] INFO - GameLogic.moveEnemy - enemyIsAttacking: true
+[2025-05-02 23:33:34.766] INFO - GameLogic.moveEnemy - L'ennemi est en train d'attaquer le héros
+[2025-05-02 23:33:34.814] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@440b599f Direction:Coord{row=0, col=1}
+[2025-05-02 23:33:34.814] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@7db58700 0 1
+[2025-05-02 23:33:34.815] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@440b599f 0 1
+[2025-05-02 23:33:35.257] SEVERE - GameLogic.moveEnemy - Ajout du mvt de l'ennemi MyCharacter{name='Boss', HP=10, coord=Coord{row=6, col=4}}
+[2025-05-02 23:33:35.258] INFO - GameLogic.moveEnemy - enemyIsAttacking: true
+[2025-05-02 23:33:35.258] INFO - GameLogic.moveEnemy - L'ennemi est en train d'attaquer le héros
+[2025-05-02 23:33:35.261] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@7a9ee3df 0 1
+[2025-05-02 23:33:35.265] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@77f3c029 Direction:Coord{row=0, col=1}
+[2025-05-02 23:33:35.265] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@77f3c029 0 1
+[2025-05-02 23:33:35.273] SEVERE - GameLogic.moveEnemy - Ajout du mvt de l'ennemi MyCharacter{name='Boss', HP=10, coord=Coord{row=6, col=4}}
+[2025-05-02 23:33:35.274] INFO - GameLogic.moveEnemy - enemyIsAttacking: true
+[2025-05-02 23:33:35.274] INFO - GameLogic.moveEnemy - L'ennemi est en train d'attaquer le héros
+[2025-05-02 23:33:35.277] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@16049118 0 1
+[2025-05-02 23:33:35.312] SEVERE - GameLogic.moveBow - Ajout du mvt de la flèche src.java.org.projet.model.modelItems.Bow@440b599f Direction:Coord{row=0, col=1}
+[2025-05-02 23:33:35.328] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queuesrc.java.org.projet.model.modelItems.Bow@440b599f 0 1
