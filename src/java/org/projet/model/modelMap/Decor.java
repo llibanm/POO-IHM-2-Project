@@ -1,6 +1,6 @@
 package src.java.org.projet.model.modelMap;
 
-/**Simple classe representant les objets de decor
+/**Simple classe representant les objets de décor
  *
  * @author 1
  */

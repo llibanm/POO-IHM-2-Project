@@ -13,19 +13,9 @@ import java.util.logging.Logger;
 public  class SelectItemSectionModel extends AbstractModel {
     private  final Logger logger = Logger.getLogger(SelectItemSectionModel.class.getName());
     List<CaseMatrix> itemsOfSelectionMenu;
-    //Item que l'utilisateur a selectionné pour positionner sur le plateau
+    /**Item que l'utilisateur a selectionné pour positionner sur le plateau*/
     CaseMatrix currentSelectedItem;
 
-    public CaseMatrix getCurrentSelectedItem() {
-        return currentSelectedItem;
-    }
-
-    public void setCurrentSelectedItem(CaseMatrix currentSelectedItem) {
-        CaseMatrix oldValue = this.currentSelectedItem;
-        this.currentSelectedItem = currentSelectedItem;
-        logger.info(oldValue + " " + this.currentSelectedItem);
-        this.getPropertyChangeSupport().firePropertyChange("currentSelectedItem", oldValue, currentSelectedItem);
-    }
 
     public SelectItemSectionModel() {
         super("Select Item");
@@ -33,6 +23,29 @@ public  class SelectItemSectionModel extends AbstractModel {
 
     }
 
+    /**
+     * @return Obtenir la case active du menu de sélection
+     */
+    public CaseMatrix getCurrentSelectedItem() {
+        return currentSelectedItem;
+    }
+
+    /**
+     * Changer la selection courante et notifier les observateurs
+     * @param currentSelectedItem
+     */
+    public void setCurrentSelectedItem(CaseMatrix currentSelectedItem) {
+        CaseMatrix oldValue = this.currentSelectedItem;
+        this.currentSelectedItem = currentSelectedItem;
+        logger.info(oldValue + " " + this.currentSelectedItem);
+        getPropertyChangeSupport().firePropertyChange("currentSelectedItem", oldValue, currentSelectedItem);
+    }
+
+
+    /**
+     *Ajouter un item dans le menu de selection
+     * @param item
+     */
     public void addItem(CaseMatrix item) {
         itemsOfSelectionMenu.add(item);
     }
