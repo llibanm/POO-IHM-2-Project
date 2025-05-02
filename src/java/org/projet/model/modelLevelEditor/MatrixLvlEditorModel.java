@@ -431,6 +431,9 @@ public class MatrixLvlEditorModel extends AbstractModel {
         this.hero = hero;
     }
 
+    /**
+     * @return Liste des entités movable de la map courante
+     */
     public List<Movable> getMovable() {
         return movable;
     }
@@ -439,6 +442,9 @@ public class MatrixLvlEditorModel extends AbstractModel {
         this.movable = movable;
     }
 
+    /**
+     * @return Matrice de la map
+     */
     public CaseMatrix[][] getMatrixEditorLvl() {
         return matrixEditorLvl;
     }
