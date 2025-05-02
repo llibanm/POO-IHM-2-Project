@@ -1,17 +1,27 @@
 
 package src.java.org.projet.model.modelCharacter;
 
+import src.java.org.projet.model.Dataset;
 import src.java.org.projet.services.SpriteService;
 import src.java.org.projet.interfaces.Ennemy;
 import src.java.org.projet.interfaces.MoveRangeOnSprite;
 import src.java.org.projet.interfaces.MyLogger;
 import src.java.org.projet.model.modelLevelEditor.base.Coord;
 
+/**
+ * Classe representant l' ennemi secondaire
+ */
 public class Agressor extends MyCharacter implements Ennemy {
 
     private final MyLogger logger = new MyLogger(Agressor.class);
+    Dataset dataset = Dataset.getInstance();
 
 
+    /**
+     * Constructeur
+     * @param name nom
+     * @param hp points de vie
+     */
     public Agressor(String name, int hp) {
         super(name, hp,
                 new MoveRangeOnSprite(new Coord(0,-1), new Coord(3,-1),new Coord(1,-1),new Coord(2,-1)),
@@ -21,26 +31,33 @@ public class Agressor extends MyCharacter implements Ennemy {
 
     }
 
-
-    public void display_help(){}
-
+    /**
+     * Attaque le héros
+     * @param hero
+     */
     public void attack(MyCharacter hero){
         if (this.getHP() > 0) {
-            hero.decreaseHP(2);
+            hero.decreaseHP(dataset.getMesure("DEFAULT_AGRESSOR_REMOVE_HP_HERO"));
             //System.out.println("You've been attacked by an agressor" );
         }
         else {//System.out.println("agressor's out")
         }
     }
 
-    public void mission(Hero hero){}
 
-
+    /**
+     * Vitesse de déplacement de l'agresseur
+     * @return
+     */
     @Override
     public int getSpeed() {
-        return 1;
+        return dataset.getMesure("DEFAULT_AGRESSOR_SPEED");
     }
 
+    /**
+     * Obtenir l'orientation de l'ennemi
+     * @return
+     */
     @Override
     public Coord getMoveDirection() {
         return directionToCoord(getLastDirection());
@@ -52,6 +69,11 @@ public class Agressor extends MyCharacter implements Ennemy {
 
     }
 
+    /**
+     * Proximité avec le le héros
+     * @param c Coordonnées du héro
+     * @return
+     */
     @Override
     public  boolean isNearOfHero(Coord c){
         int row = c.getRow();
@@ -61,6 +83,12 @@ public class Agressor extends MyCharacter implements Ennemy {
         if(isNear) return true;
         return false;
     }
+
+    /**
+     * Détecte si l'agresseur est entrain d'attaquer le héros ou de se déplacer
+     * @param hero hero
+     * @return
+     */
     @Override
     public boolean attackHero(Hero hero) {
         boolean sameLine = (getCoord().getRow() == hero.getCoord().getRow()) || (getCoord().getCol() == hero.getCoord().getCol());
@@ -76,9 +104,12 @@ public class Agressor extends MyCharacter implements Ennemy {
     }
 
 
-
+    /**
+     * Portée d'attaque de l'ennemi
+     * @return
+     */
     @Override
     public int getPorteeAtk(){
-        return 6;
+        return dataset.getMesure("DEFAULT_AGRESSOR_PORTEE_ATK");
     }
 }

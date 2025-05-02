@@ -7,6 +7,9 @@ import src.java.org.projet.interfaces.MoveRangeOnSprite;
 import src.java.org.projet.interfaces.Views4OrientationImgCharacter;
 import src.java.org.projet.model.modelLevelEditor.base.Coord;
 
+/**
+ *Classe implémentant les caractéristiques propres aux personnages du jeu
+ */
 public abstract class MyCharacter extends Views4OrientationImgCharacter implements Movable {
 
 
@@ -15,9 +18,7 @@ public abstract class MyCharacter extends Views4OrientationImgCharacter implemen
     Coord coord;
     String defaultImgPath = "src/java/org/projet/assets/character/hero/d.png";
 
-    public MyCharacter(){
-        super();
-    }
+
 
     public MyCharacter(String name, int hp, MoveRangeOnSprite moveRangeOnSprite, SpriteService spriteService, String defaultImgPath) {
         super(spriteService,moveRangeOnSprite);
@@ -26,28 +27,53 @@ public abstract class MyCharacter extends Views4OrientationImgCharacter implemen
         this.defaultImgPath = defaultImgPath;
     }
 
+    public MyCharacter(){
+        super();
+    }
+
+    /**
+     * @return url vers la photo initiale du personnage
+     */
     public String getDefaultImgPath() {
         return defaultImgPath;
     }
 
+    /**
+     * Fixer url vers la photo initiale du personnage
+     * @param defaultImgPath chemin vers l'image
+     */
     public void setDefaultImgPath(String defaultImgPath) {
         this.defaultImgPath = defaultImgPath;
     }
 
+    /**
+     * @return Coordonnées du personnage sur la map
+     */
     public Coord getCoord() {
         return coord;
     }
 
+    /**
+     * Fixer coordonnées du personnage sur la map
+     * @param coord nouvelle coordonnées
+     */
     public void setCoord(Coord coord) {
         this.coord = coord;
     }
 
+    /**
+     * Fixer les points de vie du héro
+     * @param HP nouveau pdv
+     */
     public void setHP(int HP) {
         this.HP = HP;
     }
 
 
-
+    /**
+     * Réduire les points de vie du héro
+     * @param nbp réduction
+     */
     public void decreaseHP(int nbp){
         this.HP -= nbp;
     }
@@ -60,14 +86,21 @@ public abstract class MyCharacter extends Views4OrientationImgCharacter implemen
         return HP;
     }
 
+    /**
+     * @return nome du héro
+     */
     public String getName() {
         return name;
     }
 
 
-    public abstract void mission(Hero hero);
     public abstract void attack(MyCharacter hero);
 
+    /**
+     * Détecte si le personnage est face au héro
+     * @param hero
+     * @return
+     */
     public boolean isFacingHero(Hero hero) {
         Coord enemyPos =getCoord();
         Coord heroPos = hero.getCoord();

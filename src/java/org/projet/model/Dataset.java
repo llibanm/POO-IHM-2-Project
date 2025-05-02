@@ -49,7 +49,18 @@ public class Dataset {
             new Pair<>("ROW_HERO_APPARITION", 17),
             new Pair<>("COL_HERO_APPARITION", 10),
             new Pair<>("SCENE_V",1200),
-            new Pair<>("SCENE_V1",800)
+            new Pair<>("SCENE_V1",800),
+            new Pair<>("DEFAULT_AGRESSOR_REMOVE_HP_HERO",2),
+            new Pair<>("DEFAULT_AGRESSOR_SPEED",1),
+            new Pair<>("DEFAULT_AGRESSOR_PORTEE_ATK",6),
+            new Pair<>("DEFAULT_BOSS_PORTEE_ATK",12),
+            new Pair<>("DEFAULT_BOSS_REMOVE_HP_HERO",2),
+            new Pair<>("DEFAULT_BOSS_SPEED",1),
+            new Pair<>("DEFAULT_HERO_SPEED",1),
+            new Pair<>("",0),
+            new Pair<>("",0),
+            new Pair<>("",0),
+            new Pair<>("",0)
 
     );
 

@@ -4,12 +4,17 @@ package src.java.org.projet.model.modelCharacter;
 import src.java.org.projet.interfaces.Ennemy;
 import src.java.org.projet.interfaces.MoveRangeOnSprite;
 import src.java.org.projet.interfaces.MyLogger;
+import src.java.org.projet.model.Dataset;
 import src.java.org.projet.model.modelLevelEditor.base.Coord;
 import src.java.org.projet.services.SpriteService;
 
+/**
+ * Boss du jeu
+ */
 public class Boss extends MyCharacter implements Ennemy {
 
     private final MyLogger logger = new MyLogger(Boss.class);
+    Dataset dataset = Dataset.getInstance();
 
 
     public Boss(String name, int hp) {
@@ -23,24 +28,18 @@ public class Boss extends MyCharacter implements Ennemy {
 
 
 
-
-    public void display_help(){}
-
     public void attack(MyCharacter hero){
-        if (this.getHP() > 0) {
-            hero.decreaseHP(2);
-            //System.out.println("You've been attacked by an agressor" );
+        if (getHP() > 0) {
+            hero.decreaseHP(dataset.getMesure("DEFAULT_BOSS_REMOVE_HP_HERO"));
         }
-        else {//System.out.println("agressor's out")
-        ;}
+        else {
+        }
     }
-
-    public void mission(Hero hero){}
 
 
     @Override
     public int getSpeed() {
-        return 5;
+        return dataset.getMesure("DEFAULT_BOSS_SPEED");
     }
 
     @Override
@@ -82,6 +81,6 @@ public class Boss extends MyCharacter implements Ennemy {
 
     @Override
     public int getPorteeAtk(){
-        return 12;
+        return dataset.getMesure("DEFAULT_BOSS_PORTEE_ATK");
     }
 }

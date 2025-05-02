@@ -9,6 +9,9 @@ import src.java.org.projet.model.modelItems.Bow;
 import src.java.org.projet.model.modelLevelEditor.base.Coord;
 import src.java.org.projet.model.modelMap.Location;
 
+/**
+ * Classe du Héro
+ */
 public class Hero extends MyCharacter{
     private final MyLogger logger = new MyLogger(Hero.class);
     Dataset dataset = Dataset.getInstance();
@@ -60,18 +63,27 @@ public class Hero extends MyCharacter{
         return H_position;
     }
 
+    /**
+     * Change de location
+     * @param h_position nouvelle location
+     */
     public void setH_position(Location h_position) {
         H_position = h_position;
     }
 
 
-
-
+    /**
+     *
+     * @return Vitesse du héro
+     */
     @Override
     public int getSpeed() {
-        return 1;
+        return dataset.getMesure("DEFAULT_HERO_SPEED");
     }
 
+    /**
+     * @return sens de déplacement du héro
+     */
     @Override
     public Coord getMoveDirection() {
        return directionToCoord(getLastDirection());
@@ -92,6 +104,6 @@ public class Hero extends MyCharacter{
 
 
     public void attack(MyCharacter hero){}
-    public void mission(Hero hero){}
+
 
 }

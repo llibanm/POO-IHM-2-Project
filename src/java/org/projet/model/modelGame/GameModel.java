@@ -147,7 +147,7 @@ public class GameModel {
     }
 
     /**
-     * Exporter toutes les map des niveaux aux formats json
+     * Exporter toutes les maps des niveaux aux formats json
      * @param cheminFichier chemin d'export json
      * @throws IOException
      */
@@ -204,6 +204,10 @@ public class GameModel {
         }
     }
 
+    /**
+     * Récupérer les classes des items en convertissant les objets json
+     * @throws JsonProcessingException
+     */
     public void instantiateAllCasesToJson() throws JsonProcessingException {
         Map<String, Class<?>> typeMap = new HashMap<>();
         typeMap.put("SimpleDoor", SimpleDoor.class);
