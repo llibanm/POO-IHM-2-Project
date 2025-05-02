@@ -21,14 +21,7 @@ public class Agressor extends MyCharacter implements Ennemy {
 
     }
 
-    /*@Override
-    public void describe() {
-        System.out.println("He is your enemy, he decreases your health points by attacking you.\nNB HP : " + getHP());
-    }
 
-    public void printCharacter(){
-        System.out.println(getName());
-    }*/
 
     public void attaqueAgressorWithAr(Hero hero) {
         if (hero.CanAttaqueWithAr()){

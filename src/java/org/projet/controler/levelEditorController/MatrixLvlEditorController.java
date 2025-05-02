@@ -88,22 +88,35 @@ public class MatrixLvlEditorController implements PropertyChangeListener {
      *  initialisation
      */
     public void initController() {
-        getFocusOnMatrixView();
-        this.model = gameModel.getCurrentLevel();
-        this.view.setBackground(model.getUrlBackground());
-        subscriptionToModel();
+
+        initModels();
         initView();
+        showMessage(dataset.getString("mission_hero"));
+
+    }
+
+    private void initModels() {
+        model = gameModel.getCurrentLevel();
+        model.init();
+        subscriptionToModel();
+        if(gameLogic != null) {
+            gameLogic.stopMovementLoop();
+        }
         gameLogic = new GameLogic(model);
         gameLogic.setGameModel(gameModel);
-        showMessage(dataset.getString("mission_hero"));
     }
+
 
     /**
      * Initialisation de la vue, listener des touches claviers...
      */
     private void initView() {
+        getFocusOnMatrixView();
+        view.initializeReset();
+        view.setBackground(model.getUrlBackground());
         addGridListenersOnView();
-        this.view.setOnKeyPressed(this::handleKeyPressed);
+        view.setOnKeyPressed(this::handleKeyPressed);
+        model.showItemModel();
     }
 
     /**
@@ -126,37 +139,37 @@ public class MatrixLvlEditorController implements PropertyChangeListener {
      * @param location nouvelle location
      */
     public void updateLocation(Location location) {
-        Hero hero = model.getHero();
+
         logger.info("Update location " + location);
-        unSubscriptionToModel();
-        gameLogic.stopMovementLoop();
-        gameModel.setCurrentLevel(location.getIndexOnWorldMap());
-        this.model = gameModel.getCurrentLevel();
-        gameLogic.setModel(model);
-        gameLogic.init();
-        subscriptionToModel();
-
+        //unSubscriptionToModel();
+        //gameLogic.stopMovementLoop();
+        Hero hero = model.getHero();
         hero.setCoord(new Coord(dataset.getMesure("ROW_HERO_APPARITION"), dataset.getMesure("COL_HERO_APPARITION")));
-        this.model.setHero(hero);
-        this.view.setBackground(model.getUrlBackground());
-        this.view.initializeReset();
+        gameModel.setCurrentLevel(location.getIndexOnWorldMap());
+        /*
+        model = gameModel.getCurrentLevel();
+        gameLogic.setModel(model);
+         */
+        initModels();
+        //gameLogic.init();
+        model.setHero(hero);
         initView();
-        model.showItemModel();
-
-
     }
 
     private void updateLocationBis() {
-        unSubscriptionToModel();
-        this.model = gameModel.getCurrentLevel();
-        gameLogic.setModel(model);
-        gameLogic.init();
-        subscriptionToModel();
+       // unSubscriptionToModel();
+        //this.model = gameModel.getCurrentLevel();
+        //gameLogic.stopMovementLoop();
+        //gameLogic.setModel(model);
+        //gameLogic.init();
+        //subscriptionToModel();
         Hero hero = model.getHero();
+        int row = hero.getCoord().getRow();
+        int col = hero.getCoord().getCol();
+        model.resetItemMatrice(row, col);
+        view.removeItemFromGridPane(row, col);
         hero.setCoord(new Coord(17, 10));
         this.model.setHero(hero);
-        this.view.setBackground(model.getUrlBackground());
-        this.view.initializeReset();
         initView();
         model.showItemModel();
 
@@ -492,10 +505,7 @@ public class MatrixLvlEditorController implements PropertyChangeListener {
                     } else if (itemName.equals(dataset.getString("IMPORTER"))) {
                         System.out.println("Chargement du jeu depuis la dernière sauvegarde");
                         try {
-                            gameModel.importerNiveaux(dataset.getString("DEFAULT_IMPORT_JSON_PATH"));
-                            initController();
-                            model.initEntityWithMatrix();
-                            updateLocationBis();
+                            handleImportLvl();
                         } catch (IOException e) {
                             throw new RuntimeException(e);
                         }
@@ -517,6 +527,14 @@ public class MatrixLvlEditorController implements PropertyChangeListener {
                 });
             }
         }
+    }
+
+    private void handleImportLvl() throws IOException {
+        gameLogic.stopMovementLoop();
+        gameModel.importerNiveaux(dataset.getString("DEFAULT_IMPORT_JSON_PATH"));
+        initController();
+       // model.initEntityWithMatrix();
+        updateLocationBis();
     }
 
     /**

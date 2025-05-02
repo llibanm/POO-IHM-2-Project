@@ -1,179 +1,66 @@
-[2025-05-01 20:17:16.865] INFO - MatrixLvlEditorModel.fillHeroAndEnnemyList - L'item n'est ni un heros, ni un ennemi
-[2025-05-01 20:17:16.876] INFO - MatrixLvlEditorModel.fillHeroAndEnnemyList - Ajout d'un ennemie  fillHeroAndEnnemyList+ [MyCharacter{name='Agressor', HP=10, coord=Coord{row=1, col=4}}]
-[2025-05-01 20:17:16.881] INFO - MatrixLvlEditorModel.fillHeroAndEnnemyList - Ajout du héro  fillHeroAndEnnemyList
-[2025-05-01 20:17:16.883] INFO - MatrixLvlEditorModel.setHero - Changement de l'instance du héros
-[2025-05-01 20:17:17.906] WARNING - MatrixLvlEditorModel.moveItem - moveItem MyCharacter{name='Agressor', HP=10, coord=Coord{row=1, col=4}} rowX=1 colY=0
-[2025-05-01 20:17:17.907] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de l'ancienne case CaseMatrix{urlImgToShow='', classNameITem='null', coordRow=1, coordCol=4, width=1, height=1}
-[2025-05-01 20:17:17.907] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert false) false
-[2025-05-01 20:17:17.907] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de la nouvelle case CaseMatrix{urlImgToShow='', classNameITem='MyCharacter{name='Agressor', HP=10, coord=Coord{row=2, col=4}}', coordRow=2, coordCol=4, width=1, height=1}
-[2025-05-01 20:17:17.908] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert true) true
-[2025-05-01 20:17:17.920] INFO - MatrixLvlEditorModel.moveMovable - MyCharacter{name='Agressor', HP=10, coord=Coord{row=2, col=4}} déplacé vers Coord{row=2, col=4}
-[2025-05-01 20:17:18.887] WARNING - MatrixLvlEditorModel.moveItem - moveItem MyCharacter{name='Agressor', HP=10, coord=Coord{row=2, col=4}} rowX=1 colY=0
-[2025-05-01 20:17:18.887] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de l'ancienne case CaseMatrix{urlImgToShow='', classNameITem='null', coordRow=2, coordCol=4, width=1, height=1}
-[2025-05-01 20:17:18.887] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert false) false
-[2025-05-01 20:17:18.887] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de la nouvelle case CaseMatrix{urlImgToShow='', classNameITem='MyCharacter{name='Agressor', HP=10, coord=Coord{row=3, col=4}}', coordRow=3, coordCol=4, width=1, height=1}
-[2025-05-01 20:17:18.888] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert true) true
-[2025-05-01 20:17:18.890] INFO - MatrixLvlEditorModel.moveMovable - MyCharacter{name='Agressor', HP=10, coord=Coord{row=3, col=4}} déplacé vers Coord{row=3, col=4}
-[2025-05-01 20:17:18.997] WARNING - MatrixLvlEditorModel.moveItem - moveItem MyCharacter{name='Marcel', HP=10, coord=Coord{row=17, col=10}} rowX=-1 colY=0
-[2025-05-01 20:17:18.997] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de l'ancienne case CaseMatrix{urlImgToShow='', classNameITem='null', coordRow=17, coordCol=10, width=1, height=1}
-[2025-05-01 20:17:18.997] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert false) false
-[2025-05-01 20:17:18.997] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de la nouvelle case CaseMatrix{urlImgToShow='', classNameITem='MyCharacter{name='Marcel', HP=10, coord=Coord{row=16, col=10}}', coordRow=16, coordCol=10, width=1, height=1}
-[2025-05-01 20:17:18.997] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert true) true
-[2025-05-01 20:17:19.001] INFO - MatrixLvlEditorModel.moveMovable - MyCharacter{name='Marcel', HP=10, coord=Coord{row=16, col=10}} déplacé vers Coord{row=16, col=10}
-[2025-05-01 20:17:19.246] WARNING - MatrixLvlEditorModel.moveItem - moveItem MyCharacter{name='Marcel', HP=10, coord=Coord{row=16, col=10}} rowX=-1 colY=0
-[2025-05-01 20:17:19.246] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de l'ancienne case CaseMatrix{urlImgToShow='', classNameITem='null', coordRow=16, coordCol=10, width=1, height=1}
-[2025-05-01 20:17:19.246] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert false) false
-[2025-05-01 20:17:19.247] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de la nouvelle case CaseMatrix{urlImgToShow='', classNameITem='MyCharacter{name='Marcel', HP=10, coord=Coord{row=15, col=10}}', coordRow=15, coordCol=10, width=1, height=1}
-[2025-05-01 20:17:19.247] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert true) true
-[2025-05-01 20:17:19.250] INFO - MatrixLvlEditorModel.moveMovable - MyCharacter{name='Marcel', HP=10, coord=Coord{row=15, col=10}} déplacé vers Coord{row=15, col=10}
-[2025-05-01 20:17:19.462] WARNING - MatrixLvlEditorModel.moveItem - moveItem MyCharacter{name='Marcel', HP=10, coord=Coord{row=15, col=10}} rowX=-1 colY=0
-[2025-05-01 20:17:19.463] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de l'ancienne case CaseMatrix{urlImgToShow='', classNameITem='null', coordRow=15, coordCol=10, width=1, height=1}
-[2025-05-01 20:17:19.463] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert false) false
-[2025-05-01 20:17:19.464] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de la nouvelle case CaseMatrix{urlImgToShow='', classNameITem='MyCharacter{name='Marcel', HP=10, coord=Coord{row=14, col=10}}', coordRow=14, coordCol=10, width=1, height=1}
-[2025-05-01 20:17:19.464] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert true) true
-[2025-05-01 20:17:19.469] INFO - MatrixLvlEditorModel.moveMovable - MyCharacter{name='Marcel', HP=10, coord=Coord{row=14, col=10}} déplacé vers Coord{row=14, col=10}
-[2025-05-01 20:17:19.718] WARNING - MatrixLvlEditorModel.moveItem - moveItem MyCharacter{name='Marcel', HP=10, coord=Coord{row=14, col=10}} rowX=-1 colY=0
-[2025-05-01 20:17:19.718] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de l'ancienne case CaseMatrix{urlImgToShow='', classNameITem='null', coordRow=14, coordCol=10, width=1, height=1}
-[2025-05-01 20:17:19.718] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert false) false
-[2025-05-01 20:17:19.718] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de la nouvelle case CaseMatrix{urlImgToShow='', classNameITem='MyCharacter{name='Marcel', HP=10, coord=Coord{row=13, col=10}}', coordRow=13, coordCol=10, width=1, height=1}
-[2025-05-01 20:17:19.718] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert true) true
-[2025-05-01 20:17:19.721] INFO - MatrixLvlEditorModel.moveMovable - MyCharacter{name='Marcel', HP=10, coord=Coord{row=13, col=10}} déplacé vers Coord{row=13, col=10}
-[2025-05-01 20:17:19.898] WARNING - MatrixLvlEditorModel.moveItem - moveItem MyCharacter{name='Agressor', HP=10, coord=Coord{row=3, col=4}} rowX=1 colY=0
-[2025-05-01 20:17:19.898] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de l'ancienne case CaseMatrix{urlImgToShow='', classNameITem='null', coordRow=3, coordCol=4, width=1, height=1}
-[2025-05-01 20:17:19.898] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert false) false
-[2025-05-01 20:17:19.899] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de la nouvelle case CaseMatrix{urlImgToShow='', classNameITem='MyCharacter{name='Agressor', HP=10, coord=Coord{row=4, col=4}}', coordRow=4, coordCol=4, width=1, height=1}
-[2025-05-01 20:17:19.899] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert true) true
-[2025-05-01 20:17:19.904] INFO - MatrixLvlEditorModel.moveMovable - MyCharacter{name='Agressor', HP=10, coord=Coord{row=4, col=4}} déplacé vers Coord{row=4, col=4}
-[2025-05-01 20:17:19.916] WARNING - MatrixLvlEditorModel.moveItem - moveItem MyCharacter{name='Marcel', HP=10, coord=Coord{row=13, col=10}} rowX=-1 colY=0
-[2025-05-01 20:17:19.916] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de l'ancienne case CaseMatrix{urlImgToShow='', classNameITem='null', coordRow=13, coordCol=10, width=1, height=1}
-[2025-05-01 20:17:19.917] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert false) false
-[2025-05-01 20:17:19.917] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de la nouvelle case CaseMatrix{urlImgToShow='', classNameITem='MyCharacter{name='Marcel', HP=10, coord=Coord{row=12, col=10}}', coordRow=12, coordCol=10, width=1, height=1}
-[2025-05-01 20:17:19.917] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert true) true
-[2025-05-01 20:17:19.921] INFO - MatrixLvlEditorModel.moveMovable - MyCharacter{name='Marcel', HP=10, coord=Coord{row=12, col=10}} déplacé vers Coord{row=12, col=10}
-[2025-05-01 20:17:20.138] WARNING - MatrixLvlEditorModel.moveItem - moveItem MyCharacter{name='Marcel', HP=10, coord=Coord{row=12, col=10}} rowX=-1 colY=0
-[2025-05-01 20:17:20.138] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de l'ancienne case CaseMatrix{urlImgToShow='', classNameITem='null', coordRow=12, coordCol=10, width=1, height=1}
-[2025-05-01 20:17:20.138] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert false) false
-[2025-05-01 20:17:20.138] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de la nouvelle case CaseMatrix{urlImgToShow='', classNameITem='MyCharacter{name='Marcel', HP=10, coord=Coord{row=11, col=10}}', coordRow=11, coordCol=10, width=1, height=1}
-[2025-05-01 20:17:20.138] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert true) true
-[2025-05-01 20:17:20.140] INFO - MatrixLvlEditorModel.moveMovable - MyCharacter{name='Marcel', HP=10, coord=Coord{row=11, col=10}} déplacé vers Coord{row=11, col=10}
-[2025-05-01 20:17:20.305] WARNING - MatrixLvlEditorModel.moveItem - moveItem MyCharacter{name='Marcel', HP=10, coord=Coord{row=11, col=10}} rowX=-1 colY=0
-[2025-05-01 20:17:20.305] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de l'ancienne case CaseMatrix{urlImgToShow='', classNameITem='null', coordRow=11, coordCol=10, width=1, height=1}
-[2025-05-01 20:17:20.305] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert false) false
-[2025-05-01 20:17:20.305] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de la nouvelle case CaseMatrix{urlImgToShow='', classNameITem='MyCharacter{name='Marcel', HP=10, coord=Coord{row=10, col=10}}', coordRow=10, coordCol=10, width=1, height=1}
-[2025-05-01 20:17:20.306] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert true) true
-[2025-05-01 20:17:20.308] INFO - MatrixLvlEditorModel.moveMovable - MyCharacter{name='Marcel', HP=10, coord=Coord{row=10, col=10}} déplacé vers Coord{row=10, col=10}
-[2025-05-01 20:17:20.509] WARNING - MatrixLvlEditorModel.moveItem - moveItem MyCharacter{name='Marcel', HP=10, coord=Coord{row=10, col=10}} rowX=-1 colY=0
-[2025-05-01 20:17:20.509] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de l'ancienne case CaseMatrix{urlImgToShow='', classNameITem='null', coordRow=10, coordCol=10, width=1, height=1}
-[2025-05-01 20:17:20.509] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert false) false
-[2025-05-01 20:17:20.509] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de la nouvelle case CaseMatrix{urlImgToShow='', classNameITem='MyCharacter{name='Marcel', HP=10, coord=Coord{row=9, col=10}}', coordRow=9, coordCol=10, width=1, height=1}
-[2025-05-01 20:17:20.509] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert true) true
-[2025-05-01 20:17:20.512] INFO - MatrixLvlEditorModel.moveMovable - MyCharacter{name='Marcel', HP=10, coord=Coord{row=9, col=10}} déplacé vers Coord{row=9, col=10}
-[2025-05-01 20:17:20.881] WARNING - MatrixLvlEditorModel.moveItem - moveItem MyCharacter{name='Marcel', HP=10, coord=Coord{row=9, col=10}} rowX=-1 colY=0
-[2025-05-01 20:17:20.881] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de l'ancienne case CaseMatrix{urlImgToShow='', classNameITem='null', coordRow=9, coordCol=10, width=1, height=1}
-[2025-05-01 20:17:20.881] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert false) false
-[2025-05-01 20:17:20.881] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de la nouvelle case CaseMatrix{urlImgToShow='', classNameITem='MyCharacter{name='Marcel', HP=10, coord=Coord{row=8, col=10}}', coordRow=8, coordCol=10, width=1, height=1}
-[2025-05-01 20:17:20.881] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert true) true
-[2025-05-01 20:17:20.882] INFO - MatrixLvlEditorModel.moveMovable - MyCharacter{name='Marcel', HP=10, coord=Coord{row=8, col=10}} déplacé vers Coord{row=8, col=10}
-[2025-05-01 20:17:20.887] WARNING - MatrixLvlEditorModel.moveItem - moveItem MyCharacter{name='Agressor', HP=10, coord=Coord{row=4, col=4}} rowX=1 colY=0
-[2025-05-01 20:17:20.887] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de l'ancienne case CaseMatrix{urlImgToShow='', classNameITem='null', coordRow=4, coordCol=4, width=1, height=1}
-[2025-05-01 20:17:20.887] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert false) false
-[2025-05-01 20:17:20.887] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de la nouvelle case CaseMatrix{urlImgToShow='', classNameITem='MyCharacter{name='Agressor', HP=10, coord=Coord{row=5, col=4}}', coordRow=5, coordCol=4, width=1, height=1}
-[2025-05-01 20:17:20.888] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert true) true
-[2025-05-01 20:17:20.890] INFO - MatrixLvlEditorModel.moveMovable - MyCharacter{name='Agressor', HP=10, coord=Coord{row=5, col=4}} déplacé vers Coord{row=5, col=4}
-[2025-05-01 20:17:21.081] WARNING - MatrixLvlEditorModel.moveItem - moveItem MyCharacter{name='Marcel', HP=10, coord=Coord{row=8, col=10}} rowX=-1 colY=0
-[2025-05-01 20:17:21.081] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de l'ancienne case CaseMatrix{urlImgToShow='', classNameITem='null', coordRow=8, coordCol=10, width=1, height=1}
-[2025-05-01 20:17:21.081] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert false) false
-[2025-05-01 20:17:21.081] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de la nouvelle case CaseMatrix{urlImgToShow='', classNameITem='MyCharacter{name='Marcel', HP=10, coord=Coord{row=7, col=10}}', coordRow=7, coordCol=10, width=1, height=1}
-[2025-05-01 20:17:21.081] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert true) true
-[2025-05-01 20:17:21.084] INFO - MatrixLvlEditorModel.moveMovable - MyCharacter{name='Marcel', HP=10, coord=Coord{row=7, col=10}} déplacé vers Coord{row=7, col=10}
-[2025-05-01 20:17:21.276] WARNING - MatrixLvlEditorModel.moveItem - moveItem MyCharacter{name='Marcel', HP=10, coord=Coord{row=7, col=10}} rowX=-1 colY=0
-[2025-05-01 20:17:21.276] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de l'ancienne case CaseMatrix{urlImgToShow='', classNameITem='null', coordRow=7, coordCol=10, width=1, height=1}
-[2025-05-01 20:17:21.276] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert false) false
-[2025-05-01 20:17:21.276] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de la nouvelle case CaseMatrix{urlImgToShow='', classNameITem='MyCharacter{name='Marcel', HP=10, coord=Coord{row=6, col=10}}', coordRow=6, coordCol=10, width=1, height=1}
-[2025-05-01 20:17:21.276] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert true) true
-[2025-05-01 20:17:21.279] INFO - MatrixLvlEditorModel.moveMovable - MyCharacter{name='Marcel', HP=10, coord=Coord{row=6, col=10}} déplacé vers Coord{row=6, col=10}
-[2025-05-01 20:17:21.489] WARNING - MatrixLvlEditorModel.moveItem - moveItem MyCharacter{name='Marcel', HP=10, coord=Coord{row=6, col=10}} rowX=-1 colY=0
-[2025-05-01 20:17:21.489] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de l'ancienne case CaseMatrix{urlImgToShow='', classNameITem='null', coordRow=6, coordCol=10, width=1, height=1}
-[2025-05-01 20:17:21.489] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert false) false
-[2025-05-01 20:17:21.490] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de la nouvelle case CaseMatrix{urlImgToShow='', classNameITem='MyCharacter{name='Marcel', HP=10, coord=Coord{row=5, col=10}}', coordRow=5, coordCol=10, width=1, height=1}
-[2025-05-01 20:17:21.490] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert true) true
-[2025-05-01 20:17:21.492] INFO - MatrixLvlEditorModel.moveMovable - MyCharacter{name='Marcel', HP=10, coord=Coord{row=5, col=10}} déplacé vers Coord{row=5, col=10}
-[2025-05-01 20:17:21.755] WARNING - MatrixLvlEditorModel.moveItem - moveItem MyCharacter{name='Marcel', HP=10, coord=Coord{row=5, col=10}} rowX=-1 colY=0
-[2025-05-01 20:17:21.755] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de l'ancienne case CaseMatrix{urlImgToShow='', classNameITem='null', coordRow=5, coordCol=10, width=1, height=1}
-[2025-05-01 20:17:21.755] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert false) false
-[2025-05-01 20:17:21.755] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de la nouvelle case CaseMatrix{urlImgToShow='', classNameITem='MyCharacter{name='Marcel', HP=10, coord=Coord{row=4, col=10}}', coordRow=4, coordCol=10, width=1, height=1}
-[2025-05-01 20:17:21.755] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert true) true
-[2025-05-01 20:17:21.757] INFO - MatrixLvlEditorModel.moveMovable - MyCharacter{name='Marcel', HP=10, coord=Coord{row=4, col=10}} déplacé vers Coord{row=4, col=10}
-[2025-05-01 20:17:21.896] WARNING - MatrixLvlEditorModel.moveItem - moveItem MyCharacter{name='Agressor', HP=10, coord=Coord{row=5, col=4}} rowX=-1 colY=0
-[2025-05-01 20:17:21.896] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de l'ancienne case CaseMatrix{urlImgToShow='', classNameITem='null', coordRow=5, coordCol=4, width=1, height=1}
-[2025-05-01 20:17:21.897] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert false) false
-[2025-05-01 20:17:21.897] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de la nouvelle case CaseMatrix{urlImgToShow='', classNameITem='MyCharacter{name='Agressor', HP=10, coord=Coord{row=4, col=4}}', coordRow=4, coordCol=4, width=1, height=1}
-[2025-05-01 20:17:21.897] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert true) true
-[2025-05-01 20:17:21.901] INFO - MatrixLvlEditorModel.moveMovable - MyCharacter{name='Agressor', HP=10, coord=Coord{row=4, col=4}} déplacé vers Coord{row=4, col=4}
-[2025-05-01 20:17:21.953] WARNING - MatrixLvlEditorModel.moveItem - moveItem MyCharacter{name='Marcel', HP=10, coord=Coord{row=4, col=10}} rowX=-1 colY=0
-[2025-05-01 20:17:21.953] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de l'ancienne case CaseMatrix{urlImgToShow='', classNameITem='null', coordRow=4, coordCol=10, width=1, height=1}
-[2025-05-01 20:17:21.953] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert false) false
-[2025-05-01 20:17:21.953] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de la nouvelle case CaseMatrix{urlImgToShow='', classNameITem='MyCharacter{name='Marcel', HP=10, coord=Coord{row=3, col=10}}', coordRow=3, coordCol=10, width=1, height=1}
-[2025-05-01 20:17:21.953] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert true) true
-[2025-05-01 20:17:21.956] INFO - MatrixLvlEditorModel.moveMovable - MyCharacter{name='Marcel', HP=10, coord=Coord{row=3, col=10}} déplacé vers Coord{row=3, col=10}
-[2025-05-01 20:17:22.214] WARNING - MatrixLvlEditorModel.moveItem - moveItem MyCharacter{name='Marcel', HP=10, coord=Coord{row=3, col=10}} rowX=-1 colY=0
-[2025-05-01 20:17:22.215] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de l'ancienne case CaseMatrix{urlImgToShow='', classNameITem='null', coordRow=3, coordCol=10, width=1, height=1}
-[2025-05-01 20:17:22.215] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert false) false
-[2025-05-01 20:17:22.215] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de la nouvelle case CaseMatrix{urlImgToShow='', classNameITem='MyCharacter{name='Marcel', HP=10, coord=Coord{row=2, col=10}}', coordRow=2, coordCol=10, width=1, height=1}
-[2025-05-01 20:17:22.216] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert true) true
-[2025-05-01 20:17:22.219] INFO - MatrixLvlEditorModel.moveMovable - MyCharacter{name='Marcel', HP=10, coord=Coord{row=2, col=10}} déplacé vers Coord{row=2, col=10}
-[2025-05-01 20:17:22.422] WARNING - MatrixLvlEditorModel.moveItem - moveItem MyCharacter{name='Marcel', HP=10, coord=Coord{row=2, col=10}} rowX=-1 colY=0
-[2025-05-01 20:17:22.422] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de l'ancienne case CaseMatrix{urlImgToShow='', classNameITem='null', coordRow=2, coordCol=10, width=1, height=1}
-[2025-05-01 20:17:22.422] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert false) false
-[2025-05-01 20:17:22.422] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de la nouvelle case CaseMatrix{urlImgToShow='', classNameITem='MyCharacter{name='Marcel', HP=10, coord=Coord{row=1, col=10}}', coordRow=1, coordCol=10, width=1, height=1}
-[2025-05-01 20:17:22.424] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert true) true
-[2025-05-01 20:17:22.430] INFO - MatrixLvlEditorModel.moveMovable - MyCharacter{name='Marcel', HP=10, coord=Coord{row=1, col=10}} déplacé vers Coord{row=1, col=10}
-[2025-05-01 20:17:22.770] WARNING - MatrixLvlEditorModel.moveItem - moveItem MyCharacter{name='Marcel', HP=10, coord=Coord{row=1, col=10}} rowX=-1 colY=0
-[2025-05-01 20:17:22.770] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de l'ancienne case CaseMatrix{urlImgToShow='', classNameITem='null', coordRow=1, coordCol=10, width=1, height=1}
-[2025-05-01 20:17:22.770] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert false) false
-[2025-05-01 20:17:22.770] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de la nouvelle case CaseMatrix{urlImgToShow='', classNameITem='MyCharacter{name='Marcel', HP=10, coord=Coord{row=0, col=10}}', coordRow=0, coordCol=10, width=1, height=1}
-[2025-05-01 20:17:22.771] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert true) true
-[2025-05-01 20:17:22.772] INFO - MatrixLvlEditorModel.moveMovable - MyCharacter{name='Marcel', HP=10, coord=Coord{row=0, col=10}} déplacé vers Coord{row=0, col=10}
-[2025-05-01 20:17:22.886] WARNING - MatrixLvlEditorModel.moveItem - moveItem MyCharacter{name='Agressor', HP=10, coord=Coord{row=4, col=4}} rowX=-1 colY=0
-[2025-05-01 20:17:22.886] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de l'ancienne case CaseMatrix{urlImgToShow='', classNameITem='null', coordRow=4, coordCol=4, width=1, height=1}
-[2025-05-01 20:17:22.886] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert false) false
-[2025-05-01 20:17:22.886] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de la nouvelle case CaseMatrix{urlImgToShow='', classNameITem='MyCharacter{name='Agressor', HP=10, coord=Coord{row=3, col=4}}', coordRow=3, coordCol=4, width=1, height=1}
-[2025-05-01 20:17:22.886] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert true) true
-[2025-05-01 20:17:22.888] INFO - MatrixLvlEditorModel.moveMovable - MyCharacter{name='Agressor', HP=10, coord=Coord{row=3, col=4}} déplacé vers Coord{row=3, col=4}
-[2025-05-01 20:17:23.896] WARNING - MatrixLvlEditorModel.moveItem - moveItem MyCharacter{name='Agressor', HP=10, coord=Coord{row=3, col=4}} rowX=-1 colY=0
-[2025-05-01 20:17:23.897] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de l'ancienne case CaseMatrix{urlImgToShow='', classNameITem='null', coordRow=3, coordCol=4, width=1, height=1}
-[2025-05-01 20:17:23.897] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert false) false
-[2025-05-01 20:17:23.897] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de la nouvelle case CaseMatrix{urlImgToShow='', classNameITem='MyCharacter{name='Agressor', HP=10, coord=Coord{row=2, col=4}}', coordRow=2, coordCol=4, width=1, height=1}
-[2025-05-01 20:17:23.897] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert true) true
-[2025-05-01 20:17:23.900] INFO - MatrixLvlEditorModel.moveMovable - MyCharacter{name='Agressor', HP=10, coord=Coord{row=2, col=4}} déplacé vers Coord{row=2, col=4}
-[2025-05-01 20:17:24.098] INFO - MatrixLvlEditorModel.addDynamicBow - Tire de la flèche model
-[2025-05-01 20:17:24.098] INFO - MatrixLvlEditorModel.addItemMatrice - Ajout item addItemMatrice
-[2025-05-01 20:17:24.099] INFO - MatrixLvlEditorModel.addItemMatrice - nbofRows=20, nbOfCols=20
-[2025-05-01 20:17:24.135] WARNING - MatrixLvlEditorModel.moveItem - moveItem src.java.org.projet.model.modelItems.Bow@4728c30b rowX=-1 colY=0
-[2025-05-01 20:17:24.135] INFO - MatrixLvlEditorModel.moveItem - src.java.org.projet.model.modelItems.Bow@4728c30b déplacement hors limites, suppression.
-[2025-05-01 20:17:24.889] WARNING - MatrixLvlEditorModel.moveItem - moveItem MyCharacter{name='Agressor', HP=10, coord=Coord{row=2, col=4}} rowX=-1 colY=0
-[2025-05-01 20:17:24.889] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de l'ancienne case CaseMatrix{urlImgToShow='', classNameITem='null', coordRow=2, coordCol=4, width=1, height=1}
-[2025-05-01 20:17:24.890] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert false) false
-[2025-05-01 20:17:24.890] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de la nouvelle case CaseMatrix{urlImgToShow='', classNameITem='MyCharacter{name='Agressor', HP=10, coord=Coord{row=1, col=4}}', coordRow=1, coordCol=4, width=1, height=1}
-[2025-05-01 20:17:24.890] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert true) true
-[2025-05-01 20:17:24.895] INFO - MatrixLvlEditorModel.moveMovable - MyCharacter{name='Agressor', HP=10, coord=Coord{row=1, col=4}} déplacé vers Coord{row=1, col=4}
-[2025-05-01 20:17:24.993] WARNING - MatrixLvlEditorModel.moveItem - moveItem MyCharacter{name='Marcel', HP=10, coord=Coord{row=0, col=10}} rowX=1 colY=0
-[2025-05-01 20:17:24.993] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de l'ancienne case CaseMatrix{urlImgToShow='', classNameITem='null', coordRow=0, coordCol=10, width=1, height=1}
-[2025-05-01 20:17:24.993] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert false) false
-[2025-05-01 20:17:24.995] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de la nouvelle case CaseMatrix{urlImgToShow='', classNameITem='MyCharacter{name='Marcel', HP=10, coord=Coord{row=1, col=10}}', coordRow=1, coordCol=10, width=1, height=1}
-[2025-05-01 20:17:24.995] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert true) true
-[2025-05-01 20:17:24.998] INFO - MatrixLvlEditorModel.moveMovable - MyCharacter{name='Marcel', HP=10, coord=Coord{row=1, col=10}} déplacé vers Coord{row=1, col=10}
-[2025-05-01 20:17:25.574] WARNING - MatrixLvlEditorModel.moveItem - moveItem MyCharacter{name='Marcel', HP=10, coord=Coord{row=1, col=10}} rowX=0 colY=-1
-[2025-05-01 20:17:25.575] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de l'ancienne case CaseMatrix{urlImgToShow='', classNameITem='null', coordRow=1, coordCol=10, width=1, height=1}
-[2025-05-01 20:17:25.575] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert false) false
-[2025-05-01 20:17:25.575] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de la nouvelle case CaseMatrix{urlImgToShow='', classNameITem='MyCharacter{name='Marcel', HP=10, coord=Coord{row=1, col=9}}', coordRow=1, coordCol=9, width=1, height=1}
-[2025-05-01 20:17:25.575] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert true) true
-[2025-05-01 20:17:25.585] INFO - MatrixLvlEditorModel.moveMovable - MyCharacter{name='Marcel', HP=10, coord=Coord{row=1, col=9}} déplacé vers Coord{row=1, col=9}
-[2025-05-01 20:17:25.895] WARNING - MatrixLvlEditorModel.moveItem - moveItem MyCharacter{name='Agressor', HP=10, coord=Coord{row=1, col=4}} rowX=0 colY=1
-[2025-05-01 20:17:25.895] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de l'ancienne case CaseMatrix{urlImgToShow='', classNameITem='null', coordRow=1, coordCol=4, width=1, height=1}
-[2025-05-01 20:17:25.915] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert false) false
-[2025-05-01 20:17:25.915] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - maj de la nouvelle case CaseMatrix{urlImgToShow='', classNameITem='MyCharacter{name='Agressor', HP=10, coord=Coord{row=1, col=5}}', coordRow=1, coordCol=5, width=1, height=1}
-[2025-05-01 20:17:25.915] INFO - MatrixLvlEditorModel.freeLastCastOccupedNewCase - Etat ancienne case  (assert true) true
-[2025-05-01 20:17:25.918] INFO - MatrixLvlEditorModel.moveMovable - MyCharacter{name='Agressor', HP=10, coord=Coord{row=1, col=5}} déplacé vers Coord{row=1, col=5}
-[2025-05-01 20:17:25.939] WARNING - MatrixLvlEditorModel.moveItem - moveItem MyCharacter{name='Marcel', HP=10, coord=Coord{row=1, col=9}} rowX=-1 colY=0
-[2025-05-01 20:17:25.939] INFO - MatrixLvlEditorModel.moveItem - MyCharacter{name='Marcel', HP=10, coord=Coord{row=1, col=9}} ne peut pas se déplacer, case occupée.
+[2025-05-02 08:30:38.065] INFO - MatrixLvlEditorModel.fillHeroAndEnnemyList - Ajout d'un ennemie  fillHeroAndEnnemyList+ [MyCharacter{name='Boss', HP=10, coord=Coord{row=0, col=0}}]
+[2025-05-02 08:30:38.371] INFO - MatrixLvlEditorModel.fillHeroAndEnnemyList - Ajout d'un ennemie  fillHeroAndEnnemyList+ [MyCharacter{name='Boss', HP=10, coord=Coord{row=0, col=0}}, MyCharacter{name='Boss', HP=10, coord=Coord{row=0, col=19}}]
+[2025-05-02 08:30:38.371] INFO - MatrixLvlEditorModel.fillHeroAndEnnemyList - L'item n'est ni un heros, ni un ennemi
+[2025-05-02 08:30:38.377] INFO - MatrixLvlEditorModel.fillHeroAndEnnemyList - L'item n'est ni un heros, ni un ennemi
+[2025-05-02 08:30:38.379] INFO - MatrixLvlEditorModel.fillHeroAndEnnemyList - L'item n'est ni un heros, ni un ennemi
+[2025-05-02 08:30:38.379] INFO - MatrixLvlEditorModel.fillHeroAndEnnemyList - L'item n'est ni un heros, ni un ennemi
+[2025-05-02 08:30:38.379] INFO - MatrixLvlEditorModel.fillHeroAndEnnemyList - L'item n'est ni un heros, ni un ennemi
+[2025-05-02 08:30:38.379] INFO - MatrixLvlEditorModel.fillHeroAndEnnemyList - L'item n'est ni un heros, ni un ennemi
+[2025-05-02 08:30:38.379] INFO - MatrixLvlEditorModel.fillHeroAndEnnemyList - L'item n'est ni un heros, ni un ennemi
+[2025-05-02 08:30:38.496] INFO - MatrixLvlEditorModel.fillHeroAndEnnemyList - Ajout du héro  fillHeroAndEnnemyList
+5-05-02 08:30:35.123] INFO - MatrixLvlEditorModel.fillHeroAndEnnemyList - L'item n'est ni un heros, ni un ennemi
+[2025-05-02 08:30:35.128] INFO - MatrixLvlEditorModel.fillHeroAndEnnemyList - L'item n'est ni un heros, ni un ennemi
+[2025-05-02 08:30:35.130] INFO - MatrixLvlEditorModel.fillHeroAndEnnemyList - L'item n'est ni un heros, ni un ennemi
+[2025-05-02 08:30:35.565] INFO - MatrixLvlEditorModel.fillHeroAndEnnemyList - Ajout d'un ennemie  fillHeroAndEnnemyList+ [MyCharacter{name='Agressor', HP=10, coord=Coord{row=0, col=1}}, MyCharacter{name='Agressor', HP=10, coord=Coord{row=4, col=11}}]
+[2025-05-02 08:30:35.565] INFO - MatrixLvlEditorModel.fillHeroAndEnnemyList - L'item n'est ni un heros, ni un ennemi
+[2025-05-02 08:30:35.570] INFO - MatrixLvlEditorModel.fillHeroAndEnnemyList - L'item n'est ni un heros, ni un ennemi
+[2025-05-02 08:30:35.570] INFO - MatrixLvlEditorModel.fillHeroAndEnnemyList - L'item n'est ni un heros, ni un ennemi
+[2025-05-02 08:30:35.574] INFO - MatrixLvlEditorModel.fillHeroAndEnnemyList - L'item n'est ni un heros, ni un ennemi
+[2025-05-02 08:30:35.574] INFO - MatrixLvlEditorModel.fillHeroAndEnnemyList - L'item n'est ni un heros, ni un ennemi
+[2025-05-02 08:30:35.578] INFO - MatrixLvlEditorModel.fillHeroAndEnnemyList - L'item n'est ni un heros, ni un ennemi
+[2025-05-02 08:30:35.580] INFO - MatrixLvlEditorModel.fillHeroAndEnnemyList - L'item n'est ni un heros, ni un ennemi
+[2025-05-02 08:30:35.582] INFO - MatrixLvlEditorModel.fillHeroAndEnnemyList - L'item n'est ni un heros, ni un ennemi
+[2025-05-02 08:30:35.582] INFO - MatrixLvlEditorModel.fillHeroAndEnnemyList - L'item n'est ni un heros, ni un ennemi
+[2025-05-02 08:30:35.582] INFO - MatrixLvlEditorModel.fillHeroAndEnnemyList - L'item n'est ni un heros, ni un ennemi
+[2025-05-02 08:30:35.582] INFO - MatrixLvlEditorModel.fillHeroAndEnnemyList - L'item n'est ni un heros, ni un ennemi
+[2025-05-02 08:30:35.582] INFO - MatrixLvlEditorModel.fillHeroAndEnnemyList - L'item n'est ni un heros, ni un ennemi
+[2025-05-02 08:30:35.590] INFO - MatrixLvlEditorModel.fillHeroAndEnnemyList - L'item n'est ni un heros, ni un ennemi
+[2025-05-02 08:30:35.590] INFO - MatrixLvlEditorModel.fillHeroAndEnnemyList - L'item n'est ni un heros, ni un ennemi
+[2025-05-02 08:30:35.597] INFO - MatrixLvlEditorModel.fillHeroAndEnnemyList - L'item n'est ni un heros, ni un ennemi
+[2025-05-02 08:30:36.033] INFO - MatrixLvlEditorModel.fillHeroAndEnnemyList - Ajout d'un ennemie  fillHeroAndEnnemyList+ [MyCharacter{name='Agressor', HP=10, coord=Coord{row=0, col=1}}, MyCharacter{name='Agressor', HP=10, coord=Coord{row=4, col=11}}, MyCharacter{name='Agressor', HP=10, coord=Coord{row=7, col=17}}]
+[2025-05-02 08:30:36.033] INFO - MatrixLvlEditorModel.fillHeroAndEnnemyList - L'item n'est ni un heros, ni un ennemi
+[2025-05-02 08:30:36.033] INFO - MatrixLvlEditorModel.fillHeroAndEnnemyList - L'item n'est ni un heros, ni un ennemi
+[2025-05-02 08:30:36.041] INFO - MatrixLvlEditorModel.fillHeroAndEnnemyList - L'item n'est ni un heros, ni un ennemi
+[2025-05-02 08:30:36.045] INFO - MatrixLvlEditorModel.fillHeroAndEnnemyList - L'item n'est ni un heros, ni un ennemi
+[2025-05-02 08:30:36.047] INFO - MatrixLvlEditorModel.fillHeroAndEnnemyList - L'item n'est ni un heros, ni un ennemi
+[2025-05-02 08:30:36.050] INFO - MatrixLvlEditorModel.fillHeroAndEnnemyList - L'item n'est ni un heros, ni un ennemi
+[2025-05-02 08:30:36.451] INFO - MatrixLvlEditorModel.fillHeroAndEnnemyList - Ajout d'un ennemie  fillHeroAndEnnemyList+ [MyCharacter{name='Agressor', HP=10, coord=Coord{row=0, col=1}}, MyCharacter{name='Agressor', HP=10, coord=Coord{row=4, col=11}}, MyCharacter{name='Agressor', HP=10, coord=Coord{row=7, col=17}}, MyCharacter{name='Agressor', HP=10, coord=Coord{row=10, col=1}}]
+[2025-05-02 08:30:36.451] INFO - MatrixLvlEditorModel.fillHeroAndEnnemyList - L'item n'est ni un heros, ni un ennemi
+[2025-05-02 08:30:36.451] INFO - MatrixLvlEditorModel.fillHeroAndEnnemyList - L'item n'est ni un heros, ni un ennemi
+[2025-05-02 08:30:36.451] INFO - MatrixLvlEditorModel.fillHeroAndEnnemyList - L'item n'est ni un heros, ni un ennemi
+[2025-05-02 08:30:36.459] INFO - MatrixLvlEditorModel.fillHeroAndEnnemyList - L'item n'est ni un heros, ni un ennemi
+[2025-05-02 08:30:36.461] INFO - MatrixLvlEditorModel.fillHeroAndEnnemyList - L'item n'est ni un heros, ni un ennemi
+[2025-05-02 08:30:36.463] INFO - MatrixLvlEditorModel.fillHeroAndEnnemyList - L'item n'est ni un heros, ni un ennemi
+[2025-05-02 08:30:36.858] INFO - MatrixLvlEditorModel.fillHeroAndEnnemyList - Ajout d'un ennemie  fillHeroAndEnnemyList+ [MyCharacter{name='Agressor', HP=10, coord=Coord{row=0, col=1}}, MyCharacter{name='Agressor', HP=10, coord=Coord{row=4, col=11}}, MyCharacter{name='Agressor', HP=10, coord=Coord{row=7, col=17}}, MyCharacter{name='Agressor', HP=10, coord=Coord{row=10, col=1}}, MyCharacter{name='Agressor', HP=10, coord=Coord{row=11, col=18}}]
+[2025-05-02 08:30:37.277] INFO - MatrixLvlEditorModel.fillHeroAndEnnemyList - Ajout d'un ennemie  fillHeroAndEnnemyList+ [MyCharacter{name='Agressor', HP=10, coord=Coord{row=0, col=1}}, MyCharacter{name='Agressor', HP=10, coord=Coord{row=4, col=11}}, MyCharacter{name='Agressor', HP=10, coord=Coord{row=7, col=17}}, MyCharacter{name='Agressor', HP=10, coord=Coord{row=10, col=1}}, MyCharacter{name='Agressor', HP=10, coord=Coord{row=11, col=18}}, MyCharacter{name='Agressor', HP=10, coord=Coord{row=12, col=3}}]
+[2025-05-02 08:30:37.280] INFO - MatrixLvlEditorModel.fillHeroAndEnnemyList - L'item n'est ni un heros, ni un ennemi
+[2025-05-02 08:30:37.713] INFO - MatrixLvlEditorModel.fillHeroAndEnnemyList - Ajout d'un ennemie  fillHeroAndEnnemyList+ [MyCharacter{name='Agressor', HP=10, coord=Coord{row=0, col=1}}, MyCharacter{name='Agressor', HP=10, coord=Coord{row=4, col=11}}, MyCharacter{name='Agressor', HP=10, coord=Coord{row=7, col=17}}, MyCharacter{name='Agressor', HP=10, coord=Coord{row=10, col=1}}, MyCharacter{name='Agressor', HP=10, coord=Coord{row=11, col=18}}, MyCharacter{name='Agressor', HP=10, coord=Coord{row=12, col=3}}, MyCharacter{name='Agressor', HP=10, coord=Coord{row=13, col=5}}]
+[2025-05-02 08:30:37.716] INFO - MatrixLvlEditorModel.fillHeroAndEnnemyList - L'item n'est ni un heros, ni un ennemi
+[2025-05-02 08:30:37.718] INFO - MatrixLvlEditorModel.fillHeroAndEnnemyList - L'item n'est ni un heros, ni un ennemi
+[2025-05-02 08:30:37.718] INFO - MatrixLvlEditorModel.fillHeroAndEnnemyList - L'item n'est ni un heros, ni un ennemi
+[2025-05-02 08:30:37.718] INFO - MatrixLvlEditorModel.fillHeroAndEnnemyList - L'item n'est ni un heros, ni un ennemi
+[2025-05-02 08:30:37.724] INFO - MatrixLvlEditorModel.fillHeroAndEnnemyList - L'item n'est ni un heros, ni un ennemi
+[2025-05-02 08:30:37.728] INFO - MatrixLvlEditorModel.fillHeroAndEnnemyList - L'item n'est ni un heros, ni un ennemi
+[2025-05-02 08:30:37.730] INFO - MatrixLvlEditorModel.fillHeroAndEnnemyList - L'item n'est ni un heros, ni un ennemi
+[2025-05-02 08:30:37.732] INFO - MatrixLvlEditorModel.fillHeroAndEnnemyList - L'item n'est ni un heros, ni un ennemi
+[2025-05-02 08:30:37.732] INFO - MatrixLvlEditorModel.fillHeroAndEnnemyList - L'item n'est ni un heros, ni un ennemi
+[2025-05-02 08:30:37.732] INFO - MatrixLvlEditorModel.fillHeroAndEnnemyList - L'item n'est ni un heros, ni un ennemi
+[2025-05-02 08:30:37.732] INFO - MatrixLvlEditorModel.fillHeroAndEnnemyList - L'item n'est ni un heros, ni un ennemi
+[2025-05-02 08:30:37.732] INFO - MatrixLvlEditorModel.fillHeroAndEnnemyList - L'item n'est ni un heros, ni [2025-05-02 08:31:07.983] INFO - MatrixLvlEditorModel.setHero - Changement de l'instance du héros
+t ni un heros, ni un ennemi
+[2025-05-02 08:30:37.742] INFO - MatrixLvlEditorModel.fillHeroAndEnnemyList - L'item n'est ni un heros, ni un ennemi
+[2025-05-02 08:30:37.744] INFO - MatrixLvlEditorModel.fillHeroAndEnnemyList - L'item n'est ni un heros, ni un ennemi
+[2025-05-02 08:30:37.747] INFO - MatrixLvlEditorModel.fillHeroAndEnnemyList - L'item n'est ni un heros, ni un ennemi
+[2025-05-02 08:30:37.749] INFO - MatrixLvlEditorModel.fillHeroAndEnnemyList - L'item n'est ni un heros, ni un ennemi
+[2025-05-02 08:30:37.751] INFO - MatrixLvlEditorModel.fillHeroAndEnnemyList - L'item n'est ni un heros, ni un ennemi
+[2025-05-02 08:30:37.751] INFO - MatrixLvlEditorModel.fillHeroAndEnnemyList - L'item n'est ni un heros, ni un ennemi

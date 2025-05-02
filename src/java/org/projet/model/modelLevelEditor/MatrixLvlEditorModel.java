@@ -99,11 +99,13 @@ public class MatrixLvlEditorModel extends AbstractModel {
     }
 
     public void showItemModel() {
+        MatrixLvlEditorModel mod = this;
         for (int i = 0; i < nbOfRows; i++) {
             for (int j = 0; j < nbOfCols; j++) {
                 //System.out.print(matrixEditorLvl[i][j] + " ");
-                CaseMatrix nextCase = getCaseMatrix(i, j);
-                this.getPropertyChangeSupport().firePropertyChange("showModelCase", null, nextCase);
+                //CaseMatrix nextCase = getCaseMatrix(i, j);
+
+                this.getPropertyChangeSupport().firePropertyChange("showModelCase", null, getMatrixEditorLvl());
             }
             System.out.println();
         }
@@ -129,6 +131,7 @@ public class MatrixLvlEditorModel extends AbstractModel {
         Coord currentItemPos = item.getCoord();
         Coord newItemPos = Coord.addCoord(currentItemPos, new Coord(rowX, colY));
 
+        if(item ==null)return false;
         boolean validCoord = isValidCoordinateCoord(newItemPos);
         if (!validCoord) {
             logger.info(item + " déplacement hors limites, suppression.");
@@ -224,7 +227,7 @@ public class MatrixLvlEditorModel extends AbstractModel {
                 this.getCaseMatrix(row, col).setClassOfItems(hero);
                 this.getPropertyChangeSupport().firePropertyChange("UpdateHeroState", null, hero);
                 logger.info("Ajout du héro  fillHeroAndEnnemyList");
-            } else if (classOfItems instanceof Ennemy || className.equals("Agressor")) {
+            } else if (classOfItems instanceof Ennemy || className.equals("Agressor")||className.equals("Boss")) {
                 if(className.equals("Agressor")) {
                     Agressor ennemy = new Agressor("Agressor", 10); // TODO
                     ennemy.setCoord(new Coord(row, col));

@@ -46,8 +46,9 @@ public class GameLogic {
     }
 
     public void stopMovementLoop() {
+        isProcessing = false;
         if(enemyMovementLoop != null) {
-            isProcessing = false;
+
             enemyMovementLoop.stop();
         }
 

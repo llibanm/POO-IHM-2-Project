@@ -11,7 +11,11 @@ import java.beans.PropertyChangeSupport;
 public abstract  class MyConcreteObservable implements  MyObservable {
 
     @JsonIgnore
-    private final PropertyChangeSupport propertyChangeSupport = new PropertyChangeSupport(this);
+    private  PropertyChangeSupport propertyChangeSupport = new PropertyChangeSupport(this);
+
+    public void init() {
+        propertyChangeSupport = new PropertyChangeSupport(this);
+    }
     public MyConcreteObservable() {}
     @Override
        public void addPropertyChangeListener(PropertyChangeListener propertyChangeListener){
