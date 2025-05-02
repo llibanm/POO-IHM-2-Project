@@ -31,7 +31,7 @@ import static src.java.org.projet.util.InitGame.getTopPaneView;
 import static src.java.org.projet.view.util.PopupMsg.demanderInfosConfig;
 
 /**
- * Vue principal englobant
+ * Vue principal
  */
 public class MainGameView extends Application {
 
@@ -48,6 +48,12 @@ public class MainGameView extends Application {
 
         MatrixLvLEditorView matrixLvLEditorView = new MatrixLvLEditorView(dataset.getMesure("DEFAULT_NB_ROW_COL")
                 ,dataset.getMesure("DEFAULT_NB_ROW_COL"));
+        GridPane grid = matrixLvLEditorView;
+        int defaultNbRowCol = dataset.getMesure("DEFAULT_NB_ROW_COL") * 40;
+        grid.setPrefSize(defaultNbRowCol, defaultNbRowCol);
+        grid.setMaxSize(Region.USE_PREF_SIZE, Region.USE_PREF_SIZE);
+        grid.setMinSize(Region.USE_PREF_SIZE, Region.USE_PREF_SIZE);
+
         HeroStateView heroStateView = new HeroStateView();
 
         GameModel gameModel = new GameModel(InitGame.generateAllsLevels());
@@ -59,10 +65,16 @@ public class MainGameView extends Application {
        // Background imgBackground = createImgBackground("src/java/org/projet/assets/planet/planet01.png",100,100);
        // stackPane.setBackground(imgBackground);
         centerMapView.getChildren().add(matrixLvLEditorView);
+
         matrixLvlEditorController.addGridListenersOnView();
         String commonPath = dataset.getString("DEFAULT_ASSET_PATH");
         initSelectItemView(commonPath, model, selectItemView);
         selectController.addListenerToIems();
+/*
+        centerMapView.prefWidthProperty().bind(matrixLvLEditorView.widthProperty());
+        centerMapView.prefHeightProperty().bind(matrixLvLEditorView.heightProperty());
+
+ */
 
         /**
          * Barre supérieur des options

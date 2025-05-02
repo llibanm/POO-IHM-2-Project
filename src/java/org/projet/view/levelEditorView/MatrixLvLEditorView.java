@@ -294,13 +294,22 @@ public class MatrixLvLEditorView extends GridPane {
         //model.getUrlBackground()
         var backgroundImage = new Image(url);
 
+        int defaultCaseSizeView = dataset.getMesure("DEFAULT_CASE_SIZE_VIEW") * nbOfCols;
         BackgroundImage background = new BackgroundImage(
                 backgroundImage,
                 BackgroundRepeat.NO_REPEAT,
                 BackgroundRepeat.NO_REPEAT,
                 BackgroundPosition.DEFAULT,
-                new BackgroundSize(dataset.getMesure("BACKGROUND_SIZE_V1"), dataset.getMesure("BACKGROUND_SIZE_V2"), true, true, true, true)
+                new BackgroundSize(
+                        //BackgroundSize.AUTO, BackgroundSize.AUTO,
+                        defaultCaseSizeView, defaultCaseSizeView,
+                        false, false, true, true
+                )
+                //new BackgroundSize(dataset.getMesure("BACKGROUND_SIZE_V1"), dataset.getMesure("BACKGROUND_SIZE_V2"), true, true, true, true)
         );
         this.setBackground(new Background(background));
+
     }
+
+
 }

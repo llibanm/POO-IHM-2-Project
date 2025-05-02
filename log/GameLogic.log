@@ -1,0 +1,4 @@
+[2025-05-02 17:18:01.267] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='Marcel', HP=8, coord=Coord{row=17, col=10}}
+[2025-05-02 17:18:01.268] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='Marcel', HP=8, coord=Coord{row=17, col=10}} -1 0
+[2025-05-02 17:18:01.428] INFO - GameLogic.moveHero - Ajout du déplacement du Hero dans la queue MyCharacter{name='Marcel', HP=8, coord=Coord{row=16, col=10}}
+[2025-05-02 17:18:01.428] SEVERE - GameLogic.processMoveQueue - Traitement des actions de la queueMyCharacter{name='Marcel', HP=8, coord=Coord{row=16, col=10}} -1 0
