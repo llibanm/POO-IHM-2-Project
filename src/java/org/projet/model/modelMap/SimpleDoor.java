@@ -7,6 +7,9 @@ import src.java.org.projet.interfaces.EffectOnHero;
 import src.java.org.projet.model.modelCharacter.Hero;
 import src.java.org.projet.model.modelGame.GameModel;
 
+/**
+ * Porte
+ */
 public class SimpleDoor extends Exit implements EffectOnHero {
 
 	//public SimpleDoor() {}
