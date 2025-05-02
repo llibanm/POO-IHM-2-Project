@@ -97,6 +97,15 @@ public class Dataset {
 
     public void setConfigMap(final Map<String, String> configMap) {
         this.configMap = configMap;
+        configScreenSize();
+    }
+
+    public  int toInt(String string) {
+        return Integer.parseInt(string);
+    }
+    private void configScreenSize() {
+        addMesure("SCENE_V", toInt(configMap.get("largeur")));
+        addMesure("SCENE_V1", toInt(configMap.get("hauteur")));
     }
 
     public  void initConfiguration() {

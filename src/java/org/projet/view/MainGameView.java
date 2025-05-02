@@ -27,6 +27,8 @@ import src.java.org.projet.view.levelEditorView.HeroStateView;
 import src.java.org.projet.view.levelEditorView.MatrixLvLEditorView;
 import src.java.org.projet.view.levelEditorView.SelectItemView;
 
+import static src.java.org.projet.view.util.PopupMsg.demanderInfosConfig;
+
 /**
  * Vue principal englobant
  */
@@ -34,6 +36,7 @@ public class MainGameView extends Application {
 
     private Dataset dataset = Dataset.getInstance();
     public void start(Stage primaryStage) {
+        dataset.setConfigMap(demanderInfosConfig());
         BorderPane root = new BorderPane();
 
         SelectItemSectionModel model = new SelectItemSectionModel();
