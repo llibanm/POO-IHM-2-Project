@@ -4,6 +4,9 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.*;
 
+/**
+ * Classe utilitaire effectuant des opérations sur des images et conteneurs
+ */
 public class ImageComponent {
 
     public static ImageView createImg(String imgUrl){

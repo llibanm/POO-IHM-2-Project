@@ -32,6 +32,9 @@ import java.io.FileInputStream;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Service permettant de manipuler des sprites, d'extraire des bouts d'images ...
+ */
 public class SpriteService {
     private Image spriteSheet;
     private int frameWidth, frameHeight;
@@ -54,6 +57,12 @@ public class SpriteService {
         this.rows = rows;
     }
 
+    /**
+     * Récupérer une image dans la sprite
+     * @param col
+     * @param row
+     * @return
+     */
     public ImageView getSprite(int col, int row) {
         ImageView view = new ImageView(spriteSheet);
         view.setViewport(new Rectangle2D(col * frameWidth, row * frameHeight, frameWidth, frameHeight));
@@ -104,6 +113,11 @@ public class SpriteService {
         return view;
     }
 
+    /**
+     * Obtenir liste d'images sur la même colonne
+     * @param col
+     * @return
+     */
     public List<ImageView> getSpriteCol(int col) {
         List<ImageView> sprites = new ArrayList<>();
         for (int row = 0; row < rows; row++) {
@@ -112,6 +126,11 @@ public class SpriteService {
         return sprites;
     }
 
+    /**
+     * Obtenir liste d'images sur la même ligne
+     * @param row
+     * @return
+     */
     public List<ImageView> getSpriteRow(int row) {
         List<ImageView> sprites = new ArrayList<>();
         for (int col = 0; col < columns; col++) {
@@ -121,6 +140,15 @@ public class SpriteService {
     }
 
 
+    /**
+     * Sauvegarder une portion de d'image
+     * @param spriteSheet Image
+     * @param col
+     * @param row
+     * @param frameWidth largeur de l'image
+     * @param frameHeight hauteur
+     * @param outputPath fichier de sortie
+     */
     public static void saveSprite(Image spriteSheet, int col, int row, int frameWidth, int frameHeight, String outputPath) {
         ImageView view = new ImageView(spriteSheet);
         view.setViewport(new Rectangle2D(col * frameWidth, row * frameHeight, frameWidth, frameHeight));
@@ -134,6 +162,11 @@ public class SpriteService {
         }
     }
 
+    /**
+     * Obtenir soit liste d'image sur la même colonne sois sur la même ligne
+     * @param getRowOrColRange choix entre la colonne et la ligne
+     * @return
+     */
     public List<ImageView> getRangeSprite(Coord getRowOrColRange) {
         int row = getRowOrColRange.getRow();
         int col = getRowOrColRange.getCol();
@@ -147,8 +180,9 @@ public class SpriteService {
         return null;}
     }
 
-
-
+    /**
+     * @return Obtenir toutes les sous images de la sprite
+     */
     public List<ImageView> getAllSprites() {
         List<ImageView> sprites = new ArrayList<>();
         for (int row = 0; row < rows; row++) {
@@ -199,7 +233,15 @@ public class SpriteService {
         return transparentImage;
     }
 
-    public   ImageView getSprite(SpriteService sheet,int col, int row, Pane root) {
+    /**
+     *  Obtenir une image dans la sprite et la placer dans un Pane
+     * @param sheet
+     * @param col
+     * @param row
+     * @param root conteneur ou insérer l'image
+     * @return image de la sprite
+     */
+    public ImageView getSprite(SpriteService sheet,int col, int row, Pane root) {
         // Sprite à (1,0)
         ImageView single = sheet.getSprite(col, row);
         single.setX(200);
